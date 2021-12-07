@@ -1,12 +1,12 @@
 {
   "@context": "http://www.w3.org/ns/csvw",
   "@type": "Table",
-  "url": "DOES THE ARMS DATA HAVE A URL?",
-  "dc:title": "MasterARMS_latest",
+  "url": "https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv",
+  "dc:title": "MasterARMS_LWIJI",
   "dc:publisher": "Flanders Marine Institute",
   "tableSchema": {
     "columns": [
-    	{"name": "Country"
+    	{"name": "Country",
     	"datatype": "string",
     	"propertyUrl": "schema:country"},
     
@@ -28,7 +28,7 @@
     
     	{"name": "latitude",
     	"datatype": "float",
-    	"propertyUrl": "schema:latitude},
+    	"propertyUrl": "schema:latitude"},
     
     	{"name": "depth",
     	"datatype": "int",
@@ -60,27 +60,27 @@
     
     	{"name": "gene_COI",
     	"datatype": "string",
-    	"propertyUrl": ""http://edamontology.org/data_1093},
+    	"propertyUrl": "http://edamontology.org/data_1093"},
     
     	{"name": "gene_18S",
     	"datatype": "string",
-    	"propertyUrl": ""http://edamontology.org/data_1093},
+    	"propertyUrl": "http://edamontology.org/data_1093"},
     
     	{"name": "gene_ITS",
     	"datatype": "string",
-    	"propertyUrl": ""http://edamontology.org/data_1093},
+    	"propertyUrl": "http://edamontology.org/data_1093"},
     
     	{"name": "negativeControl_gene_COI",
     	"datatype": "string",
-    	"propertyUrl": ""http://edamontology.org/data_1093},
+    	"propertyUrl": "http://edamontology.org/data_1093"},
     
     	{"name": "negativeControl_gene_18S",
     	"datatype": "string",
-    	"propertyUrl": ""http://edamontology.org/data_1093},
+    	"propertyUrl": "http://edamontology.org/data_1093"},
     
     	{"name": "negativeControl_gene_ITS",
     	"datatype": "string",
-    	"propertyUrl": ""http://edamontology.org/data_1093},
+    	"propertyUrl": "http://edamontology.org/data_1093"},
     
     	{"name": "OtherDataLink",
     	"datatype": "anyURI",
@@ -88,11 +88,11 @@
     
     	{"name": "AccessRights",
     	"datatype": "int",
-    	"propertyUrl": ""http://purl.org/dc/terms/accessRights},
+    	"propertyUrl": "http://purl.org/dc/terms/accessRights"},
     
     	{"name": "AssociatedFileType",
     	"datatype": "string",
-    	"propertyUrl": "http://purl.org/dc/terms/type"},
+    	"propertyUrl": "http://purl.org/dc/terms/type"}
     
     ],
     "primaryKey": "MaterialSample-ID"
