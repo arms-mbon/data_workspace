@@ -1,0 +1,419 @@
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv> 
+	a csvw:table;
+	csvw:schema <https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI_description.csv>;
+	csvw:columns [
+		MaterialSample_ID,
+		Country,
+		Observatory_ID,
+		ARMS_ID,
+		Deploy_Date,
+		Collect_Date,
+		gene_COI,
+		gene_18S,
+		gene_ITS,
+		negativeControl_gene_COI,
+		negativeControl_gene_18S,
+		negativeControl_gene_ITS,
+		OtherDataLink,
+		AccessRights,
+		AssociatedFileType,
+		longitude,
+		latitude,
+		depth,
+		Fraction,
+		Preservative,
+		Filter, 
+	];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Crete_1HERP_180928_190128_SF40_DMSO>
+	schema:country &#39;Greece&#39;^^xsd:string;
+	schema:identifier &#39;Crete&#39;^^xsd:string;
+	schema:identifier &#39;1HERP&#39;^^xsd:string;
+	schema:startDate &#39;9/28/2018&#39;^^xsd:string;
+	schema:endDate &#39;1/28/2019&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460466&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4605084&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018429&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460471&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018474&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018475&#39;^^xsd:string;
+	schema:identifier &#39;NA&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;sequences&#39;^^xsd:string;
+	schema:longitude &#39;25.136605&#39;^^xsd:double;
+	schema:latitude &#39;35.343153&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;5&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;sessile&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;DMSO&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;40&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Crete_1HERP_180928_190128_SF40_EtOH>
+	schema:country &#39;Greece&#39;^^xsd:string;
+	schema:identifier &#39;Crete&#39;^^xsd:string;
+	schema:identifier &#39;1HERP&#39;^^xsd:string;
+	schema:startDate &#39;9/28/2018&#39;^^xsd:string;
+	schema:endDate &#39;1/28/2019&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460467&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4605085&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018430&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460471&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018474&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018475&#39;^^xsd:string;
+	schema:identifier &#39;NA&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;sequences&#39;^^xsd:string;
+	schema:longitude &#39;25.136605&#39;^^xsd:double;
+	schema:latitude &#39;35.343153&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;5&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;sessile&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;EtOH&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;40&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Crete_1HERP_180928_190128_MF500_DMSO>
+	schema:country &#39;Greece&#39;^^xsd:string;
+	schema:identifier &#39;Crete&#39;^^xsd:string;
+	schema:identifier &#39;1HERP&#39;^^xsd:string;
+	schema:startDate &#39;9/28/2018&#39;^^xsd:string;
+	schema:endDate &#39;1/28/2019&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460468&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4605086&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018431&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460471&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018474&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018475&#39;^^xsd:string;
+	schema:identifier &#39;NA&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;sequences&#39;^^xsd:string;
+	schema:longitude &#39;25.136605&#39;^^xsd:double;
+	schema:latitude &#39;35.343153&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;5&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;motile &#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;DMSO&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;500&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Crete_1HERP_180928_190128_MF500_EtOH>
+	schema:country &#39;Greece&#39;^^xsd:string;
+	schema:identifier &#39;Crete&#39;^^xsd:string;
+	schema:identifier &#39;1HERP&#39;^^xsd:string;
+	schema:startDate &#39;9/28/2018&#39;^^xsd:string;
+	schema:endDate &#39;1/28/2019&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460469&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4605087&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018432&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460471&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018474&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018475&#39;^^xsd:string;
+	schema:identifier &#39;NA&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;sequences&#39;^^xsd:string;
+	schema:longitude &#39;25.136605&#39;^^xsd:double;
+	schema:latitude &#39;35.343153&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;5&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;motile &#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;EtOH&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;500&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Crete_1HERP_180928_190128_SED_Frozen>
+	schema:country &#39;Greece&#39;^^xsd:string;
+	schema:identifier &#39;Crete&#39;^^xsd:string;
+	schema:identifier &#39;1HERP&#39;^^xsd:string;
+	schema:startDate &#39;9/28/2018&#39;^^xsd:string;
+	schema:endDate &#39;1/28/2019&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460470&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4605088&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018433&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460471&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018474&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018475&#39;^^xsd:string;
+	schema:identifier &#39;NA&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;sequences&#39;^^xsd:string;
+	schema:longitude &#39;25.136605&#39;^^xsd:double;
+	schema:latitude &#39;35.343153&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;5&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;sediment&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;frozen&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Crete_1HERP_180928_190128_PS250_EtOH>
+	schema:country &#39;Greece&#39;^^xsd:string;
+	schema:identifier &#39;Crete&#39;^^xsd:string;
+	schema:identifier &#39;1HERP&#39;^^xsd:string;
+	schema:startDate &#39;9/28/2018&#39;^^xsd:string;
+	schema:endDate &#39;1/28/2019&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;sequencing pending&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4605089&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018434&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460471&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018474&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018475&#39;^^xsd:string;
+	schema:identifier &#39;NA&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;sequences&#39;^^xsd:string;
+	schema:longitude &#39;25.136605&#39;^^xsd:double;
+	schema:latitude &#39;35.343153&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;5&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;plankton&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;EtOH&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;250&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Crete_1HERP_180928_190128_Images>
+	schema:country &#39;Greece&#39;^^xsd:string;
+	schema:identifier &#39;Crete&#39;^^xsd:string;
+	schema:identifier &#39;1HERP&#39;^^xsd:string;
+	schema:startDate &#39;9/28/2018&#39;^^xsd:string;
+	schema:endDate &#39;1/28/2019&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	schema:identifier &#39;VLIZ_00000615_6100183aaa3ee810554990&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;images&#39;^^xsd:string;
+	schema:longitude &#39;25.136605&#39;^^xsd:double;
+	schema:latitude &#39;35.343153&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Crete_1HERP_180928_190128_ManualObservations>
+	schema:country &#39;Greece&#39;^^xsd:string;
+	schema:identifier &#39;Crete&#39;^^xsd:string;
+	schema:identifier &#39;1HERP&#39;^^xsd:string;
+	schema:startDate &#39;9/28/2018&#39;^^xsd:string;
+	schema:endDate &#39;1/28/2019&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	schema:identifier &#39;VLIZ_00000615_6100190832a05166010758&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;manual observations&#39;^^xsd:string;
+	schema:longitude &#39;25.136605&#39;^^xsd:double;
+	schema:latitude &#39;35.343153&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Koster_VH2_180418_180906_SF40_EtOH>
+	schema:country &#39;Sweden&#39;^^xsd:string;
+	schema:identifier &#39;Koster&#39;^^xsd:string;
+	schema:identifier &#39;VH2&#39;^^xsd:string;
+	schema:startDate &#39;4/18/2018&#39;^^xsd:string;
+	schema:endDate &#39;9/6/2018&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018450&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4605231&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018443&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460471&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018474&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018475&#39;^^xsd:string;
+	schema:identifier &#39;NA&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;sequences&#39;^^xsd:string;
+	schema:longitude &#39;11.111884&#39;^^xsd:double;
+	schema:latitude &#39;58.87633&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;22&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;sessile&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;EtOH&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;40&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Koster_VH2_180418_180906_SF40_DMSO>
+	schema:country &#39;Sweden&#39;^^xsd:string;
+	schema:identifier &#39;Koster&#39;^^xsd:string;
+	schema:identifier &#39;VH2&#39;^^xsd:string;
+	schema:startDate &#39;4/18/2018&#39;^^xsd:string;
+	schema:endDate &#39;9/6/2018&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018451&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4605232&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018444&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460471&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018474&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018475&#39;^^xsd:string;
+	schema:identifier &#39;NA&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;sequences&#39;^^xsd:string;
+	schema:longitude &#39;11.111884&#39;^^xsd:double;
+	schema:latitude &#39;58.87633&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;22&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;sessile&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;DMSO&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;40&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Koster_VH2_180418_180906_MF100_EtOH>
+	schema:country &#39;Sweden&#39;^^xsd:string;
+	schema:identifier &#39;Koster&#39;^^xsd:string;
+	schema:identifier &#39;VH2&#39;^^xsd:string;
+	schema:startDate &#39;4/18/2018&#39;^^xsd:string;
+	schema:endDate &#39;9/6/2018&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018452&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4605233&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018445&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460471&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018474&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018475&#39;^^xsd:string;
+	schema:identifier &#39;NA&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;sequences&#39;^^xsd:string;
+	schema:longitude &#39;11.111884&#39;^^xsd:double;
+	schema:latitude &#39;58.87633&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;22&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;motile &#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;EtOH&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;100&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Koster_VH2_180418_180906_MF500_EtOH>
+	schema:country &#39;Sweden&#39;^^xsd:string;
+	schema:identifier &#39;Koster&#39;^^xsd:string;
+	schema:identifier &#39;VH2&#39;^^xsd:string;
+	schema:startDate &#39;4/18/2018&#39;^^xsd:string;
+	schema:endDate &#39;9/6/2018&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018453&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4605234&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018446&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460471&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018474&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018475&#39;^^xsd:string;
+	schema:identifier &#39;NA&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;sequences&#39;^^xsd:string;
+	schema:longitude &#39;11.111884&#39;^^xsd:double;
+	schema:latitude &#39;58.87633&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;22&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;motile &#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;EtOH&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;500&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Koster_VH2_180418_180906_SED100_DMSO>
+	schema:country &#39;Sweden&#39;^^xsd:string;
+	schema:identifier &#39;Koster&#39;^^xsd:string;
+	schema:identifier &#39;VH2&#39;^^xsd:string;
+	schema:startDate &#39;4/18/2018&#39;^^xsd:string;
+	schema:endDate &#39;9/6/2018&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018454&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4605235&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018447&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460471&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018474&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018475&#39;^^xsd:string;
+	schema:identifier &#39;NA&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;sequences&#39;^^xsd:string;
+	schema:longitude &#39;11.111884&#39;^^xsd:double;
+	schema:latitude &#39;58.87633&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;22&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;sediment&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;DMSO&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;100&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Koster_VH2_180418_180906_SED500_DMSO>
+	schema:country &#39;Sweden&#39;^^xsd:string;
+	schema:identifier &#39;Koster&#39;^^xsd:string;
+	schema:identifier &#39;VH2&#39;^^xsd:string;
+	schema:startDate &#39;4/18/2018&#39;^^xsd:string;
+	schema:endDate &#39;9/6/2018&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018455&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4605236&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018448&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460471&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018474&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018475&#39;^^xsd:string;
+	schema:identifier &#39;NA&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;sequences&#39;^^xsd:string;
+	schema:longitude &#39;11.111884&#39;^^xsd:double;
+	schema:latitude &#39;58.87633&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;22&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;sediment&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;DMSO&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;500&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Koster_VH2_180418_180906_PS90_EtOH>
+	schema:country &#39;Sweden&#39;^^xsd:string;
+	schema:identifier &#39;Koster&#39;^^xsd:string;
+	schema:identifier &#39;VH2&#39;^^xsd:string;
+	schema:startDate &#39;4/18/2018&#39;^^xsd:string;
+	schema:endDate &#39;9/6/2018&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;sequencing pending&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4605237&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018449&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR3460471&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018474&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;ERR4018475&#39;^^xsd:string;
+	schema:identifier &#39;NA&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;sequences&#39;^^xsd:string;
+	schema:longitude &#39;11.111884&#39;^^xsd:double;
+	schema:latitude &#39;58.87633&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;22&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;plankton&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;EtOH&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;90&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Koster_VH2_180418_180906_Images>
+	schema:country &#39;Sweden&#39;^^xsd:string;
+	schema:identifier &#39;Koster&#39;^^xsd:string;
+	schema:identifier &#39;VH2&#39;^^xsd:string;
+	schema:startDate &#39;4/18/2018&#39;^^xsd:string;
+	schema:endDate &#39;9/6/2018&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	schema:identifier &#39;VLIZ_00000615_6100189bdacd8661881214&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;images&#39;^^xsd:string;
+	schema:longitude &#39;11.111884&#39;^^xsd:double;
+	schema:latitude &#39;58.87633&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;.@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> .
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv#ARMS_Crete_1HERP_180928_190128_ManualObservations>
+	schema:country &#39;Sweden&#39;^^xsd:string;
+	schema:identifier &#39;Koster&#39;^^xsd:string;
+	schema:identifier &#39;VH2&#39;^^xsd:string;
+	schema:startDate &#39;4/18/2018&#39;^^xsd:string;
+	schema:endDate &#39;9/6/2018&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	http://edamontology.org/data_1093 &#39;NA&#39;^^xsd:string;
+	schema:identifier &#39;VLIZ_00000615_610018fa66217766733426&#39;^^xsd:string;
+	http://purl.org/dc/terms/accessRights &#39;http://purl.org/eprint/accessRights/OpenAccess&#39;^^xsd:string;
+	http://purl.org/dc/terms/type &#39;manual observations&#39;^^xsd:string;
+	schema:longitude &#39;11.111884&#39;^^xsd:double;
+	schema:latitude &#39;58.87633&#39;^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact &#39;NA&#39;^^xsd:string;.
