@@ -15,85 +15,8 @@
 
 <{{uritexpand("https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv{#MaterialSample_ID}",_)}}>
 {%- for row in sets['tableSchema'] %}
-	{%- if row['column'] == 'Country' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.Country, row['datatype'])}};
+	{%- if _[row['column']] != 'NA' %}
+	{{row['propertyUrl']}} {{ttl_fmt(_[row['column']], row['datatype'])}};
 	{%- endif %}
-
-	{%- if row['column'] == 'Observatory_ID' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.Observatory_ID, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'ARMS_ID' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.ARMS_ID, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'OtherDataLink' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.OtherDataLink, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'latitude' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.latitude, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'longitude' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.longitude, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'Deploy_Date' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.Deploy_Date, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'Collect_Date' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.Collect_Date, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'AccessRights' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.AccessRights, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'AssociatedFileType' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.AssociatedFileType, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'depth' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.depth, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'Fraction' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.Fraction, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'Preservative' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.Preservative, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'Filter' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.Filter, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'gene_COI' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.gene_COI, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'gene_18S' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.gene_18S, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'gene_ITS' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.gene_ITS, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'negativeControl_gene_COI' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.negativeControl_gene_COI, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'negativeControl_gene_18S' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.negativeControl_gene_18S, row['datatype'])}};
-	{%- endif %}
-
-	{%- if row['column'] == 'negativeControl_gene_ITS' %}
-	{{row['propertyUrl']}} {{ttl_fmt(_.negativeControl_gene_ITS, row['datatype'])}};
-	{%- endif %}
-
 {%- endfor -%}
 .
