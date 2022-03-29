@@ -16,7 +16,11 @@
 <{{uritexpand("https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv{#MaterialSample_ID}",_)}}>
 {%- for row in sets['tableSchema'] %}
 	{%- if _[row['column']] != 'NA' %}
+		{%- if row['column'] == 'AccessRights' %}
+	{{row['propertyUrl']}} <{{uritexpand("http://purl.org/eprint/accessRights/{AccessRights}",_)}}>;
+		{%- else %}
 	{{row['propertyUrl']}} {{ttl_fmt(_[row['column']], row['datatype'])}};
 	{%- endif %}
+{%- endif %}
 {%- endfor -%}
 .
