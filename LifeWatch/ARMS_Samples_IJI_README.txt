@@ -1,4 +1,5 @@
-ARMS_Samples_IJI.csv: the CSV file containing the metadata of the ARMS data collection (dates, locations, IDs, URLS po  ARMS_Samples_IJI_description.csvw.jsonld: jsonld version of that, to allow developers to access these metadata without
+ARMS_Samples_IJI.csv: the CSV file containing the metadata of the ARMS data collection (dates, locations, IDs, URLS po  
+ARMS_Samples_IJI_description.csvw.jsonld: jsonld version of that, to allow developers to access these metadata without
  
 Pay Attention:
 
@@ -8,7 +9,9 @@ Pay Attention:
     - In order to automatically DOWNLOAD the 2 fastq files for each of the run accesion numbers, you can use the webservices as documented on https://github.com/enasequence/enaBrowserTools, e.g. enaDataGet -f fastq -d /tmp/ run ERR3460470 (the ERR## is the value in the cells)
 - The column called OtherDataLink contains the URI of zip files of image or CSV files of manual observations, currently
     - In order to download those files directly, the URL is https://mda.vliz.be/download.php?file={cell value}
-    - In order to allow a user to see the metadata of the files and download manually, the URL is https://mda.vliz.be/direc  
+    - In order to allow a user to see the metadata of the files and download manually, the URL is https://mda.vliz.be/directlink.php?fid={cell value}
+    - NA means that there is no link (i.e. "not present")
+    Note that this column is NOT NECESSARY TO INCLUDE in the table in the workflow for the step "select sequences"  
 - The column called AccessRights is there because for some rows of ARMS_Samples_IJI.csv, the data are only open to ARMS   
 - The column called AssociatedFileType is to help you understand the type of data that are linked to each row.
    - sequences - the associated data are the sequences in ENA
