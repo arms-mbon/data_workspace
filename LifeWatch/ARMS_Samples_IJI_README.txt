@@ -1,5 +1,5 @@
-ARMS_Samples_IJI.csv: the CSV file containing the metadata of the ARMS data collection (dates, locations, IDs, URLS po  
-ARMS_Samples_IJI_description.csvw.jsonld: jsonld version of that, to allow developers to access these metadata without
+ARMS_Samples_IJI.csv: the CSV file containing all the metadata of the ARMS data collection (dates, locations, IDs, URLS, etc) 
+ARMS_Samples_IJI_description.csvw.jsonld: jsonld version of that, to allow developers to access these metadata m2m
  
 Pay Attention:
 
@@ -12,12 +12,10 @@ Pay Attention:
     - In order to allow a user to see the metadata of the files and download manually, the URL is https://mda.vliz.be/directlink.php?fid={cell value}
     - NA means that there is no link (i.e. "not present")
     Note that this column is NOT NECESSARY TO INCLUDE in the table in the workflow for the step "select sequences"  
-- The column called AccessRights is there because for some rows of ARMS_Samples_IJI.csv, the data are only open to ARMS   
-- The column called AssociatedFileType is to help you understand the type of data that are linked to each row.
+- The column called AccessRights is there because for some rows of ARMS_Samples_IJI.csv, the data are only open to ARMS.  
+- The column called AssociatedFileType is to help the developers understand the type of data that are linked to each row. In this way you can decide whether the row needs to be included in the table: a table that is for selecting sequences only needs the rows with value "sequences" in this column; a table that is for selecting images or manual observations (not currently part of the workflow) similarly needs only the row with value "images" or "manual observations" in the row. 
    - sequences - the associated data are the sequences in ENA
    - images - the data are images, stored as a single ZIP file, in MDA
-   - manual observations - the data are CSV files containing manual observations, provided either as a single CSV or a zip   
-   - Hence it will be necessary to check if the filetype downloaded is a ZIP or not.
-
+   - manual observations - the data are CSV files containing manual observations, provided either as a single CSV or a zip
  
-  Correct as of Dec 8 2021
+  Correct as of March 29 2022
