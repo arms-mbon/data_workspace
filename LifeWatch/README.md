@@ -24,15 +24,17 @@ We have subsetted the ARMS data input file (ARMS_Samples_IJI.csv) so that they p
    * images - the data are images, stored as a single ZIP file, in MDA
    * manual observations - the data are CSV files containing manual observations, provided either as a single CSV or a zip
 
-**Information on ARMS4IJI_Template4PEMA_data**\n
-For this template of the data to load into the PEMA path of the workflow, to present to the user as a selection table, the data and metadata files contain the following: TO BE WRITTEN 
+**Information on ARMS4IJI_Template4PEMA_data**
+For this template of the data to load into the PEMA path of the workflow, to present to the user as a selection table, the data and metadata files contain the following: 
+* TO BE WRITTEN 
 
 
-**Information on ARMS4IJI_Template4Images/ManualObs_data**\n
-For this template of the data to load into the Image analysis or Manual Observations analysis paths of the workflow, to present to the user as a selection table, the data and metadata files contain the following: TO BE WRITTEN
+**Information on ARMS4IJI_Template4Images/ManualObs_data**
+For this template of the data to load into the Image analysis or Manual Observations analysis paths of the workflow, to present to the user as a selection table, the data and metadata files contain the following: 
+* TO BE WRITTEN
 
 
-ToBeDone
+TO BE DONE 
 * rename ARMS_Samples_IJI.csv to ARMS4Tesseract_data.csv
 * rename ARMS_Samples_IJI_description.csv to ARMS4Tesserat_metadata.csv
 * appropriately rename the ldt and ttl files
