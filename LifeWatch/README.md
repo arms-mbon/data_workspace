@@ -12,12 +12,12 @@ We have subsetted the ARMS all-data file (ARMS_Samples_IJI.csv) so that we can p
 **Information on ARMS_Samples_IJI.csv**
 * Each row in ARMS_Samples_IJI.csv is a single material sample, and there can be several rows for each sampling event as each row corresponds to a unique (sequence, image, or manual observation) dataset from that sampling event. 
 * The columns called _gene_COI|18S|ITS_ and _negativeControl_gene_COI|18S|ITS_ contain the ENA run accession numbers of raw sequences
-    * In order to view the webpage on ENA for those sequences, you need to go to _https://www.ebi.ac.uk/ena/browser/view/{cell value}_
+    * In order to view the webpage on ENA for those sequences, you need to go to https<nowiki>://www<nowiki>.ebi<nowiki>.ac<nowiki>.uk/ena/browser/view/{cell value} 
     * In order to automatically download the two fastq files for each of the run accesion numbers, you can use the webservices as documented on https://github.com/enasequence/enaBrowserTools, e.g. enaDataGet -f fastq -d /tmp/ run ERR3460470 (the ERR## is the value in the cells)
     * The PEMA workflow requires the ENA accesion numbers only, not an actual download of the data
 * The column called _OtherDataLink_ contains the URI of zip files of images or the CSV files of manual observations
-    * In order to download those files directly, the URL is _https://mda.vliz.be/download.php?file={cell value}_
-    * To load the metadata of the files from which webpage the data can be downloaded manually, the URL is _https://mda.vliz.be/directlink.php?fid={cell value}_
+    * In order to download those files directly, the URL is https<nowiki>://mda<nowiki>.vliz<nowiki>.be/download.php?file={cell value}
+    * To load the metadata of the files from which webpage the data can be downloaded manually, the URL is https<nowiki>://mda<nowiki>.vliz<nowiki>.be/directlink.php?fid={cell value}
     * NA means that there is no link (i.e. "not present")
     * Note that at present the images are wrapped in a ZIP file, and it is still to be decided how these will be incorporated in the ARMS workflow. Once decisions have been made, updates here will follow. 
 * The column called _AccessRights_ gives the data licence. This information can be displayed to users as-is (no need to turn the values into a URL, for example). Data which are ClosedAccess cannot be accessed unless the user has permissions (e.g. has the uname and psswrd of the ARMS ENA account).   
