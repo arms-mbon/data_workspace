@@ -41,13 +41,9 @@ This is template of the data to load into the Image analysis or Manual Observati
 -->
 
 TO BE DONE 
-* rename ARMS_Samples_IJI.csv to ARMS4Tesseract_data.csv
-* rename ARMS_Samples_IJI_description.csv to ARMS4Tesserat_metadata.csv
 * appropriately rename the ldt and ttl files
 * create the template csv and metadata files
 * create the templates' template and ttl files
-* in main ARMS input files: - change "gene_COI" to just "COI" and negativeControl_gene_COI to COI (neg. control), change "sequencing pending" to "pending"
-* check this statement "The PEMA workflow requires the ENA accesion numbers only, not an actual download of the data"
-* turn "open access" into an actual licence
+* check with LW if can update now (real-time?)
 
 
