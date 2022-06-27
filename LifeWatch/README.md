@@ -1,4 +1,4 @@
-Here we have placed all the data that the LifeWatch Tesseracto ARMS workflow requires.
+Here we have placed all the data that the LifeWatch Tesseracto ARMS workflow requires. These data are provided for a specific purpose and with a specific layout, and while the data here are openly accessible, this is not the place to look for the overview of the ARMS data if you are coming to this page with that intent. 
 
 * [ARMS_Samples_IJI.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI.csv): the CSV file containing the metadata of the ARMS data collection (dates, locations, IDs, URLS, etc) as provided for the LifeWatch IJI workflow. This includes references to archived sequence data, image data, and spreadsheet data, and thus is a complete overview. As the different steps of the ARMS workflow execute different processes on different data, the actual data to load into any single step will be a subset of this table. Appropriate subsetted template CSV files are also provided here (see the "Subsetted" files described below). As more data become available, new rows will be added to this spreadsheet, so it will be continuously updated (rather than released as new versions). Note that we aim to include a complete overview of the ARMS-MBON data collection in this file, but there may be a lag between updates. 
 * [ARMS_Samples_IJI_description.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS_Samples_IJI_description.csv): a description of the columns in the data file (ARMS_Samples_IJI.csv), including the datatype and propertyURL. These are provided to help developers understand what is contained in the columns. 
@@ -13,19 +13,18 @@ We have subsetted the ARMS all-data file (ARMS_Samples_IJI.csv) so that we can p
 -->
 
 **Information on ARMS_Samples_IJI.csv**
-* Each row in ARMS_Samples_IJI.csv is a single material sample arising from a sampling event. There are several rows for each sampling event as each row corresponds to the different datasets (sequences, images, and/or manual observations) derived from each sampling event. 
-* The columns called _gene_COI|18S|ITS_ and _negativeControl_gene_COI|18S|ITS_ contain the ENA run accession numbers of raw sequences
-    * In order to view the webpage on ENA for those sequences, you need to go to https<nowiki>://www<nowiki>.ebi<nowiki>.ac<nowiki>.uk/ena/browser/view/{cell value} 
+* Each row in ARMS_Samples_IJI.csv is for the datasets linked to a particular sampling event: as several datasets (sequences, images, and/or manual observations) are linked to each sampling event, each sampling event has several associated rows. 
+* The columns called _gene_COI|18S|ITS_ and _negativeControl_gene_COI|18S|ITS_ contain the run accession numbers of the associated raw sequences that are archived in [ENA](https://www.ebi.ac.uk/ena/browser/home)
+    * In order to view the ENA run accession webpage for any sequence, you need to go to https<nowiki>://www<nowiki>.ebi<nowiki>.ac<nowiki>.uk/ena/browser/view/{cell value} 
     * In order to automatically download the two fastq files for each of the run accession numbers, you can use the webservices as documented on https://github.com/enasequence/enaBrowserTools, e.g. enaDataGet -f fastq -d /tmp/ run ERR3460470 (with "ERR3460470" being the accession number)
-    * The PEMA workflow requires the ENA accession numbers only, not an actual download of the data
     * NA means that there is no link (i.e. "not present"), usually because that row is not describing sequences but rather the images or manual observations
-* The column called _OtherDataLink_ contains the URI of zip files of images or the CSV files of manual observations
+* The column called _OtherDataLink_ contains the URI to the zip files that hold the ARMS images or to the CSV files of manual observations
     * In order to download those files directly, the URL is https<nowiki>://mda<nowiki>.vliz<nowiki>.be/download.php?file={cell value}
     * To view a webpage with the  metadata of the files and from where the data can be downloaded manually, the URL is https<nowiki>://mda<nowiki>.vliz<nowiki>.be/directlink.php?fid={cell value}
     * NA means that there is no link (i.e. "not present"), usually because that row is not describing images or manual observations, but rather sequences
     * Note that at present the images are wrapped in a ZIP file, and it is still to be decided how these will be incorporated in the ARMS workflow. Once decisions have been made, updates here will follow. 
-* The column called _AccessRights_ gives the data licence. This information can be displayed to users as-is (no need to turn the values into a URL, for example). Data which are ClosedAccess cannot be accessed unless the user has permissions (e.g. has the uname and psswrd of the ARMS ENA account).   
-* The column called _AssociatedFileType_ is to help the developers understand the type of data that are linked to each row. 
+* The column called _AccessRights_ gives the data licence. This information can be displayed to users as-is (no need to turn the values into a URL, for example). Data which are ClosedAccess cannot be accessed unless the user has permissions (e.g. has the uname and psswd of the ARMS ENA account).   
+* The column called _AssociatedFileType_ is to help the IJI developers understand the type of data that are linked to each row. 
    * sequences - the associated data are the sequences in ENA
    * images - the data are images, stored as a single ZIP file, in MDA
    * manual observations - the data are CSV files containing manual observations, provided either as a single CSV or a zip
