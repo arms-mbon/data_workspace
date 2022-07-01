@@ -1,5 +1,5 @@
 column,ColumnTitle_4Tesseract,ColumnOrder_4Tesseract,datatype,propertyUrl,Description,Unit,UnitUrl, , 
-Sample_ID,SampleID,,xsd:string,schema:identifier,The Sample ID we are using for these data,NA,NA,,
+Sample_ID,SampleID,-1,xsd:string,schema:identifier,The Sample ID we are using for these data,NA,NA,,
 Country,Country,1,xsd:string,schema:country,The country of sampling,NA,NA,,
 Observatory_ID,Observatory,2,xsd:string,schema:identifier,The observatory ID,NA,NA,,
 ARMS_ID,ARMS,3,xsd:string,schema:identifier,The ARMS unit ID,NA,NA,,
