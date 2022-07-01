@@ -35,6 +35,7 @@ We have subsetted the ARMS4Tesseract_data.csv so that we can provide templates f
    
 These two files are copies of ARMS4Tesseract_data/metadata.csv: the only differences are
    * The rows not relating to sequence data have been removed
+   * The columns containing gene_types that PEMA cannot process (if there are any) have been removed 
    * Two columns have been removed: OtherDataLink and AssociatedFileType as these are no longer necessary in this file
    * Two columns have been added to the metadata file: ColumnTitle_4Tesseract to suggest a column title that can be used and ColumnOrder_4Tesseract that can be used to order the sequences-selection table in the workflow
    
