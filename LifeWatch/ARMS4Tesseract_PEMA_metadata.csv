@@ -17,4 +17,4 @@ latitude,Latitude,14,xsd:double,schema:latitude,ARMS unit latitude,decimal degre
 depth,Depth,15,xsd:integer,http://rs.tdwg.org/dwc/terms/MeasurementOrFact,ARMS unit depth in meters,metre,https://vocab.nerc.ac.uk/collection/P06/current/ULAA/,,
 Fraction,Fraction,16,xsd:string,http://rs.tdwg.org/dwc/terms/MeasurementOrFact,"The fraction as defined by ARMS-MBON (motile, sessile, etc)",NA,NA,,
 Preservative,Preservative,17,xsd:string,http://rs.tdwg.org/dwc/terms/MeasurementOrFact,The preservative used for shipping the material to the DNA centre,NA,NA,,
- ,, , ,, ,,,,
+Filter,Filter, ,xsd:integer,http://rs.tdwg.org/dwc/terms/MeasurementOrFact,The mesh size when filtering the material (micrometer),micrometre,https://vocab.nerc.ac.uk/collection/P06/current/UMIC/,,
