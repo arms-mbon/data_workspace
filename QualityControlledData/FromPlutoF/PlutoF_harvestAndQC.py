@@ -107,7 +107,7 @@ for sampling_area in json_data_loaded['sampling_areas']:
         if pre_ARMS_unit == ' ' or pre_ARMS_unit == '' or pre_ARMS_unit == None:
             pre_ARMS_unit = child_area['name']
         print(pre_ARMS_unit)
-        pre_ARMS_unit = pre_ARMS_unit.replace(station,'')
+        #pre_ARMS_unit = pre_ARMS_unit.replace(station,'')
         pre_ARMS_unit = pre_ARMS_unit.replace('_', '')
         pre_ARMS_unit = pre_ARMS_unit.replace('ARMS', '')
         ARMS_unit = pre_ARMS_unit

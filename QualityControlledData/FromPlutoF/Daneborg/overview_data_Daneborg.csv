@@ -1,4 +1,4 @@
 Station,Country,ARMS_unit,Date_start,Date_end,Event_ID,Material Samples,Observations,Sequences,Associated Data,Created,Updated
-Daneborg,Greenland,2,2020-07-22,2021-08,ARMS_Daneborg_2_20200722_00000000,0,0,0,0,2019-11-25,2021-11-08
-Daneborg,Greenland,3,2020-07-22,2022-08,ARMS_Daneborg_3_20200722_00000000,0,0,0,0,2019-11-25,2021-11-08
-Daneborg,Greenland,1,2020-07-22,2022-08,ARMS_Daneborg_1_20200722_00000000,0,0,0,0,2019-11-25,2021-11-08
+Daneborg,Greenland,Daneborg2,2020-07-22,2021-08,ARMS_Daneborg_Daneborg2_20200722_00000000,0,0,0,0,2019-11-25,2021-11-08
+Daneborg,Greenland,Daneborg3,2020-07-22,2022-08,ARMS_Daneborg_Daneborg3_20200722_00000000,0,0,0,0,2019-11-25,2021-11-08
+Daneborg,Greenland,Daneborg1,2020-07-22,2022-08,ARMS_Daneborg_Daneborg1_20200722_00000000,0,0,0,0,2019-11-25,2021-11-08
