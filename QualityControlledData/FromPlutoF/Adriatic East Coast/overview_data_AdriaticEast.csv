@@ -1,0 +1,4 @@
+Station,Country,ARMS_unit,Date_start,Date_end,Event_ID,Material Samples,Observations,Sequences,Associated Data,Created,Updated
+AdriaticEast,Italy,Ven3,2021-06-23,2022-07-12,ARMS_AdriaticEast_Ven3_20210623_20220712,0,0,0,0,2021-06-28,2022-07-26
+AdriaticEast,Italy,Ven1,2021-06-23,2022-07-12,ARMS_AdriaticEast_Ven1_20210623_20220712,0,0,0,0,2021-06-28,2022-07-26
+AdriaticEast,Italy,Ven2,2021-06-23,2022-07-12,ARMS_AdriaticEast_Ven2_20210623_20220712,0,0,0,0,2021-06-28,2022-07-26

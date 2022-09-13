@@ -1,0 +1,3 @@
+Station,Country,ARMS_unit,date_start,date_end,Event_id,File_Name,File_Type,File_Download_URL,created_at,updated_at
+RavHarbour,Italy,RavH1,2021-04-22,2021-07-26,ARMS_RavHarbour_RavH1_20210422_20210726,ARMS_RAVH3_20210422_IMG_Field_16.HEIC,Image,Closed Access,2021-04-22,2022-07-06
+RavHarbour,Italy,RavH1,2021-04-22,2021-07-26,ARMS_RavHarbour_RavH1_20210422_20210726,ARMS_RAVH3_20210422_IMG_Field_13.HEIC,Image,Closed Access,2021-04-22,2022-07-06
