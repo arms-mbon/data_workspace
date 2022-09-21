@@ -1,0 +1,170 @@
+station,country,unit,qc_param,qc_flag
+Koster,Sweden,VH1,ARMS unit,passed
+Koster,Sweden,VH1,ARMS unit,passed
+Koster,Sweden,VH1,ARMS unit,passed
+Koster,Sweden,VH3,ARMS unit,passed
+Koster,Sweden,VH3,ARMS unit,passed
+Koster,Sweden,VH3,ARMS unit,passed
+Koster,Sweden,VH2,ARMS unit,passed
+Koster,Sweden,VH2,ARMS unit,passed
+Koster,Sweden,VH2,ARMS unit,passed
+Roscoff,France,BasBloS1,ARMS unit,passed
+Roscoff,France,BasBloS1,ARMS unit,passed
+Roscoff,France,BasBloS1,ARMS unit,passed
+Roscoff,France,MarBloR1,ARMS unit,passed
+Roscoff,France,MarBloR1,ARMS unit,passed
+Roscoff,France,MarBloR1,ARMS unit,passed
+Roscoff,France,MarBloR3,ARMS unit,passed
+Roscoff,France,MarBloR3,ARMS unit,passed
+Roscoff,France,MarBloR2,ARMS unit,passed
+Roscoff,France,MarBloR2,ARMS unit,passed
+Roscoff,France,BasBloS3,ARMS unit,passed
+Roscoff,France,BasBloS3,ARMS unit,passed
+Roscoff,France,BasBloS2,ARMS unit,passed
+Roscoff,France,BasBloS2,ARMS unit,passed
+Plymouth,United Kingdom,MBA1,ARMS unit,passed
+Plymouth,United Kingdom,MBA2,ARMS unit,passed
+Plymouth,United Kingdom,MBA1A,ARMS unit,passed
+Plymouth,United Kingdom,MBA1A,ARMS unit,passed
+Plymouth,United Kingdom,MBA1B,ARMS unit,passed
+Plymouth,United Kingdom,MBA1B,ARMS unit,passed
+Plymouth,United Kingdom,MBA1C,ARMS unit,passed
+Plymouth,United Kingdom,MBA1C,ARMS unit,passed
+TZS,Finland,NA,Station,passed
+TZS,Finland,NA,Station,passed
+TZS,Finland,NA,Station,passed
+TZS,Finland,NA,Station,passed
+TZS,Finland,NA,Station,passed
+Svalbard,Norway,S2,ARMS unit,passed
+Svalbard,Norway,S2,ARMS unit,passed
+Svalbard,Norway,S1,ARMS unit,passed
+Svalbard,Norway,S1,ARMS unit,passed
+Svalbard,Norway,S1,ARMS unit,passed
+Svalbard,Norway,S1A,ARMS unit,passed
+Svalbard,Norway,S1B,ARMS unit,passed
+Svalbard,Norway,S1C,ARMS unit,passed
+Rothera,Antarctica,SouthCove1,ARMS unit,passed
+Rothera,Antarctica,HangarCove2,ARMS unit,passed
+Rothera,Antarctica,HangarCove1,ARMS unit,passed
+Rothera,Antarctica,Cheshire1,ARMS unit,passed
+Rothera,Antarctica,HangarCove3,ARMS unit,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,AZFPout,ARMS unit,missing
+BelgiumCoast,Belgium,AZBW1,ARMS unit,missing
+BelgiumCoast,Belgium,AJJC81,ARMS unit,missing
+BelgiumCoast,Belgium,AJJC86,ARMS unit,missing
+BelgiumCoast,Belgium,AZBE1,ARMS unit,missing
+BelgiumCoast,Belgium,AJJCD78,ARMS unit,missing
+BelgiumCoast,Belgium,BirkenfelsA,ARMS unit,missing
+BelgiumCoast,Belgium,BirkenfelsB,ARMS unit,missing
+BelgiumCoast,Belgium,AJJCD89,ARMS unit,missing
+BelgiumCoast,Belgium,AJJBC89,ARMS unit,missing
+BelgiumCoast,Belgium,AZFPin,ARMS unit,missing
+BelgiumCoast,Belgium,CPower,ARMS unit,missing
+BelgiumCoast,Belgium,Coastbusters,ARMS unit,missing
+BelgiumCoast,Belgium,Birkenfels,ARMS unit,missing
+Vigo,Spain,TorallaA,ARMS unit,passed
+Vigo,Spain,TorallaA,ARMS unit,passed
+Vigo,Spain,TorallaA,ARMS unit,passed
+Vigo,Spain,TorallaB,ARMS unit,passed
+Vigo,Spain,TorallaB,ARMS unit,passed
+Vigo,Spain,TorallaC,ARMS unit,passed
+Vigo,Spain,TorallaC,ARMS unit,passed
+Eilat,Israel,NR,ARMS unit,passed
+Eilat,Israel,NR,ARMS unit,passed
+Eilat,Israel,NR,ARMS unit,passed
+Eilat,Israel,NR,ARMS unit,passed
+Eilat,Israel,Katza,ARMS unit,passed
+Eilat,Israel,Katza,ARMS unit,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,NA,Station,passed
+GulfOfPiran,Slovenia,to delete,ARMS unit,missing
+GulfOfPiran,Slovenia,LukaKP,ARMS unit,passed
+GulfOfPiran,Slovenia,BojaVida,ARMS unit,passed
+Getxo,Spain,G2,ARMS unit,passed
+Getxo,Spain,G2,ARMS unit,passed
+Getxo,Spain,G1,ARMS unit,passed
+Getxo,Spain,G1,ARMS unit,passed
+Getxo,Spain,G3,ARMS unit,passed
+Getxo,Spain,G3,ARMS unit,passed
+Gdynia,Poland,GDY1,ARMS unit,passed
+Gdynia,Poland,GDY1,ARMS unit,passed
+Gdynia,Poland,GDY1,ARMS unit,passed
+Limfjord,Denmark,Green33,ARMS unit,passed
+Limfjord,Denmark,Green33,ARMS unit,passed
+Limfjord,Denmark,Green33,ARMS unit,passed
+Limfjord,Denmark,Red2,ARMS unit,passed
+Limfjord,Denmark,Red2,ARMS unit,passed
+Limfjord,Denmark,Red2,ARMS unit,passed
+Limfjord,Denmark,Yellow8,ARMS unit,passed
+Limfjord,Denmark,Yellow8,ARMS unit,passed
+Limfjord,Denmark,Yellow8,ARMS unit,passed
+Limfjord,Denmark,Yellow8,ARMS unit,passed
+Bodo,Norway,GStraB,ARMS unit,passed
+Bodo,Norway,GStraB,ARMS unit,passed
+Bodo,Norway,GStraM,ARMS unit,passed
+Bodo,Norway,GStraM,ARMS unit,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,NA,Station,passed
+SWC,Sweden,Gbg4,ARMS unit,passed
+SWC,Sweden,Bjorko1,ARMS unit,passed
+SWC,Sweden,Hjuvik1,ARMS unit,passed
+SWC,Sweden,Gbg1,ARMS unit,passed
+SWC,Sweden,Gbg2,ARMS unit,passed
+SWC,Sweden,Gbg3,ARMS unit,passed
+SWC,Sweden,Varberg1,ARMS unit,passed
+SWC,Sweden,Varberg2,ARMS unit,passed
+SWC,Sweden,Varberg3,ARMS unit,passed
+SWC,Sweden,Marstrand2,ARMS unit,passed
+SWC,Sweden,Marstrand3,ARMS unit,passed
+SWC,Sweden,Helsingborg1,ARMS unit,passed
+SWC,Sweden,Helsignborg2,ARMS unit,passed
+SWC,Sweden,Marstrand1,ARMS unit,passed
+SWC,Sweden,Preemraff2,ARMS unit,passed
+SWC,Sweden,Preemraff1,ARMS unit,passed
+SchleswigHolstein,Germany,NA,Station,passed
+SchleswigHolstein,Germany,SHNP3,ARMS unit,missing
+SchleswigHolstein,Germany,SHNP2,ARMS unit,missing
+SchleswigHolstein,Germany,SHNP4,ARMS unit,missing
+RavHarbour,Italy,NA,Station,missing
+AdriaticEast,Italy,NA,Station,passed
+AdriaticEast,Italy,NA,Station,passed
+AdriaticEast,Italy,NA,Station,passed

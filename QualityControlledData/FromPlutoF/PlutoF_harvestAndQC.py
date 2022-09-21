@@ -7,17 +7,60 @@ import csv
 import requests
 import shutil
 import csv
+from dotenv import load_dotenv
+#import lib for sending mails
+from smtplib import SMTP
+import ssl
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email import encoders
+from email.mime.base import MIMEBase
 
 # variables here
+load_dotenv()
+sender_email = str(os.getenv('SENDER_EMAIL'))
+password = str(os.getenv('PASSWORD'))
+receiver_email = str(os.getenv('RECIEVER_EMAIL'))
+# Creating the respective object along with the gmail login and port number
+smtp_port = SMTP("smtp.gmail.com", 587)
+# Establishing a connection to the SMTP server with Transport Layer Security (TLS) mode
+smtp_port.ehlo()
+# Informing the client to establish a secure connection, either to a TLS or SSL
+smtp_port.starttls()
+# Logging into your account
+smtp_port.login(sender_email , password)
+# Creating the contents of the email
+subject = "ARMS QC automated report"
+address_list = [receiver_email, "cedric.decruw@vliz.be"]
+
+html_begin = """\
+<html>
+  <body>
+    <p>Hi,<br>
+        A summary of the QC script is below:<br>
+    </p>
+    <ul><br>
+"""
+html_end = """\
+    <br>
+    </ul>
+    <p>This mail was send by python QC-script<br></p>
+  </body>
+</html>
+"""
+pre_formatted_message = [html_begin]
+message = MIMEMultipart("alternative")
+message["Subject"] = subject
+message["From"] = sender_email
+message["To"] = receiver_email
+
 #import json file names ./ARMS_data.json
 #get parent dir of current file 
 parent_dit = os.path.dirname(os.path.abspath(__file__))
-
-
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/BD5BB3D1D6110AC18121619B7CF2339654A97059DFD16C0E5266A70A942A16E1.json?h=Ol_fir7xzgWA2F1dHvB3kA&e=1663159227'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/BD5BB3D1D6110AC18121619B7CF2339654A97059DFD16C0E5266A70A942A16E1.json?h=gxn9Wp9tz5WF9qHOK_x4zg&e=1663836156'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -30,9 +73,12 @@ json_data = open(os.path.join(parent_dit, 'AllARMSPlutof.json'))
 json_data_loaded = json.load(json_data)
 
 #load in csv file PlutoF_QC_v2_StationARMSnames.csv
-with open(os.path.join(parent_dit, 'PlutoF_QC_v2_StationARMSnames.csv'), 'r') as f:
+with open(os.path.join(parent_dit, 'PlutoF_QC_StationARMSnames.csv'), 'r') as f:
     qc_stations = list(csv.reader(f))
 print(qc_stations)
+
+#variables that will make the csv files
+csv_file_QC_output = []
 
 #helper function that will convert input date format 2021-05-15 18:53:34.831045+00:00 to format 2021-05-15
 def converteddate(date):
@@ -43,7 +89,7 @@ def converteddate(date):
         return date
 
 #hepler functions that takes in input and also input column and return the value of the "input column corrected" from the qc-stations csv file if the value is not blank
-def correctedvalue(input_value, input_column):
+def correctedvalue(input_value, input_column, input_country=None, input_station=None):
     index_column = 0
     for field in qc_stations[0]:
         if field == input_column:
@@ -52,15 +98,35 @@ def correctedvalue(input_value, input_column):
             correctedcolumn = index_column
         index_column += 1
     
+    toreturn = input_value
+    found_station = False
     for row in qc_stations:
         if row[tocheckcolumn] == input_value:
+            found_station = True
             if row[correctedcolumn] != '' and row[correctedcolumn] != ' ' and row[correctedcolumn] != None :
                 print(f'corrected value found for {input_value} in {input_column} column => {row[correctedcolumn]}')
-                return row[correctedcolumn]
+                toreturn = row[correctedcolumn]
+                #add to csv file
+                if input_column == "Country":
+                    csv_file_QC_output.append({'station': 'NA', 'country': toreturn, 'unit': 'NA', 'qc_param': input_column, 'qc_flag': 'passed'})
+                elif input_column == "Station":
+                    csv_file_QC_output.append({'station': toreturn, 'country': input_country, 'unit': 'NA', 'qc_param': input_column, 'qc_flag': 'passed'})
+                elif input_column == "ARMS unit":
+                    csv_file_QC_output.append({'station': input_station, 'country': input_country, 'unit': toreturn, 'qc_param': input_column, 'qc_flag': 'passed'})
             else:
                 print('no corrected value for ' + input_value)
-                return input_value
-    return input_value
+                toreturn = input_value
+            
+    if found_station == False:
+        if input_column == 'Station':
+            csv_file_QC_output.append({'station': input_value, 'country': input_country, 'unit': 'NA', 'qc_param': input_column, 'qc_flag': 'missing'})
+        elif input_column == 'Country':
+            csv_file_QC_output.append({'station': 'NA', 'country': input_value, 'unit': 'NA', 'qc_param': input_column, 'qc_flag': 'missing'})
+        elif input_column == 'ARMS unit':
+            csv_file_QC_output.append({'station': input_station, 'country': input_country, 'unit': input_value, 'qc_param': input_column, 'qc_flag': 'missing'})
+        part_attachted = '<li> - '+input_value + ' not found in column '+ input_column +' in the csv file </li>'
+        pre_formatted_message.append(part_attachted)
+    return toreturn
 
 
 #get the following variables from the json file
@@ -94,16 +160,15 @@ for sampling_area in json_data_loaded['sampling_areas']:
         os.mkdir(os.path.join(output_dir, sampling_area['name']))
     except Exception as e:
         print(e)
-    
-    #coun
     #country
     country = correctedvalue(sampling_area['country'], 'Country')
-    station = correctedvalue(sampling_area['name'], 'Station')
+    
+    station = correctedvalue(sampling_area['name'], 'Station',input_country=sampling_area['country'])
     print(f"working on {sampling_area['name']}")
     print(f'working on {station}')
     for child_area in sampling_area['child_areas']:
         print(f" area name {child_area['name']}")
-        pre_ARMS_unit = correctedvalue(child_area['name'], 'ARMS unit')
+        pre_ARMS_unit = correctedvalue(child_area['name'], 'ARMS unit',input_country=country, input_station=station)
         if pre_ARMS_unit == ' ' or pre_ARMS_unit == '' or pre_ARMS_unit == None:
             pre_ARMS_unit = child_area['name']
         print(pre_ARMS_unit)
@@ -359,3 +424,41 @@ with open(os.path.join(output_dir, 'AllMaterialSamples.csv'), 'w', newline='') a
     writer.writeheader()
     for data in material_samples_csv_data:
         writer.writerow(data)
+
+filename = 'PlutoF_HarvestQCreport.csv'  # In same directory as script
+
+#make csv file from csv_file_QC_output
+with open(os.path.join(output_dir, filename), 'w', newline='') as csvfile:
+    fieldnames = ['station','country','unit','qc_param','qc_flag']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    for data in csv_file_QC_output:
+        writer.writerow(data)
+
+# Open PDF file in binary mode
+with open(os.path.join(output_dir, filename), "rb") as attachment:
+    # Add file as application/octet-stream
+    # Email client can usually download this automatically as attachment
+    part = MIMEBase("application", "octet-stream")
+    part.set_payload(attachment.read())
+
+# Encode file in ASCII characters to send by email    
+encoders.encode_base64(part)
+
+# Add header as key/value pair to attachment part
+part.add_header(
+    "Content-Disposition",
+    f"attachment; filename= {filename}",
+)
+
+# Add attachment to message and convert message to string
+message.attach(part)
+#Send email part#
+pre_formatted_message.append(html_end)
+formatted_message = ''.join(pre_formatted_message)
+message.attach(MIMEText(formatted_message, "html"))
+print(message)
+smtp_port.sendmail(sender_email, address_list, message.as_string()) #put on end script
+print("Email Sent")
+smtp_port.quit()
+
