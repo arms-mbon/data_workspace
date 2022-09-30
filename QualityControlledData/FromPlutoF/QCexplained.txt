@@ -16,4 +16,4 @@ Steps done before each subsequent PluotF download
 1) Ideally, the data manager checks the file PlutoF_QC_StationsARMSnames.csv and updates (manually) by checking against 
    PlutoF
 2) Upon a download of PlutoF, the corrections are made following the same procedure described above
-3) A QC report is produced......NEED TO WRITE ABOUT THIS ONCE DONE, see https://github.com/arms-mbon/Data/issues/8
+3) A QC report is produced, this being a spreadsheet listing those stations and ARMS units as downloaded from PlutoF which was not in the file PlutoF_QC_StationsARMSnames.csv, or where something was in the file but not in PlutoF. An email is also sent with a reduced version of that spreadsheet.
