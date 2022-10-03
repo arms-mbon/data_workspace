@@ -60,7 +60,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/BD5BB3D1D6110AC18121619B7CF2339654A97059DFD16C0E5266A70A942A16E1.json?h=gxn9Wp9tz5WF9qHOK_x4zg&e=1663836156'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/ED4A12F9855E3761816BDD9E502C1560059F5073FD4149F04BD38DBE7730DE1A.json?h=buFWGg1i7JGEM377js-7YA&e=1664887180'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -87,6 +87,22 @@ def converteddate(date):
         return new_date
     except:
         return date
+    
+def getDepth(child_area):
+    #check if measurements are presentr in the child area
+    try:
+        if child_area['measurements']:
+            #loop over the measurements and check if measurements[i]['measurement][name] == 'Depth max'
+            i = 0
+            for measurements in child_area['measurements']:
+                if measurements['measurement']['name'] == 'Depth max':
+                    #if so return the measurement value
+                    return child_area['measurements'][i]['value']
+                i+=1
+        else:
+            return 'no measurements'
+    except:
+        return 'no measurements'
 
 #hepler functions that takes in input and also input column and return the value of the "input column corrected" from the qc-stations csv file if the value is not blank
 def correctedvalue(input_value, input_column, input_country=None, input_station=None):
@@ -176,6 +192,12 @@ for sampling_area in json_data_loaded['sampling_areas']:
         pre_ARMS_unit = pre_ARMS_unit.replace('_', '')
         pre_ARMS_unit = pre_ARMS_unit.replace('ARMS', '')
         ARMS_unit = pre_ARMS_unit
+        
+        #get latitude longitude and depth
+        latitude = child_area['latitude']
+        longitude = child_area['longitude']
+        depth = getDepth(child_area)
+        
         for sampling_event in child_area['sampling_events']:
             #date_start
             date_start = converteddate(sampling_event['timespan_begin'])
@@ -342,10 +364,43 @@ for sampling_area in json_data_loaded['sampling_areas']:
                     "created_at": created,
                     "updated_at": updated
                 })
+                
+            main_csv_data.append(
+                {'Station': station,
+                 'Country': country,
+                 'ARMS_unit': ARMS_unit,
+                 'Latitude': latitude,
+                 'Longitude': longitude,
+                 'Depth': depth,
+                 'Date_start': date_start,
+                 'Date_end': date_end,
+                 'Event_ID': event_description,
+                 'Material Samples': material_samples,
+                 'Observations': observations,
+                 'Sequences': sequences,
+                 'Associated Data': associated_date,
+                 'Created': created,
+                 'Updated': updated
+                 })
 
-            main_data_csv.append({'Station': station, 'Country': country, 'ARMS_unit': ARMS_unit, 'Date_start': date_start, 'Date_end': date_end, 'Event_ID': event_description, 'Material Samples': material_samples, 'Observations': observations, 'Sequences': sequences, 'Associated Data': associated_date, 'Created': created, 'Updated': updated})
-            #append dictionary of data to main_csv_data
-            main_csv_data.append({'Station': station, 'Country': country, 'ARMS_unit': ARMS_unit, 'Date_start': date_start, 'Date_end': date_end, 'Event_ID': event_description, 'Material Samples': material_samples, 'Observations': observations, 'Sequences': sequences, 'Associated Data': associated_date, 'Created': created, 'Updated': updated})
+            main_data_csv.append(
+                {'Station': station,
+                 'Country': country,
+                 'ARMS_unit': ARMS_unit,
+                 'Latitude': latitude,
+                 'Longitude': longitude,
+                 'Depth': depth,
+                 'Date_start': date_start,
+                 'Date_end': date_end,
+                 'Event_ID': event_description,
+                 'Material Samples': material_samples,
+                 'Observations': observations,
+                 'Sequences': sequences,
+                 'Associated Data': associated_date,
+                 'Created': created,
+                 'Updated': updated
+                 })
+
     with open(os.path.join(output_dir, sampling_area['name'],"material_samples_"+station+'.csv'), 'w', newline='') as csvfile:
         fieldnames = ['Material_Sample_ID', 'Parent_Event_ID', 'Description', 'Created_At', 'Updated_At', 'Sequences', 'Associated data']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
@@ -378,7 +433,7 @@ for sampling_area in json_data_loaded['sampling_areas']:
             writer.writerow(data)
     
     with open(os.path.join(output_dir, sampling_area['name'],"overview_data_"+station+'.csv'), 'w', newline='') as csvfile:
-        fieldnames = ['Station', 'Country', 'ARMS_unit', 'Date_start', 'Date_end', 'Event_ID', 'Material Samples', 'Observations', 'Sequences', 'Associated Data', 'Created', 'Updated']
+        fieldnames = ['Station', 'Country', 'ARMS_unit','Latitude','Longitude','Depth', 'Date_start', 'Date_end', 'Event_ID', 'Material Samples', 'Observations', 'Sequences', 'Associated Data', 'Created', 'Updated']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for data in main_data_csv:
@@ -386,7 +441,7 @@ for sampling_area in json_data_loaded['sampling_areas']:
 
 #write the main.csv
 with open(os.path.join(output_dir, 'AllOverview.csv'), 'w', newline='') as csvfile:
-    fieldnames = ['Station', 'Country', 'ARMS_unit', 'Date_start', 'Date_end', 'Event_ID', 'Material Samples', 'Observations', 'Sequences', 'Associated Data', 'Created', 'Updated']
+    fieldnames = ['Station', 'Country', 'ARMS_unit','Latitude','Longitude','Depth', 'Date_start', 'Date_end', 'Event_ID', 'Material Samples', 'Observations', 'Sequences', 'Associated Data', 'Created', 'Updated']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
     for data in main_csv_data:

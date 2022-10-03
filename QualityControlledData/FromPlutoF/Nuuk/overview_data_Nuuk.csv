@@ -1,4 +1,4 @@
-Station,Country,ARMS_unit,Date_start,Date_end,Event_ID,Material Samples,Observations,Sequences,Associated Data,Created,Updated
-Nuuk,Greenland,Nuuk1,2020-08-01,2022-08,ARMS_Nuuk_Nuuk1_20200801_00000000,0,0,0,0,2019-11-25,2021-11-08
-Nuuk,Greenland,Nuuk2,2020-08-01,2022-08,ARMS_Nuuk_Nuuk2_20200801_00000000,0,0,0,0,2019-11-25,2021-11-08
-Nuuk,Greenland,Nuuk3,2020-08-01,2022-08,ARMS_Nuuk_Nuuk3_20200801_00000000,0,0,0,0,2019-11-25,2021-11-08
+Station,Country,ARMS_unit,Latitude,Longitude,Depth,Date_start,Date_end,Event_ID,Material Samples,Observations,Sequences,Associated Data,Created,Updated
+Nuuk,Greenland,Nuuk1,64.14000000,-51.39000000,15,2020-08-01,2022-08,ARMS_Nuuk_Nuuk1_20200801_00000000,0,0,0,0,2019-11-25,2021-11-08
+Nuuk,Greenland,Nuuk2,64.14040000,-51.39040000,15,2020-08-01,2022-08,ARMS_Nuuk_Nuuk2_20200801_00000000,0,0,0,0,2019-11-25,2021-11-08
+Nuuk,Greenland,Nuuk3,64.14080000,-51.39080000,15,2020-08-01,2022-08,ARMS_Nuuk_Nuuk3_20200801_00000000,0,0,0,0,2019-11-25,2021-11-08
