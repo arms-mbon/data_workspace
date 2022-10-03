@@ -1,6 +1,6 @@
 Station,Country,ARMS_unit,date_start,date_end,Event_id,File_Name,File_Type,File_Download_URL,created_at,updated_at
-Rothera,Antarctica,HangarCove1,2019-07-08,2021-01,ARMS_Rothera_HangarCove1_20190708_00000000,ARMS.jpg,Image,Closed Access,2019-11-11,2020-04-27
-Rothera,Antarctica,HangarCove1,2019-07-08,2021-01,ARMS_Rothera_HangarCove1_20190708_00000000,ARMS_Antarctica_P7090579.JPG,Image,Closed Access,2019-11-11,2020-04-27
-Rothera,Antarctica,HangarCove1,2019-07-08,2021-01,ARMS_Rothera_HangarCove1_20190708_00000000,P7080522.JPG,Image,Closed Access,2019-11-11,2020-04-27
-Rothera,Antarctica,HangarCove1,2019-07-08,2021-01,ARMS_Rothera_HangarCove1_20190708_00000000,ARMS_Antarctica_P7090579_2.jpg,Image,Closed Access,2019-11-11,2020-04-27
-Rothera,Antarctica,HangarCove1,2019-07-08,2021-01,ARMS_Rothera_HangarCove1_20190708_00000000,dive hole.png,Image,Closed Access,2019-11-11,2020-04-27
+Rothera,Antarctica,HangarCove1,2019-07-08,2021-01,ARMS_Rothera_HangarCove1_20190708_00000000,ARMS.jpg,Image,https://files.plutof.ut.ee/public/orig/99/3F/993FC90EC482DAD1B9628DD4CA3BC5A9B2AA99EF3DD1704D4B416EA26DE1285B.jpg,2019-11-11,2020-04-27
+Rothera,Antarctica,HangarCove1,2019-07-08,2021-01,ARMS_Rothera_HangarCove1_20190708_00000000,ARMS_Antarctica_P7090579.JPG,Image,https://files.plutof.ut.ee/public/orig/C2/FB/C2FB107EE0C9FB343D22ACC64C49D5CD89F7EB246F88D3C70A33D62BD1903884.jpg,2019-11-11,2020-04-27
+Rothera,Antarctica,HangarCove1,2019-07-08,2021-01,ARMS_Rothera_HangarCove1_20190708_00000000,P7080522.JPG,Image,https://files.plutof.ut.ee/public/orig/96/64/9664EBDC520573818A784679C0C2E8E5C2E293D68E589D14AB53D9534A93D200.jpg,2019-11-11,2020-04-27
+Rothera,Antarctica,HangarCove1,2019-07-08,2021-01,ARMS_Rothera_HangarCove1_20190708_00000000,ARMS_Antarctica_P7090579_2.jpg,Image,https://files.plutof.ut.ee/public/orig/3D/11/3D112DC12A6646052C474698909FC062282D34ABF5E75C5F0EFB24EBBA142F43.jpg,2019-11-11,2020-04-27
+Rothera,Antarctica,HangarCove1,2019-07-08,2021-01,ARMS_Rothera_HangarCove1_20190708_00000000,dive hole.png,Image,https://files.plutof.ut.ee/public/orig/2C/FE/2CFE99F4110745360B8A49A9FF94050854947DBBF501735AF7A6DB6A845289E1.png,2019-11-11,2020-04-27
