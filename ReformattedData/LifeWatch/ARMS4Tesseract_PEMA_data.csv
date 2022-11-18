@@ -1,4 +1,4 @@
-Sample_ID,Country,Observatory_ID,ARMS_ID,Deploy_Date,Collect_Date,gene_COI,gene_18S,gene_ITS,negativeControl_gene_COI,negativeControl_gene_18S,negativeControl_gene_ITS,AccessRights,longitude,latitude,depth,Fraction,Preservative,Filter
+Sample_ID,Country,Observatory_ID,ARMS_ID,Deploy_Date,Collect_Date,gene_COI,gene_18S,gene_ITS,negativeControl_gene_COI,negativeControl_gene_18S,negativeControl_gene_ITS,AccessRights,latitude,longitude,depth,Fraction,Preservative,Filter
 ARMS_BelgianCoast_AZBE1_190924_200303_MF100_DMSO,Belgium,BelgiumCoast,AZBE1,2019-09-24,2020-03-03,ERR7125498,ERR7125496,no longer provided,ERR7125582,ERR7125581,no longer provided,CC BY,51.364298,3.20701,7,Motile,DMSO,100
 ARMS_BelgianCoast_AZBE1_190924_200303_MF500_DMSO,Belgium,BelgiumCoast,AZBE1,2019-09-24,2020-03-03,ERR4914228,ERR4914227,ERR4914229,ERR4914160,ERR4914102,ERR4914218,CC BY,51.364298,3.20701,7,Motile,DMSO,500
 ARMS_BelgianCoast_AZBE1_190924_200303_SF40_DMSO,Belgium,BelgiumCoast,AZBE1,2019-09-24,2020-03-03,ERR7125478,ERR7125477,ERR7125479,ERR7125534,ERR7125533,ERR7125535,CC BY,51.364298,3.20701,7,Sessile,DMSO,40
