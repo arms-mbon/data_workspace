@@ -1,4 +1,4 @@
-Sample_ID,Country,Observatory_ID,ARMS_ID,Deploy_Date,Collect_Date,gene_COI,gene_18S,gene_ITS,negativeControl_gene_COI,negativeControl_gene_18S,negativeControl_gene_ITS,OtherDataLink,AccessRights,AssociatedFileType,longitude,latitude,depth,Fraction,Preservative,Filter
+Sample_ID,Country,Observatory_ID,ARMS_ID,Deploy_Date,Collect_Date,gene_COI,gene_18S,gene_ITS,negativeControl_gene_COI,negativeControl_gene_18S,negativeControl_gene_ITS,OtherDataLink,AccessRights,AssociatedFileType,latitude,longitude,depth,Fraction,Preservative,Filter
 ARMS_Crete_1HERP_180928_190128_SF40_DMSO,Greece,Crete,1HERP,2018-09-28,2019-01-28,ERR3460466,ERR4605084,ERR4018429,ERR3460471,ERR4605902,ERR4018475,NA,CC BY,sequences,25.136605,35.343153,5,sessile,DMSO,40
 ARMS_Crete_1HERP_180928_190128_SF40_EtOH,Greece,Crete,1HERP,2018-09-28,2019-01-28,ERR3460467,ERR4605085,ERR4018430,ERR3460471,ERR4605902,ERR4018475,NA,CC BY,sequences,25.136605,35.343153,5,sessile,EtOH,40
 ARMS_Crete_1HERP_180928_190128_MF500_DMSO,Greece,Crete,1HERP,2018-09-28,2019-01-28,ERR3460468,ERR4605086,ERR4018431,ERR3460471,ERR4605902,ERR4018475,NA,CC BY,sequences,25.136605,35.343153,5,motile ,DMSO,500
