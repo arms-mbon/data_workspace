@@ -60,9 +60,6 @@ Getxo,Spain,G2,ARMS unit,passed
 Getxo,Spain,G1,ARMS unit,passed
 Getxo,Spain,G3,ARMS unit,passed
 Gdynia,Poland,GDY1,ARMS unit,passed
-Laeso,Denmark,unit1,ARMS unit,passed
-Laeso,Denmark,unit2,ARMS unit,passed
-Laeso,Denmark,unit3,ARMS unit,passed
 Limfjord,Denmark,Green33,ARMS unit,passed
 Limfjord,Denmark,Red2,ARMS unit,passed
 Limfjord,Denmark,Yellow8,ARMS unit,passed
@@ -104,6 +101,6 @@ SchleswigHolstein,Germany,NA,Station,passed
 SchleswigHolstein,Germany,NA,Station,passed
 SchleswigHolstein,Germany,NA,Station,passed
 SchleswigHolstein,Germany,NA,Station,passed
-AdriaticEast,Italy,NA,Station,passed
-AdriaticEast,Italy,NA,Station,passed
-AdriaticEast,Italy,NA,Station,passed
+AdriaticEastCoast,Italy,NA,Station,passed
+AdriaticEastCoast,Italy,NA,Station,passed
+AdriaticEastCoast,Italy,NA,Station,passed

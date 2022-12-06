@@ -163,12 +163,12 @@ Galway,Gurr2,depth,fail,6.2,8
 Galway,Gurr1,depth,fail,6.6,8
 Galway,Gurr1,depth,fail,6.6,8
 Galway,Gurr4,"latitude, longitude, depth",pass,,
-Laeso,unit1,arms_unit,fail,unit1,Ven3
-Laeso,unit1,arms_unit,fail,unit1,Ven3
-Laeso,unit2,arms_unit,fail,unit2,Ven3
-Laeso,unit2,arms_unit,fail,unit2,Ven3
-Laeso,unit3,arms_unit,fail,unit3,Ven3
-Laeso,unit3,arms_unit,fail,unit3,Ven3
+Laeso,Laeso3,"latitude, longitude, depth",pass,,
+Laeso,Laeso3,"latitude, longitude, depth",pass,,
+Laeso,Laeso1,"latitude, longitude, depth",pass,,
+Laeso,Laeso1,"latitude, longitude, depth",pass,,
+Laeso,Laeso2,"latitude, longitude, depth",pass,,
+Laeso,Laeso2,"latitude, longitude, depth",pass,,
 Limfjord,Green33,latitude,fail,56.90155000,56.901246
 Limfjord,Green33,longitude,fail,9.05516667,9.058189
 Limfjord,Green33,latitude,fail,56.90155000,56.901246
@@ -224,9 +224,9 @@ RavHarbour,RavH2,depth,fail,no measurements,1.5
 RavHarbour,RavH2,"latitude, longitude, depth",pass,,
 RavHarbour,RavH3,depth,fail,no measurements,1.5
 RavHarbour,RavH3,"latitude, longitude, depth",pass,,
-AdriaticEast,Ven3,latitude,fail,45.31666700,45.314167
-AdriaticEast,Ven3,longitude,fail,12.50000000,12.508333
-AdriaticEast,Ven1,latitude,fail,45.31666700,45.314167
-AdriaticEast,Ven1,longitude,fail,12.50000000,12.508333
-AdriaticEast,Ven2,latitude,fail,45.31666700,45.314167
-AdriaticEast,Ven2,longitude,fail,12.50000000,12.508333
+AdriaticEastCoast,Ven3,latitude,fail,45.31666700,45.314167
+AdriaticEastCoast,Ven3,longitude,fail,12.50000000,12.508333
+AdriaticEastCoast,Ven1,latitude,fail,45.31666700,45.314167
+AdriaticEastCoast,Ven1,longitude,fail,12.50000000,12.508333
+AdriaticEastCoast,Ven2,latitude,fail,45.31666700,45.314167
+AdriaticEastCoast,Ven2,longitude,fail,12.50000000,12.508333

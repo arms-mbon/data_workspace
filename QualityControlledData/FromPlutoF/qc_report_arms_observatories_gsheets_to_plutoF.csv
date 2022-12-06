@@ -153,9 +153,12 @@ Limfjord,Green33,longitude,fail,9.058189,9.05516667
 Limfjord,Red2,"latitude, longitude, depth",pass,,
 Limfjord,Red2,"latitude, longitude, depth",pass,,
 Limfjord,Red2,"latitude, longitude, depth",pass,,
-Laeso,Laeso1,arms_id,fail,Laeso1,Ven2
-Laeso,Laeso2,arms_id,fail,Laeso2,Ven2
-Laeso,Laeso3,arms_id,fail,Laeso3,Ven2
+Laeso,Laeso1,"latitude, longitude, depth",pass,,
+Laeso,Laeso1,"latitude, longitude, depth",pass,,
+Laeso,Laeso2,"latitude, longitude, depth",pass,,
+Laeso,Laeso2,"latitude, longitude, depth",pass,,
+Laeso,Laeso3,"latitude, longitude, depth",pass,,
+Laeso,Laeso3,"latitude, longitude, depth",pass,,
 Getxo,G1,depth,fail,5,10
 Getxo,G1,depth,fail,5,10
 Getxo,G2,depth,fail,5,10

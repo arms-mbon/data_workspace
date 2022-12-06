@@ -50,7 +50,15 @@ html_end = """\
     </ul>
     <br>
     <p> the qc report for for the arms observatories are as follows:</p><br>
-    <a href=""></a>
+    <ul>
+    <li>
+    <a href="https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromPlutoF/qc_report_arms_observatories_gsheets_to_plutoF.csv">qc_report_arms_observatories_gsheets_to_plutoF.csv</a>
+    </li>
+    <li>
+    <a href="https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromPlutoF/qc_report_arms_observatories_plutoF_to_gsheets.csv">qc_report_arms_observatories_plutoF_to_gsheets.csv</a>
+    </li>
+    </ul>
+    <br>
     <p>This mail was send by python QC-script<br></p>
   </body>
 </html>
