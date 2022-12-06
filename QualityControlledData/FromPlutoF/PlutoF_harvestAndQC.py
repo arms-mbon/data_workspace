@@ -587,14 +587,14 @@ for plutoF_data in json_arms_observatories_plutoF:
             try:
                 if float(plutoF_data["Latitude"]) != float(gsheets_data["Latitude"]):
                     #check if the difference is less than 2m and if so then pass
-                    if abs(float(plutoF_data["Latitude"]) - float(gsheets_data["Latitude"])) >  (1/111.6):
+                    if abs(abs(float(plutoF_data["Latitude"])) - abs(float(gsheets_data["Latitude"]))) >  (1/111.6):
                         qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude", "qc_flag":"fail","plutoF_data":plutoF_data["Latitude"], "gsheets_data":gsheets_data["Latitude"]})
             except:
                 qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude", "qc_flag":"fail","plutoF_data":plutoF_data["Latitude"], "gsheets_data":gsheets_data["Latitude"]})
             
             try:
                 if float(plutoF_data["Longitude"]) != float(gsheets_data["Longitude"]):
-                    if abs(float(plutoF_data["Longitude"]) - float(gsheets_data["Longitude"])) >  (1/111.6):
+                    if abs(abs(float(plutoF_data["Longitude"])) - abs(float(gsheets_data["Longitude"]))) >  (1/111.6):
                         qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"longitude", "qc_flag":"fail","plutoF_data":plutoF_data["Longitude"], "gsheets_data":gsheets_data["Longitude"]})
             except:
                 qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"longitude", "qc_flag":"fail","plutoF_data":plutoF_data["Longitude"], "gsheets_data":gsheets_data["Longitude"]})
@@ -624,13 +624,14 @@ for gsheets_data in json_arms_observatories_gsheets:
             try:
                 
                 if float(gsheets_data["Latitude"]) != float(plutoF_data["Latitude"]):
-                    if abs(float(gsheets_data["Latitude"]) - float(plutoF_data["Latitude"])) > (1/111.6):
+                    #if the first 2 characters after the . are the same then pass
+                    if abs(abs(float(gsheets_data["Latitude"])) - abs(float(plutoF_data["Latitude"]))) > (1/111.6):
                         qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude", "qc_flag":"fail","gsheets_data":gsheets_data["Latitude"],"plutoF_data":plutoF_data["Latitude"]})
             except:
                 qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude", "qc_flag":"fail","gsheets_data":gsheets_data["Latitude"],"plutoF_data":plutoF_data["Latitude"]})
             try:
                 if float(gsheets_data["Longitude"]) != float(plutoF_data["Longitude"]):
-                    if abs(float(gsheets_data["Longitude"]) - float(plutoF_data["Longitude"])) >  (1/111.6):
+                    if abs(abs(float(gsheets_data["Longitude"])) - abs(float(plutoF_data["Longitude"]))) >  (1/111.6):
                         qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"longitude", "qc_flag":"fail","gsheets_data":gsheets_data["Longitude"],"plutoF_data":plutoF_data["Longitude"]})
             except:
                 qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"longitude", "qc_flag":"fail","gsheets_data":gsheets_data["Longitude"],"plutoF_data":plutoF_data["Longitude"]})
