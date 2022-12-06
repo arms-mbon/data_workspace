@@ -532,9 +532,12 @@ formatted_message = ''.join(pre_formatted_message)
 message.attach(MIMEText(formatted_message, "html"))
 print(message)
 if correction_found == False:
+    pass
+    '''
     smtp_port.sendmail(sender_email, address_list, message.as_string()) #put on end script
     print("Email Sent")
     smtp_port.quit()
+    '''
     
 
 #perform a download of a google sheet and import each sheet as a json file : url = https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/edit#gid=1607535453
@@ -584,14 +587,14 @@ for plutoF_data in json_arms_observatories_plutoF:
             try:
                 if float(plutoF_data["Latitude"]) != float(gsheets_data["Latitude"]):
                     #check if the difference is less than 2m and if so then pass
-                    if abs(float(plutoF_data["Latitude"]) - float(gsheets_data["Latitude"])) > 0.00002:
+                    if abs(float(plutoF_data["Latitude"]) - float(gsheets_data["Latitude"])) >  (1/111.6):
                         qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude", "qc_flag":"fail","plutoF_data":plutoF_data["Latitude"], "gsheets_data":gsheets_data["Latitude"]})
             except:
                 qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude", "qc_flag":"fail","plutoF_data":plutoF_data["Latitude"], "gsheets_data":gsheets_data["Latitude"]})
             
             try:
                 if float(plutoF_data["Longitude"]) != float(gsheets_data["Longitude"]):
-                    if abs(float(plutoF_data["Longitude"]) - float(gsheets_data["Longitude"])) > 0.00002:
+                    if abs(float(plutoF_data["Longitude"]) - float(gsheets_data["Longitude"])) >  (1/111.6):
                         qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"longitude", "qc_flag":"fail","plutoF_data":plutoF_data["Longitude"], "gsheets_data":gsheets_data["Longitude"]})
             except:
                 qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"longitude", "qc_flag":"fail","plutoF_data":plutoF_data["Longitude"], "gsheets_data":gsheets_data["Longitude"]})
@@ -621,13 +624,13 @@ for gsheets_data in json_arms_observatories_gsheets:
             try:
                 
                 if float(gsheets_data["Latitude"]) != float(plutoF_data["Latitude"]):
-                    if abs(float(gsheets_data["Latitude"]) - float(plutoF_data["Latitude"])) > 0.00002:
+                    if abs(float(gsheets_data["Latitude"]) - float(plutoF_data["Latitude"])) > (1/111.6):
                         qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude", "qc_flag":"fail","gsheets_data":gsheets_data["Latitude"],"plutoF_data":plutoF_data["Latitude"]})
             except:
                 qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude", "qc_flag":"fail","gsheets_data":gsheets_data["Latitude"],"plutoF_data":plutoF_data["Latitude"]})
             try:
                 if float(gsheets_data["Longitude"]) != float(plutoF_data["Longitude"]):
-                    if abs(float(gsheets_data["Longitude"]) - float(plutoF_data["Longitude"])) > 0.00002:
+                    if abs(float(gsheets_data["Longitude"]) - float(plutoF_data["Longitude"])) >  (1/111.6):
                         qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"longitude", "qc_flag":"fail","gsheets_data":gsheets_data["Longitude"],"plutoF_data":plutoF_data["Longitude"]})
             except:
                 qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"longitude", "qc_flag":"fail","gsheets_data":gsheets_data["Longitude"],"plutoF_data":plutoF_data["Longitude"]})

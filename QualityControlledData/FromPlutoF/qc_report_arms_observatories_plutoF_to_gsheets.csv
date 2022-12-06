@@ -24,10 +24,8 @@ Roscoff,BasBloS3,"latitude, longitude, depth",pass,,
 Roscoff,BasBloS2,"latitude, longitude, depth",pass,,
 Roscoff,BasBloS2,"latitude, longitude, depth",pass,,
 Plymouth,MBA1,latitude,fail,50.35013400,50.3674
-Plymouth,MBA1,longitude,fail,-4.15916700,-4.1552
 Plymouth,MBA1,depth,fail,10.1,1
 Plymouth,MBA2,latitude,fail,50.36740000,50.350134
-Plymouth,MBA2,longitude,fail,-4.15520000,-4.159167
 Plymouth,MBA2,depth,fail,1,10
 Plymouth,MBA1A,"latitude, longitude, depth",pass,,
 Plymouth,MBA1A,"latitude, longitude, depth",pass,,
@@ -39,8 +37,6 @@ TZS,Spikarna,"latitude, longitude, depth",pass,,
 TZS,Spikarna,"latitude, longitude, depth",pass,,
 TZS,Angbat,"latitude, longitude, depth",pass,,
 TZS,Angbat,"latitude, longitude, depth",pass,,
-TZS,Kummelkobben,latitude,fail,59.86450000,59.86442
-TZS,Kummelkobben,longitude,fail,23.26515000,23.265084
 TZS,Kummelkobben,depth,fail,4,6
 Svalbard,S2,depth,fail,no measurements,14
 Svalbard,S2,"latitude, longitude, depth",pass,,
@@ -59,10 +55,6 @@ BelgiumCoast,AZFPout,"latitude, longitude, depth",pass,,
 BelgiumCoast,AZBW1,"latitude, longitude, depth",pass,,
 BelgiumCoast,AJJC86,"latitude, longitude, depth",pass,,
 BelgiumCoast,AZBE1,"latitude, longitude, depth",pass,,
-BelgiumCoast,AJJCD78,latitude,fail,51.65271000,51.65374944
-BelgiumCoast,AJJCD78,longitude,fail,2.79757500,2.79602577
-BelgiumCoast,AJJCD78,latitude,fail,51.65271000,51.65374944
-BelgiumCoast,AJJCD78,longitude,fail,2.79757500,2.79602577
 BelgiumCoast,AJJCD89,depth,fail,no measurements,18.64
 BelgiumCoast,AJJCD89,"latitude, longitude, depth",pass,,
 BelgiumCoast,AJJBC89,depth,fail,no measurements,20.815624
@@ -75,16 +67,8 @@ BelgiumCoast,CPowerA,"latitude, longitude, depth",pass,,
 BelgiumCoast,CPowerB,"latitude, longitude, depth",pass,,
 BelgiumCoast,CoastbustersA,depth,fail,no measurements,9
 BelgiumCoast,CoastbustersA,"latitude, longitude, depth",pass,,
-Vigo,TorallaA,latitude,fail,42.23611111,42.233333
-Vigo,TorallaA,longitude,fail,-8.78611111,-8.783333
-Vigo,TorallaA,latitude,fail,42.23611111,42.233333
-Vigo,TorallaA,longitude,fail,-8.78611111,-8.783333
-Vigo,TorallaA,latitude,fail,42.23611111,42.233333
-Vigo,TorallaA,longitude,fail,-8.78611111,-8.783333
 Vigo,TorallaB,"latitude, longitude, depth",pass,,
 Vigo,TorallaB,"latitude, longitude, depth",pass,,
-Vigo,TorallaC,latitude,fail,42.23400000,42.233333
-Vigo,TorallaC,latitude,fail,42.23400000,42.233333
 Eilat,NR,arms_unit,fail,NR,Ven3
 Eilat,NR,arms_unit,fail,NR,Ven3
 Eilat,NR,arms_unit,fail,NR,Ven3
@@ -106,16 +90,11 @@ GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
 GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
 GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
 GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
-Nuuk,Nuuk1,latitude,fail,64.14000000,64.1405
-Nuuk,Nuuk1,longitude,fail,-51.39000000,-51.3906
 Nuuk,Nuuk2,"latitude, longitude, depth",pass,,
 Nuuk,Nuuk3,"latitude, longitude, depth",pass,,
 Daneborg,Daneborg2,latitude,fail,74.33040000,74.24005445
-Daneborg,Daneborg2,longitude,fail,-20.34040000,-20.33723818
 Daneborg,Daneborg3,latitude,fail,74.33080000,74.24005445
-Daneborg,Daneborg3,longitude,fail,-20.34080000,-20.33723818
 Daneborg,Daneborg1,latitude,fail,74.33000000,74.24005445
-Daneborg,Daneborg1,longitude,fail,-20.34000000,-20.33723818
 Getxo,G2,depth,fail,10,5
 Getxo,G2,depth,fail,10,5
 Getxo,G1,depth,fail,10,5
@@ -138,13 +117,7 @@ Crete,1HERP,"latitude, longitude, depth",pass,,
 Crete,1HERP,"latitude, longitude, depth",pass,,
 Crete,1HERP,"latitude, longitude, depth",pass,,
 Crete,1HERP,"latitude, longitude, depth",pass,,
-Galway,Gurr3,latitude,fail,53.31544300,53.315693
-Galway,Gurr3,longitude,fail,-9.67156400,-9.670278
-Galway,Gurr3,latitude,fail,53.31544300,53.315693
-Galway,Gurr3,longitude,fail,-9.67156400,-9.670278
-Galway,Gurr2,longitude,fail,-9.66854100,-9.670278
 Galway,Gurr2,depth,fail,6.2,8
-Galway,Gurr2,longitude,fail,-9.66854100,-9.670278
 Galway,Gurr2,depth,fail,6.2,8
 Galway,Gurr1,depth,fail,6.6,8
 Galway,Gurr1,depth,fail,6.6,8
@@ -155,23 +128,9 @@ Laeso,Laeso1,"latitude, longitude, depth",pass,,
 Laeso,Laeso1,"latitude, longitude, depth",pass,,
 Laeso,Laeso2,"latitude, longitude, depth",pass,,
 Laeso,Laeso2,"latitude, longitude, depth",pass,,
-Limfjord,Green33,latitude,fail,56.90155000,56.901246
-Limfjord,Green33,longitude,fail,9.05516667,9.058189
-Limfjord,Green33,latitude,fail,56.90155000,56.901246
-Limfjord,Green33,longitude,fail,9.05516667,9.058189
-Limfjord,Green33,latitude,fail,56.90155000,56.901246
-Limfjord,Green33,longitude,fail,9.05516667,9.058189
 Limfjord,Red2,"latitude, longitude, depth",pass,,
 Limfjord,Red2,"latitude, longitude, depth",pass,,
 Limfjord,Red2,"latitude, longitude, depth",pass,,
-Limfjord,Yellow8,latitude,fail,56.90131667,56.902366
-Limfjord,Yellow8,longitude,fail,9.05733333,9.055797
-Limfjord,Yellow8,latitude,fail,56.90131667,56.902366
-Limfjord,Yellow8,longitude,fail,9.05733333,9.055797
-Limfjord,Yellow8,latitude,fail,56.90131667,56.902366
-Limfjord,Yellow8,longitude,fail,9.05733333,9.055797
-Limfjord,Yellow8,latitude,fail,56.90131667,56.902366
-Limfjord,Yellow8,longitude,fail,9.05733333,9.055797
 Bodo,GStraB,"latitude, longitude, depth",pass,,
 Bodo,GStraB,"latitude, longitude, depth",pass,,
 Bodo,GStraM,"latitude, longitude, depth",pass,,
@@ -201,9 +160,3 @@ RavHarbour,RavH2,depth,fail,no measurements,1.5
 RavHarbour,RavH2,"latitude, longitude, depth",pass,,
 RavHarbour,RavH3,depth,fail,no measurements,1.5
 RavHarbour,RavH3,"latitude, longitude, depth",pass,,
-AdriaticEastCoast,Ven3,latitude,fail,45.31666700,45.314167
-AdriaticEastCoast,Ven3,longitude,fail,12.50000000,12.508333
-AdriaticEastCoast,Ven1,latitude,fail,45.31666700,45.314167
-AdriaticEastCoast,Ven1,longitude,fail,12.50000000,12.508333
-AdriaticEastCoast,Ven2,latitude,fail,45.31666700,45.314167
-AdriaticEastCoast,Ven2,longitude,fail,12.50000000,12.508333
