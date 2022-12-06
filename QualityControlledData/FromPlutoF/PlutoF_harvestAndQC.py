@@ -583,19 +583,23 @@ for plutoF_data in json_arms_observatories_plutoF:
             #check if the lat; long and depth are the same
             try:
                 if float(plutoF_data["Latitude"]) != float(gsheets_data["Latitude"]):
-                    qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude", "qc_flag":"fail","plutoF_data":plutoF_data["Latitude"], "gsheets_data":gsheets_data["Latitude"]})
+                    #check if the difference is less than 2m and if so then pass
+                    if abs(float(plutoF_data["Latitude"]) - float(gsheets_data["Latitude"])) > 0.00002:
+                        qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude", "qc_flag":"fail","plutoF_data":plutoF_data["Latitude"], "gsheets_data":gsheets_data["Latitude"]})
             except:
                 qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude", "qc_flag":"fail","plutoF_data":plutoF_data["Latitude"], "gsheets_data":gsheets_data["Latitude"]})
             
             try:
                 if float(plutoF_data["Longitude"]) != float(gsheets_data["Longitude"]):
-                    qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"longitude", "qc_flag":"fail","plutoF_data":plutoF_data["Longitude"], "gsheets_data":gsheets_data["Longitude"]})
+                    if abs(float(plutoF_data["Longitude"]) - float(gsheets_data["Longitude"])) > 0.00002:
+                        qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"longitude", "qc_flag":"fail","plutoF_data":plutoF_data["Longitude"], "gsheets_data":gsheets_data["Longitude"]})
             except:
                 qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"longitude", "qc_flag":"fail","plutoF_data":plutoF_data["Longitude"], "gsheets_data":gsheets_data["Longitude"]})
                 
             try:
                 if float(plutoF_data["Depth"]) != float(gsheets_data["Depth (m)"]):
-                    qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"depth", "qc_flag":"fail","plutoF_data":plutoF_data["Depth"], "gsheets_data":gsheets_data["Depth (m)"]})
+                    if abs(float(plutoF_data["Depth"]) - float(gsheets_data["Depth (m)"])) > 1:
+                        qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"depth", "qc_flag":"fail","plutoF_data":plutoF_data["Depth"], "gsheets_data":gsheets_data["Depth (m)"]})
             except:
                 qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"depth", "qc_flag":"fail","plutoF_data":plutoF_data["Depth"], "gsheets_data":gsheets_data["Depth (m)"]})
             
@@ -617,17 +621,20 @@ for gsheets_data in json_arms_observatories_gsheets:
             try:
                 
                 if float(gsheets_data["Latitude"]) != float(plutoF_data["Latitude"]):
-                    qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude", "qc_flag":"fail","gsheets_data":gsheets_data["Latitude"],"plutoF_data":plutoF_data["Latitude"]})
+                    if abs(float(gsheets_data["Latitude"]) - float(plutoF_data["Latitude"])) > 0.00002:
+                        qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude", "qc_flag":"fail","gsheets_data":gsheets_data["Latitude"],"plutoF_data":plutoF_data["Latitude"]})
             except:
                 qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude", "qc_flag":"fail","gsheets_data":gsheets_data["Latitude"],"plutoF_data":plutoF_data["Latitude"]})
             try:
                 if float(gsheets_data["Longitude"]) != float(plutoF_data["Longitude"]):
-                    qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"longitude", "qc_flag":"fail","gsheets_data":gsheets_data["Longitude"],"plutoF_data":plutoF_data["Longitude"]})
+                    if abs(float(gsheets_data["Longitude"]) - float(plutoF_data["Longitude"])) > 0.00002:
+                        qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"longitude", "qc_flag":"fail","gsheets_data":gsheets_data["Longitude"],"plutoF_data":plutoF_data["Longitude"]})
             except:
                 qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"longitude", "qc_flag":"fail","gsheets_data":gsheets_data["Longitude"],"plutoF_data":plutoF_data["Longitude"]})
             try:
                 if float(gsheets_data["Depth (m)"]) != float(plutoF_data["Depth"]):
-                    qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"depth", "qc_flag":"fail","gsheets_data":gsheets_data["Depth (m)"],"plutoF_data":plutoF_data["Depth"]})
+                    if abs(float(gsheets_data["Depth (m)"]) - float(plutoF_data["Depth"])) > 1:
+                        qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"depth", "qc_flag":"fail","gsheets_data":gsheets_data["Depth (m)"],"plutoF_data":plutoF_data["Depth"]})
             except:
                 qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"depth", "qc_flag":"fail","gsheets_data":gsheets_data["Depth (m)"],"plutoF_data":plutoF_data["Depth"]})
             try:
