@@ -6,8 +6,10 @@ import json
 import csv
 import requests
 import shutil
+import uritemplate
 import csv
 from dotenv import load_dotenv
+import pandas as pd
 #import lib for sending mails
 from smtplib import SMTP
 import ssl
@@ -18,6 +20,8 @@ from email.mime.base import MIMEBase
 
 # variables here
 load_dotenv()
+print(os.getenv('SENDER_EMAIL'))
+print(os.getenv('PASSWORD'))
 sender_email = str(os.getenv('SENDER_EMAIL'))
 password = str(os.getenv('PASSWORD'))
 receiver_email = str(os.getenv('RECIEVER_EMAIL'))
@@ -44,6 +48,9 @@ html_begin = """\
 html_end = """\
     <br>
     </ul>
+    <br>
+    <p> the qc report for for the arms observatories are as follows:</p><br>
+    <a href=""></a>
     <p>This mail was send by python QC-script<br></p>
   </body>
 </html>
@@ -60,7 +67,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/505A52BF2A9D5A741BFE1F0DADA876115783328C7C628EF164B1731D9E882579.json?h=mB7IXeA9VGVWyQZnUt5Tvw&e=1664889467'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/505A52BF2A9D5A741BFE1F0DADA876115783328C7C628EF164B1731D9E882579.json?h=kapuAsvxoN4EcMcGCpBkUA&e=1670403834'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -120,6 +127,7 @@ def correctedvalue(input_value, input_column, input_country=None, input_station=
         if row[tocheckcolumn] == input_value:
             found_station = True
             if row[correctedcolumn] != '' and row[correctedcolumn] != ' ' and row[correctedcolumn] != None :
+                correction_found = True
                 print(f'corrected value found for {input_value} in {input_column} column => {row[correctedcolumn]}')
                 toreturn = row[correctedcolumn]
                 #add to csv file
@@ -134,6 +142,7 @@ def correctedvalue(input_value, input_column, input_country=None, input_station=
                 toreturn = input_value
             
     if found_station == False:
+        correction_found = True
         if input_column == 'Station':
             csv_file_QC_output.append({'station': input_value, 'country': input_country, 'unit': 'NA', 'qc_param': input_column, 'qc_flag': 'missing'})
         elif input_column == 'Country':
@@ -166,6 +175,7 @@ sequences_csv_data = []
 associated_csv_data = []
 observations_csv_data = []
 material_samples_csv_data = []
+correction_found = False
 for sampling_area in json_data_loaded['sampling_areas']:
     material_samples_csv = []
     observations_csv = []
@@ -180,14 +190,14 @@ for sampling_area in json_data_loaded['sampling_areas']:
     country = correctedvalue(sampling_area['country'], 'Country')
     
     station = correctedvalue(sampling_area['name'], 'Station',input_country=sampling_area['country'])
-    print(f"working on {sampling_area['name']}")
-    print(f'working on {station}')
+    #print(f"working on {sampling_area['name']}")
+    #print(f'working on {station}')
     for child_area in sampling_area['child_areas']:
-        print(f" area name {child_area['name']}")
+        #print(f" area name {child_area['name']}")
         pre_ARMS_unit = correctedvalue(child_area['name'], 'ARMS unit',input_country=country, input_station=station)
         if pre_ARMS_unit == ' ' or pre_ARMS_unit == '' or pre_ARMS_unit == None:
             pre_ARMS_unit = child_area['name']
-        print(pre_ARMS_unit)
+        #print(pre_ARMS_unit)
         #pre_ARMS_unit = pre_ARMS_unit.replace(station,'')
         pre_ARMS_unit = pre_ARMS_unit.replace('_', '')
         pre_ARMS_unit = pre_ARMS_unit.replace('ARMS', '')
@@ -513,7 +523,124 @@ pre_formatted_message.append(html_end)
 formatted_message = ''.join(pre_formatted_message)
 message.attach(MIMEText(formatted_message, "html"))
 print(message)
-smtp_port.sendmail(sender_email, address_list, message.as_string()) #put on end script
-print("Email Sent")
-smtp_port.quit()
+if correction_found == False:
+    smtp_port.sendmail(sender_email, address_list, message.as_string()) #put on end script
+    print("Email Sent")
+    smtp_port.quit()
+    
 
+#perform a download of a google sheet and import each sheet as a json file : url = https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/edit#gid=1607535453
+url = 'https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/export?format=csv&id=1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE&gid=1607535453'
+r = requests.get(url, allow_redirects=True)
+print(r.status_code)
+with open(os.path.join(output_dir, "ARMS_Observatory_info.csv"), "wb") as f:
+        f.write(r.content)
+
+#same for the arms_samples_sequences / 
+url = 'https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/export?format=csv&id=1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE&gid=855411053'
+r = requests.get(url, allow_redirects=True)
+with open(os.path.join(output_dir, "ARMS_Samples_Sequences.csv"), "wb") as f:
+        f.write(r.content)
+        
+#make a QC report for the ARMS Observatory info comparing data from AllObservations.csv and ARMS_Observatory_info.csv
+qc_report_arms_observatories_plutoF_to_gsheets = []
+qc_report_arms_observatories_gsheets_to_plutoF = []
+#load in Arms Observatory info as json file
+def csv_to_json(csv_file_path):
+    #create a dictionary
+    data_dict = []
+    #Step 2
+    #open a csv file handler
+    with open(csv_file_path, encoding = 'utf-8') as csv_file_handler:
+        csv_reader = csv.DictReader(csv_file_handler)
+        #convert each row into a dictionary
+        #and add the converted data to the data_variable
+        for rows in csv_reader:
+            data_dict.append(rows)
+    return data_dict
+            
+json_arms_observatories_gsheets = csv_to_json(os.path.join(output_dir, "ARMS_Observatory_info.csv")) 
+json_arms_observatories_plutoF = main_csv_data
+#a mapping will be placed here in the future where all the culumbs are described that should be compared
+
+#begin the plutoF to gsheets QC
+for plutoF_data in json_arms_observatories_plutoF:
+    found = False
+    for gsheets_data in json_arms_observatories_gsheets:
+        #begin with the rules 
+        #if the arms_id is the same then begin checking the rules
+        if plutoF_data["ARMS_unit"] == gsheets_data["ARMS-ID (corrected)"]:
+            found = True
+            #go over the rules
+            #check if the lat; long and depth are the same
+            try:
+                if float(plutoF_data["Latitude"]) != float(gsheets_data["Latitude"]):
+                    qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude", "qc_flag":"fail","plutoF_data":plutoF_data["Latitude"], "gsheets_data":gsheets_data["Latitude"]})
+            except:
+                qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude", "qc_flag":"fail","plutoF_data":plutoF_data["Latitude"], "gsheets_data":gsheets_data["Latitude"]})
+            
+            try:
+                if float(plutoF_data["Longitude"]) != float(gsheets_data["Longitude"]):
+                    qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"longitude", "qc_flag":"fail","plutoF_data":plutoF_data["Longitude"], "gsheets_data":gsheets_data["Longitude"]})
+            except:
+                qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"longitude", "qc_flag":"fail","plutoF_data":plutoF_data["Longitude"], "gsheets_data":gsheets_data["Longitude"]})
+                
+            try:
+                if float(plutoF_data["Depth"]) != float(gsheets_data["Depth (m)"]):
+                    qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"depth", "qc_flag":"fail","plutoF_data":plutoF_data["Depth"], "gsheets_data":gsheets_data["Depth (m)"]})
+            except:
+                qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"depth", "qc_flag":"fail","plutoF_data":plutoF_data["Depth"], "gsheets_data":gsheets_data["Depth (m)"]})
+            
+            try:
+                if float(plutoF_data["Latitude"]) == float(gsheets_data["Latitude"]) and float(plutoF_data["Longitude"]) == float(gsheets_data["Longitude"]) and float(plutoF_data["Depth"]) == float(gsheets_data["Depth (m)"]):
+                    qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude, longitude, depth", "qc_flag":"pass"})
+            except:
+                qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude, longitude, depth", "qc_flag":"pass"})
+    if found == False:
+        qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"arms_unit", "qc_flag":"fail","plutoF_data":plutoF_data["ARMS_unit"], "gsheets_data":gsheets_data["ARMS-ID (corrected)"]})
+
+#do the same for the gsheets to plutoF QC
+for gsheets_data in json_arms_observatories_gsheets:
+    found = False
+    for plutoF_data in json_arms_observatories_plutoF:
+        if gsheets_data["ARMS-ID (corrected)"] == plutoF_data["ARMS_unit"]:
+            found = True
+            #go over the rules
+            try:
+                
+                if float(gsheets_data["Latitude"]) != float(plutoF_data["Latitude"]):
+                    qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude", "qc_flag":"fail","gsheets_data":gsheets_data["Latitude"],"plutoF_data":plutoF_data["Latitude"]})
+            except:
+                qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude", "qc_flag":"fail","gsheets_data":gsheets_data["Latitude"],"plutoF_data":plutoF_data["Latitude"]})
+            try:
+                if float(gsheets_data["Longitude"]) != float(plutoF_data["Longitude"]):
+                    qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"longitude", "qc_flag":"fail","gsheets_data":gsheets_data["Longitude"],"plutoF_data":plutoF_data["Longitude"]})
+            except:
+                qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"longitude", "qc_flag":"fail","gsheets_data":gsheets_data["Longitude"],"plutoF_data":plutoF_data["Longitude"]})
+            try:
+                if float(gsheets_data["Depth (m)"]) != float(plutoF_data["Depth"]):
+                    qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"depth", "qc_flag":"fail","gsheets_data":gsheets_data["Depth (m)"],"plutoF_data":plutoF_data["Depth"]})
+            except:
+                qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"depth", "qc_flag":"fail","gsheets_data":gsheets_data["Depth (m)"],"plutoF_data":plutoF_data["Depth"]})
+            try:
+                if float(gsheets_data["Latitude"]) == float(plutoF_data["Latitude"]) and float(gsheets_data["Longitude"]) == float(plutoF_data["Longitude"]) and float(gsheets_data["Depth (m)"]) == float(plutoF_data["Depth"]):
+                    qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude, longitude, depth", "qc_flag":"pass"})
+            except:
+                qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude, longitude, depth", "qc_flag":"pass"})
+    if found == False:
+        qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"arms_id", "qc_flag":"fail","gsheets_data":gsheets_data["ARMS-ID (corrected)"],"plutoF_data":plutoF_data["ARMS_unit"]})
+
+#write away the reports to a csv file 
+with open(os.path.join(output_dir, "qc_report_arms_observatories_plutoF_to_gsheets.csv"), "w", newline='') as f:
+    fieldnames = ['station','arms_unit','qc_param','qc_flag','plutoF_data','gsheets_data']
+    writer = csv.DictWriter(f, fieldnames=fieldnames)
+    writer.writeheader()
+    for data in qc_report_arms_observatories_plutoF_to_gsheets:
+        writer.writerow(data)
+
+with open(os.path.join(output_dir, "qc_report_arms_observatories_gsheets_to_plutoF.csv"), "w", newline='') as f:
+    fieldnames = ['station','arms_id','qc_param','qc_flag','gsheets_data','plutoF_data']
+    writer = csv.DictWriter(f, fieldnames=fieldnames)
+    writer.writeheader()
+    for data in qc_report_arms_observatories_gsheets_to_plutoF:
+        writer.writerow(data)
