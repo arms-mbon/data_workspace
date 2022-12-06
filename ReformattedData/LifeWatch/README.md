@@ -41,8 +41,7 @@ These two files are copies of ARMS4Tesseract_data/metadata.csv: the only differe
    
    
 TO BE DONE 
-* appropriately rename the ldt and ttl files
 * create the templates' template and ttl files
-* check with LW if can update now (real-time?)
+* delete all the old files
 
 
