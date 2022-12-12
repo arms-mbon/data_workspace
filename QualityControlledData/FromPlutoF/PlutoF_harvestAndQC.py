@@ -75,7 +75,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/505A52BF2A9D5A741BFE1F0DADA876115783328C7C628EF164B1731D9E882579.json?h=kapuAsvxoN4EcMcGCpBkUA&e=1670403834'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/094EF47CBF8AFBF20D33D9BFDDC478A4A1518DD3F8E21CF69296DD8881F676B1.json?h=bmWBV0FVCPjE6-YJroPbfw&e=1670950009'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -544,14 +544,26 @@ if correction_found == False:
 url = 'https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/export?format=csv&id=1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE&gid=1607535453'
 r = requests.get(url, allow_redirects=True)
 print(r.status_code)
-with open(os.path.join(output_dir, "ARMS_Observatory_info.csv"), "wb") as f:
+with open(os.path.join(output_dir, "GS_ARMS_Observatory_info.csv"), "wb") as f:
         f.write(r.content)
 
 #same for the arms_samples_sequences / 
 url = 'https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/export?format=csv&id=1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE&gid=855411053'
 r = requests.get(url, allow_redirects=True)
-with open(os.path.join(output_dir, "ARMS_Samples_Sequences.csv"), "wb") as f:
+with open(os.path.join(output_dir, "GS_ARMS_Samples_Sequences.csv"), "wb") as f:
         f.write(r.content)
+
+#same for the arms observatory metadata
+url = 'https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/export?format=csv&id=1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE&gid=2133798758'
+r = requests.get(url, allow_redirects=True)
+with open(os.path.join(output_dir, "GS_ARMS_Observatory_Metadata.csv"), "wb") as f:
+        f.write(r.content)
+
+#same for the arms material_samples and sequence info metadata
+url = 'https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/export?format=csv&id=1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE&gid=1582985605'
+r= requests.get(url, allow_redirects=True)
+with open(os.path.join(output_dir, "GS_ARMS_Material_Samples_and_Sequence_Info.csv"), "wb") as f:
+    f.write(r.content)
         
 #make a QC report for the ARMS Observatory info comparing data from AllObservations.csv and ARMS_Observatory_info.csv
 qc_report_arms_observatories_plutoF_to_gsheets = []
@@ -570,7 +582,7 @@ def csv_to_json(csv_file_path):
             data_dict.append(rows)
     return data_dict
             
-json_arms_observatories_gsheets = csv_to_json(os.path.join(output_dir, "ARMS_Observatory_info.csv")) 
+json_arms_observatories_gsheets = csv_to_json(os.path.join(output_dir, "GS_ARMS_Observatory_info.csv")) 
 json_arms_observatories_plutoF = main_csv_data
 #a mapping will be placed here in the future where all the culumbs are described that should be compared
 
@@ -663,3 +675,138 @@ with open(os.path.join(output_dir, "qc_report_arms_observatories_gsheets_to_plut
     writer.writeheader()
     for data in qc_report_arms_observatories_gsheets_to_plutoF:
         writer.writerow(data)
+
+#perform the same qc for the samples
+qc_report_arms_samples_plutoF_to_gsheets = []
+qc_report_arms_samples_gsheets_to_plutoF = []
+
+json_arms_samples_gsheets = csv_to_json(os.path.join(output_dir, "GS_ARMS_Samples_Sequences.csv")) 
+json_arms_samples_plutoF = material_samples_csv_data
+
+#begin the plutoF to gsheets QC
+for plutoF_data in json_arms_samples_plutoF:
+    found = False
+    print(plutoF_data)
+    for gsheets_data in json_arms_samples_gsheets:
+        if gsheets_data["MaterialSample-ID"] == plutoF_data["Material_Sample_ID"]:
+            found = True
+            try:
+                #tests here for diff columns
+                #check if event_id is the same
+                try:
+                    if gsheets_data["EventID"] != plutoF_data["Parent_Event_ID"]:
+                        qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutoF_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+                except:
+                    qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutoF_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+                
+                try:
+                    if gsheets_data["EventID"] == plutoF_data["Parent_Event_ID"]:
+                        qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"pass"})
+                except:
+                    qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"pass"})    
+                
+            except:
+                qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutoF_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+                
+    if found == False:
+        #try and find the sample splitting the gs material sample id by "_" and taking all but the last part and then joining them back together
+        for gsheets_data in json_arms_samples_gsheets:
+            split_string_material_id = gsheets_data["MaterialSample-ID"].split("_")
+            split_string_material_id.pop()
+            new_gs_mat_sample_id = "_".join(split_string_material_id)
+            if new_gs_mat_sample_id == plutoF_data["Material_Sample_ID"]:
+                found = True
+                #add line that states the diff between the two
+                qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"Material_Sample_ID", "qc_flag":"fail","plutoF_data":plutoF_data["Material_Sample_ID"],"gsheets_data":gsheets_data["MaterialSample-ID"]})
+                try:
+                    #tests here for diff columns
+                    #check if event_id is the same
+                    try:
+                        if gsheets_data["EventID"] != plutoF_data["Parent_Event_ID"]:
+                            qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutoF_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+                    except:
+                        qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutoF_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+                    
+                    try:
+                        if gsheets_data["EventID"] == plutoF_data["Parent_Event_ID"]:
+                            qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"pass"})
+                    except:
+                        qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"pass"})    
+                    
+                except:
+                    qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutoF_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+        if found == False:
+            qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"arms_id", "qc_flag":"fail","plutoF_data":plutoF_data["Material_Sample_ID"],"gsheets_data":"not found"})
+
+#do the same for gsheets to plutoF
+for gsheets_data in json_arms_samples_gsheets:
+    found = False
+    for plutof_data in json_arms_samples_plutoF:
+        if gsheets_data["MaterialSample-ID"] == plutof_data["Material_Sample_ID"]:
+            found = True
+            try:
+                try:
+                    if gsheets_data["EventID"] != plutof_data["Parent_Event_ID"]:
+                        qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutof_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+                except:
+                    qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutof_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+                
+                try:
+                    if gsheets_data["EventID"] == plutof_data["Parent_Event_ID"]:
+                        qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"event_id", "qc_flag":"pass"})
+                except:
+                    qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"event_id", "qc_flag":"pass"})
+            except:
+                qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutof_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+    if found == False:
+        for plutof_data in json_arms_samples_plutoF:
+            split_string_material_id = gsheets_data["MaterialSample-ID"].split("_")
+            split_string_material_id.pop()
+            new_gs_mat_sample_id = "_".join(split_string_material_id)
+            if new_gs_mat_sample_id == plutof_data["Material_Sample_ID"]:
+                found = True
+                #add line that states the diff between the two
+                qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"Material_Sample_ID", "qc_flag":"fail","plutoF_data":plutof_data["Material_Sample_ID"],"gsheets_data":gsheets_data["MaterialSample-ID"]})
+                try:
+                    #tests here for diff columns
+                    #check if event_id is the same
+                    try:
+                        if gsheets_data["EventID"] != plutof_data["Parent_Event_ID"]:
+                            qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutof_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+                    except:
+                        qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutof_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+                    
+                    try:
+                        if gsheets_data["EventID"] == plutof_data["Parent_Event_ID"]:
+                            qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"event_id", "qc_flag":"pass"})
+                    except:
+                        qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"event_id", "qc_flag":"pass"})    
+                    
+                except:
+                    qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutof_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+        if found == False:
+            qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"arms_id", "qc_flag":"fail","plutoF_data":"not found","gsheets_data":gsheets_data["MaterialSample-ID"]})
+
+#write both reports to csv
+with open(os.path.join(output_dir, 'qc_report_arms_samples_plutoF_to_gsheets.csv'), 'w', newline='', encoding="utf-8") as csvfile:
+    fieldnames = ["sample","qc_param","qc_flag","plutoF_data","gsheets_data"]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    for row in qc_report_arms_samples_plutoF_to_gsheets:
+        writer.writerow(row)
+
+with open(os.path.join(output_dir, 'qc_report_arms_samples_gsheets_to_plutoF.csv'), 'w', newline='', encoding="utf-8") as csvfile:
+    fieldnames = ["sample","qc_param","qc_flag","plutoF_data","gsheets_data"]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    for row in qc_report_arms_samples_gsheets_to_plutoF:
+        writer.writerow(row)
+        
+#cut all the files that start with GS_ARMS_ and end with .csv and put them in the parent folder of the output folder /FromGS
+for file in os.listdir(output_dir):
+    if file.startswith("GS_ARMS_") and file.endswith(".csv"):
+        #make the string of the file path to move
+        #split the output_dir string on the os sep and pop the last element and rejoin the string by os.sep
+        parent_folder = os.sep.join(output_dir.split(os.sep)[:-1])
+        shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"FromGS",file))
+        

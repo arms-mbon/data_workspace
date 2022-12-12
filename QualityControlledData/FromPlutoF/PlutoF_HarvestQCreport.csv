@@ -41,15 +41,14 @@ BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
-BelgiumCoast,Belgium,Coastbusters,ARMS unit,missing
-BelgiumCoast,Belgium,CPower,ARMS unit,missing
-BelgiumCoast,Belgium,Birkenfels,ARMS unit,missing
 BelgiumCoast,Belgium,CPowerC,ARMS unit,missing
 Vigo,Spain,TorallaA,ARMS unit,passed
 Vigo,Spain,TorallaB,ARMS unit,passed
 Vigo,Spain,TorallaC,ARMS unit,passed
-Eilat,Israel,NR,ARMS unit,passed
-Eilat,Israel,Katza,ARMS unit,passed
+Eilat,Israel,Eilat_NR2,ARMS unit,missing
+Eilat,Israel,Eilat_NR1,ARMS unit,missing
+Eilat,Israel,Eilat_Katza2,ARMS unit,missing
+Eilat,Israel,Eilat_Katza1,ARMS unit,missing
 GulfOfPiran,Slovenia,NA,Station,passed
 GulfOfPiran,Slovenia,NA,Station,passed
 GulfOfPiran,Slovenia,NA,Station,passed
