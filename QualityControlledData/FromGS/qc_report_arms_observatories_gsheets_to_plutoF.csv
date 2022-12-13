@@ -97,10 +97,12 @@ Crete,2UBPC,"latitude, longitude, depth",pass,,
 Crete,2UBPC,"latitude, longitude, depth",pass,,
 Crete,2UBPC,"latitude, longitude, depth",pass,,
 Crete,2UBPC,"latitude, longitude, depth",pass,,
-Eilat,NR1,arms_id,fail,NR1,Ven2
-Eilat,Katza1,arms_id,fail,Katza1,Ven2
-Eilat,NR2,arms_id,fail,NR2,Ven2
-Eilat,Katza2,arms_id,fail,Katza2,Ven2
+Eilat,NR1,"latitude, longitude, depth",pass,,
+Eilat,NR1,"latitude, longitude, depth",pass,,
+Eilat,NR1,"latitude, longitude, depth",pass,,
+Eilat,Katza1,"latitude, longitude, depth",pass,,
+Eilat,NR2,"latitude, longitude, depth",pass,,
+Eilat,Katza2,"latitude, longitude, depth",pass,,
 Nuuk,Nuuk2,"latitude, longitude, depth",pass,,
 Nuuk,Nuuk3,"latitude, longitude, depth",pass,,
 Daneborg,Daneborg1,latitude,fail,74.24005445,74.33000000

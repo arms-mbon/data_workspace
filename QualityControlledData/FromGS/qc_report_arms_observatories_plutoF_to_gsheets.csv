@@ -65,12 +65,12 @@ BelgiumCoast,CPowerC,"latitude, longitude, depth",pass,,
 BelgiumCoast,BirkenfelsA,"latitude, longitude, depth",pass,,
 Vigo,TorallaB,"latitude, longitude, depth",pass,,
 Vigo,TorallaB,"latitude, longitude, depth",pass,,
-Eilat,EilatNR2,arms_unit,fail,EilatNR2,Ven3
-Eilat,EilatNR1,arms_unit,fail,EilatNR1,Ven3
-Eilat,EilatNR1,arms_unit,fail,EilatNR1,Ven3
-Eilat,EilatNR1,arms_unit,fail,EilatNR1,Ven3
-Eilat,EilatKatza2,arms_unit,fail,EilatKatza2,Ven3
-Eilat,EilatKatza1,arms_unit,fail,EilatKatza1,Ven3
+Eilat,NR2,"latitude, longitude, depth",pass,,
+Eilat,NR1,"latitude, longitude, depth",pass,,
+Eilat,NR1,"latitude, longitude, depth",pass,,
+Eilat,NR1,"latitude, longitude, depth",pass,,
+Eilat,Katza2,"latitude, longitude, depth",pass,,
+Eilat,Katza1,"latitude, longitude, depth",pass,,
 GulfOfPiran,to delete,arms_unit,fail,to delete,Ven3
 GulfOfPiran,Fornace,"latitude, longitude, depth",pass,,
 GulfOfPiran,Fornace,"latitude, longitude, depth",pass,,
