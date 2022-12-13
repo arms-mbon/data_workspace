@@ -6,7 +6,8 @@ A QC is done on the google sheet data compared to the data from PlutoF (that are
 We do the following
 * From the ARMS Observatory info tab: the Station names, ARMS unit names, lat,  long, and depth are compared to the same values in the PlutoF download
 * If station or unit names are different they are changed (to be the same in the two data sources)
-* If lat, long, or depth are not correct we do not change those here. Rather, these values will be changed in the combined PlutoF and google sheet data, which are in https://github.com/arms-mbon/Data/tree/main/QualityControlledData/Combined. The default position is that if there are differences in lat, long, depth, the PlutoF value is to be trusted, unless not present and the google sheet value is to be trusted. 
+* If lat, long, or depth are not correct we do not change those in the downloaded sheets, but rather new versions of those. The default position is that if there are differences in lat, long, depth, the PlutoF value is to be trusted, unless not present and the google sheet value is to be trusted. 
+* From the ARMS samples+sequences tab: TO BE WRITTEN!!!!!!!
 
 So, to see the original google sheet data, look at the files here:
 * GS_ARMS_Material_Samples_and_Sequence_Info.csv
