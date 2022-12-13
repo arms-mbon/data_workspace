@@ -52,10 +52,16 @@ html_end = """\
     <p> the qc report for for the arms observatories are as follows:</p><br>
     <ul>
     <li>
-    <a href="https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromPlutoF/qc_report_arms_observatories_gsheets_to_plutoF.csv">qc_report_arms_observatories_gsheets_to_plutoF.csv</a>
+    <a href="https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromGS/qc_report_arms_observatories_gsheets_to_plutoF.csv">qc_report_arms_observatories_gsheets_to_plutoF.csv</a>
     </li>
     <li>
-    <a href="https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromPlutoF/qc_report_arms_observatories_plutoF_to_gsheets.csv">qc_report_arms_observatories_plutoF_to_gsheets.csv</a>
+    <a href="https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromGS/qc_report_arms_observatories_plutoF_to_gsheets.csv">qc_report_arms_observatories_plutoF_to_gsheets.csv</a>
+    </li>
+    <li>
+    <a href="https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromGS/qc_report_arms_samples_plutoF_to_gsheets.csv">qc_report_arms_samples_plutoF_to_gsheets.csv</a>
+    </li>
+    <li>
+    <a href="https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromGS/qc_report_arms_samples_gsheets_to_plutoF.csv">qc_report_arms_samples_gsheets_to_plutoF.csv</a>
     </li>
     </ul>
     <br>
@@ -75,7 +81,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/094EF47CBF8AFBF20D33D9BFDDC478A4A1518DD3F8E21CF69296DD8881F676B1.json?h=bmWBV0FVCPjE6-YJroPbfw&e=1670950009'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/0AE1A0DF1597AEB01632174ED7CB4AF81A07306784893C33B280D01BEB7F2FAE.json?h=gX3MkXpB9GYQLhGnupbyYw&e=1671027269'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -531,13 +537,11 @@ pre_formatted_message.append(html_end)
 formatted_message = ''.join(pre_formatted_message)
 message.attach(MIMEText(formatted_message, "html"))
 print(message)
-if correction_found == False:
-    pass
-    '''
-    smtp_port.sendmail(sender_email, address_list, message.as_string()) #put on end script
-    print("Email Sent")
-    smtp_port.quit()
-    '''
+    
+smtp_port.sendmail(sender_email, address_list, message.as_string()) #put on end script
+print("Email Sent")
+smtp_port.quit()
+    
     
 
 #perform a download of a google sheet and import each sheet as a json file : url = https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/edit#gid=1607535453
@@ -810,3 +814,10 @@ for file in os.listdir(output_dir):
         parent_folder = os.sep.join(output_dir.split(os.sep)[:-1])
         shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"FromGS",file))
         
+#do the same for all the files that start with qc_report
+for file in os.listdir(output_dir):
+    if file.startswith("qc_report"):
+        #make the string of the file path to move
+        #split the output_dir string on the os sep and pop the last element and rejoin the string by os.sep
+        parent_folder = os.sep.join(output_dir.split(os.sep)[:-1])
+        shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"FromGS",file))
