@@ -10,19 +10,19 @@ We do the following
 * From the ARMS samples+sequences tab: TO BE WRITTEN!!!!!!!
 
 So, to see the original google sheet data, look at the files here:
-*  [GS_ARMS_Material_Samples_and_Sequence_Info.csv](https://github.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Material_Samples_and_Sequence_Info.csv)
-*  [GS_ARMS_Observatory_Metadata.csv](https://github.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Observatory_Metadata.csv)
-*  [GS_ARMS_Observatory_info.csv](https://github.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Observatory_info.csv)
-*  [GS_ARMS_Samples_Sequences.csv](https://github.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Samples_Sequences.csv)
+*  [GS_ARMS_Material_Samples_and_Sequence_Info.csv](https://raw.githubusercontent.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Material_Samples_and_Sequence_Info.csv)
+*  [GS_ARMS_Observatory_Metadata.csv](https://raw.githubusercontent.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Observatory_Metadata.csv)
+*  [GS_ARMS_Observatory_info.csv](https://raw.githubusercontent.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Observatory_info.csv)
+*  [GS_ARMS_Samples_Sequences.csv](https://raw.githubusercontent.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Samples_Sequences.csv)
 
 The corrected google sheet values can be found 
-* [GS_ARMS_Material_Samples_and_Sequence_Info_QC.csv](https://github.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Material_Samples_and_Sequence_Info_QC.csv)
-* [GS_ARMS_Observatory_Metadata_QC.csv](https://github.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Observatory_Metadata_QC.csv)
-* [GS_ARMS_Observatory_info_QC.csv](https://github.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Observatory_info_QC.csv)
-* [GS_ARMS_Samples_Sequences_QC.csv](https://github.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Samples_Sequences_QC.csv)
+* [GS_ARMS_Material_Samples_and_Sequence_Info_QC.csv](https://raw.githubusercontent.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Material_Samples_and_Sequence_Info_QC.csv)
+* [GS_ARMS_Observatory_Metadata_QC.csv](https://raw.githubusercontent.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Observatory_Metadata_QC.csv)
+* [GS_ARMS_Observatory_info_QC.csv](https://raw.githubusercontent.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Observatory_info_QC.csv)
+* [GS_ARMS_Samples_Sequences_QC.csv](https://raw.githubusercontent.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/GS_ARMS_Samples_Sequences_QC.csv)
 
 To see the QC report see: 
-* [From PlutoF to Google Sheet](https://github.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/qc_report_arms_observatories_plutoF_to_gsheets.csv)
-* [From Google Sheet to PlutoF](https://github.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/qc_report_arms_observatories_gsheets_to_plutof.csv)
+* [From PlutoF to Google Sheet](https://raw.githubusercontent.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/qc_report_arms_observatories_plutoF_to_gsheets.csv)
+* [From Google Sheet to PlutoF](https://raw.githubusercontent.com/arms-mbon/Data/edit/main/QualityControlledData/FromGS/qc_report_arms_observatories_gsheets_to_plutof.csv)
 * for the samples sheets here also ....!!!!!!
 
