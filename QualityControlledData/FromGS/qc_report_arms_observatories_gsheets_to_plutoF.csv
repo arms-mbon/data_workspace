@@ -1,0 +1,165 @@
+station,arms_id,qc_param,qc_flag,gsheets_data,plutoF_data
+Plymouth,MBA1,latitude,fail,50.3674,50.35013400
+Plymouth,MBA1,depth,fail,1,10.1
+Plymouth,MBA2,latitude,fail,50.350134,50.36740000
+Plymouth,MBA2,depth,fail,10,1
+Plymouth,MBA1A,"latitude, longitude, depth",pass,,
+Plymouth,MBA1A,"latitude, longitude, depth",pass,,
+Plymouth,MBA1B,"latitude, longitude, depth",pass,,
+Plymouth,MBA1B,"latitude, longitude, depth",pass,,
+Plymouth,MBA1C,"latitude, longitude, depth",pass,,
+Plymouth,MBA1C,"latitude, longitude, depth",pass,,
+Roscoff,MarBloR1,"latitude, longitude, depth",pass,,
+Roscoff,MarBloR1,"latitude, longitude, depth",pass,,
+Roscoff,MarBloR1,"latitude, longitude, depth",pass,,
+Roscoff,MarBloR2,"latitude, longitude, depth",pass,,
+Roscoff,MarBloR2,"latitude, longitude, depth",pass,,
+Roscoff,MarBloR3,"latitude, longitude, depth",pass,,
+Roscoff,MarBloR3,"latitude, longitude, depth",pass,,
+Roscoff,BasBloS1,"latitude, longitude, depth",pass,,
+Roscoff,BasBloS1,"latitude, longitude, depth",pass,,
+Roscoff,BasBloS1,"latitude, longitude, depth",pass,,
+Roscoff,BasBloS2,"latitude, longitude, depth",pass,,
+Roscoff,BasBloS2,"latitude, longitude, depth",pass,,
+Roscoff,BasBloS3,"latitude, longitude, depth",pass,,
+Roscoff,BasBloS3,"latitude, longitude, depth",pass,,
+Vigo,TorallaB,"latitude, longitude, depth",pass,,
+Vigo,TorallaB,"latitude, longitude, depth",pass,,
+TZS,Angbat,"latitude, longitude, depth",pass,,
+TZS,Angbat,"latitude, longitude, depth",pass,,
+TZS,Spikarna,"latitude, longitude, depth",pass,,
+TZS,Spikarna,"latitude, longitude, depth",pass,,
+TZS,Kummelkobben,depth,fail,6,4
+GulfOfPiran,Fornace,"latitude, longitude, depth",pass,,
+GulfOfPiran,Fornace,"latitude, longitude, depth",pass,,
+GulfOfPiran,Fornace,"latitude, longitude, depth",pass,,
+GulfOfPiran,Fornace,"latitude, longitude, depth",pass,,
+GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
+GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
+GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
+GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
+GulfOfPiran,LukaKP,"latitude, longitude, depth",pass,,
+GulfOfPiran,LukaKP,"latitude, longitude, depth",pass,,
+GulfOfPiran,LukaKP,"latitude, longitude, depth",pass,,
+GulfOfPiran,LukaKP,"latitude, longitude, depth",pass,,
+GulfOfPiran,LukaKP,"latitude, longitude, depth",pass,,
+GulfOfPiran,LukaKP,"latitude, longitude, depth",pass,,
+Svalbard,S1,depth,fail,14,no measurements
+Svalbard,S1,"latitude, longitude, depth",pass,,
+Svalbard,S1,depth,fail,14,no measurements
+Svalbard,S1,"latitude, longitude, depth",pass,,
+Svalbard,S1,depth,fail,14,no measurements
+Svalbard,S1,"latitude, longitude, depth",pass,,
+Svalbard,S2,depth,fail,14,no measurements
+Svalbard,S2,"latitude, longitude, depth",pass,,
+Svalbard,S2,depth,fail,14,no measurements
+Svalbard,S2,"latitude, longitude, depth",pass,,
+Svalbard,S1C,"latitude, longitude, depth",pass,,
+Svalbard,S1B,"latitude, longitude, depth",pass,,
+Svalbard,S1A,"latitude, longitude, depth",pass,,
+Gdynia,GDY1,"latitude, longitude, depth",pass,,
+Gdynia,GDY1,"latitude, longitude, depth",pass,,
+Gdynia,GDY1,"latitude, longitude, depth",pass,,
+Gdynia,GDY1,"latitude, longitude, depth",pass,,
+Koster,VH1,"latitude, longitude, depth",pass,,
+Koster,VH1,"latitude, longitude, depth",pass,,
+Koster,VH1,"latitude, longitude, depth",pass,,
+Koster,VH2,"latitude, longitude, depth",pass,,
+Koster,VH2,"latitude, longitude, depth",pass,,
+Koster,VH2,"latitude, longitude, depth",pass,,
+Koster,VH2,"latitude, longitude, depth",pass,,
+Koster,VH3,"latitude, longitude, depth",pass,,
+Koster,VH3,"latitude, longitude, depth",pass,,
+Koster,VH3,"latitude, longitude, depth",pass,,
+SWC,Preemraff1,"latitude, longitude, depth",pass,,
+SWC,Preemraff2,"latitude, longitude, depth",pass,,
+SWC,Marstrand3,depth,fail,5,2
+SWC,Helsingborg1,"latitude, longitude, depth",pass,,
+SWC,Helsingborg2,arms_id,fail,Helsingborg2,Ven2
+SWC,Varberg1,"latitude, longitude, depth",pass,,
+SWC,Varberg2,"latitude, longitude, depth",pass,,
+SWC,Varberg3,"latitude, longitude, depth",pass,,
+SWC,Gbg2,depth,fail,24,5
+SWC,Gbg3,depth,fail,8,5
+SWC,Hjuvik1,"latitude, longitude, depth",pass,,
+Crete,1HERP,"latitude, longitude, depth",pass,,
+Crete,1HERP,"latitude, longitude, depth",pass,,
+Crete,1HERP,"latitude, longitude, depth",pass,,
+Crete,1HERP,"latitude, longitude, depth",pass,,
+Crete,1HERP,"latitude, longitude, depth",pass,,
+Crete,1HERP,"latitude, longitude, depth",pass,,
+Crete,1HERP,"latitude, longitude, depth",pass,,
+Crete,1HERP,"latitude, longitude, depth",pass,,
+Crete,1HERP,"latitude, longitude, depth",pass,,
+Crete,1HERP,"latitude, longitude, depth",pass,,
+Crete,2UBPC,"latitude, longitude, depth",pass,,
+Crete,2UBPC,"latitude, longitude, depth",pass,,
+Crete,2UBPC,"latitude, longitude, depth",pass,,
+Crete,2UBPC,"latitude, longitude, depth",pass,,
+Crete,2UBPC,"latitude, longitude, depth",pass,,
+Eilat,NR1,"latitude, longitude, depth",pass,,
+Eilat,NR1,"latitude, longitude, depth",pass,,
+Eilat,NR1,"latitude, longitude, depth",pass,,
+Eilat,Katza1,"latitude, longitude, depth",pass,,
+Eilat,NR2,"latitude, longitude, depth",pass,,
+Eilat,Katza2,"latitude, longitude, depth",pass,,
+Nuuk,Nuuk2,"latitude, longitude, depth",pass,,
+Nuuk,Nuuk3,"latitude, longitude, depth",pass,,
+Daneborg,Daneborg1,latitude,fail,74.24005445,74.33000000
+Daneborg,Daneborg2,latitude,fail,74.24005445,74.33040000
+Daneborg,Daneborg3,latitude,fail,74.24005445,74.33080000
+Limfjord,Red2,"latitude, longitude, depth",pass,,
+Limfjord,Red2,"latitude, longitude, depth",pass,,
+Limfjord,Red2,"latitude, longitude, depth",pass,,
+Laeso,Laeso1,"latitude, longitude, depth",pass,,
+Laeso,Laeso1,"latitude, longitude, depth",pass,,
+Laeso,Laeso2,"latitude, longitude, depth",pass,,
+Laeso,Laeso2,"latitude, longitude, depth",pass,,
+Laeso,Laeso3,"latitude, longitude, depth",pass,,
+Laeso,Laeso3,"latitude, longitude, depth",pass,,
+Getxo,G1,depth,fail,5,10
+Getxo,G1,depth,fail,5,10
+Getxo,G2,depth,fail,5,10
+Getxo,G2,depth,fail,5,10
+Getxo,G3,depth,fail,5,10
+Getxo,G3,depth,fail,5,10
+Bodo,GStraM,"latitude, longitude, depth",pass,,
+Bodo,GStraM,"latitude, longitude, depth",pass,,
+Bodo,GStraB,"latitude, longitude, depth",pass,,
+Bodo,GStraB,"latitude, longitude, depth",pass,,
+Galway,Gurr1,depth,fail,8,6.6
+Galway,Gurr1,depth,fail,8,6.6
+Galway,Gurr1,depth,fail,8,6.6
+Galway,Gurr2,depth,fail,8,6.2
+Galway,Gurr2,depth,fail,8,6.2
+Galway,Gurr2,depth,fail,8,6.2
+Galway,Gurr4,"latitude, longitude, depth",pass,,
+SchleswigHolstein,SHNP4,arms_id,fail,SHNP4,Ven2
+SchleswigHolstein,SHNP3,arms_id,fail,SHNP3,Ven2
+SchleswigHolstein,SHNP2,arms_id,fail,SHNP2,Ven2
+SchleswigHolstein,SHNP1,depth,fail,not provided,no measurements
+SchleswigHolstein,SHNP1,"latitude, longitude, depth",pass,,
+BelgiumCoast,AZFPout,"latitude, longitude, depth",pass,,
+BelgiumCoast,AAZFPin,arms_id,fail,AAZFPin,Ven2
+BelgiumCoast,AZBE1,"latitude, longitude, depth",pass,,
+BelgiumCoast,AZBW1,"latitude, longitude, depth",pass,,
+BelgiumCoast,AJJC86,"latitude, longitude, depth",pass,,
+BelgiumCoast,AJJCD89,"latitude, longitude, depth",pass,,
+BelgiumCoast,BirkenfelsA,"latitude, longitude, depth",pass,,
+BelgiumCoast,BirkenfelsB,"latitude, longitude, depth",pass,,
+BelgiumCoast,AJJBC89,"latitude, longitude, depth",pass,,
+BelgiumCoast,CPowerA,"latitude, longitude, depth",pass,,
+BelgiumCoast,CPowerB,"latitude, longitude, depth",pass,,
+BelgiumCoast,CPowerC,"latitude, longitude, depth",pass,,
+RavHarbour,RavH3,depth,fail,1.5,no measurements
+RavHarbour,RavH3,"latitude, longitude, depth",pass,,
+RavHarbour,RavH2,depth,fail,1.5,no measurements
+RavHarbour,RavH2,"latitude, longitude, depth",pass,,
+RavHarbour,RavH1,depth,fail,1.5,no measurements
+RavHarbour,RavH1,"latitude, longitude, depth",pass,,
+RavMarine,RavM2,depth,fail,1.5,no measurements
+RavMarine,RavM2,"latitude, longitude, depth",pass,,
+RavMarine,RavM3,depth,fail,1.5,no measurements
+RavMarine,RavM3,"latitude, longitude, depth",pass,,
+RavMarine,RavM1,depth,fail,1.5,no measurements
+RavMarine,RavM1,"latitude, longitude, depth",pass,,

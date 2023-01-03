@@ -1,0 +1,107 @@
+Station,Station corrected,Country,Country corrected,ARMS unit,ARMS unit corrected
+Koster,,Sweden,,Koster_VH1,VH1
+Koster,,Sweden,,Koster_VH3,VH3
+Koster,,Sweden,,Koster_VH2,VH2
+Koster,,Sweden,,Stromstad,
+Roscoff,,France,,BasBlo_S1,BasBloS1
+Roscoff,,France,,MarBlo_R1,MarBloR1
+Roscoff,,France,,MarBlo_R3,MarBloR3
+Roscoff,,France,,MarBlo_R2,MarBloR2
+Roscoff,,France,,BasBlo_S3,BasBloS3
+Roscoff,,France,,BasBlo_S2,BasBloS2
+Plymouth,,United Kingdom,,MBA_ARMS2,MBA1
+Plymouth,,United Kingdom,,MBA_ARMS1,MBA2
+Plymouth,,United Kingdom,,MBA_ARMS1A,MBA1A
+Plymouth,,United Kingdom,,MBA_ARMS1B,MBA1B
+Plymouth,,United Kingdom,,MBA_ARMS1C,MBA1C
+Gulf_of_FInland_TZS,TZS,Finland,,Spikarna,
+Gulf_of_FInland_TZS,TZS,Finland,,Angbat,
+Gulf_of_FInland_TZS,TZS,Finland,,Kummelkobben,
+Svalbard,,Norway,,Svalbard_S2,S2
+Svalbard,,Norway,,Svalbard_S1,S1
+Svalbard,,Norway,,Svalbard_S1A,S1A
+Svalbard,,Norway,,Svalbard_S1B,S1B
+Svalbard,,Norway,,Svalbard_S1C,S1C
+Rothera,,Antarctica,,Rothera_SouthCove1,SouthCove1
+Rothera,,Antarctica,,Rothera_HangarCove2,HangarCove2
+Rothera,,Antarctica,,Rothera_HangarCove1,HangarCove1
+Rothera,,Antarctica,,Rothera_Cheshire1,Cheshire1
+Rothera,,Antarctica,,Rothera_HangarCove3,HangarCove3
+Belgium,BelgiumCoast,Belgium, ,AZFPout,
+Belgium,BelgiumCoast,Belgium, ,AZFPin,
+Belgium,BelgiumCoast,Belgium, ,BirkenfelsA, 
+Belgium,BelgiumCoast,Belgium, ,BirkenfelsB, 
+Belgium,BelgiumCoast,Belgium, ,AZBW1, 
+Belgium,BelgiumCoast,Belgium, ,AZBE1, 
+Belgium,BelgiumCoast,Belgium, ,AJJCD78, 
+Belgium,BelgiumCoast,Belgium, ,AJJC86, 
+Belgium,BelgiumCoast,Belgium, ,AJJC81,
+Belgium,BelgiumCoast,Belgium, ,AJJBC89,
+Belgium,BelgiumCoast,Belgium, ,AJJCD89,
+Belgium,BelgiumCoast,Belgium, ,CoastbustersA,
+Belgium,BelgiumCoast,Belgium, ,CPowerA,
+Belgium,BelgiumCoast,Belgium, ,CPowerB,
+Belgium,BelgiumCoast,Belgium, ,CPowerC,
+Vigo,,Spain,,Toralla_A,TorallaA
+Vigo,,Spain,,Toralla_B,TorallaB
+Vigo,,Spain,,Toralla_C,TorallaC
+Eilat,,Israel,,Eilat_NR1,NR1
+Eilat,,Israel,,Eilat_Katza1,Katza1
+Eilat,,Israel,,Eilat_NR2,NR2
+Eilat,,Israel,,Eilat_Katza2,Katza2
+Gulf_of_Piran,GulfOfPiran,Slovenia,,Luka KP,LukaKP
+Gulf_of_Piran,GulfOfPiran,Slovenia,,Boja Vida,BojaVida
+Gulf_of_Piran,GulfOfPiran,Slovenia,,Fornace,
+Nuuk,,Greenland,,Nuuk1,
+Nuuk,,Greenland,,Nuuk2,
+Nuuk,,Greenland,,Nuuk3,
+Daneborg,,Greenland,,Daneborg2,
+Daneborg,,Greenland,,Daneborg3,
+Daneborg,,Greenland,,Daneborg1,
+Getxo,,Spain,,Getxo_G2,G2
+Getxo,,Spain,,Getxo_G1,G1
+Getxo,,Spain,,Getxo_G3,G3
+Gdynia,,Poland,,GDY_1,GDY1
+Crete,,Greece,,2UBPC,
+Crete,,Greece,,1HERP,
+Galway,,Ireland,,Gurr3,
+Galway,,Ireland,,Gurr2,
+Galway,,Ireland,,Gurr1,
+Galway,,Ireland,,Gurr4,
+Laeso,,Denmark,,Laeso3,
+Laeso,,Denmark,,Laeso1,
+Laeso,,Denmark,,Laeso2,
+Limfjord,,Denmark,,Limfjord_Green33,Green33
+Limfjord,,Denmark,,Limfjord_Red2,Red2
+Limfjord,,Denmark,,Limfjord_Yellow8,Yellow8
+Bodo,,Norway,,Bodo_GStraB,GStraB
+Bodo,,Norway,,Bodo_GStraM,GStraM
+Swedish_West_coast,SWC,Sweden,,ARMS_Gbg4,Gbg4
+Swedish_West_coast,SWC,Sweden,,ARMS_Bjorko1,Bjorko1
+Swedish_West_coast,SWC,Sweden,,ARMS_Hjuvik1,Hjuvik1
+Swedish_West_coast,SWC,Sweden,,ARMS_Gbg1,Gbg1
+Swedish_West_coast,SWC,Sweden,,ARMS_Gbg2,Gbg2
+Swedish_West_coast,SWC,Sweden,,ARMS_Gbg3,Gbg3
+Swedish_West_coast,SWC,Sweden,,ARMS_Varberg1,Varberg1
+Swedish_West_coast,SWC,Sweden,,ARMS_Varberg2,Varberg2
+Swedish_West_coast,SWC,Sweden,,ARMS_Varberg3,Varberg3
+Swedish_West_coast,SWC,Sweden,,ARMS_Marstrand2,Marstrand2
+Swedish_West_coast,SWC,Sweden,,ARMS_Marstrand3,Marstrand3
+Swedish_West_coast,SWC,Sweden,,ARMS_Helsingborg1,Helsingborg1
+Swedish_West_coast,SWC,Sweden,,ARMS_Helsingborg2,Helsignborg2
+Swedish_West_coast,SWC,Sweden,,ARMS_Marstrand1,Marstrand1
+Swedish_West_coast,SWC,Sweden,,ARMS_Preemraff2,Preemraff2
+Swedish_West_coast,SWC,Sweden,,ARMS_Preemraff1,Preemraff1
+Nationalpark Schleswig-Holstein,SchleswigHolstein,Germany,,SHNP1,
+Nationalpark Schleswig-Holstein,SchleswigHolstein,Germany,,SHNP2,
+Nationalpark Schleswig-Holstein,SchleswigHolstein,Germany,,SHNP3,
+Nationalpark Schleswig-Holstein,SchleswigHolstein,Germany,,SHNP4,
+RavMarina,,Italy,,RavM2,
+RavMarina,,Italy,,RavM3,
+RavMarina,,Italy,,RavM1,
+RavHarbour,,Italy,,RavH1,
+RavHarbour,,Italy,,RavH2,
+RavHarbour,,Italy,,RavH3,
+Adriatic East Coast,AdriaticEastCoast,Italy,,Ven3,
+Adriatic East Coast,AdriaticEastCoast,Italy,,Ven1,
+Adriatic East Coast,AdriaticEastCoast,Italy,,Ven2,
