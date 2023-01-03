@@ -2,7 +2,7 @@ ColumnTitle,Description,Datatype,Property,ObservablePropertyUrl,Unit,UnitUrl,Cel
 Observatory-ID,Observatory ID,xsd:string,schema:identifier,,,,
 ARMS-ID,ARMS unit ID,xsd:string,schema:identifier,,,,
 MaterialSample-ID,Material Sample ID,xsd:string,schema:identifier,,,,
-EventID,Event ID,xsd:string,schema:identifier,,,,
+Event-ID,Event ID,xsd:string,schema:identifier,,,,
 Deployment Date,Date the ARMS unit was deployed,xsd:datetime,schema:startDate,,,,
 Collection Date,Date the ARMS unit was retrieved,xsd:datetime,schema:endDate,,,,
 Observatory-ID,Observatory ID,xsd:string,schema:identifier,,,,

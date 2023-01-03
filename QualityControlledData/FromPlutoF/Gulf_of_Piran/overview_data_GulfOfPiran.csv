@@ -1,5 +1,4 @@
 Station,Country,ARMS_unit,Latitude,Longitude,Depth,Date_start,Date_end,Event_ID,Material Samples,Observations,Sequences,Associated Data,Created,Updated
-GulfOfPiran,Slovenia,to delete,45.56485600,13.74358600,3,2020-06-22,2021-05,ARMS_GulfOfPiran_to delete_20200622_00000000,0,0,0,0,2020-12-16,2020-12-16
 GulfOfPiran,Slovenia,Fornace,45.51880000,13.56730000,9,2018-08-15,2018-11-18,ARMS_GulfOfPiran_Fornace_20180815_20181118,0,0,0,154,2019-11-11,2020-04-27
 GulfOfPiran,Slovenia,Fornace,45.51880000,13.56730000,9,2018-08-15,2019-02-15,ARMS_GulfOfPiran_Fornace_20180815_20190215,0,0,0,179,2020-03-16,2020-04-14
 GulfOfPiran,Slovenia,Fornace,45.51880000,13.56730000,9,2019-07-02,2020-01-27,ARMS_GulfOfPiran_Fornace_20190702_20200127,0,0,0,127,2020-03-23,2020-04-22

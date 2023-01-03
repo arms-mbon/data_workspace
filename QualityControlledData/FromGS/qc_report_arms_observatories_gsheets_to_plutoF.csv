@@ -140,7 +140,6 @@ SchleswigHolstein,SHNP2,arms_id,fail,SHNP2,Ven2
 SchleswigHolstein,SHNP1,depth,fail,not provided,no measurements
 SchleswigHolstein,SHNP1,"latitude, longitude, depth",pass,,
 BelgiumCoast,AZFPout,"latitude, longitude, depth",pass,,
-BelgiumCoast,AAZFPin,arms_id,fail,AAZFPin,Ven2
 BelgiumCoast,AZBE1,"latitude, longitude, depth",pass,,
 BelgiumCoast,AZBW1,"latitude, longitude, depth",pass,,
 BelgiumCoast,AJJC86,"latitude, longitude, depth",pass,,

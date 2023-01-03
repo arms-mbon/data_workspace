@@ -81,7 +81,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/0AE1A0DF1597AEB01632174ED7CB4AF81A07306784893C33B280D01BEB7F2FAE.json?h=gX3MkXpB9GYQLhGnupbyYw&e=1671027269'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/C81424D26AB0EE8A42CE7C1AD9CDCAAEA98DFD76CD7DC4799AF89D92F7D2E496.json?h=IhcIRbT8VphzRIdbgJHS4g&e=1672844735'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -572,6 +572,7 @@ with open(os.path.join(output_dir, "GS_ARMS_Material_Samples_and_Sequence_Info.c
 #make a QC report for the ARMS Observatory info comparing data from AllObservations.csv and ARMS_Observatory_info.csv
 qc_report_arms_observatories_plutoF_to_gsheets = []
 qc_report_arms_observatories_gsheets_to_plutoF = []
+qc_observatory_info = []
 #load in Arms Observatory info as json file
 def csv_to_json(csv_file_path):
     #create a dictionary
@@ -589,6 +590,56 @@ def csv_to_json(csv_file_path):
 json_arms_observatories_gsheets = csv_to_json(os.path.join(output_dir, "GS_ARMS_Observatory_info.csv")) 
 json_arms_observatories_plutoF = main_csv_data
 #a mapping will be placed here in the future where all the culumbs are described that should be compared
+
+#begin the plutoF to gsheets QC
+for plutoF_data in json_arms_observatories_plutoF:
+    found_observatory = False
+    found_arms_id = False
+    for gsheets_data in json_arms_observatories_gsheets:
+        #check if the observatory name is the same
+        try:
+            if plutoF_data["Station"] == gsheets_data["Country ISO3letter code"]:
+                found_observatory = True
+            #check if the arms_id is the same
+            if plutoF_data["ARMS_unit"] == gsheets_data["ARMS-ID (corrected)"]:
+                found_arms_id = True
+        except:
+            pass
+    if found_arms_id == False:
+        qc_observatory_info.append({"ARMS_unit": plutoF_data["ARMS_unit"], "Station": plutoF_data["Station"], "QC_comment": "ARMS ID not found in GS", "QC_param": "ARMS_ID", "QC_value_plutoF": plutoF_data["ARMS_unit"], "QC_value_gsheets": ""})
+    if found_observatory == False:
+        qc_observatory_info.append({"ARMS_unit": plutoF_data["ARMS_unit"], "Station": plutoF_data["Station"], "QC_comment": "Observatory not found in GS", "QC_param": "Observatory", "QC_value_plutoF": plutoF_data["Station"], "QC_value_gsheets": ""})
+    if found_arms_id == True and found_observatory == True:
+        #compare both longitude and latitude 
+        if plutoF_data["Latitude"] == gsheets_data["Latitude"] and plutoF_data["Longitude"] == gsheets_data["Longitude"]:
+            qc_observatory_info.append({"ARMS_unit": plutoF_data["ARMS_unit"], "Station": plutoF_data["Station"], "QC_comment": "OK"})
+        else:
+            qc_observatory_info.append({"ARMS_unit": plutoF_data["ARMS_unit"], "Station": plutoF_data["Station"], "QC_comment": "Observatory and ARMS ID found but lat and long are different", "QC_param": "Lat_Long", "QC_value_plutoF": plutoF_data["Latitude"] + " " + plutoF_data["Longitude"], "QC_value_gsheets": gsheets_data["Latitude"] + " " + gsheets_data["Longitude"]})
+
+#same for gsheets to plutoF
+for gsheets_data in json_arms_observatories_gsheets:
+    found_observatory = False
+    found_arms_id = False
+    for plutoF_data in json_arms_observatories_plutoF:
+        try:
+            #check if the observatory name is the same
+            if plutoF_data["Station"] == gsheets_data["Country ISO3letter code"]:
+                found_observatory = True
+                
+            #check if the arms_id is the same
+            if plutoF_data["ARMS_unit"] == gsheets_data["ARMS-ID (corrected)"]:
+                found_arms_id = True
+        except:
+            pass
+    if found_arms_id == False:
+        qc_observatory_info.append({"ARMS_unit": gsheets_data["ARMS-ID (corrected)"], "Station": gsheets_data["Country ISO3letter code"], "QC_comment": "ARMS ID not found in PlutoF", "QC_param": "ARMS_ID", "QC_value_plutoF": "", "QC_value_gsheets": gsheets_data["ARMS-ID (corrected)"]})
+    if found_observatory == False:
+        qc_observatory_info.append({"ARMS_unit": gsheets_data["ARMS-ID (corrected)"], "Station": gsheets_data["Country ISO3letter code"], "QC_comment": "Observatory not found in PlutoF", "QC_param": "Observatory", "QC_value_plutoF": "", "QC_value_gsheets": gsheets_data["Country ISO3letter code"]})
+    if found_arms_id == True and found_observatory == True:
+        if plutoF_data["Latitude"] == gsheets_data["Latitude"] and plutoF_data["Longitude"] == gsheets_data["Longitude"]:
+            qc_observatory_info.append({"ARMS_unit": gsheets_data["ARMS-ID (corrected)"], "Station": gsheets_data["Country ISO3letter code"], "QC_comment": "OK"})
+        else:
+            qc_observatory_info.append({"ARMS_unit": gsheets_data["ARMS-ID (corrected)"], "Station": gsheets_data["Country ISO3letter code"], "QC_comment": "Observatory and ARMS ID found but lat and long are different", "QC_param": "Lat_Long", "QC_value_plutoF": plutoF_data["Latitude"] + " " + plutoF_data["Longitude"], "QC_value_gsheets": gsheets_data["Latitude"] + " " + gsheets_data["Longitude"]})       
 
 #begin the plutoF to gsheets QC
 for plutoF_data in json_arms_observatories_plutoF:
@@ -638,7 +689,6 @@ for gsheets_data in json_arms_observatories_gsheets:
             found = True
             #go over the rules
             try:
-                
                 if float(gsheets_data["Latitude"]) != float(plutoF_data["Latitude"]):
                     #if the first 2 characters after the . are the same then pass
                     if abs(abs(float(gsheets_data["Latitude"])) - abs(float(plutoF_data["Latitude"]))) > (1/111.6):
@@ -679,6 +729,14 @@ with open(os.path.join(output_dir, "qc_report_arms_observatories_gsheets_to_plut
     writer.writeheader()
     for data in qc_report_arms_observatories_gsheets_to_plutoF:
         writer.writerow(data)
+        
+with open(os.path.join(output_dir, "qc_observatory_info.csv"), "w", newline='') as f:
+    fieldnames = ['ARMS_unit','Station','QC_comment','QC_param','QC_value_plutoF','QC_value_gsheets']
+    writer = csv.DictWriter(f, fieldnames=fieldnames)
+    writer.writeheader()
+    for data in qc_observatory_info:
+        writer.writerow(data)
+        
 
 #perform the same qc for the samples
 qc_report_arms_samples_plutoF_to_gsheets = []
@@ -707,10 +765,34 @@ for plutoF_data in json_arms_samples_plutoF:
                     if gsheets_data["EventID"] == plutoF_data["Parent_Event_ID"]:
                         qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"pass"})
                 except:
-                    qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"pass"})    
-                
+                    qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"pass"})          
             except:
                 qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutoF_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+            
+            try:
+                #check if the last part of the material sample id is the same as the combination of Fraction and Filter (micrometer) and Preservative combined
+                lastpartmatsamplid = plutoF_data["Material_Sample_ID"].split("_")[-1]
+                #check if the last part uppercased of the material sample id is the same as gs preservative uppercased
+                if lastpartmatsamplid.upper() == gsheets_data["Preservative"].upper():
+                    qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"preservative", "qc_flag":"present in plutoF sample id"})
+                    lastpartmatsamplid = plutoF_data["Material_Sample_ID"].split("_")[-2]
+                else:
+                    qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"preservative", "qc_flag":"not present in plutoF sample id"})
+                
+                #check if the last part uppercased of the material sample id is the same as gs filter uppercased
+                if gsheets_data["Fraction"] == "Motile":
+                    fr = "MF"
+                if gsheets_data["Fraction"] == "Sessile":
+                    fr = "SF"
+                
+                if lastpartmatsamplid.upper() == fr.upper()+gsheets_data["Filter"].upper():
+                    qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"fraction+filter", "qc_flag":"present in plutoF sample id"})
+                else:
+                    qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"fraction+filter", "qc_flag":"not present in plutoF sample id"})
+            except:
+                qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"preservative+fraction+filter", "qc_flag":"couldn't be checked due to missing data in plutoF or gsheets"})
+                
+
                 
     if found == False:
         #try and find the sample splitting the gs material sample id by "_" and taking all but the last part and then joining them back together
@@ -739,6 +821,7 @@ for plutoF_data in json_arms_samples_plutoF:
                     
                 except:
                     qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":plutoF_data["Parent_Event_ID"],"gsheets_data":gsheets_data["EventID"]})
+                    
         if found == False:
             qc_report_arms_samples_plutoF_to_gsheets.append({"sample":plutoF_data["Material_Sample_ID"],"qc_param":"arms_id", "qc_flag":"fail","plutoF_data":plutoF_data["Material_Sample_ID"],"gsheets_data":"not found"})
 
@@ -821,3 +904,7 @@ for file in os.listdir(output_dir):
         #split the output_dir string on the os sep and pop the last element and rejoin the string by os.sep
         parent_folder = os.sep.join(output_dir.split(os.sep)[:-1])
         shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"FromGS",file))
+        
+#perform 4 QC steps on the plutoF data/ gs data
+#step 1: check the Observatory Info table
+
