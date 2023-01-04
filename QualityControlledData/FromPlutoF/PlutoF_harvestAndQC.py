@@ -190,14 +190,16 @@ associated_csv_data = []
 observations_csv_data = []
 material_samples_csv_data = []
 correction_found = False
+#make sample area name by replcing space with underscore
 for sampling_area in json_data_loaded['sampling_areas']:
+    ew_sampling_area_name = sampling_area['name'].replace(" ", "_")
     material_samples_csv = []
     observations_csv = []
     sequences_csv = []
     associated_data_csv = []
     main_data_csv = []
     try:
-        os.mkdir(os.path.join(output_dir, sampling_area['name']))
+        os.mkdir(os.path.join(output_dir, ew_sampling_area_name))
     except Exception as e:
         print(e)
     #country
@@ -424,29 +426,31 @@ for sampling_area in json_data_loaded['sampling_areas']:
                  'Created': created,
                  'Updated': updated
                  })
+            
+    
 
-    with open(os.path.join(output_dir, sampling_area['name'],"material_samples_"+station+'.csv'), 'w', newline='') as csvfile:
+    with open(os.path.join(output_dir, ew_sampling_area_name,"material_samples_"+station+'.csv'), 'w', newline='') as csvfile:
         fieldnames = ['Material_Sample_ID', 'Parent_Event_ID', 'Description', 'Created_At', 'Updated_At', 'Sequences', 'Associated data']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for data in material_samples_csv:
             writer.writerow(data)
     
-    with open(os.path.join(output_dir, sampling_area['name'],"observations_"+station+'.csv'), 'w', newline='') as csvfile:
+    with open(os.path.join(output_dir, ew_sampling_area_name,"observations_"+station+'.csv'), 'w', newline='') as csvfile:
         fieldnames = ['Station', 'Country', 'ARMS_unit', 'date_start', 'date_end', 'Event_id', 'Remarks', 'Is_Varified', 'Taxon_Name', 'created_at', 'updated_at']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for data in observations_csv:
             writer.writerow(data)
     
-    with open(os.path.join(output_dir, sampling_area['name'],"sequences_"+station+'.csv'), 'w', newline='') as csvfile:
+    with open(os.path.join(output_dir, ew_sampling_area_name,"sequences_"+station+'.csv'), 'w', newline='') as csvfile:
         fieldnames = ['Station', 'Country', 'ARMS_unit', 'date_start', 'date_end', 'Event_id', 'Sequence_ID', 'Sequence', 'Chimeric', 'Unite_Status', 'Low_Quality', 'Forward_Primer', 'Reverse_Primer', 'Remarks', 'Regions', 'created_at', 'updated_at']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for data in sequences_csv:
             writer.writerow(data)
             
-    with open(os.path.join(output_dir, sampling_area['name'],"associated_data_"+station+'.csv'), 'w', newline='') as csvfile:
+    with open(os.path.join(output_dir, ew_sampling_area_name,"associated_data_"+station+'.csv'), 'w', newline='') as csvfile:
         fieldnames = ['Station', 'Country', 'ARMS_unit', 'date_start', 'date_end', 'Event_id', 'File_Name', 'File_Type', 'File_Download_URL', 'created_at', 'updated_at']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
@@ -456,7 +460,7 @@ for sampling_area in json_data_loaded['sampling_areas']:
             data = {k: v.encode('cp850','replace').decode('cp850') for k, v in data.items()}
             writer.writerow(data)
     
-    with open(os.path.join(output_dir, sampling_area['name'],"overview_data_"+station+'.csv'), 'w', newline='') as csvfile:
+    with open(os.path.join(output_dir, ew_sampling_area_name,"overview_data_"+station+'.csv'), 'w', newline='') as csvfile:
         fieldnames = ['Station', 'Country', 'ARMS_unit','Latitude','Longitude','Depth', 'Date_start', 'Date_end', 'Event_ID', 'Material Samples', 'Observations', 'Sequences', 'Associated Data', 'Created', 'Updated']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
@@ -538,7 +542,7 @@ formatted_message = ''.join(pre_formatted_message)
 message.attach(MIMEText(formatted_message, "html"))
 print(message)
     
-smtp_port.sendmail(sender_email, address_list, message.as_string()) #put on end script
+#smtp_port.sendmail(sender_email, address_list, message.as_string()) #put on end script
 print("Email Sent")
 smtp_port.quit()
     
