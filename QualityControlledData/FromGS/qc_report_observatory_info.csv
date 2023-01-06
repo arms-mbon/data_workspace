@@ -1,8 +1,4 @@
 ARMS_unit,Station,QC_comment,QC_param,QC_value_plutoF,QC_value_gsheets
-Helsignborg2,SWC,ARMS ID not found in GS,ARMS_ID,Helsignborg2,
-RavM2,RavMarina,Observatory not found in GS,Observatory,RavMarina,
-RavM3,RavMarina,Observatory not found in GS,Observatory,RavMarina,
-RavM1,RavMarina,Observatory not found in GS,Observatory,RavMarina,
 HangarCove1,GBR,OK,,,
 HangarCove2,GBR,Observatory and ARMS ID found but lat and long are different,Lat_Long,-67.56416666 -68.12496670,-67.5641667 -68.1249667
 HangarCove3,GBR,Observatory and ARMS ID found but lat and long are different,Lat_Long,-67.56416666 -68.12496670,-67.5641667 -68.1249667
@@ -43,7 +39,7 @@ Marstrand1,SWE,OK,,,
 Marstrand2,SWE,OK,,,
 Marstrand3,SWE,OK,,,
 Helsingborg1,SWE,OK,,,
-Helsingborg2,SWE,ARMS ID not found in PlutoF,ARMS_ID,,Helsingborg2
+Helsingborg2,SWE,OK,,,
 Varberg1,SWE,OK,,,
 Varberg2,SWE,OK,,,
 Varberg3,SWE,OK,,,
@@ -102,9 +98,9 @@ CPowerC,BEL,OK,,,
 RavH3,ITA,OK,,,
 RavH2,ITA,OK,,,
 RavH1,ITA,OK,,,
-RavM2,ITA,Observatory not found in PlutoF,Observatory,,ITA
-RavM3,ITA,Observatory not found in PlutoF,Observatory,,ITA
-RavM1,ITA,Observatory not found in PlutoF,Observatory,,ITA
+RavM2,ITA,OK,,,
+RavM3,ITA,OK,,,
+RavM1,ITA,OK,,,
 Ven1,ITA,Observatory and ARMS ID found but lat and long are different,Lat_Long,45.31666700 12.50000000,45.314167 12.508333
 Ven2,ITA,Observatory and ARMS ID found but lat and long are different,Lat_Long,45.31666700 12.50000000,45.314167 12.508333
 Ven3,ITA,Observatory and ARMS ID found but lat and long are different,Lat_Long,45.31666700 12.50000000,45.314167 12.508333

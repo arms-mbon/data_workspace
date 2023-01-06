@@ -87,7 +87,7 @@ SWC,Preemraff1,"latitude, longitude, depth",pass,,
 SWC,Preemraff2,"latitude, longitude, depth",pass,,
 SWC,Marstrand3,depth,fail,5,2
 SWC,Helsingborg1,"latitude, longitude, depth",pass,,
-SWC,Helsingborg2,arms_id,fail,Helsingborg2,Ven2
+SWC,Helsingborg2,"latitude, longitude, depth",pass,,
 SWC,Varberg1,"latitude, longitude, depth",pass,,
 SWC,Varberg2,"latitude, longitude, depth",pass,,
 SWC,Varberg3,"latitude, longitude, depth",pass,,
@@ -207,12 +207,12 @@ RavHarbour,RavH2,depth,fail,1.5,no measurements
 RavHarbour,RavH2,"latitude, longitude, depth",pass,,
 RavHarbour,RavH1,depth,fail,1.5,no measurements
 RavHarbour,RavH1,"latitude, longitude, depth",pass,,
-RavMarine,RavM2,depth,fail,1.5,no measurements
-RavMarine,RavM2,"latitude, longitude, depth",pass,,
-RavMarine,RavM3,depth,fail,1.5,no measurements
-RavMarine,RavM3,"latitude, longitude, depth",pass,,
-RavMarine,RavM1,depth,fail,1.5,no measurements
-RavMarine,RavM1,"latitude, longitude, depth",pass,,
+RavMarina,RavM2,depth,fail,1.5,no measurements
+RavMarina,RavM2,"latitude, longitude, depth",pass,,
+RavMarina,RavM3,depth,fail,1.5,no measurements
+RavMarina,RavM3,"latitude, longitude, depth",pass,,
+RavMarina,RavM1,depth,fail,1.5,no measurements
+RavMarina,RavM1,"latitude, longitude, depth",pass,,
 AdriaticEastCoast,Ven1,latitude,value is different but not significantly,45.314167,45.31666700
 AdriaticEastCoast,Ven1,longitude,value is different but not significantly,12.508333,12.50000000
 AdriaticEastCoast,Ven2,latitude,value is different but not significantly,45.314167,45.31666700

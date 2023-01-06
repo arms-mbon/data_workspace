@@ -193,7 +193,7 @@ SWC,Varberg2,"latitude, longitude, depth",pass,,
 SWC,Varberg3,"latitude, longitude, depth",pass,,
 SWC,Marstrand3,depth,fail,2,5
 SWC,Helsingborg1,"latitude, longitude, depth",pass,,
-SWC,Helsignborg2,arms_unit,fail,Helsignborg2,Ven3
+SWC,Helsingborg2,"latitude, longitude, depth",pass,,
 SWC,Preemraff2,"latitude, longitude, depth",pass,,
 SWC,Preemraff1,"latitude, longitude, depth",pass,,
 SchleswigHolstein,SHNP1,depth,fail,no measurements,not provided
