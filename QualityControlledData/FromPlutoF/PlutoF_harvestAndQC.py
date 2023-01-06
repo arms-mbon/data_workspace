@@ -984,6 +984,9 @@ for gsheets_data in json_arms_samples_gsheets:
                  }
             )
 
+#go over the ImageData list and remove duplicates
+ImageData = [dict(t) for t in {tuple(d.items()) for d in ImageData}]
+
 #write the data to csv files in the output directory 
 with open(os.path.join(output_dir,"combined_SamplingEventData.csv"), 'w', newline='', encoding="utf-8") as f:
     w = csv.DictWriter(f, SamplingEventData[0].keys())
