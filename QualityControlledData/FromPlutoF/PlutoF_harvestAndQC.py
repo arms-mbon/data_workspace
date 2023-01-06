@@ -911,18 +911,22 @@ for gsheets_data in json_arms_samples_gsheets:
 #Gene18S gsheets["gene_18S"]
 #GeneNegControl_18S gsheets["gene_18S_negative_control"]
 for gsheets_data in json_arms_samples_gsheets:
-    OmicsData.append(
-        {"EventID":gsheets_data["Event-ID"],
-         "MaterialSampleID":gsheets_data["MaterialSample-ID"],
-         "OriginalSampleID":gsheets_data["OriginalSample-ID"],
-         "Gene_COI":gsheets_data["gene_COI"],
-         "GeneNegControl_COI":gsheets_data["gene_COI_negative_control"],
-         "GeneITS":gsheets_data["gene_ITS"],
-         "GeneNegControl_ITS":gsheets_data["gene_ITS_negative_control"],
-         "Gene18S":gsheets_data["gene_18S"],
-         "GeneNegControl_18S":gsheets_data["gene_18S_negative_control"]
-         }
-    )
+    #if (Gene_COI == undefined or  Gene_COI = "") and (GeneITS = "" or GeneITS == undefined ) and (Gene18S = "" or Gene18S == undefined):
+    if (gsheets_data["gene_COI"] == "" or gsheets_data["gene_COI"] == "undefined") and (gsheets_data["gene_ITS"] == "" or gsheets_data["gene_ITS"] == "undefined") and (gsheets_data["gene_18S"] == "" or gsheets_data["gene_18S"] == "undefined"):
+        continue
+    else:
+        OmicsData.append(
+            {"EventID":gsheets_data["Event-ID"],
+            "MaterialSampleID":gsheets_data["MaterialSample-ID"],
+            "Gene_COI":gsheets_data["gene_COI"],
+            "gene_COI_negative_control":gsheets_data["gene_COI_negative_control"],
+            "GeneITS":gsheets_data["gene_ITS"],
+            "gene_ITS_negative_control":gsheets_data["gene_ITS_negative_control"],
+            "Gene18S":gsheets_data["gene_18S"],
+            "gene_18S_negative_control":gsheets_data["gene_18S_negative_control"],
+            "OriginalSampleID":gsheets_data["OriginalSample-ID"]
+            }
+        )
 
 ##ImageData
 #ObservatoryID gsheets["Observatory-ID (corrected)"]
