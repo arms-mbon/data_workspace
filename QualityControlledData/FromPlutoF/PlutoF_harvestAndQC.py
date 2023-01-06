@@ -81,7 +81,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/C81424D26AB0EE8A42CE7C1AD9CDCAAEA98DFD76CD7DC4799AF89D92F7D2E496.json?h=IhcIRbT8VphzRIdbgJHS4g&e=1672844735'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/C81424D26AB0EE8A42CE7C1AD9CDCAAEA98DFD76CD7DC4799AF89D92F7D2E496.json?h=pNs6xKMmrBywfJaqidqfYA&e=1673082223'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -762,7 +762,7 @@ for plutoF_data in json_arms_samples_plutoF:
     found = False
     print(plutoF_data)
     for gsheets_data in json_arms_samples_gsheets:
-        if plutoF_data["Parent_Event_ID"] == gsheets_data["EventID"]:
+        if plutoF_data["Parent_Event_ID"] == gsheets_data["Event-ID"]:
             found = True
     
     if found == False:
@@ -783,11 +783,11 @@ for gsheets_data in json_arms_samples_gsheets:
     found = False
     for plutof_data in json_arms_samples_plutoF:
         #first check if the event id is the same
-        if gsheets_data["EventID"] == plutof_data["Parent_Event_ID"]:
+        if gsheets_data["Event-ID"] == plutof_data["Parent_Event_ID"]:
             found = True
             
     if found == False:
-        qc_report_arms_observatories_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":"not found","gsheets_data":gsheets_data["EventID"]})
+        qc_report_arms_observatories_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"event_id", "qc_flag":"fail","plutoF_data":"not found","gsheets_data":gsheets_data["Event-ID"]})
 
     if found == True:
         sample_found = False
@@ -866,13 +866,13 @@ for gsheets_data in json_arms_observatories_gsheets:
 #UnitID gsheets["ARMS-ID (corrected)"]
 #DateDeployed gsheets["Deployment Date"]
 #DateCollected gsheets["Collection Date"]
-#EventID gsheets["Event-ID"]
+#Event-ID gsheets["Event-ID"]
 #MaterialSampleID gsheets["MaterialSample-ID"]
 #Fraction gsheets["Fraction"]
 #Preservative gsheets["Preservative"]
 #Filter gsheets["Filter (micrometer)"]
 #CrateCover gsheets["Crate cover used during retrieval"]
-#Number of associated data files => for item in accomsiated data files, if item["EventID"] == gsheets["Event-ID"], count += 1
+#Number of associated data files => for item in accomsiated data files, if item["Event-ID"] == gsheets["Event-ID"], count += 1
 for gsheets_data in json_arms_samples_gsheets:
     count = 0
     for item in associated_csv_data:
@@ -950,28 +950,28 @@ with open(os.path.join(output_dir,"combined_SamplingEventData.csv"), 'w', newlin
     w = csv.DictWriter(f, SamplingEventData[0].keys())
     w.writeheader()
     for row in SamplingEventData:
-        row = {k: v.encode('cp850','replace').decode('cp850') for k, v in row.items()}
+        #row = {k: v.encode('cp850','replace').decode('cp850') for k, v in row.items()}
         w.writerow(row)
 
 with open(os.path.join(output_dir,"combined_ObservatoryData.csv"), 'w', newline='', encoding="utf-8") as f:
     w = csv.DictWriter(f, ObservatoryData[0].keys())
     w.writeheader()
     for row in ObservatoryData:
-        row = {k: v.encode('cp850','replace').decode('cp850') for k, v in row.items()}
+        #row = {k: v.encode('cp850','replace').decode('cp850') for k, v in row.items()}
         w.writerow(row)
 
 with open(os.path.join(output_dir,"combined_OmicsData.csv"), 'w', newline='', encoding="utf-8") as f:
     w = csv.DictWriter(f, OmicsData[0].keys())
     w.writeheader()
     for row in OmicsData:
-        row = {k: v.encode('cp850','replace').decode('cp850') for k, v in row.items()}
+        #row = {k: v.encode('cp850','replace').decode('cp850') for k, v in row.items()}
         w.writerow(row)
 
 with open(os.path.join(output_dir,"combined_ImageData.csv"), 'w', newline='', encoding="utf-8") as f:
     w = csv.DictWriter(f, ImageData[0].keys())
     w.writeheader()
     for row in ImageData:
-        row = {k: v.encode('cp850','replace').decode('cp850') for k, v in row.items()}
+        #row = {k: v.encode('cp850','replace').decode('cp850') for k, v in row.items()}
         w.writerow(row)
 
 #cut the combined csv files to the ./Combined directory
