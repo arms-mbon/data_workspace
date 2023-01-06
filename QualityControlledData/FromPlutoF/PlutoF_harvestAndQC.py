@@ -884,22 +884,57 @@ for gsheets_data in json_arms_samples_gsheets:
             country= obs_gsheets_data["Country ISO3letter code"]
             break
         
-    SamplingEventData.append(
-        {"Country":country,
-         "ObservatoryID":gsheets_data["Observatory-ID"],
-         "UnitID":gsheets_data["ARMS-ID"],
-         "DateDeployed":gsheets_data["Deployment Date"],
-         "DateCollected":gsheets_data["Collection Date"],
-         "EventID":gsheets_data["Event-ID"],
-         "MaterialSampleID":gsheets_data["MaterialSample-ID"],
-         "Fraction":gsheets_data["Fraction"],
-         "Preservative":gsheets_data["Preservative"],
-         "Filter":gsheets_data["Filter (micrometer)"],
-         "CrateCover":gsheets_data["Crate cover used during retrieval"],
-         "Number of associated data files":str(count)
-         }
-    )
-    
+    #check if eventid is in the plutoF data
+    for plutoF_data in json_arms_samples_plutoF:
+        if gsheets_data["Event-ID"] == plutof_data["Parent_Event_ID"]:          
+            SamplingEventData.append(
+                {"Country":country,
+                "ObservatoryID":gsheets_data["Observatory-ID"],
+                "UnitID":gsheets_data["ARMS-ID"],
+                "DateDeployed":gsheets_data["Deployment Date"],
+                "DateCollected":gsheets_data["Collection Date"],
+                "EventID":gsheets_data["Event-ID"],
+                "MaterialSampleID":gsheets_data["MaterialSample-ID"],
+                "Fraction":gsheets_data["Fraction"],
+                "Preservative":gsheets_data["Preservative"],
+                "Filter":gsheets_data["Filter (micrometer)"],
+                "CrateCover":gsheets_data["Crate cover used during retrieval"],
+                "Number of associated data files":str(count)
+                }
+            )
+
+for plutoF_data in json_arms_samples_plutoF:
+    inGoogleSheets = False
+    for obs_plutoF_data in json_arms_observatories_plutoF:
+        #get the country from the observatory data by matching the observatory id
+        if obs_plutoF_data["Event_ID"] == plutoF_data["Parent_Event_ID"]:
+            country= obs_plutoF_data["Country"]
+            observatoryid = obs_plutoF_data["Station"]
+            unitid = obs_plutoF_data["ARMS_unit"]
+            date_deployed = obs_plutoF_data["Date_start"]
+            collection_date = obs_plutoF_data["Date_end"]
+            break
+    for gsheets_data in json_arms_samples_gsheets:
+        if plutoF_data["Parent_Event_ID"] == gsheets_data["Event-ID"]:
+            inGoogleSheets = True
+            break
+    if inGoogleSheets == False:
+        SamplingEventData.append(
+            {"Country":country,
+            "ObservatoryID":observatoryid,
+            "UnitID":unitid,
+            "DateDeployed":date_deployed,
+            "DateCollected":collection_date,
+            "EventID":plutoF_data["Parent_Event_ID"],
+            "MaterialSampleID":plutoF_data["Material_Sample_ID"],
+            "Fraction":gsheets_data["Fraction"],
+            "Preservative":"",
+            "Filter":"",
+            "CrateCover":"",
+            "Number of associated data files":plutoF_data["Associated data"]
+            }
+        )
+
 ##OmicsData
 #EventID gsheets["Event-ID"]
 #MaterialSampleID gsheets["MaterialSample-ID"]
@@ -919,11 +954,11 @@ for gsheets_data in json_arms_samples_gsheets:
             {"EventID":gsheets_data["Event-ID"],
             "MaterialSampleID":gsheets_data["MaterialSample-ID"],
             "Gene_COI":gsheets_data["gene_COI"],
-            "gene_COI_negative_control":gsheets_data["gene_COI_negative_control"],
+            "Gene_COI_negative_control":gsheets_data["gene_COI_negative_control"],
             "GeneITS":gsheets_data["gene_ITS"],
-            "gene_ITS_negative_control":gsheets_data["gene_ITS_negative_control"],
+            "Gene_ITS_negative_control":gsheets_data["gene_ITS_negative_control"],
             "Gene18S":gsheets_data["gene_18S"],
-            "gene_18S_negative_control":gsheets_data["gene_18S_negative_control"],
+            "Gene_18S_negative_control":gsheets_data["gene_18S_negative_control"],
             "OriginalSampleID":gsheets_data["OriginalSample-ID"]
             }
         )
