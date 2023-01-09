@@ -81,7 +81,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/C81424D26AB0EE8A42CE7C1AD9CDCAAEA98DFD76CD7DC4799AF89D92F7D2E496.json?h=pNs6xKMmrBywfJaqidqfYA&e=1673082223'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/C81424D26AB0EE8A42CE7C1AD9CDCAAEA98DFD76CD7DC4799AF89D92F7D2E496.json?h=QxCUsXdgfMM-sKQyuwEWkA&e=1673349384'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -552,7 +552,7 @@ print(r.status_code)
 with open(os.path.join(output_dir, "GS_ARMS_Observatory_info.csv"), "wb") as f:
         f.write(r.content)
 
-#same for the arms_samples_sequences / 
+#same for the arms_samples_sequences
 url = 'https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/export?format=csv&id=1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE&gid=855411053'
 r = requests.get(url, allow_redirects=True)
 with open(os.path.join(output_dir, "GS_ARMS_Samples_Sequences.csv"), "wb") as f:
@@ -798,6 +798,56 @@ for gsheets_data in json_arms_samples_gsheets:
             qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"sample_id", "qc_flag":"fail","plutoF_data":"not found","gsheets_data":gsheets_data["MaterialSample-ID"]})
         if sample_found == True: 
             qc_report_arms_samples_gsheets_to_plutoF.append({"sample":gsheets_data["MaterialSample-ID"],"qc_param":"sample_id", "qc_flag":"pass"})
+            
+#make a qc report that will compare the events in plutoF to the events in gsheets
+#the file will be called qc_report_events.csv
+#The CSV can have columns: Event-ID from GS, Deployment Date from GS, Collection Date from GS, Event_id from PlutoF, Date_start from PlutoF, Date_end from PlutoF.
+#if there is no PlutoF event for a GS, then the cell value under "Event_id from PlutoF" is "missing" and the date cell values can be blank/"missing".
+#If there is no GS event for a Plutof, then the cell value under"Event-ID from GS" is "missing" and the date cell values can be blank/"missing".
+#Note that while the date part of the Event-ID should be the same as the deployment and collection date values, 
+#there is no guarantee that this will be so: hence we treat the EventID as the key as the dates as values 
+#that I will manually compare to the date part of the EventID. So please do stick to the YYYY-MM-DD format. 
+
+qc_events = []
+
+#from plutoF to gsheets
+for plutoF_data in main_csv_data:
+    found = False
+    for gs_data in json_arms_samples_gsheets:
+        #check if the event id is the same
+        if plutoF_data["Event_ID"] == gs_data["Event-ID"]:
+            qc_events.append({"Event-ID from GS":gs_data["Event-ID"],"Deployment Date from GS":gs_data["Deployment Date"],"Collection Date from GS":gs_data["Collection Date"],"Event_id from PlutoF":plutoF_data["Event_ID"],"Date_start from PlutoF":plutoF_data["Date_start"],"Date_end from PlutoF":plutoF_data["Date_end"]})
+            found = True
+            break
+    if found == False:
+        qc_events.append({"Event-ID from GS":"missing","Deployment Date from GS":"missing","Collection Date from GS":"missing","Event_id from PlutoF":plutoF_data["Event_ID"],"Date_start from PlutoF":plutoF_data["Date_start"],"Date_end from PlutoF":plutoF_data["Date_end"]})
+
+#from gsheets to plutoF
+for gs_data in json_arms_samples_gsheets:
+    found = False
+    for plutoF_data in main_csv_data:
+        if gs_data["Event-ID"] == plutoF_data["Event_ID"]:
+            found = True
+            present = False
+            #check if the event id already in the list
+            if len(qc_events) > 0:
+                for qc_event in qc_events:
+                    if qc_event["Event-ID from GS"] == gs_data["Event-ID"]:
+                        present = True
+                        break
+            if present == False:
+                qc_events.append({"Event-ID from GS":gs_data["Event-ID"],"Deployment Date from GS":gs_data["Deployment Date"],"Collection Date from GS":gs_data["Collection Date"],"Event_id from PlutoF":plutoF_data["Event_ID"],"Date_start from PlutoF":plutoF_data["Date_start"],"Date_end from PlutoF":plutoF_data["Date_end"]})
+            break       
+    if found == False:
+        qc_events.append({"Event-ID from GS":gs_data["Event-ID"],"Deployment Date from GS":gs_data["Deployment Date"],"Collection Date from GS":gs_data["Collection Date"],"Event_id from PlutoF":"missing","Date_start from PlutoF":"missing","Date_end from PlutoF":"missing"})
+
+#write the qc report to csv
+with open(os.path.join(output_dir, 'qc_report_events.csv'), 'w', newline='', encoding="utf-8") as csvfile:
+    fieldnames = ["Event-ID from GS","Deployment Date from GS","Collection Date from GS","Event_id from PlutoF","Date_start from PlutoF","Date_end from PlutoF"]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    for row in qc_events:
+        writer.writerow(row)
 
 #write both reports to csv
 with open(os.path.join(output_dir, 'qc_report_arms_samples_plutoF_to_gsheets.csv'), 'w', newline='', encoding="utf-8") as csvfile:
