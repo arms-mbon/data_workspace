@@ -1,4 +1,4 @@
-In here are all the metadata that are downloaded on a regular basis from the ARMS-MBON account on PlutoF.
+In here are all the metadata that are downloaded on a regular basis from the ARMS-MBON account on PlutoF. 
 
 The organisation of folders is by Observatory. **In each Observatory folder** are spreadsheets (CSV) that contain the metadata provided in PluotF by the ARMS partners
 * An _overview data_ of the sampling events that are recorded in PlutoF, including the metadata of the observatory, ARMS units, and events, and also including the number of material samples, associated data, sequences, and observations that are in PlutoF for each event.
@@ -15,5 +15,11 @@ In addition to these spreadsheets contained in each observatory folder, the same
 * [AllSequences.csv](https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromPlutoF/AllSequences.csv)
 * [AllObservations.csv](https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromPlutoF/AllObservations.csv)
 
-The metadata downloaded from PlutoF undergo a QC, which modifies the various names (observatory, ARMS units) and IDs (event IDs, material sample IDs, sequence IDs, associated data IDs) where they do follow the rules encoded in the ARMS-MBON Handbook. The QC script and its inputs and outputs can also be found here.
 
+**Quality control**
+
+The metadata downloaded from PlutoF undergo a QC, which modifies the various names (observatory, ARMS units) and IDs (event IDs, material sample IDs, sequence IDs, associated data IDs) where they do follow the rules encoded in the ARMS-MBON Handbook. The QC script and its inputs and outputs can also be found here. Any corrections or additions that are found to be necessary in PlutoF are passed on to the ARMS partners, and once those corrections are made the process is repeated, until no more corrections are necessary. 
+
+_**The current status of the QC**_: :repeat:
+
+<!---The current status of the QC_: :ballot_box_with_check: -->
