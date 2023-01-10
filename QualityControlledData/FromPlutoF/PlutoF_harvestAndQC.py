@@ -1109,3 +1109,8 @@ for row in dataframein:
     i+=1
 f.close()   
 
+#delete the old AllAssociatedData.csv file
+#rename the new AllAssociatedData_kme.csv file to AllAssociatedData.csv
+os.remove(os.path.join(output_dir,"AllAssociatedData.csv"))
+os.rename(os.path.join(output_dir,"AllAssociatedData_kme.csv"),os.path.join(output_dir,"AllAssociatedData.csv"))
+
