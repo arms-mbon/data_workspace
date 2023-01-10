@@ -1,28 +1,15 @@
 The data here are taken from the ARMS overview sheet in the ARMS google account: https://docs.google.com/spreadsheets/d/1iFwKO4OAmQrgZtIpyOxjdXvyCEPE_jK45V4elh1lwYs/edit#gid=139664176. Each tab there is downloaded into a separate CSV file. 
 
+*  [GS_ARMS_Material_Samples_and_Sequence_Info.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Material_Samples_and_Sequence_Info.csv) for the metadata on the sampling events and the accession numbers of the sequences in ENA 
+*  [GS_ARMS_Samples_Sequences.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Samples_Sequences.csv) semantic annotation and descriptions of the columns in the samples+sequences spreadsheet 
+*  [GS_ARMS_Observatory_info.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Observatory_info.csv) for the metadata on the observatories themselves
+*  [GS_ARMS_Observatory_Metadata.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Observatory_Metadata.csv) semantic annotation and descriptions of the columns observatories spreadsheet 
+
 **Quality Control**
 
-A QC is done on the google sheet data by comparing them to the data from PlutoF and stored [in FromPlutoF here](https://github.com/arms-mbon/Data/tree/main/QualityControlledData/FromPlutoF). 
-We do the following
-* From the ARMS Observatory info tab: the Station names, ARMS unit names, lat, long, and depth are compared to the same values in the PlutoF download
-  * If station or unit names are different, they are changed to be the value that was agreed in the consortium (both google sheet and PlutoF may need to be changed). 
-  * If lat, long, or depth are not different, we assume that the PlutoF value is to be trusted (unless otherwise informed), and if there is no value then "not provided" is entered instead. A copy of the google sheets is created, with a additional columns containing the corrected lat, long, and depth values. 
-* From the ARMS samples+sequences tab: TO BE WRITTEN!!!!!!!
+A QC is done on the google sheet data by comparing them to the data from PlutoF and stored [in FromPlutoF](https://github.com/arms-mbon/Data/tree/main/QualityControlledData/FromPlutoF), and by checking for internal consistency. Any differences found are communicated to the ARMS partners who are requested to make corrections in their PlutoF and/or google sheet entries. The data are then downloaded again and the QC steps repeated, until no more corrections are necessary. The QC output files can also be found here (_qc_report_xxx).
 
-So, to see the original google sheet data, look at the files here:
-*  [GS_ARMS_Material_Samples_and_Sequence_Info.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Material_Samples_and_Sequence_Info.csv)
-*  [GS_ARMS_Observatory_Metadata.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Observatory_Metadata.csv)
-*  [GS_ARMS_Observatory_info.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Observatory_info.csv)
-*  [GS_ARMS_Samples_Sequences.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Samples_Sequences.csv)
+_**The current status of the QC**_: :repeat:
 
-The corrected google sheet values can be found 
-* [GS_ARMS_Material_Samples_and_Sequence_Info_QC.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Material_Samples_and_Sequence_Info_QC.csv)
-* [GS_ARMS_Observatory_Metadata_QC.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Observatory_Metadata_QC.csv)
-* [GS_ARMS_Observatory_info_QC.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Observatory_info_QC.csv)
-* [GS_ARMS_Samples_Sequences_QC.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Samples_Sequences_QC.csv)
-
-To see the QC report see: 
-* [From PlutoF to Google Sheet](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/qc_report_arms_observatories_plutoF_to_gsheets.csv)
-* [From Google Sheet to PlutoF](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/qc_report_arms_observatories_gsheets_to_plutof.csv)
-* for the samples sheets here also ....!!!!!!
+<!---The current status of the QC_: :ballot_box_with_check: -->
 
