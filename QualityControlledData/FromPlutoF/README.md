@@ -1,4 +1,4 @@
-In here are all the metadata that are downloaded on a regular basis from the ARMS-MBON account on PlutoF. 
+In here are all the metadata that are downloaded on a regular basis from the ARMS-MBON account on [PlutoF](https://app.plutof.ut.ee/study/view/81139). 
 
 The organisation of folders is by Observatory. **In each Observatory folder** are spreadsheets (CSV) that contain the metadata provided in PluotF by the ARMS partners
 * An _overview data_ of the sampling events that are recorded in PlutoF, including the metadata of the observatory, ARMS units, and events, and also including the number of material samples, associated data, sequences, and observations that are in PlutoF for each event.
