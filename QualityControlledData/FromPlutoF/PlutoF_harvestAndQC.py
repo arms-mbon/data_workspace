@@ -8,6 +8,7 @@ import requests
 import shutil
 import uritemplate
 import csv
+import re
 from dotenv import load_dotenv
 import pandas as pd
 #import lib for sending mails
@@ -81,7 +82,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/C81424D26AB0EE8A42CE7C1AD9CDCAAEA98DFD76CD7DC4799AF89D92F7D2E496.json?h=QxCUsXdgfMM-sKQyuwEWkA&e=1673349384'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/C81424D26AB0EE8A42CE7C1AD9CDCAAEA98DFD76CD7DC4799AF89D92F7D2E496.json?h=YoABKnLSsKUwQ8L-58QFtw&e=1673423021'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -96,7 +97,7 @@ json_data_loaded = json.load(json_data)
 #load in csv file PlutoF_QC_v2_StationARMSnames.csv
 with open(os.path.join(parent_dit, 'PlutoF_QC_StationARMSnames.csv'), 'r') as f:
     qc_stations = list(csv.reader(f))
-print(qc_stations)
+#print(qc_stations)
 
 #variables that will make the csv files
 csv_file_QC_output = []
@@ -142,7 +143,7 @@ def correctedvalue(input_value, input_column, input_country=None, input_station=
             found_station = True
             if row[correctedcolumn] != '' and row[correctedcolumn] != ' ' and row[correctedcolumn] != None :
                 correction_found = True
-                print(f'corrected value found for {input_value} in {input_column} column => {row[correctedcolumn]}')
+                #print(f'corrected value found for {input_value} in {input_column} column => {row[correctedcolumn]}')
                 toreturn = row[correctedcolumn]
                 #add to csv file
                 if input_column == "Country":
@@ -152,7 +153,7 @@ def correctedvalue(input_value, input_column, input_country=None, input_station=
                 elif input_column == "ARMS unit":
                     csv_file_QC_output.append({'station': input_station, 'country': input_country, 'unit': toreturn, 'qc_param': input_column, 'qc_flag': 'passed'})
             else:
-                print('no corrected value for ' + input_value)
+                #print('no corrected value for ' + input_value)
                 toreturn = input_value
             
     if found_station == False:
@@ -760,7 +761,7 @@ json_arms_samples_plutoF = material_samples_csv_data
 #begin the plutoF to gsheets QC
 for plutoF_data in json_arms_samples_plutoF:
     found = False
-    print(plutoF_data)
+    #print(plutoF_data)
     for gsheets_data in json_arms_samples_gsheets:
         if plutoF_data["Parent_Event_ID"] == gsheets_data["Event-ID"]:
             found = True
@@ -1036,6 +1037,9 @@ for gsheets_data in json_arms_samples_gsheets:
 
 #go over the ImageData list and remove duplicates
 ImageData = [dict(t) for t in {tuple(d.items()) for d in ImageData}]
+SamplingEventData = [dict(t) for t in {tuple(d.items()) for d in SamplingEventData}]
+ObservatoryData = [dict(t) for t in {tuple(d.items()) for d in ObservatoryData}]
+OmicsData = [dict(t) for t in {tuple(d.items()) for d in OmicsData}]
 
 #write the data to csv files in the output directory 
 with open(os.path.join(output_dir,"combined_SamplingEventData.csv"), 'w', newline='', encoding="utf-8") as f:
@@ -1073,3 +1077,35 @@ for file in os.listdir(output_dir):
         #split the output_dir string on the os sep and pop the last element and rejoin the string by os.sep
         parent_folder = os.sep.join(output_dir.split(os.sep)[:-1])
         shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"Combined",file))
+
+## Addition of K on 10-01-2023 ##
+#open AllAssociatedData.csv and write the data to it
+outfile = os.path.join(output_dir,"AllAssociatedData_kme.csv")
+data= pd.read_csv(os.path.join(output_dir,"AllAssociatedData.csv"),encoding='unicode_escape')
+f = open(outfile,"w")
+# turn the data into an array of rows (each element is a single row)
+dataframein = data.to_numpy()
+i=0
+for row in dataframein:
+    type = str(row[7])
+    value = str(row[6]) 
+    platefc = "NA"
+    platenr = "NA"
+    # find the pattern
+    if type == "Image":
+        sey = re.split(r"_(\d)([T,B])",value)
+        if len(sey)==4:
+            #print("--",sey[2],"--")
+            platenr = str(sey[1]) # column "Plate Number"
+            platefc = "Bottom" # column "Plate location"
+            #print("--",sey[2],"--",platefc)
+            if "T" in str(sey[2]): 
+                platefc = "Top" 
+            #print("--",sey[2],"--",platefc)
+        else:
+            platefc = "not provided"
+            platenr = "not provided"
+    f.write("{},{},{},{},{},{},{},{},{},{},{},{},{}\n".format(row[0],row[1],row[2],row[3],row[4],row[5],row[6],platefc,platenr,row[7],row[8],row[9],row[10]))
+    i+=1
+f.close()   
+
