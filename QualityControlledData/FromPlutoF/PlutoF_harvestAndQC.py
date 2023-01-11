@@ -82,7 +82,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/C81424D26AB0EE8A42CE7C1AD9CDCAAEA98DFD76CD7DC4799AF89D92F7D2E496.json?h=YoABKnLSsKUwQ8L-58QFtw&e=1673423021'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/C81424D26AB0EE8A42CE7C1AD9CDCAAEA98DFD76CD7DC4799AF89D92F7D2E496.json?h=HzTUn8o9j9p_8rBwLQGXvg&e=1673516236'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -550,7 +550,7 @@ smtp_port.quit()
 url = 'https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/export?format=csv&id=1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE&gid=1607535453'
 r = requests.get(url, allow_redirects=True)
 print(r.status_code)
-with open(os.path.join(output_dir, "GS_ARMS_Observatory_info.csv"), "wb") as f:
+with open(os.path.join(output_dir, "GS_ARMS_Observatory.csv"), "wb") as f:
         f.write(r.content)
 
 #same for the arms_samples_sequences
@@ -568,7 +568,7 @@ with open(os.path.join(output_dir, "GS_ARMS_Observatory_Metadata.csv"), "wb") as
 #same for the arms material_samples and sequence info metadata
 url = 'https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/export?format=csv&id=1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE&gid=1582985605'
 r= requests.get(url, allow_redirects=True)
-with open(os.path.join(output_dir, "GS_ARMS_Material_Samples_and_Sequence_Info.csv"), "wb") as f:
+with open(os.path.join(output_dir, "GS_ARMS_Material_Samples_Sequence_Metadata.csv"), "wb") as f:
     f.write(r.content)
         
 #make a QC report for the ARMS Observatory info comparing data from AllObservations.csv and ARMS_Observatory_info.csv
@@ -589,7 +589,7 @@ def csv_to_json(csv_file_path):
             data_dict.append(rows)
     return data_dict
             
-json_arms_observatories_gsheets = csv_to_json(os.path.join(output_dir, "GS_ARMS_Observatory_info.csv")) 
+json_arms_observatories_gsheets = csv_to_json(os.path.join(output_dir, "GS_ARMS_Observatory.csv")) 
 json_arms_observatories_plutoF = main_csv_data
 #a mapping will be placed here in the future where all the culumbs are described that should be compared
 
@@ -757,6 +757,7 @@ qc_report_arms_samples_gsheets_to_plutoF = []
 
 json_arms_samples_gsheets = csv_to_json(os.path.join(output_dir, "GS_ARMS_Samples_Sequences.csv")) 
 json_arms_samples_plutoF = material_samples_csv_data
+print(material_samples_csv_data)
 
 #begin the plutoF to gsheets QC
 for plutoF_data in json_arms_samples_plutoF:
@@ -864,7 +865,7 @@ with open(os.path.join(output_dir, 'qc_report_arms_samples_gsheets_to_plutoF.csv
     writer.writeheader()
     for row in qc_report_arms_samples_gsheets_to_plutoF:
         writer.writerow(row)
-        
+            
 #cut all the files that start with GS_ARMS_ and end with .csv and put them in the parent folder of the output folder /FromGS
 for file in os.listdir(output_dir):
     if file.startswith("GS_ARMS_") and file.endswith(".csv"):
@@ -933,11 +934,29 @@ for gsheets_data in json_arms_samples_gsheets:
         #get the country from the observatory data by matching the observatory id
         if obs_gsheets_data["Observatory-ID (corrected)"] == gsheets_data["Observatory-ID"]:
             country= obs_gsheets_data["Country ISO3letter code"]
-            break
         
     #check if eventid is in the plutoF data
-    for plutoF_data in json_arms_samples_plutoF:
-        if gsheets_data["Event-ID"] == plutof_data["Parent_Event_ID"]:          
+    for plutoF_data in material_samples_csv_data:
+        #print(plutoF_data)
+        #print(plutoF_data["Parent_Event_ID"])
+        if gsheets_data["Event-ID"] == plutoF_data["Parent_Event_ID"]:       
+            print("event id in plutoF data :"+ gsheets_data["Event-ID"])
+            SamplingEventData.append(
+                {"Country":country,
+                "ObservatoryID":gsheets_data["Observatory-ID"],
+                "UnitID":gsheets_data["ARMS-ID"],
+                "DateDeployed":gsheets_data["Deployment Date"],
+                "DateCollected":gsheets_data["Collection Date"],
+                "EventID":gsheets_data["Event-ID"],
+                "MaterialSampleID":gsheets_data["MaterialSample-ID"],
+                "Fraction":gsheets_data["Fraction"],
+                "Preservative":gsheets_data["Preservative"],
+                "Filter":gsheets_data["Filter (micrometer)"],
+                "CrateCover":gsheets_data["Crate cover used during retrieval"],
+                "Number of associated data files":str(count)
+                }
+            )
+        else:
             SamplingEventData.append(
                 {"Country":country,
                 "ObservatoryID":gsheets_data["Observatory-ID"],
@@ -954,7 +973,7 @@ for gsheets_data in json_arms_samples_gsheets:
                 }
             )
 
-for plutoF_data in json_arms_samples_plutoF:
+for plutoF_data in material_samples_csv_data:
     inGoogleSheets = False
     for obs_plutoF_data in json_arms_observatories_plutoF:
         #get the country from the observatory data by matching the observatory id
@@ -964,11 +983,10 @@ for plutoF_data in json_arms_samples_plutoF:
             unitid = obs_plutoF_data["ARMS_unit"]
             date_deployed = obs_plutoF_data["Date_start"]
             collection_date = obs_plutoF_data["Date_end"]
-            break
     for gsheets_data in json_arms_samples_gsheets:
         if plutoF_data["Parent_Event_ID"] == gsheets_data["Event-ID"]:
             inGoogleSheets = True
-            break
+            print(gsheets_data["Event-ID"] + " is in google sheets")
     if inGoogleSheets == False:
         SamplingEventData.append(
             {"Country":country,
