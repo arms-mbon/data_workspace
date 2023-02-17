@@ -91,6 +91,7 @@ AJJCD89,BEL,OK,,,
 BirkenfelsA,BEL,OK,,,
 BirkenfelsB,BEL,OK,,,
 CoastbustersA,BEL,Observatory and ARMS ID found but lat and long are different,Lat_Long,51.11529044 2.57995513,51.11485 2.57858333
+CoastbustersB,BEL,ARMS ID not found in PlutoF,ARMS_ID,,CoastbustersB
 AJJBC89,BEL,OK,,,
 CPowerA,BEL,OK,,,
 CPowerB,BEL,OK,,,
