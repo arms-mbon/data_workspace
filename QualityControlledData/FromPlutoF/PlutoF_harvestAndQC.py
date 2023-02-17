@@ -33,7 +33,7 @@ smtp_port.ehlo()
 # Informing the client to establish a secure connection, either to a TLS or SSL
 smtp_port.starttls()
 # Logging into your account
-smtp_port.login(sender_email , password)
+#smtp_port.login(sender_email , password)
 # Creating the contents of the email
 subject = "ARMS QC automated report"
 address_list = [receiver_email, "cedric.decruw@vliz.be"]
@@ -82,7 +82,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/C81424D26AB0EE8A42CE7C1AD9CDCAAEA98DFD76CD7DC4799AF89D92F7D2E496.json?h=HzTUn8o9j9p_8rBwLQGXvg&e=1673516236'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/C81424D26AB0EE8A42CE7C1AD9CDCAAEA98DFD76CD7DC4799AF89D92F7D2E496.json?h=eSzNNvYbAownh9v_2nsDrw&e=1676720281'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -930,10 +930,10 @@ for gsheets_data in json_arms_samples_gsheets:
     for item in associated_csv_data:
         if item["Event_id"] == gsheets_data["Event-ID"]:
             count += 1
-    for obs_gsheets_data in json_arms_observatories_gsheets:
-        #get the country from the observatory data by matching the observatory id
-        if obs_gsheets_data["Observatory-ID (corrected)"] == gsheets_data["Observatory-ID"]:
-            country= obs_gsheets_data["Country ISO3letter code"]
+    
+    for observatories in ObservatoryData:
+        if gsheets_data["Observatory-ID"] == observatories["ObservatoryID"]:
+            country = observatories["Country"]        
         
     #check if eventid is in the plutoF data
     for plutoF_data in material_samples_csv_data:
@@ -978,7 +978,10 @@ for plutoF_data in material_samples_csv_data:
     for obs_plutoF_data in json_arms_observatories_plutoF:
         #get the country from the observatory data by matching the observatory id
         if obs_plutoF_data["Event_ID"] == plutoF_data["Parent_Event_ID"]:
-            country= obs_plutoF_data["Country"]
+            #get country from the observatory data
+            for observatory in ObservatoryData:
+                if obs_plutoF_data["Station"] == observatory["ObservatoryID"]:
+                    country = observatory["Country"]
             observatoryid = obs_plutoF_data["Station"]
             unitid = obs_plutoF_data["ARMS_unit"]
             date_deployed = obs_plutoF_data["Date_start"]

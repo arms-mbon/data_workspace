@@ -197,6 +197,7 @@ BelgiumCoast,BirkenfelsA,"latitude, longitude, depth",pass,,
 BelgiumCoast,BirkenfelsB,"latitude, longitude, depth",pass,,
 BelgiumCoast,CoastbustersA,latitude,value is different but not significantly,51.11485,51.11529044
 BelgiumCoast,CoastbustersA,longitude,value is different but not significantly,2.57858333,2.57995513
+BelgiumCoast,CoastbustersB,arms_id,fail,CoastbustersB,Ven2
 BelgiumCoast,AJJBC89,"latitude, longitude, depth",pass,,
 BelgiumCoast,CPowerA,"latitude, longitude, depth",pass,,
 BelgiumCoast,CPowerB,"latitude, longitude, depth",pass,,
