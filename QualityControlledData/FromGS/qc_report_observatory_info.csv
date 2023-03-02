@@ -2,7 +2,7 @@ ARMS_unit,Station,QC_comment,QC_param,QC_value_plutoF,QC_value_gsheets
 HangarCove1,GBR,OK,,,
 HangarCove2,GBR,Observatory and ARMS ID found but lat and long are different,Lat_Long,-67.56416666 -68.12496670,-67.5641667 -68.1249667
 HangarCove3,GBR,Observatory and ARMS ID found but lat and long are different,Lat_Long,-67.56416666 -68.12496670,-67.5641667 -68.1249667
-SouthCove1,GBR,Observatory and ARMS ID found but lat and long are different,Lat_Long,-67.57500000 -68.13466666,-67.575 -68.1346667
+SouthCove1,GBR,Observatory and ARMS ID found but lat and long are different,Lat_Long,-67.57500000 -68.13466667,-67.575 -68.1346667
 Cheshire1,GBR,Observatory and ARMS ID found but lat and long are different,Lat_Long,-67.57383333 -68.12523333,-67.5738333 -68.1252333
 MBA1,GBR,OK,,,
 MBA2,GBR,OK,,,
@@ -75,7 +75,7 @@ GStraB,NOR,OK,,,
 Gurr1,IRL,OK,,,
 Gurr2,IRL,Observatory and ARMS ID found but lat and long are different,Lat_Long,53.31567500 -9.66854100,53.315693 -9.670278
 Gurr3,IRL,Observatory and ARMS ID found but lat and long are different,Lat_Long,53.31544300 -9.67156400,53.315693 -9.670278
-Gurr4,IRL,OK,,,
+Gurr4,IRL,ARMS ID not found in PlutoF,ARMS_ID,,Gurr4
 SHNP4,DEU,ARMS ID not found in PlutoF,ARMS_ID,,SHNP4
 SHNP3,DEU,ARMS ID not found in PlutoF,ARMS_ID,,SHNP3
 SHNP2,DEU,ARMS ID not found in PlutoF,ARMS_ID,,SHNP2
@@ -91,7 +91,7 @@ AJJCD89,BEL,OK,,,
 BirkenfelsA,BEL,OK,,,
 BirkenfelsB,BEL,OK,,,
 CoastbustersA,BEL,Observatory and ARMS ID found but lat and long are different,Lat_Long,51.11529044 2.57995513,51.11485 2.57858333
-CoastbustersB,BEL,ARMS ID not found in PlutoF,ARMS_ID,,CoastbustersB
+CoastbustersB,BEL,OK,,,
 AJJBC89,BEL,OK,,,
 CPowerA,BEL,OK,,,
 CPowerB,BEL,OK,,,
