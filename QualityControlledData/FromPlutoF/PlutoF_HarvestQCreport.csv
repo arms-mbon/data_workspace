@@ -21,11 +21,11 @@ Svalbard,Norway,S1,ARMS unit,passed
 Svalbard,Norway,S1A,ARMS unit,passed
 Svalbard,Norway,S1B,ARMS unit,passed
 Svalbard,Norway,S1C,ARMS unit,passed
-Rothera,Antarctica,SouthCove1,ARMS unit,passed
 Rothera,Antarctica,HangarCove2,ARMS unit,passed
 Rothera,Antarctica,HangarCove1,ARMS unit,passed
-Rothera,Antarctica,Cheshire1,ARMS unit,passed
 Rothera,Antarctica,HangarCove3,ARMS unit,passed
+Rothera,Antarctica,SouthCove1,ARMS unit,passed
+Rothera,Antarctica,Cheshire1,ARMS unit,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
@@ -41,6 +41,7 @@ BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,CoastbustersB,ARMS unit,missing
 Vigo,Spain,TorallaA,ARMS unit,passed
 Vigo,Spain,TorallaB,ARMS unit,passed
 Vigo,Spain,TorallaC,ARMS unit,passed

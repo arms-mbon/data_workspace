@@ -82,7 +82,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/C81424D26AB0EE8A42CE7C1AD9CDCAAEA98DFD76CD7DC4799AF89D92F7D2E496.json?h=eSzNNvYbAownh9v_2nsDrw&e=1676720281'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/F51F2AAFB6E4405D5EB45055EBD77AD3850499060757FFF20BD2093BC6F0A792.json?h=XGFxTOHMZkBX79hYwDhF3g&e=1677832339'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -232,6 +232,22 @@ for sampling_area in json_data_loaded['sampling_areas']:
             date_end = converteddate(sampling_event['timespan_end'])
             #event_id
             event_id = sampling_event['id']
+            
+            #get the habitat data 
+            
+            habitat = sampling_event['habitat']
+            
+            #try and get the desciption and iucn_habitat_type
+            try:
+                description = habitat['description']
+            except:
+                description = 'NA'
+            
+            try:
+                iucn_habitat_type = habitat['iucn_habitat_type']
+            except:
+                iucn_habitat_type = "NA"
+            
             #event_description
             try:
                 date_end_desc = date_end.replace('-', '')
@@ -420,6 +436,8 @@ for sampling_area in json_data_loaded['sampling_areas']:
                  'Date_start': date_start,
                  'Date_end': date_end,
                  'Event_ID': event_description,
+                 'Event_Description': description,
+                 "IUCN_Habitat_type": iucn_habitat_type,
                  'Material Samples': material_samples,
                  'Observations': observations,
                  'Sequences': sequences,
@@ -462,10 +480,11 @@ for sampling_area in json_data_loaded['sampling_areas']:
             writer.writerow(data)
     
     with open(os.path.join(output_dir, ew_sampling_area_name,"overview_data_"+station+'.csv'), 'w', newline='') as csvfile:
-        fieldnames = ['Station', 'Country', 'ARMS_unit','Latitude','Longitude','Depth', 'Date_start', 'Date_end', 'Event_ID', 'Material Samples', 'Observations', 'Sequences', 'Associated Data', 'Created', 'Updated']
+        fieldnames = ['Station', 'Country', 'ARMS_unit','Latitude','Longitude','Depth', 'Date_start', 'Date_end', 'Event_ID', 'Event_Description','IUCN_Habitat_type','Material Samples', 'Observations', 'Sequences', 'Associated Data', 'Created', 'Updated']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for data in main_data_csv:
+            data = {k: str(v).encode('cp850','replace').decode('cp850') for k, v in data.items()}
             writer.writerow(data)
 
 #write the main.csv
@@ -884,6 +903,7 @@ for file in os.listdir(output_dir):
         
 #combine gsheets data with plutoF data in one file
 SamplingEventData = []
+NonMatchingSamplingEventData = []
 ObservatoryData = []
 OmicsData = []
 ImageData = []
@@ -1000,10 +1020,34 @@ for plutoF_data in material_samples_csv_data:
             "EventID":plutoF_data["Parent_Event_ID"],
             "MaterialSampleID":plutoF_data["Material_Sample_ID"],
             "Fraction":gsheets_data["Fraction"],
-            "Preservative":"",
-            "Filter":"",
-            "CrateCover":"",
+            "Preservative":"Not provided",
+            "Filter":"Not provided",
+            "CrateCover":"Not provided",
             "Number of associated data files":plutoF_data["Associated data"]
+            }
+        )
+        NonMatchingSamplingEventData.append(
+            {
+                "EventID":plutoF_data["Parent_Event_ID"]
+            }
+        )    
+        
+for row in main_csv_data:
+    #get the Event_ID
+    event_id_to_compare = row["Event_ID"]
+    isfound = False
+    for sampling_event in SamplingEventData:
+        sampling_event_id = sampling_event["EventID"]
+        #print("event id to compare: " + event_id_to_compare)
+        if event_id_to_compare == sampling_event_id:
+            isfound = True
+            print("found")
+            break
+    if isfound == False:
+        print("not found")
+        NonMatchingSamplingEventData.append(
+            {
+                "EventID":event_id_to_compare
             }
         )
 
@@ -1091,6 +1135,12 @@ with open(os.path.join(output_dir,"combined_ImageData.csv"), 'w', newline='', en
         #row = {k: v.encode('cp850','replace').decode('cp850') for k, v in row.items()}
         w.writerow(row)
 
+with open(os.path.join(output_dir,"in_plutoF_not_GS.csv"), 'w', newline='', encoding="utf-8") as f:
+    w = csv.DictWriter(f, NonMatchingSamplingEventData[0].keys())
+    w.writeheader()
+    for row in NonMatchingSamplingEventData:
+        #row = {k: v.encode('cp850','replace').decode('cp850') for k, v in row.items()}
+        w.writerow(row)
 #cut the combined csv files to the ./Combined directory
 for file in os.listdir(output_dir):
     if file.startswith("combined_"):

@@ -1,4 +1,4 @@
-ColumnTitle,Description,Datatype,Property,ObservablePropertyUrl,Unit,UnitUrl,Cell2URL
+ColumnTitle+,Description,Datatype,Property,ObservablePropertyUrl,Unit,UnitUrl,Cell2URL
 Sample Region (country),Sampling region name,xsd:string,schema:description,,,,
 Country ISO3letter code,Country,xsd:string,schema:country,,,,http://publications.europa.eu/resource/authority/country/{}
 Observatory-ID (corrected),Observatory ID,xsd:string,schema:identifier,,,,
