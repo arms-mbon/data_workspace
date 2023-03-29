@@ -17,13 +17,10 @@ TZS,Finland,NA,Station,passed
 TZS,Finland,NA,Station,passed
 TZS,Finland,NA,Station,passed
 Svalbard,Norway,S2,ARMS unit,passed
-Svalbard,Norway,S1,ARMS unit,passed
 Svalbard,Norway,S1A,ARMS unit,passed
 Svalbard,Norway,S1B,ARMS unit,passed
 Svalbard,Norway,S1C,ARMS unit,passed
-Rothera,Antarctica,HangarCove2,ARMS unit,passed
-Rothera,Antarctica,HangarCove1,ARMS unit,passed
-Rothera,Antarctica,HangarCove3,ARMS unit,passed
+Svalbard,Norway,S1,ARMS unit,passed
 Rothera,Antarctica,SouthCove1,ARMS unit,passed
 Rothera,Antarctica,Cheshire1,ARMS unit,passed
 BelgiumCoast,Belgium,NA,Station,passed
@@ -42,9 +39,10 @@ BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,CoastbustersB,ARMS unit,missing
-Vigo,Spain,TorallaA,ARMS unit,passed
 Vigo,Spain,TorallaB,ARMS unit,passed
 Vigo,Spain,TorallaC,ARMS unit,passed
+Vigo,Spain,Toralla_D,ARMS unit,missing
+Vigo,Spain,TorallaA,ARMS unit,passed
 Eilat,Israel,NR2,ARMS unit,passed
 Eilat,Israel,NR1,ARMS unit,passed
 Eilat,Israel,Katza2,ARMS unit,passed
@@ -95,10 +93,6 @@ SWC,Sweden,Helsingborg2,ARMS unit,passed
 SWC,Sweden,Marstrand1,ARMS unit,passed
 SWC,Sweden,Preemraff2,ARMS unit,passed
 SWC,Sweden,Preemraff1,ARMS unit,passed
-SchleswigHolstein,Germany,NA,Station,passed
-SchleswigHolstein,Germany,NA,Station,passed
-SchleswigHolstein,Germany,NA,Station,passed
-SchleswigHolstein,Germany,NA,Station,passed
 AdriaticEastCoast,Italy,NA,Station,passed
 AdriaticEastCoast,Italy,NA,Station,passed
 AdriaticEastCoast,Italy,NA,Station,passed
