@@ -9,7 +9,7 @@ import shutil
 import uritemplate
 import csv
 import re
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import pandas as pd
 #import lib for sending mails
 from smtplib import SMTP
@@ -20,23 +20,23 @@ from email import encoders
 from email.mime.base import MIMEBase
 
 # variables here
-load_dotenv()
-print(os.getenv('SENDER_EMAIL'))
-print(os.getenv('PASSWORD'))
-sender_email = str(os.getenv('SENDER_EMAIL'))
-password = str(os.getenv('PASSWORD'))
-receiver_email = str(os.getenv('RECIEVER_EMAIL'))
+#load_dotenv()
+#print(os.getenv('SENDER_EMAIL'))
+#print(os.getenv('PASSWORD'))
+#sender_email = str(os.getenv('SENDER_EMAIL'))
+#password = str(os.getenv('PASSWORD'))
+#receiver_email = str(os.getenv('RECIEVER_EMAIL'))
 # Creating the respective object along with the gmail login and port number
 smtp_port = SMTP("smtp.gmail.com", 587)
 # Establishing a connection to the SMTP server with Transport Layer Security (TLS) mode
-smtp_port.ehlo()
+#smtp_port.ehlo()
 # Informing the client to establish a secure connection, either to a TLS or SSL
-smtp_port.starttls()
+#smtp_port.starttls()
 # Logging into your account
 #smtp_port.login(sender_email , password)
 # Creating the contents of the email
 subject = "ARMS QC automated report"
-address_list = [receiver_email, "cedric.decruw@vliz.be"]
+#address_list = [receiver_email, "cedric.decruw@vliz.be"]
 
 html_begin = """\
 <html>
@@ -73,8 +73,8 @@ html_end = """\
 pre_formatted_message = [html_begin]
 message = MIMEMultipart("alternative")
 message["Subject"] = subject
-message["From"] = sender_email
-message["To"] = receiver_email
+#message["From"] = sender_email
+#message["To"] = receiver_email
 
 #import json file names ./ARMS_data.json
 #get parent dir of current file 
@@ -82,7 +82,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/F51F2AAFB6E4405D5EB45055EBD77AD3850499060757FFF20BD2093BC6F0A792.json?h=XGFxTOHMZkBX79hYwDhF3g&e=1677832339'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/5653762731985736347A39F3C37A593634BBA850A11BF35D5BFE1229CC6F10B3.json?h=GVqPsmf4XL9HGDRkWvxatw&e=1680170392'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
