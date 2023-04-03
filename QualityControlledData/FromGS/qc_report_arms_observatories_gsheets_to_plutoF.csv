@@ -166,14 +166,15 @@ TZS,Spikarna,"latitude, longitude, depth",pass,,
 TZS,Angbat,"latitude, longitude, depth",pass,,
 TZS,Angbat,"latitude, longitude, depth",pass,,
 TZS,Kummelkobben,"latitude, longitude, depth",pass,,
-Vigo,TorallaA,latitude,value is different but not significantly,42.233333,42.22840000
-Vigo,TorallaA,longitude,value is different but not significantly,-8.783333,-8.77870000
-Vigo,TorallaA,latitude,value is different but not significantly,42.233333,42.22840000
-Vigo,TorallaA,longitude,value is different but not significantly,-8.783333,-8.77870000
-Vigo,TorallaA,latitude,value is different but not significantly,42.233333,42.22840000
-Vigo,TorallaA,longitude,value is different but not significantly,-8.783333,-8.77870000
-Vigo,TorallaB,"latitude, longitude, depth",pass,,
-Vigo,TorallaB,"latitude, longitude, depth",pass,,
-Vigo,TorallaC,"latitude, longitude, depth",pass,,
-Vigo,TorallaC,"latitude, longitude, depth",pass,,
+Vigo,TorallaA,"latitude, longitude, depth",pass,,
+Vigo,TorallaA,"latitude, longitude, depth",pass,,
+Vigo,TorallaA,"latitude, longitude, depth",pass,,
+Vigo,TorallaB,latitude,value is different but not significantly,42.2284,42.23333300
+Vigo,TorallaB,longitude,value is different but not significantly,-8.7787,-8.78333300
+Vigo,TorallaB,latitude,value is different but not significantly,42.2284,42.23333300
+Vigo,TorallaB,longitude,value is different but not significantly,-8.7787,-8.78333300
+Vigo,TorallaC,latitude,value is different but not significantly,42.2284,42.23333300
+Vigo,TorallaC,longitude,value is different but not significantly,-8.7787,-8.78333300
+Vigo,TorallaC,latitude,value is different but not significantly,42.2284,42.23333300
+Vigo,TorallaC,longitude,value is different but not significantly,-8.7787,-8.78333300
 Vigo,TorallaD,arms_id,fail,TorallaD,Ven2
