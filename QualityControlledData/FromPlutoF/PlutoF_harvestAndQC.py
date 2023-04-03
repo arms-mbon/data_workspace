@@ -20,61 +20,6 @@ from email import encoders
 from email.mime.base import MIMEBase
 
 # variables here
-#load_dotenv()
-#print(os.getenv('SENDER_EMAIL'))
-#print(os.getenv('PASSWORD'))
-#sender_email = str(os.getenv('SENDER_EMAIL'))
-#password = str(os.getenv('PASSWORD'))
-#receiver_email = str(os.getenv('RECIEVER_EMAIL'))
-# Creating the respective object along with the gmail login and port number
-smtp_port = SMTP("smtp.gmail.com", 587)
-# Establishing a connection to the SMTP server with Transport Layer Security (TLS) mode
-#smtp_port.ehlo()
-# Informing the client to establish a secure connection, either to a TLS or SSL
-#smtp_port.starttls()
-# Logging into your account
-#smtp_port.login(sender_email , password)
-# Creating the contents of the email
-subject = "ARMS QC automated report"
-#address_list = [receiver_email, "cedric.decruw@vliz.be"]
-
-html_begin = """\
-<html>
-  <body>
-    <p>Hi,<br>
-        A summary of the QC script is below:<br>
-    </p>
-    <ul><br>
-"""
-html_end = """\
-    <br>
-    </ul>
-    <br>
-    <p> the qc report for for the arms observatories are as follows:</p><br>
-    <ul>
-    <li>
-    <a href="https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromGS/qc_report_arms_observatories_gsheets_to_plutoF.csv">qc_report_arms_observatories_gsheets_to_plutoF.csv</a>
-    </li>
-    <li>
-    <a href="https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromGS/qc_report_arms_observatories_plutoF_to_gsheets.csv">qc_report_arms_observatories_plutoF_to_gsheets.csv</a>
-    </li>
-    <li>
-    <a href="https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromGS/qc_report_arms_samples_plutoF_to_gsheets.csv">qc_report_arms_samples_plutoF_to_gsheets.csv</a>
-    </li>
-    <li>
-    <a href="https://github.com/arms-mbon/Data/blob/main/QualityControlledData/FromGS/qc_report_arms_samples_gsheets_to_plutoF.csv">qc_report_arms_samples_gsheets_to_plutoF.csv</a>
-    </li>
-    </ul>
-    <br>
-    <p>This mail was send by python QC-script<br></p>
-  </body>
-</html>
-"""
-pre_formatted_message = [html_begin]
-message = MIMEMultipart("alternative")
-message["Subject"] = subject
-#message["From"] = sender_email
-#message["To"] = receiver_email
 
 #import json file names ./ARMS_data.json
 #get parent dir of current file 
@@ -82,7 +27,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/5653762731985736347A39F3C37A593634BBA850A11BF35D5BFE1229CC6F10B3.json?h=D1Sxs32M_BzVNpt3Qs4L6A&e=1680591903'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/5653762731985736347A39F3C37A593634BBA850A11BF35D5BFE1229CC6F10B3.json?h=mV1WwSkZ8IP30cNfpuJAKQ&e=1680593093'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -164,8 +109,6 @@ def correctedvalue(input_value, input_column, input_country=None, input_station=
             csv_file_QC_output.append({'station': 'NA', 'country': input_value, 'unit': 'NA', 'qc_param': input_column, 'qc_flag': 'missing'})
         elif input_column == 'ARMS unit':
             csv_file_QC_output.append({'station': input_station, 'country': input_country, 'unit': input_value, 'qc_param': input_column, 'qc_flag': 'missing'})
-        part_attachted = '<li> - '+input_value + ' not found in column '+ input_column +' in the csv file </li>'
-        pre_formatted_message.append(part_attachted)
     return toreturn
 
 
@@ -250,12 +193,20 @@ for sampling_area in json_data_loaded['sampling_areas']:
             
             #event_description
             try:
-                date_end_desc = date_end.replace('-', '')
-                date_start_desc = date_start.replace('-', '')
-                if len(date_end.replace('-','')) != 8:
+                try:
+                    date_end_desc = date_end.replace('-', '')
+                    if len(date_end.replace('-','')) != 8:
+                        date_end_desc = "00000000"
+                except:
                     date_end_desc = "00000000"
-                if len(date_start.replace('-','')) != 8:
+                    
+                try:
+                    date_start_desc = date_start.replace('-', '')
+                    if len(date_start.replace('-','')) != 8:
+                        date_start_desc = "00000000"
+                except:
                     date_start_desc = "00000000"
+                    
                 event_description = "ARMS_" + station + '_' + ARMS_unit + '_' + date_start_desc + "_" + date_end_desc
             except:
                 event_description = "ARMS_" + station + '_' + ARMS_unit + '_' + "00000000" + "_" + "00000000"
@@ -538,33 +489,6 @@ with open(os.path.join(output_dir, filename), 'w', newline='') as csvfile:
     for data in csv_file_QC_output:
         writer.writerow(data)
 
-# Open PDF file in binary mode
-with open(os.path.join(output_dir, filename), "rb") as attachment:
-    # Add file as application/octet-stream
-    # Email client can usually download this automatically as attachment
-    part = MIMEBase("application", "octet-stream")
-    part.set_payload(attachment.read())
-
-# Encode file in ASCII characters to send by email    
-encoders.encode_base64(part)
-
-# Add header as key/value pair to attachment part
-part.add_header(
-    "Content-Disposition",
-    f"attachment; filename= {filename}",
-)
-
-# Add attachment to message and convert message to string
-message.attach(part)
-#Send email part#
-pre_formatted_message.append(html_end)
-formatted_message = ''.join(pre_formatted_message)
-message.attach(MIMEText(formatted_message, "html"))
-print(message)
-#smtp_port.sendmail(sender_email, address_list, message.as_string()) #put on end script
-print("Email Sent")
-smtp_port.quit()
-
 #perform a download of a google sheet and import each sheet as a json file : url = https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/edit#gid=1607535453
 url = 'https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/export?format=csv&id=1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE&gid=1607535453'
 r = requests.get(url, allow_redirects=True)
@@ -575,7 +499,7 @@ with open(os.path.join(output_dir, "GS_ARMS_Observatory.csv"), "wb") as f:
 #same for the arms_samples_sequences
 url = 'https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/export?format=csv&id=1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE&gid=855411053'
 r = requests.get(url, allow_redirects=True)
-with open(os.path.join(output_dir, "GS_ARMS_Samples_Sequences.csv"), "wb") as f:
+with open(os.path.join(output_dir, "GS_ARMS_MaterialSamples_Sequences.csv"), "wb") as f:
         f.write(r.content)
 
 #same for the arms observatory metadata
@@ -587,7 +511,7 @@ with open(os.path.join(output_dir, "GS_ARMS_Observatory_Metadata.csv"), "wb") as
 #same for the arms material_samples and sequence info metadata
 url = 'https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/export?format=csv&id=1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE&gid=1582985605'
 r= requests.get(url, allow_redirects=True)
-with open(os.path.join(output_dir, "GS_ARMS_Material_Samples_Sequence_Metadata.csv"), "wb") as f:
+with open(os.path.join(output_dir, "GS_ARMS_MaterialSamples_Sequence_Metadata.csv"), "wb") as f:
     f.write(r.content)
         
 #make a QC report for the ARMS Observatory info comparing data from AllObservations.csv and ARMS_Observatory_info.csv
@@ -774,7 +698,7 @@ with open(os.path.join(output_dir, "qc_report_observatory_info.csv"), "w", newli
 qc_report_arms_samples_plutoF_to_gsheets = []
 qc_report_arms_samples_gsheets_to_plutoF = []
 
-json_arms_samples_gsheets = csv_to_json(os.path.join(output_dir, "GS_ARMS_Samples_Sequences.csv")) 
+json_arms_samples_gsheets = csv_to_json(os.path.join(output_dir, "GS_ARMS_MaterialSamples_Sequences.csv")) 
 json_arms_samples_plutoF = material_samples_csv_data
 print(material_samples_csv_data)
 
@@ -928,7 +852,10 @@ for gsheets_data in json_arms_observatories_gsheets:
          "Depth":gsheets_data["Depth (m)"],
          "Field Replicates":gsheets_data["Field replicates"],
          "Monitoring area":gsheets_data["Monitoring area"],
-         "Habitat keywords":gsheets_data["Habitat keywords (env_local)"]
+         "Habitat keywords":gsheets_data["Habitat keywords (env_local)"],
+         "IUCN habitat type":gsheets_data["IUCN habitat type"],
+         "Description":gsheets_data["Description"],
+         "Notes":gsheets_data["Notes"]
          }
     )
 
@@ -1088,6 +1015,7 @@ for gsheets_data in json_arms_samples_gsheets:
 #Filetype item["File_Type"]
 #Download URL item["File_Download_URL"]
 for gsheets_data in json_arms_samples_gsheets:
+    print(gsheets_data)
     for item in associated_csv_data:
         if item["Event_id"] == gsheets_data["Event-ID"]:
             ImageData.append(
