@@ -59,16 +59,17 @@ BelgiumCoast,AJJCD78,"latitude, longitude, depth",pass,,
 BelgiumCoast,AJJCD78,"latitude, longitude, depth",pass,,
 BelgiumCoast,BirkenfelsA,"latitude, longitude, depth",pass,,
 BelgiumCoast,CoastbustersB,"latitude, longitude, depth",pass,,
-Vigo,TorallaB,"latitude, longitude, depth",pass,,
-Vigo,TorallaB,"latitude, longitude, depth",pass,,
-Vigo,TorallaC,"latitude, longitude, depth",pass,,
-Vigo,TorallaC,"latitude, longitude, depth",pass,,
-Vigo,TorallaA,latitude,value is different but not significantly,42.22840000,42.233333
-Vigo,TorallaA,longitude,value is different but not significantly,-8.77870000,-8.783333
-Vigo,TorallaA,latitude,value is different but not significantly,42.22840000,42.233333
-Vigo,TorallaA,longitude,value is different but not significantly,-8.77870000,-8.783333
-Vigo,TorallaA,latitude,value is different but not significantly,42.22840000,42.233333
-Vigo,TorallaA,longitude,value is different but not significantly,-8.77870000,-8.783333
+Vigo,TorallaB,latitude,value is different but not significantly,42.23333300,42.2284
+Vigo,TorallaB,longitude,value is different but not significantly,-8.78333300,-8.7787
+Vigo,TorallaB,latitude,value is different but not significantly,42.23333300,42.2284
+Vigo,TorallaB,longitude,value is different but not significantly,-8.78333300,-8.7787
+Vigo,TorallaC,latitude,value is different but not significantly,42.23333300,42.2284
+Vigo,TorallaC,longitude,value is different but not significantly,-8.78333300,-8.7787
+Vigo,TorallaC,latitude,value is different but not significantly,42.23333300,42.2284
+Vigo,TorallaC,longitude,value is different but not significantly,-8.78333300,-8.7787
+Vigo,TorallaA,"latitude, longitude, depth",pass,,
+Vigo,TorallaA,"latitude, longitude, depth",pass,,
+Vigo,TorallaA,"latitude, longitude, depth",pass,,
 Eilat,NR2,"latitude, longitude, depth",pass,,
 Eilat,NR2,"latitude, longitude, depth",pass,,
 Eilat,NR1,"latitude, longitude, depth",pass,,
