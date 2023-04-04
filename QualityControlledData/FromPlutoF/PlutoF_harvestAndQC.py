@@ -199,6 +199,11 @@ for sampling_area in json_data_loaded['sampling_areas']:
         
         if depth_min == "no measurement" and depth_max != "no measurement":
             depth_min = depth_max
+            
+        #RavHarbour RavH3 caviat to fix
+        if depth_min == "no measurement" and depth_max == "no measurement":
+            depth_max = "1.5"
+            depth_min = "1.5"
         
         for sampling_event in child_area['sampling_events']:
             #date_start
