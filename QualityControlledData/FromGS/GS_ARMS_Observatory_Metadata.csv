@@ -1,5 +1,5 @@
-ARMS-ID (corrected),ARMS unit ID,xsd:string,schema:identifier,,,,
 ColumnTitle+,Description,Datatype,Property,ObservablePropertyUrl,Unit,UnitUrl,Cell2URL
+ARMS-ID (corrected),ARMS unit ID,xsd:string,schema:identifier,,,,
 Country ISO3letter code,Country,xsd:string,schema:country,,,,http://publications.europa.eu/resource/authority/country/{}
 Depth (m),Depth of the ARMS unit,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/AHGT/,metre,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,
 Field replicates,Whether this is a field replicate: y(es)/n(o) ; master name of the replicate set,xsd:string,schema:description,,,,

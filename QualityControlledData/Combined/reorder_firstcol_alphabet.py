@@ -14,7 +14,10 @@ print(files)
 for file in files:
     with open(os.path.join(script_dir, file), 'r') as f:
         lines = f.readlines()
+        #take out the first line
+        header = lines.pop(0)
         lines.sort()
         with open(os.path.join(script_dir, file), 'w') as f:
+            f.write(header)
             for line in lines:
                 f.write(line)

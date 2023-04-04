@@ -1,10 +1,10 @@
+ColumnTitle,Description,Datatype,Property,ObservablePropertyUrl,Unit,UnitUrl,Cell2URL
  ,,,,,,,18S_demultiplexed,Demultiplexing method used,xsd:string,schema:description,,,,
 ARMS-ID,ARMS unit ID,xsd:string,schema:identifier,,,,
 ARMS-ID,ARMS unit ID,xsd:string,schema:identifier,,,,
 COI_demultiplexed,Demultiplexing method used,xsd:string,schema:description,,,,
 Cleaned sequences,Unknown,xsd:string,xsd:description,,,,
 Collection Date,Date the ARMS unit was retrieved,xsd:datetime,schema:endDate,,,,
-ColumnTitle,Description,Datatype,Property,ObservablePropertyUrl,Unit,UnitUrl,Cell2URL
 Country,Country of the observatory,xsd:string,schema:Country,,,,
 Crate cover used during retrieval,Was a crate cover used during retrieval of the unit,xsd:string,schema:description,,,,
 Deployment Date,Date the ARMS unit was deployed,xsd:datetime,schema:startDate,,,,
