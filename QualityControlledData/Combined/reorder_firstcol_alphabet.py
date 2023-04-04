@@ -3,7 +3,7 @@ import os
 #get the directory where the files are located
 script_dir = os.path.dirname(__file__)
 folder_to_check = script_dir
-file_prefix = "GS_ARMS_"
+file_prefix = "combined_"
 
 #get all files in the folder that start with the prefix
 files = [f for f in os.listdir(folder_to_check) if f.startswith(file_prefix)]
