@@ -47,6 +47,24 @@ def converteddate(date):
     except:
         return date
     
+def getPlateNumberAndPosition(file_name):
+    #do a regular expression to get the plate position and plate number the expression should search for "_1-9(B or T)" eg _1T_ or _2B_ or _3B_
+    #the regex should find patterns like: _1T_ or _2B_ or _3B_
+    regex = re.compile(r'_(\d)([BT])')
+    found = regex.search(file_name)
+    #check if the regex found a match and if so return the match
+    if found:
+        #print(found.group(1))
+        #print(found.group(2))
+        if found.group(2) == 'T':
+            return found.group(1), 'Top'
+        elif found.group(2) == 'B':
+            return found.group(1), 'Bottom'
+    else:
+        return 'Not Provided', 'Not Provided'
+    
+    
+    
 def getDepthMax(child_area):
     #check if measurements are presentr in the child area
     try:
@@ -175,6 +193,12 @@ for sampling_area in json_data_loaded['sampling_areas']:
         longitude = child_area['longitude']
         depth_max = getDepthMax(child_area)
         depth_min = getDepthMin(child_area)
+        
+        if depth_max == "no measurement" and depth_min != "no measurement":
+            depth_max = depth_min
+        
+        if depth_min == "no measurement" and depth_max != "no measurement":
+            depth_min = depth_max
         
         for sampling_event in child_area['sampling_events']:
             #date_start
@@ -336,6 +360,8 @@ for sampling_area in json_data_loaded['sampling_areas']:
             #associated_data table here
             for file in sampling_event['files']:   
                 file_name = file['identifier'] 
+                platenumber , position = getPlateNumberAndPosition(file_name)
+                
                 file_type = file['type']
                 file_download_url = file['download_link']
                 if file_download_url == None or file_download_url == "":
@@ -349,6 +375,8 @@ for sampling_area in json_data_loaded['sampling_areas']:
                     "Event_id": event_description,
                     "File_Name": file_name,
                     "File_Type": file_type,
+                    "Plate_Number": platenumber,
+                    "Position": position,
                     "File_Download_URL": file_download_url,
                     "created_at": created,
                     "updated_at": updated
@@ -361,6 +389,8 @@ for sampling_area in json_data_loaded['sampling_areas']:
                     "date_end": date_end,
                     "Event_id": event_description,
                     "File_Name": file_name,
+                    "Plate_Number": platenumber,
+                    "Position": position,
                     "File_Type": file_type,
                     "File_Download_URL": file_download_url,
                     "created_at": created,
@@ -431,7 +461,7 @@ for sampling_area in json_data_loaded['sampling_areas']:
             writer.writerow(data)
             
     with open(os.path.join(output_dir, ew_sampling_area_name,"associated_data_"+station+'.csv'), 'w', newline='') as csvfile:
-        fieldnames = ['Station', 'Country', 'ARMS_unit', 'date_start', 'date_end', 'Event_id', 'File_Name', 'File_Type', 'File_Download_URL', 'created_at', 'updated_at']
+        fieldnames = ['Station', 'Country', 'ARMS_unit', 'date_start', 'date_end', 'Event_id', 'File_Name', 'Plate_Number','Position','File_Type', 'File_Download_URL', 'created_at', 'updated_at']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for data in associated_data_csv:
@@ -458,7 +488,7 @@ with open(os.path.join(output_dir, 'AllOverview.csv'), 'w', newline='') as csvfi
 
 #write the associated.csv
 with open(os.path.join(output_dir, 'AllAssociatedData.csv'), 'w', newline='') as csvfile:
-    fieldnames = ['Station', 'Country', 'ARMS_unit', 'date_start', 'date_end', 'Event_id', 'File_Name', 'File_Type', 'File_Download_URL', 'created_at', 'updated_at']
+    fieldnames = ['Station', 'Country', 'ARMS_unit', 'date_start', 'date_end', 'Event_id', 'File_Name', 'Plate_Number', 'Position', 'File_Type', 'File_Download_URL', 'created_at', 'updated_at']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
     for data in associated_csv_data:
@@ -1037,6 +1067,8 @@ for gsheets_data in json_arms_samples_gsheets:
                  "EventID":gsheets_data["Event-ID"],
                  "Filename":item["File_Name"],
                  "Filetype":item["File_Type"],
+                 "PlateNumber":item["Plate_Number"],
+                 "Position":item["Position"],
                  "Download URL":item["File_Download_URL"]
                  }
             )
@@ -1089,40 +1121,3 @@ for file in os.listdir(output_dir):
         #split the output_dir string on the os sep and pop the last element and rejoin the string by os.sep
         parent_folder = os.sep.join(output_dir.split(os.sep)[:-1])
         shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"Combined",file))
-
-## Addition of K on 10-01-2023 ##
-#open AllAssociatedData.csv and write the data to it
-outfile = os.path.join(output_dir,"AllAssociatedData_kme.csv")
-data= pd.read_csv(os.path.join(output_dir,"AllAssociatedData.csv"),encoding='unicode_escape')
-f = open(outfile,"w")
-# turn the data into an array of rows (each element is a single row)
-dataframein = data.to_numpy()
-i=0
-for row in dataframein:
-    type = str(row[7])
-    value = str(row[6]) 
-    platefc = "NA"
-    platenr = "NA"
-    # find the pattern
-    if type == "Image":
-        sey = re.split(r"_(\d)([T,B])",value)
-        if len(sey)==4:
-            #print("--",sey[2],"--")
-            platenr = str(sey[1]) # column "Plate Number"
-            platefc = "Bottom" # column "Plate location"
-            #print("--",sey[2],"--",platefc)
-            if "T" in str(sey[2]): 
-                platefc = "Top" 
-            #print("--",sey[2],"--",platefc)
-        else:
-            platefc = "not provided"
-            platenr = "not provided"
-    f.write("{},{},{},{},{},{},{},{},{},{},{},{},{}\n".format(row[0],row[1],row[2],row[3],row[4],row[5],row[6],platefc,platenr,row[7],row[8],row[9],row[10]))
-    i+=1
-f.close()   
-
-#delete the old AllAssociatedData.csv file
-#rename the new AllAssociatedData_kme.csv file to AllAssociatedData.csv
-os.remove(os.path.join(output_dir,"AllAssociatedData.csv"))
-os.rename(os.path.join(output_dir,"AllAssociatedData_kme.csv"),os.path.join(output_dir,"AllAssociatedData.csv"))
-
