@@ -11,23 +11,15 @@ import csv
 import re
 #from dotenv import load_dotenv
 import pandas as pd
-#import lib for sending mails
-from smtplib import SMTP
-import ssl
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from email import encoders
-from email.mime.base import MIMEBase
 
-# variables here
-
+#variables here
 #import json file names ./ARMS_data.json
 #get parent dir of current file 
 parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/5653762731985736347A39F3C37A593634BBA850A11BF35D5BFE1229CC6F10B3.json?h=mV1WwSkZ8IP30cNfpuJAKQ&e=1680593093'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/5653762731985736347A39F3C37A593634BBA850A11BF35D5BFE1229CC6F10B3.json?h=xKJA2pTTnVBqC2l6-pH98g&e=1680683423'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -55,7 +47,7 @@ def converteddate(date):
     except:
         return date
     
-def getDepth(child_area):
+def getDepthMax(child_area):
     #check if measurements are presentr in the child area
     try:
         if child_area['measurements']:
@@ -63,6 +55,21 @@ def getDepth(child_area):
             i = 0
             for measurements in child_area['measurements']:
                 if measurements['measurement']['name'] == 'Depth max':
+                    #if so return the measurement value
+                    return child_area['measurements'][i]['value']
+                i+=1
+        else:
+            return 'no measurements'
+    except:
+        return 'no measurements'
+    
+def getDepthMin(child_area):
+    try:
+        if child_area['measurements']:
+            #loop over the measurements and check if measurements[i]['measurement][name] == 'Depth max'
+            i = 0
+            for measurements in child_area['measurements']:
+                if measurements['measurement']['name'] == 'Depth min':
                     #if so return the measurement value
                     return child_area['measurements'][i]['value']
                 i+=1
@@ -166,7 +173,8 @@ for sampling_area in json_data_loaded['sampling_areas']:
         #get latitude longitude and depth
         latitude = child_area['latitude']
         longitude = child_area['longitude']
-        depth = getDepth(child_area)
+        depth_max = getDepthMax(child_area)
+        depth_min = getDepthMin(child_area)
         
         for sampling_event in child_area['sampling_events']:
             #date_start
@@ -365,7 +373,8 @@ for sampling_area in json_data_loaded['sampling_areas']:
                  'ARMS_unit': ARMS_unit,
                  'Latitude': latitude,
                  'Longitude': longitude,
-                 'Depth': depth,
+                 'Depth_min': depth_min,
+                 'Depth_max': depth_max,
                  'Date_start': date_start,
                  'Date_end': date_end,
                  'Event_ID': event_description,
@@ -383,7 +392,8 @@ for sampling_area in json_data_loaded['sampling_areas']:
                  'ARMS_unit': ARMS_unit,
                  'Latitude': latitude,
                  'Longitude': longitude,
-                 'Depth': depth,
+                 'Depth_min': depth_min,
+                 'Depth_max': depth_max,
                  'Date_start': date_start,
                  'Date_end': date_end,
                  'Event_ID': event_description,
@@ -431,7 +441,7 @@ for sampling_area in json_data_loaded['sampling_areas']:
             writer.writerow(data)
     
     with open(os.path.join(output_dir, ew_sampling_area_name,"overview_data_"+station+'.csv'), 'w', newline='') as csvfile:
-        fieldnames = ['Station', 'Country', 'ARMS_unit','Latitude','Longitude','Depth', 'Date_start', 'Date_end', 'Event_ID', 'Event_Description','IUCN_Habitat_type','Material Samples', 'Observations', 'Sequences', 'Associated Data', 'Created', 'Updated']
+        fieldnames = ['Station', 'Country', 'ARMS_unit','Latitude','Longitude','Depth_min','Depth_max', 'Date_start', 'Date_end', 'Event_ID', 'Event_Description','IUCN_Habitat_type','Material Samples', 'Observations', 'Sequences', 'Associated Data', 'Created', 'Updated']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for data in main_data_csv:
@@ -440,7 +450,7 @@ for sampling_area in json_data_loaded['sampling_areas']:
 
 #write the main.csv
 with open(os.path.join(output_dir, 'AllOverview.csv'), 'w', newline='') as csvfile:
-    fieldnames = ['Station', 'Country', 'ARMS_unit','Latitude','Longitude','Depth', 'Date_start', 'Date_end', 'Event_ID', 'Material Samples', 'Observations', 'Sequences', 'Associated Data', 'Created', 'Updated']
+    fieldnames = ['Station', 'Country', 'ARMS_unit','Latitude','Longitude','Depth_min','Depth_max', 'Date_start', 'Date_end', 'Event_ID', 'Material Samples', 'Observations', 'Sequences', 'Associated Data', 'Created', 'Updated']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
     for data in main_csv_data:
@@ -619,14 +629,14 @@ for plutoF_data in json_arms_observatories_plutoF:
                 qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"longitude", "qc_flag":"fail","plutoF_data":plutoF_data["Longitude"], "gsheets_data":gsheets_data["Longitude"]})
                 
             try:
-                if float(plutoF_data["Depth"]) != float(gsheets_data["Depth (m)"]):
-                    if abs(float(plutoF_data["Depth"]) - float(gsheets_data["Depth (m)"])) > 1:
-                        qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"depth", "qc_flag":"fail","plutoF_data":plutoF_data["Depth"], "gsheets_data":gsheets_data["Depth (m)"]})
+                if float(plutoF_data["Depth_min"]) != float(gsheets_data["Depth (m)"]):
+                    if abs(float(plutoF_data["Depth_min"]) - float(gsheets_data["Depth (m)"])) > 1:
+                        qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"depth", "qc_flag":"fail","plutoF_data":plutoF_data["Depth_min"], "gsheets_data":gsheets_data["Depth (m)"]})
             except:
-                qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"depth", "qc_flag":"fail","plutoF_data":plutoF_data["Depth"], "gsheets_data":gsheets_data["Depth (m)"]})
+                qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"depth", "qc_flag":"fail","plutoF_data":plutoF_data["Depth_min"], "gsheets_data":gsheets_data["Depth (m)"]})
             
             try:
-                if float(plutoF_data["Latitude"]) == float(gsheets_data["Latitude"]) and float(plutoF_data["Longitude"]) == float(gsheets_data["Longitude"]) and float(plutoF_data["Depth"]) == float(gsheets_data["Depth (m)"]):
+                if float(plutoF_data["Latitude"]) == float(gsheets_data["Latitude"]) and float(plutoF_data["Longitude"]) == float(gsheets_data["Longitude"]) and float(plutoF_data["Depth_min"]) == float(gsheets_data["Depth (m)"]):
                     qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude, longitude, depth", "qc_flag":"pass"})
             except:
                 qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude, longitude, depth", "qc_flag":"pass"})
@@ -658,13 +668,13 @@ for gsheets_data in json_arms_observatories_gsheets:
             except:
                 qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"longitude", "qc_flag":"fail","gsheets_data":gsheets_data["Longitude"],"plutoF_data":plutoF_data["Longitude"]})
             try:
-                if float(gsheets_data["Depth (m)"]) != float(plutoF_data["Depth"]):
-                    if abs(float(gsheets_data["Depth (m)"]) - float(plutoF_data["Depth"])) > 1:
-                        qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"depth", "qc_flag":"fail","gsheets_data":gsheets_data["Depth (m)"],"plutoF_data":plutoF_data["Depth"]})
+                if float(gsheets_data["Depth (m)"]) != float(plutoF_data["Depth_min"]):
+                    if abs(float(gsheets_data["Depth (m)"]) - float(plutoF_data["Depth_min"])) > 1:
+                        qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"depth", "qc_flag":"fail","gsheets_data":gsheets_data["Depth (m)"],"plutoF_data":plutoF_data["Depth_min"]})
             except:
-                qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"depth", "qc_flag":"fail","gsheets_data":gsheets_data["Depth (m)"],"plutoF_data":plutoF_data["Depth"]})
+                qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"depth", "qc_flag":"fail","gsheets_data":gsheets_data["Depth (m)"],"plutoF_data":plutoF_data["Depth_min"]})
             try:
-                if float(gsheets_data["Latitude"]) == float(plutoF_data["Latitude"]) and float(gsheets_data["Longitude"]) == float(plutoF_data["Longitude"]) and float(gsheets_data["Depth (m)"]) == float(plutoF_data["Depth"]):
+                if float(gsheets_data["Latitude"]) == float(plutoF_data["Latitude"]) and float(gsheets_data["Longitude"]) == float(plutoF_data["Longitude"]) and float(gsheets_data["Depth (m)"]) == float(plutoF_data["Depth_min"]):
                     qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude, longitude, depth", "qc_flag":"pass"})
             except:
                 qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude, longitude, depth", "qc_flag":"pass"})
@@ -843,21 +853,24 @@ ImageData = []
 #Monitoring area  gsheets["Monitoring area"]
 #Habitat keywords gsheets["Habitat keywords (env_local)"]
 for gsheets_data in json_arms_observatories_gsheets:
-   ObservatoryData.append(
-        {"Country":gsheets_data["Country ISO3letter code"],
-         "ObservatoryID":gsheets_data["Observatory-ID (corrected)"],
-         "UnitID":gsheets_data["ARMS-ID (corrected)"],
-         "Latitude":gsheets_data["Latitude"],
-         "Longitude":gsheets_data["Longitude"],
-         "Depth":gsheets_data["Depth (m)"],
-         "Field Replicates":gsheets_data["Field replicates"],
-         "Monitoring area":gsheets_data["Monitoring area"],
-         "Habitat keywords":gsheets_data["Habitat keywords (env_local)"],
-         "IUCN habitat type":gsheets_data["IUCN habitat type"],
-         "Description":gsheets_data["Description"],
-         "Notes":gsheets_data["Notes"]
-         }
-    )
+    for plutoF_data in main_csv_data:
+        if gsheets_data["ARMS-ID (corrected)"] == plutoF_data["ARMS_unit"]:
+            ObservatoryData.append(
+                {"Country":gsheets_data["Country ISO3letter code"],
+                "ObservatoryID":gsheets_data["Observatory-ID (corrected)"],
+                "UnitID":gsheets_data["ARMS-ID (corrected)"],
+                "Latitude":gsheets_data["Latitude"],
+                "Longitude":gsheets_data["Longitude"],
+                "Depth_min":plutoF_data["Depth_min"],
+                "Depth_max":plutoF_data["Depth_max"],
+                "Field Replicates":gsheets_data["Field replicates"],
+                "Monitoring area":gsheets_data["Monitoring area"],
+                "Habitat keywords":gsheets_data["Habitat keywords (env_local)"],
+                "IUCN habitat type":gsheets_data["IUCN habitat type"],
+                "Description":gsheets_data["Description"],
+                "Notes":gsheets_data["Notes"]
+                }
+            )
 
 ##SamplingEventData
 #country from gsheets["Country ISO3letter code"]
