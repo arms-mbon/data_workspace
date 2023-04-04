@@ -1,3 +1,4 @@
+ObservatoryID,UnitID,EventID,Filename,Filetype,PlateNumber,Position,Download URL
 BelgiumCoast,AJJBC89,ARMS_BelgiumCoast_AJJBC89_20210225_20210819,ARMS_BC_89_1B.jpg,Image,1,Bottom,https://files.plutof.ut.ee/public/orig/CE/75/CE75056EDF9FFE2D016703FC85F85453A1D119E62CF5125502349CE6D2F392C4.jpg
 BelgiumCoast,AJJBC89,ARMS_BelgiumCoast_AJJBC89_20210225_20210819,ARMS_BC_89_1T.jpg,Image,1,Top,https://files.plutof.ut.ee/public/orig/A2/63/A2634D96FFC624980A7CC0CDF977EDF230F4E3C56C6407ACF7D828ED0773B3AB.jpg
 BelgiumCoast,AJJBC89,ARMS_BelgiumCoast_AJJBC89_20210225_20210819,ARMS_BC_89_2B.jpg,Image,2,Bottom,https://files.plutof.ut.ee/public/orig/D1/7D/D17D9865E766CC92A547C58506E87BE80FEFAD0A16FF7B5239252E5F3C20C48B.jpg
@@ -5161,7 +5162,6 @@ Limfjord,Yellow8,ARMS_Limfjord_Yellow8_20190618_20191029,2019_Limfjord_Yellow8_I
 Limfjord,Yellow8,ARMS_Limfjord_Yellow8_20190618_20191029,2019_Limfjord_Yellow8_IMG_9457.jpg,Image,Not Provided,Not Provided,https://files.plutof.ut.ee/public/orig/83/B1/83B10AA17DEDA29376B70B8449F0E53205564D811F764E518D61401799BE7423.jpg
 Limfjord,Yellow8,ARMS_Limfjord_Yellow8_20190618_20191029,Limjord_Yellow8_2018_habitat.png,Image,Not Provided,Not Provided,https://files.plutof.ut.ee/public/orig/E0/E0/E0E081ED02E26DE55ABD8F369E3F98C16C8A034E23A4EA601D34D26C43DE6D89.png
 Limfjord,Yellow8,ARMS_Limfjord_Yellow8_20190618_20191029,Limjord_Yellow8_2018_habitat2.png,Image,Not Provided,Not Provided,https://files.plutof.ut.ee/public/orig/88/31/88316E9A648B3435704A196DB61C50F7E6D2177F67147AA050290FE764796C9A.png
-ObservatoryID,UnitID,EventID,Filename,Filetype,PlateNumber,Position,Download URL
 Plymouth,MBA1,ARMS_Plymouth_MBA1_20180701_20181001,2018_MBA_MBA1_P1260960.JPG,Image,Not Provided,Not Provided,https://files.plutof.ut.ee/public/orig/0F/72/0F72807DF57B8F7146C5B6CD632028D2AFFF002DA6674C6AB62FF7DC6BAB7E9E.jpg
 Plymouth,MBA1,ARMS_Plymouth_MBA1_20180701_20181001,2018_MBA_MBA1_P1260962.JPG,Image,Not Provided,Not Provided,https://files.plutof.ut.ee/public/orig/37/3A/373AC98B50DD575362F1BD162FD42832AC8C71715552D794E36FC671DB899DA9.jpg
 Plymouth,MBA1,ARMS_Plymouth_MBA1_20180701_20181001,2018_MBA_MBA1_P1260966.JPG,Image,Not Provided,Not Provided,https://files.plutof.ut.ee/public/orig/E0/B5/E0B58C895F0FCCB1F7F2DEF6E7FEAD1CA34C842402B68BABB4723FEDAA8BD200.jpg
