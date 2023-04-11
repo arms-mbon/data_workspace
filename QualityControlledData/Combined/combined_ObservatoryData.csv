@@ -63,7 +63,7 @@ ITA,AdriaticEastCoast,Ven2,45.316667,12.5000,16,16,Ven,LTER site,LHI (Low human 
 ITA,AdriaticEastCoast,Ven3,45.316667,12.5000,16,16,Ven,LTER site,LHI (Low human influence),,,
 ITA,RavHarbour,RavH1,44.421488,12.209497,1.5,1.5,RavH,Harbour,industrial,,,
 ITA,RavHarbour,RavH2,44.421488,12.209497,1.5,1.5,RavH,Harbour,industrial,,,
-ITA,RavHarbour,RavH3,44.421488,12.209497,1.5,1.5,RavH,Harbour,industrial,,,
+ITA,RavHarbour,RavH3,44.421488,12.209497,no measurements,no measurements,RavH,Harbour,industrial,,,
 ITA,RavMarina,RavM1,44.492426,12.287623,1.5,1.5,RavM,Marina,semi-industrial,,,
 ITA,RavMarina,RavM2,44.492426,12.287623,1.5,1.5,RavM,Marina,semi-industrial,,,
 ITA,RavMarina,RavM3,44.492426,12.287623,1.5,1.5,RavM,Marina,semi-industrial,,,
