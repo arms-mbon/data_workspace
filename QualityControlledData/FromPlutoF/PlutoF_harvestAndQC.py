@@ -19,7 +19,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/5653762731985736347A39F3C37A593634BBA850A11BF35D5BFE1229CC6F10B3.json?h=xKJA2pTTnVBqC2l6-pH98g&e=1680683423'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/5653762731985736347A39F3C37A593634BBA850A11BF35D5BFE1229CC6F10B3.json?h=cPgOFLsxk_pXxXD5dF1--w&e=1681283312'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -797,7 +797,6 @@ for gsheets_data in json_arms_samples_gsheets:
 #Note that while the date part of the Event-ID should be the same as the deployment and collection date values, 
 #there is no guarantee that this will be so: hence we treat the EventID as the key as the dates as values 
 #that I will manually compare to the date part of the EventID. So please do stick to the YYYY-MM-DD format. 
-
 qc_events = []
 
 #from plutoF to gsheets
@@ -920,11 +919,19 @@ for gsheets_data in json_arms_observatories_gsheets:
 #Filter gsheets["Filter (micrometer)"]
 #CrateCover gsheets["Crate cover used during retrieval"]
 #Number of associated data files => for item in accomsiated data files, if item["Event-ID"] == gsheets["Event-ID"], count += 1
+
+
+
 for gsheets_data in json_arms_samples_gsheets:
     count = 0
+    count_seq = 0
     for item in associated_csv_data:
         if item["Event_id"] == gsheets_data["Event-ID"]:
             count += 1
+    
+    for sequence in sequences_csv_data:
+        if gsheets_data["Event-ID"] == sequence["Event_id"]:
+            count_seq += 1
     
     for observatories in ObservatoryData:
         if gsheets_data["Observatory-ID"] == observatories["ObservatoryID"]:
@@ -948,7 +955,8 @@ for gsheets_data in json_arms_samples_gsheets:
                 "Preservative":gsheets_data["Preservative"],
                 "Filter":gsheets_data["Filter (micrometer)"],
                 "CrateCover":gsheets_data["Crate cover used during retrieval"],
-                "Number of associated data files":str(count)
+                "Number of associated data files":str(count),
+                "Number of processed sequences":str(count_seq)
                 }
             )
         else:
@@ -964,12 +972,17 @@ for gsheets_data in json_arms_samples_gsheets:
                 "Preservative":gsheets_data["Preservative"],
                 "Filter":gsheets_data["Filter (micrometer)"],
                 "CrateCover":gsheets_data["Crate cover used during retrieval"],
-                "Number of associated data files":str(count)
+                "Number of associated data files":str(count),
+                "Number of processed sequences":str(count_seq)
                 }
             )
 
 for plutoF_data in material_samples_csv_data:
     inGoogleSheets = False
+    count_seq = 0
+    for sequence in sequences_csv_data:
+        if plutoF_data["Parent_Event_ID"] == sequence["Event_id"]:
+            count_seq += 1    
     for obs_plutoF_data in json_arms_observatories_plutoF:
         #get the country from the observatory data by matching the observatory id
         if obs_plutoF_data["Event_ID"] == plutoF_data["Parent_Event_ID"]:
@@ -998,7 +1011,8 @@ for plutoF_data in material_samples_csv_data:
             "Preservative":"Not provided",
             "Filter":"Not provided",
             "CrateCover":"Not provided",
-            "Number of associated data files":plutoF_data["Associated data"]
+            "Number of associated data files":plutoF_data["Associated data"],
+            "Number of processed sequences": count_seq
             }
         )
         NonMatchingSamplingEventData.append(
@@ -1053,7 +1067,6 @@ for gsheets_data in json_arms_samples_gsheets:
             "OriginalSampleID":gsheets_data["OriginalSample-ID"]
             }
         )
-
 ##ImageData
 #ObservatoryID gsheets["Observatory-ID (corrected)"]
 #UnitID gsheets["ARMS-ID (corrected)"]
@@ -1077,13 +1090,11 @@ for gsheets_data in json_arms_samples_gsheets:
                  "Download URL":item["File_Download_URL"]
                  }
             )
-
 #go over the ImageData list and remove duplicates
 ImageData = [dict(t) for t in {tuple(d.items()) for d in ImageData}]
 SamplingEventData = [dict(t) for t in {tuple(d.items()) for d in SamplingEventData}]
 ObservatoryData = [dict(t) for t in {tuple(d.items()) for d in ObservatoryData}]
 OmicsData = [dict(t) for t in {tuple(d.items()) for d in OmicsData}]
-
 #write the data to csv files in the output directory 
 with open(os.path.join(output_dir,"combined_SamplingEventData.csv"), 'w', newline='', encoding="utf-8") as f:
     w = csv.DictWriter(f, SamplingEventData[0].keys())
