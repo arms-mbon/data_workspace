@@ -107,6 +107,6 @@ Spikarna,FIN,OK,,,
 Angbat,FIN,OK,,,
 Kummelkobben,FIN,OK,,,
 TorallaA,ESP,OK,,,
-TorallaB,ESP,Observatory and ARMS ID found but lat and long are different,Lat_Long,42.23333300 -8.78333300,42.2284 -8.7787
-TorallaC,ESP,Observatory and ARMS ID found but lat and long are different,Lat_Long,42.23333300 -8.78333300,42.2284 -8.7787
+TorallaB,ESP,OK,,,
+TorallaC,ESP,OK,,,
 TorallaD,ESP,ARMS ID not found in PlutoF,ARMS_ID,,TorallaD
