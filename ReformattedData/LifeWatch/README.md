@@ -39,9 +39,7 @@ These two files are copies of ARMS4Tesseract_data/metadata.csv: the only differe
    * Two columns have been removed: OtherDataLink and AssociatedFileType as these are no longer necessary in this file
    * Two columns have been added to the metadata file: ColumnTitle_4Tesseract to suggest a column title that can be used and ColumnOrder_4Tesseract that can be used to order the sequences-selection table in the workflow
    
-   
-TO BE DONE 
-* create the templates' template and ttl files
-* delete all the old files
+  
+
 
 
