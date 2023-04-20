@@ -1,0 +1,15 @@
+AphiaID,rank,scientificname,child_id
+1,Superdomain,Biota,2
+2,Kingdom,Animalia,1821
+1821,Phylum,Chordata,146419
+146419,Subphylum,Vertebrata,1828
+1828,Infraphylum,Gnathostomata,1831
+1831,Megaclass,Tetrapoda,1838
+1838,Superclass,Reptilia,196109
+196109,Order,Squamata,196112
+196112,Suborder,Serpentes,196113
+196113,Infraorder,Alethinophidia,342638
+342638,Family,Elapidae,413301
+413301,Subfamily,Hydrophiinae,343607
+343607,Genus,Hydrophis,407681
+407681,Species,Hydrophis pachycercos,

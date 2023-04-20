@@ -1,0 +1,18 @@
+AphiaID,rank,scientificname,child_id
+1,Superdomain,Biota,2
+2,Kingdom,Animalia,1065
+1065,Phylum,Arthropoda,1066
+1066,Subphylum,Crustacea,845959
+845959,Superclass,Multicrustacea,1071
+1071,Class,Malacostraca,1086
+1086,Subclass,Eumalacostraca,1089
+1089,Superorder,Eucarida,1130
+1130,Order,Decapoda,106670
+106670,Suborder,Pleocyemata,106673
+106673,Infraorder,Brachyura,106679
+106679,Section,Eubrachyura,106680
+106680,Subsection,Heterotremata,106702
+106702,Superfamily,Portunoidea,557512
+557512,Family,Polybiidae,106925
+106925,Genus,Liocarcinus,107388
+107388,Species,Liocarcinus holsatus,
