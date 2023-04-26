@@ -19,7 +19,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/4B4C640A57167456D31BCB065612D605FA8478E88B72B3C29570F4C59F17A329.json?h=xXjvakws5T3Gb8y0b2GR-A&e=1682063972'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/92482A87F00DC522C339E15F217DEFFCCD553B807969E6355EF5D9C4C4686E3E.json?h=7D4JOaeN-0IkovCZbpl2gQ&e=1682579726'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -920,18 +920,27 @@ for gsheets_data in json_arms_observatories_gsheets:
 #CrateCover gsheets["Crate cover used during retrieval"]
 #Number of associated data files => for item in accomsiated data files, if item["Event-ID"] == gsheets["Event-ID"], count += 1
 
-
-
 for gsheets_data in json_arms_samples_gsheets:
     count = 0
-    count_seq = 0
     for item in associated_csv_data:
         if item["Event_id"] == gsheets_data["Event-ID"]:
             count += 1
-    
-    for sequence in sequences_csv_data:
-        if gsheets_data["Event-ID"] == sequence["Event_id"]:
-            count_seq += 1
+        
+    ENA_count = 0
+    #if gsheets_data["gene_COI"] =starts with ERR
+    if gsheets_data["gene_COI"].startswith("ERR"):
+        ENA_count += 1
+    if gsheets_data["gene_COI_negative_control"].startswith("ERR"):
+        ENA_count += 1
+    if gsheets_data["gene_ITS"].startswith("ERR"):
+        ENA_count += 1
+    if gsheets_data["gene_ITS_negative_control"].startswith("ERR"):
+        ENA_count += 1
+    if gsheets_data["gene_18S"].startswith("ERR"):
+        ENA_count += 1
+    if gsheets_data["gene_18S_negative_control"].startswith("ERR"):
+        ENA_count += 1
+
     
     for observatories in ObservatoryData:
         if gsheets_data["Observatory-ID"] == observatories["ObservatoryID"]:
@@ -956,7 +965,7 @@ for gsheets_data in json_arms_samples_gsheets:
                 "Filter":gsheets_data["Filter (micrometer)"],
                 "CrateCover":gsheets_data["Crate cover used during retrieval"],
                 "Number of associated data files":str(count),
-                "Number of processed sequences":str(count_seq)
+                "Number of ENA sequences":str(ENA_count)
                 }
             )
         else:
@@ -973,16 +982,12 @@ for gsheets_data in json_arms_samples_gsheets:
                 "Filter":gsheets_data["Filter (micrometer)"],
                 "CrateCover":gsheets_data["Crate cover used during retrieval"],
                 "Number of associated data files":str(count),
-                "Number of processed sequences":str(count_seq)
+                "Number of ENA sequences":str(ENA_count)
                 }
             )
 
 for plutoF_data in material_samples_csv_data:
     inGoogleSheets = False
-    count_seq = 0
-    for sequence in sequences_csv_data:
-        if plutoF_data["Parent_Event_ID"] == sequence["Event_id"]:
-            count_seq += 1    
     for obs_plutoF_data in json_arms_observatories_plutoF:
         #get the country from the observatory data by matching the observatory id
         if obs_plutoF_data["Event_ID"] == plutoF_data["Parent_Event_ID"]:
@@ -997,6 +1002,21 @@ for plutoF_data in material_samples_csv_data:
     for gsheets_data in json_arms_samples_gsheets:
         if plutoF_data["Parent_Event_ID"] == gsheets_data["Event-ID"]:
             inGoogleSheets = True
+            #check if ENA sequences are available
+            ENA_count = 0
+            #if gsheets_data["gene_COI"] =starts with ERR
+            if gsheets_data["gene_COI"].startswith("ERR"):
+                ENA_count += 1
+            if gsheets_data["gene_COI_negative_control"].startswith("ERR"):
+                ENA_count += 1
+            if gsheets_data["gene_ITS"].startswith("ERR"):
+                ENA_count += 1
+            if gsheets_data["gene_ITS_negative_control"].startswith("ERR"):
+                ENA_count += 1
+            if gsheets_data["gene_18S"].startswith("ERR"):
+                ENA_count += 1
+            if gsheets_data["gene_18S_negative_control"].startswith("ERR"):
+                ENA_count += 1
             print(gsheets_data["Event-ID"] + " is in google sheets")
     if inGoogleSheets == False:
         SamplingEventData.append(
@@ -1012,7 +1032,7 @@ for plutoF_data in material_samples_csv_data:
             "Filter":"Not provided",
             "CrateCover":"Not provided",
             "Number of associated data files":plutoF_data["Associated data"],
-            "Number of processed sequences": count_seq
+            "Number of ENA sequences": str(ENA_count)
             }
         )
         NonMatchingSamplingEventData.append(
