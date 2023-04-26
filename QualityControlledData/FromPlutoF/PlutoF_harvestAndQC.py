@@ -1080,10 +1080,16 @@ for gsheets_data in json_arms_samples_gsheets:
             "MaterialSampleID":gsheets_data["MaterialSample-ID"],
             "Gene_COI":gsheets_data["gene_COI"],
             "Gene_COI_negative_control":gsheets_data["gene_COI_negative_control"],
-            "GeneITS":gsheets_data["gene_ITS"],
+            "Gene_COI_demultiplexed":gsheets_data["COI_demultiplexed"],
+            "Gene_COI_comment":gsheets_data["comment_COI"],
+            "Gene_ITS":gsheets_data["gene_ITS"],
             "Gene_ITS_negative_control":gsheets_data["gene_ITS_negative_control"],
-            "Gene18S":gsheets_data["gene_18S"],
+            "Gene_ITS_demultiplexed":gsheets_data["ITS_demultiplexed"],
+            "Gene_ITS_comment":gsheets_data["comment_ITS"],
+            "Gene_18S":gsheets_data["gene_18S"],
             "Gene_18S_negative_control":gsheets_data["gene_18S_negative_control"],
+            "Gene_18S_demultiplexed":gsheets_data["18S_demultiplexed"],
+            "Gene_18S_comment":gsheets_data["comment_18S"],
             "OriginalSampleID":gsheets_data["OriginalSample-ID"]
             }
         )
