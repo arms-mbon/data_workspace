@@ -23,6 +23,23 @@ def get_html_from_taxonomy_browser(taxonomy_browser_id):
     response = requests.get(url)
     return response.text
 
+def get_rank_from_html(html):
+    rank = ""
+    if "Rank:" in html:
+        #print("found rank")
+        #print(html.split("Rank:</b>")[1])
+        rank = html.split("Rank:")[1].split("</strong>")[0].split("<strong>")[1].strip()
+    return rank
+
+def get_scientific_name_from_html(html):
+    scientific_name = ""
+    #<title>Taxonomy browser (Liocarcinus holsatus)</title>
+    if "<title>Taxonomy browser (" in html:
+        #print("found scientific name")
+        #print(html.split("Scientific name:</b>")[1])
+        scientific_name = html.split("<title>Taxonomy browser (")[1].split(")</title>")[0].strip()
+    return scientific_name
+
 def get_aphia_id_from_html(html):
     aphia_id = ""
     if "https://www.marinespecies.org/aphia.php?p=taxdetails&amp;" in html:
@@ -53,25 +70,63 @@ def get_taxonomic_info_from_json(json):
     #for key, value in json.items():
     #convertion to csv [["AphiaID","rank","scientificname","child_id"],[1,"kingdom","animalia",2],[2,"phylum","chordata",3],[3,"class","mammalia",4],[4,"order","carnivora",5],[5,"family","canidae",6],[6,"genus","canis",7],[7,"species","canis lupus",8]]
     return check_child_info(json, [])
+
+def get_aphia_name(json_rows):
+    #take last row of json_rows and get the scientific name
+    return json_rows[-1][2]
+
+def get_aphia_id(json_rows):
+    #take last row of json_rows and get the aphia id
+    return json_rows[-1][0]
+
+def get_aphia_rank(json_rows):
+    return json_rows[-1][1]
     
 for taxonomy_browser_id in taxonomy_browser_ids:
     html = get_html_from_taxonomy_browser(taxonomy_browser_id)
     aphia_id = get_aphia_id_from_html(html)
     
+    ncbi_scienctific_name = get_scientific_name_from_html(html)
+    ncbi_rank = get_rank_from_html(html)
+    
     if aphia_id == "":
         print("no worms id for " + taxonomy_browser_id)
+        
+        #check if convertion.csv file exists if not create it else append to it
+        if not os.path.isfile(current_dir_script + "/convertion.csv"):
+            with open(current_dir_script + "/convertion.csv", "w", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow(headers)
+                writer.writerow([ncbi_scienctific_name, ncbi_rank, "", "", ""])
+        else:
+            with open(current_dir_script + "/convertion.csv", "a", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow([ncbi_scienctific_name, ncbi_rank, "", "", ""])
+        
         continue
     worms_data = get_data_from_aphia_id(aphia_id)
     #pretty print the json
     json_rows = get_taxonomic_info_from_json(json.loads(worms_data))
     print(json_rows)
     
-    #headers of the csv file will be ["AphiaID","rank","scientificname","child_id"]
-    headers = ["AphiaID","rank","scientificname","child_id"]
-    #write the json_rows to a csv file with the name of the taxonomy_browser_id
-
-    with open(os.path.join(current_dir_script, "taxonomy_browser_id_"+str(taxonomy_browser_id)+".csv"), 'w', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow(headers)
-        writer.writerows(json_rows)
+    aphia_id = get_aphia_id(json_rows)
+    aphia_scienctific_name = get_aphia_name(json_rows)
+    aphia_rank = get_aphia_rank(json_rows)
+    
+    headers = ["NCBIScientificName","NCBIScientificRank","aphiaScientificNameID","AphiaScientificName","AphiaScientificNameRank"]
+    
+    #check if convertion.csv file exists if not create it else append to it
+    if not os.path.isfile(current_dir_script + "/convertion.csv"):
+        with open(current_dir_script + "/convertion.csv", "w", newline="") as file:
+            writer = csv.writer(file)
+            writer.writerow(headers)
+            writer.writerow([ncbi_scienctific_name, ncbi_rank, aphia_id, aphia_scienctific_name, aphia_rank])
+    else:
+        with open(current_dir_script + "/convertion.csv", "a", newline="") as file:
+            writer = csv.writer(file)
+            writer.writerow([ncbi_scienctific_name, ncbi_rank, aphia_id, aphia_scienctific_name, aphia_rank])
         
+
+
+
+
