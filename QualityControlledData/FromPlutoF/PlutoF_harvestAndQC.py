@@ -987,6 +987,55 @@ for gsheets_data in json_arms_samples_gsheets:
             )
 
 for plutoF_data in material_samples_csv_data:
+    
+    #check if plutoF_data["MaterialSample_ID"] is already part of the SamplingEventData["MaterialSampleID"]
+    in_list = False
+    for item in SamplingEventData:
+        if item["MaterialSampleID"] == plutoF_data["Material_Sample_ID"]:
+            in_list = True
+    
+    if in_list:
+        continue
+    
+    for main_data in main_csv_data:
+        if plutoF_data["Parent_Event_ID"] == main_data["Event_ID"]:
+            country = main_data["Country"]
+            Observatory_id = main_data["Station"]
+            Unit_id = main_data["ARMS_unit"]
+    
+    pre_date_created = plutoF_data["Parent_Event_ID"].split("_")[3]
+    date_created = pre_date_created[0:4]+"-"+pre_date_created[4:6]+"-"+pre_date_created[6:8]
+    
+    pre_date_collected = plutoF_data["Parent_Event_ID"].split("_")[4]
+    date_collected = pre_date_collected[0:4]+"-"+pre_date_collected[4:6]+"-"+pre_date_collected[6:8]
+    try:
+        fraction = plutoF_data["Material_Sample_ID"].split("_")[5]
+    except:
+        fraction = ""
+    try:
+        preservative = plutoF_data["Material_Sample_ID"].split("_")[6]
+    except:
+        preservative = ""
+    
+    SamplingEventData.append(
+        {
+            "Country":country,
+            "ObservatoryID":Observatory_id,
+            "UnitID":Unit_id,
+            "DateDeployed":date_created,
+            "DateCollected":date_collected,
+            "EventID":plutoF_data["Parent_Event_ID"],
+            "MaterialSampleID":plutoF_data["Material_Sample_ID"],
+            "Fraction":fraction,
+            "Preservative":preservative,
+            "Filter":"",
+            "CrateCover":"",
+            "Number of associated data files":"",
+            "Number of ENA sequences":""
+        } 
+    )
+        
+for plutoF_data in material_samples_csv_data:
     inGoogleSheets = False
     for obs_plutoF_data in json_arms_observatories_plutoF:
         #get the country from the observatory data by matching the observatory id
