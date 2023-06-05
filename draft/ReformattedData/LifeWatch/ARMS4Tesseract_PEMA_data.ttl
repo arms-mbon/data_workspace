@@ -1,0 +1,446 @@
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/#> . 
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv> 
+	a csvw:table;
+	csvw:schema <https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_metadata.csv>;
+	csvw:columns [
+		Sample_ID,
+		Country,
+		Observatory_ID,
+		ARMS_ID,
+		Deploy_Date,
+		Collect_Date,
+		gene_COI,
+		gene_18S,
+		gene_ITS,
+		negativeControl_gene_COI,
+		negativeControl_gene_18S,
+		negativeControl_gene_ITS,
+		AccessRights,
+		longitude,
+		latitude,
+		depth,
+		Fraction,
+		Preservative,
+		Filter, 
+	];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Crete_1HERP_180928_190128_SF40_DMSO>
+	schema:identifier 'ARMS_Crete_1HERP_180928_190128_SF40_DMSO'^^xsd:string;
+	schema:country 'Greece'^^xsd:string;
+	schema:identifier 'Crete'^^xsd:string;
+	schema:identifier '1HERP'^^xsd:string;
+	schema:startDate '2018-09-28'^^xsd:string;
+	schema:endDate '2019-01-28'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460466'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605084'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018429'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460471'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605902'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018475'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '25.136605'^^xsd:double;
+	schema:latitude '35.343153'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '5'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'sessile'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'DMSO'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '40'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Crete_1HERP_180928_190128_SF40_EtOH>
+	schema:identifier 'ARMS_Crete_1HERP_180928_190128_SF40_EtOH'^^xsd:string;
+	schema:country 'Greece'^^xsd:string;
+	schema:identifier 'Crete'^^xsd:string;
+	schema:identifier '1HERP'^^xsd:string;
+	schema:startDate '2018-09-28'^^xsd:string;
+	schema:endDate '2019-01-28'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460467'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605085'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018430'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460471'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605902'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018475'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '25.136605'^^xsd:double;
+	schema:latitude '35.343153'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '5'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'sessile'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'EtOH'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '40'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Crete_1HERP_180928_190128_MF500_DMSO>
+	schema:identifier 'ARMS_Crete_1HERP_180928_190128_MF500_DMSO'^^xsd:string;
+	schema:country 'Greece'^^xsd:string;
+	schema:identifier 'Crete'^^xsd:string;
+	schema:identifier '1HERP'^^xsd:string;
+	schema:startDate '2018-09-28'^^xsd:string;
+	schema:endDate '2019-01-28'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460468'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605086'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018431'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460471'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605902'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018475'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '25.136605'^^xsd:double;
+	schema:latitude '35.343153'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '5'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'motile '^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'DMSO'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '500'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Crete_1HERP_180928_190128_MF500_EtOH>
+	schema:identifier 'ARMS_Crete_1HERP_180928_190128_MF500_EtOH'^^xsd:string;
+	schema:country 'Greece'^^xsd:string;
+	schema:identifier 'Crete'^^xsd:string;
+	schema:identifier '1HERP'^^xsd:string;
+	schema:startDate '2018-09-28'^^xsd:string;
+	schema:endDate '2019-01-28'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460469'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605087'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018432'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460471'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605902'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018475'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '25.136605'^^xsd:double;
+	schema:latitude '35.343153'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '5'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'motile '^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'EtOH'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '500'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Crete_1HERP_180928_190128_SED_Frozen>
+	schema:identifier 'ARMS_Crete_1HERP_180928_190128_SED_Frozen'^^xsd:string;
+	schema:country 'Greece'^^xsd:string;
+	schema:identifier 'Crete'^^xsd:string;
+	schema:identifier '1HERP'^^xsd:string;
+	schema:startDate '2018-09-28'^^xsd:string;
+	schema:endDate '2019-01-28'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460470'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605088'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018433'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460471'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605902'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018475'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '25.136605'^^xsd:double;
+	schema:latitude '35.343153'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '5'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'sediment'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'frozen'^^xsd:string;
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Crete_1HERP_180928_190128_PS250_EtOH>
+	schema:identifier 'ARMS_Crete_1HERP_180928_190128_PS250_EtOH'^^xsd:string;
+	schema:country 'Greece'^^xsd:string;
+	schema:identifier 'Crete'^^xsd:string;
+	schema:identifier '1HERP'^^xsd:string;
+	schema:startDate '2018-09-28'^^xsd:string;
+	schema:endDate '2019-01-28'^^xsd:string;
+	http://edamontology.org/data_1093 'pending'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605089'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018434'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460471'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605902'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018475'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '25.136605'^^xsd:double;
+	schema:latitude '35.343153'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '5'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'plankton'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'EtOH'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '250'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Crete_1HERP_180928_190128_MF125_DMSO>
+	schema:identifier 'ARMS_Crete_1HERP_180928_190128_MF125_DMSO'^^xsd:string;
+	schema:country 'Greece'^^xsd:string;
+	schema:identifier 'Crete'^^xsd:string;
+	schema:identifier '1HERP'^^xsd:string;
+	schema:startDate '2018-09-28'^^xsd:string;
+	schema:endDate '2019-01-28'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR9632063'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR9632060'^^xsd:string;
+	http://edamontology.org/data_1093 'pending'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR9632065'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR9632062'^^xsd:string;
+	http://edamontology.org/data_1093 'pending'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '25.136605'^^xsd:double;
+	schema:latitude '35.343153'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '5'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'motile '^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'DMSO'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '125'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Crete_1HERP_180928_190128_MF125_EtOH>
+	schema:identifier 'ARMS_Crete_1HERP_180928_190128_MF125_EtOH'^^xsd:string;
+	schema:country 'Greece'^^xsd:string;
+	schema:identifier 'Crete'^^xsd:string;
+	schema:identifier '1HERP'^^xsd:string;
+	schema:startDate '2018-09-28'^^xsd:string;
+	schema:endDate '2019-01-28'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR9632064'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR9632061'^^xsd:string;
+	http://edamontology.org/data_1093 'pending'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR9632065'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR9632062'^^xsd:string;
+	http://edamontology.org/data_1093 'pending'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '25.136605'^^xsd:double;
+	schema:latitude '35.343153'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '5'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'motile '^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'EtOH'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '125'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Koster_VH2_180418_180906_SF40_EtOH>
+	schema:identifier 'ARMS_Koster_VH2_180418_180906_SF40_EtOH'^^xsd:string;
+	schema:country 'Sweden'^^xsd:string;
+	schema:identifier 'Koster'^^xsd:string;
+	schema:identifier 'VH2'^^xsd:string;
+	schema:startDate '2018-04-18'^^xsd:string;
+	schema:endDate '2018-09-06'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018450'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605231'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018443'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460471'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605902'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018475'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '11.111884'^^xsd:double;
+	schema:latitude '58.87633'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '22'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'sessile'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'EtOH'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '40'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Koster_VH2_180418_180906_SF40_DMSO>
+	schema:identifier 'ARMS_Koster_VH2_180418_180906_SF40_DMSO'^^xsd:string;
+	schema:country 'Sweden'^^xsd:string;
+	schema:identifier 'Koster'^^xsd:string;
+	schema:identifier 'VH2'^^xsd:string;
+	schema:startDate '2018-04-18'^^xsd:string;
+	schema:endDate '2018-09-06'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018451'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605232'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018444'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460471'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605902'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018475'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '11.111884'^^xsd:double;
+	schema:latitude '58.87633'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '22'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'sessile'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'DMSO'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '40'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Koster_VH2_180418_180906_MF100_EtOH>
+	schema:identifier 'ARMS_Koster_VH2_180418_180906_MF100_EtOH'^^xsd:string;
+	schema:country 'Sweden'^^xsd:string;
+	schema:identifier 'Koster'^^xsd:string;
+	schema:identifier 'VH2'^^xsd:string;
+	schema:startDate '2018-04-18'^^xsd:string;
+	schema:endDate '2018-09-06'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018452'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605233'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018445'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460471'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605902'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018475'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '11.111884'^^xsd:double;
+	schema:latitude '58.87633'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '22'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'motile '^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'EtOH'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '100'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Koster_VH2_180418_180906_MF500_EtOH>
+	schema:identifier 'ARMS_Koster_VH2_180418_180906_MF500_EtOH'^^xsd:string;
+	schema:country 'Sweden'^^xsd:string;
+	schema:identifier 'Koster'^^xsd:string;
+	schema:identifier 'VH2'^^xsd:string;
+	schema:startDate '2018-04-18'^^xsd:string;
+	schema:endDate '2018-09-06'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018453'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605234'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018446'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460471'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605902'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018475'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '11.111884'^^xsd:double;
+	schema:latitude '58.87633'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '22'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'motile '^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'EtOH'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '500'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Koster_VH2_180418_180906_SED100_DMSO>
+	schema:identifier 'ARMS_Koster_VH2_180418_180906_SED100_DMSO'^^xsd:string;
+	schema:country 'Sweden'^^xsd:string;
+	schema:identifier 'Koster'^^xsd:string;
+	schema:identifier 'VH2'^^xsd:string;
+	schema:startDate '2018-04-18'^^xsd:string;
+	schema:endDate '2018-09-06'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018454'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605235'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018447'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460471'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605902'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018475'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '11.111884'^^xsd:double;
+	schema:latitude '58.87633'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '22'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'sediment'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'DMSO'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '100'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Koster_VH2_180418_180906_SED500_DMSO>
+	schema:identifier 'ARMS_Koster_VH2_180418_180906_SED500_DMSO'^^xsd:string;
+	schema:country 'Sweden'^^xsd:string;
+	schema:identifier 'Koster'^^xsd:string;
+	schema:identifier 'VH2'^^xsd:string;
+	schema:startDate '2018-04-18'^^xsd:string;
+	schema:endDate '2018-09-06'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018455'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605236'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018448'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460471'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605902'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018475'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '11.111884'^^xsd:double;
+	schema:latitude '58.87633'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '22'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'sediment'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'DMSO'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '500'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv#ARMS_Koster_VH2_180418_180906_PS90_EtOH>
+	schema:identifier 'ARMS_Koster_VH2_180418_180906_PS90_EtOH'^^xsd:string;
+	schema:country 'Sweden'^^xsd:string;
+	schema:identifier 'Koster'^^xsd:string;
+	schema:identifier 'VH2'^^xsd:string;
+	schema:startDate '2018-04-18'^^xsd:string;
+	schema:endDate '2018-09-06'^^xsd:string;
+	http://edamontology.org/data_1093 'pending'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605237'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018449'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR3460471'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4605902'^^xsd:string;
+	http://edamontology.org/data_1093 'ERR4018475'^^xsd:string;
+	http://purl.org/dc/terms/accessRights <https://creativecommons.org/licenses/by/4.0/>;
+	schema:longitude '11.111884'^^xsd:double;
+	schema:latitude '58.87633'^^xsd:double;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '22'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+    ];
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'plankton'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact 'EtOH'^^xsd:string;
+	http://rs.tdwg.org/dwc/terms/MeasurementOrFact [
+        qudt:numericValue '90'^^xsd:integer;
+		qudt:hasUnit <https://vocab.nerc.ac.uk/collection/P06/current/UMIC/>;
+    ];
+.

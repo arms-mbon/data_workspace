@@ -1,0 +1,12 @@
+Station,Country,ARMS_unit,date_start,date_end,Event_id,Remarks,Is_Varified,Taxon_Name,created_at,updated_at
+Koster,Sweden,VH1,2019-05-27,2020-07-16,ARMS_Koster_VH1_20190527_20200716,2.76 percent,Verified,Ascidia,2021-05-16,2021-05-16
+Koster,Sweden,VH1,2019-05-27,2020-07-16,ARMS_Koster_VH1_20190527_20200716,0.24%,Verified,"Galathea nexa Embleton, 1836",2021-05-16,2021-05-16
+Koster,Sweden,VH1,2019-05-27,2020-07-16,ARMS_Koster_VH1_20190527_20200716,0.12%,Verified,Scrupocellaria,2021-05-16,2021-05-16
+Koster,Sweden,VH1,2019-05-27,2020-07-16,ARMS_Koster_VH1_20190527_20200716,30 percent,Verified,"Cryptosula pallasiana (Moll, 1803)",2021-05-16,2021-05-16
+Koster,Sweden,VH1,2019-05-27,2020-07-16,ARMS_Koster_VH1_20190527_20200716,Idmidronea atlantica,Verified,"Idmidronea Canu & Bassler, 1920",2021-05-16,2021-05-16
+Koster,Sweden,VH1,2019-05-27,2020-07-16,ARMS_Koster_VH1_20190527_20200716,30 percent of encrusting species,Verified,"Pomatoceros triqueter (Linnaeus, 1758)",2021-05-15,2021-05-15
+Koster,Sweden,VH1,2019-05-27,2020-07-16,ARMS_Koster_VH1_20190527_20200716,"Plagiocea patina, 2%",Verified,Bryozoa,2021-05-16,2021-05-16
+Koster,Sweden,VH1,2019-05-27,2020-07-16,ARMS_Koster_VH1_20190527_20200716,2.75 precent of the encrusting species,Verified,"Marthasterias glacialis (Linnaeus, 1758)",2021-05-16,2021-05-16
+Koster,Sweden,VH1,2019-05-27,2020-07-16,ARMS_Koster_VH1_20190527_20200716,"Spirobis spirobis, 6%",Verified,Polychaeta,2021-05-16,2021-05-16
+Koster,Sweden,VH1,2019-05-27,2020-07-16,ARMS_Koster_VH1_20190527_20200716,6.2%,Verified,"Escharella immersa (Fleming, 1828)",2021-05-16,2021-05-16
+Koster,Sweden,VH1,2019-05-27,2020-07-16,ARMS_Koster_VH1_20190527_20200716,"Smittoidea reticulata, 6%",Verified,Smittoidea,2021-05-16,2021-05-16
