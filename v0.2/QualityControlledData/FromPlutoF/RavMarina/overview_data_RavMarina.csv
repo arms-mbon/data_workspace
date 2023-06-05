@@ -1,0 +1,4 @@
+Station,Country,ARMS_unit,Latitude,Longitude,Depth,Date_start,Date_end,Event_ID,Material Samples,Observations,Sequences,Associated Data,Created,Updated
+RavMarina,Italy,RavM2,44.49242600,12.28762300,no measurements,2021-04-22,2021-07-26,ARMS_RavMarina_RavM2_20210422_20210726,0,0,0,0,2021-04-22,2021-06-28
+RavMarina,Italy,RavM3,44.49242600,12.28762300,no measurements,2021-04-22,2021-07-26,ARMS_RavMarina_RavM3_20210422_20210726,0,0,0,0,2021-04-22,2021-06-28
+RavMarina,Italy,RavM1,44.49242600,12.28762300,no measurements,2021-04-22,2021-07-26,ARMS_RavMarina_RavM1_20210422_20210726,0,0,0,2,2021-04-22,2022-07-06

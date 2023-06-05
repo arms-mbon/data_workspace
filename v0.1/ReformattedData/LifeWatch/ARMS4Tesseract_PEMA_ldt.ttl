@@ -1,0 +1,44 @@
+{# Template 'ARMS4Tesseract_PEMA_data_ldt.ttl'
+Description: 'Template to generate triples from ARMS4Tesseract_PEMA data.'
+Inputs:
+	- input-file: ARMS4Tesseract_PEMA_data.csv
+	- set-file(s): ARMS4Tesseract_PEMA_metadata.csv as tableSchema
+#}
+
+{%- if ctrl.isFirst %}
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/#> . 
+
+<https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv> 
+	a csvw:table;
+	csvw:schema <https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_metadata.csv>;
+	csvw:columns [
+	{%- for row in sets['tableSchema'] %}
+		{{row['column']}},
+	{%- endfor %} 
+	];
+.
+{%- endif %}
+
+<{{uritexpand("https://raw.githubusercontent.com/arms-mbon/Data/main/LifeWatch/ARMS4Tesseract_PEMA_data.csv{#Sample_ID}",_)}}>
+{%- for row in sets['tableSchema'] %}
+	{%- if _[row['column']] != 'NA' %}
+		{%- if row['column'] == 'AccessRights' %}
+			{%- if _[row['column']] == 'CC BY' %}
+	{{row['propertyUrl']}} <https://creativecommons.org/licenses/by/4.0/>;
+			{%- elif _[row['column']] == 'under embargo' %}
+	{{row['propertyUrl']}} <{{uritexpand("http://purl.org/eprint/accessRights/{AccessRights}",_)}}>; {#- still looking for correct term-url here -#}
+			{%- endif %}
+
+		{%- elif row['column'] == 'depth' or row['column'] == 'Filter' %}
+	{{row['propertyUrl']}} [
+        qudt:numericValue {{ttl_fmt(_[row['column']], row['datatype'])}};
+		qudt:hasUnit <{{row['UnitUrl']}}>;
+    ];
+        {%- else %}
+	{{row['propertyUrl']}} {{ttl_fmt(_[row['column']], row['datatype'])}};
+	{%- endif %}
+{%- endif %}
+{%- endfor %}
+.
