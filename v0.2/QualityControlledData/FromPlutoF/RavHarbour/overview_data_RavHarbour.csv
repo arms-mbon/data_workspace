@@ -1,0 +1,4 @@
+Station,Country,ARMS_unit,Latitude,Longitude,Depth,Date_start,Date_end,Event_ID,Material Samples,Observations,Sequences,Associated Data,Created,Updated
+RavHarbour,Italy,RavH1,44.42148800,12.20949700,no measurements,2021-04-22,2021-07-26,ARMS_RavHarbour_RavH1_20210422_20210726,0,0,0,2,2021-04-22,2022-07-06
+RavHarbour,Italy,RavH2,44.42148800,12.20949700,no measurements,2021-04-22,2021-07-26,ARMS_RavHarbour_RavH2_20210422_20210726,0,0,0,0,2021-04-22,2021-07-14
+RavHarbour,Italy,RavH3,44.42148800,12.20949700,no measurements,2021-04-22,2021-07-26,ARMS_RavHarbour_RavH3_20210422_20210726,0,0,0,0,2021-04-22,2021-06-28
