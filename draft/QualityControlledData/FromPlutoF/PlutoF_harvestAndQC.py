@@ -19,7 +19,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/92482A87F00DC522C339E15F217DEFFCCD553B807969E6355EF5D9C4C4686E3E.json?h=7D4JOaeN-0IkovCZbpl2gQ&e=1682579726'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/40F4B77D241A0AD71F9AC6060F9457961DCC8270F425AE5CB24E7C0EAF0C0D69.json?h=uhCboBOb7ERtjgrkSe7wDQ&e=1687936179'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -664,14 +664,14 @@ for plutoF_data in json_arms_observatories_plutoF:
                 qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"longitude", "qc_flag":"fail","plutoF_data":plutoF_data["Longitude"], "gsheets_data":gsheets_data["Longitude"]})
                 
             try:
-                if float(plutoF_data["Depth_min"]) != float(gsheets_data["Depth (m)"]):
-                    if abs(float(plutoF_data["Depth_min"]) - float(gsheets_data["Depth (m)"])) > 1:
-                        qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"depth", "qc_flag":"fail","plutoF_data":plutoF_data["Depth_min"], "gsheets_data":gsheets_data["Depth (m)"]})
+                if float(plutoF_data["Depth_min"]) != float(gsheets_data["Depth_min (m)"]):
+                    if abs(float(plutoF_data["Depth_min"]) - float(gsheets_data["Depth_min (m)"])) > 1:
+                        qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"depth", "qc_flag":"fail","plutoF_data":plutoF_data["Depth_min"], "gsheets_data":gsheets_data["Depth_min (m)"]})
             except:
-                qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"depth", "qc_flag":"fail","plutoF_data":plutoF_data["Depth_min"], "gsheets_data":gsheets_data["Depth (m)"]})
+                qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"depth", "qc_flag":"fail","plutoF_data":plutoF_data["Depth_min"], "gsheets_data":gsheets_data["Depth_min (m)"]})
             
             try:
-                if float(plutoF_data["Latitude"]) == float(gsheets_data["Latitude"]) and float(plutoF_data["Longitude"]) == float(gsheets_data["Longitude"]) and float(plutoF_data["Depth_min"]) == float(gsheets_data["Depth (m)"]):
+                if float(plutoF_data["Latitude"]) == float(gsheets_data["Latitude"]) and float(plutoF_data["Longitude"]) == float(gsheets_data["Longitude"]) and float(plutoF_data["Depth_min"]) == float(gsheets_data["Depth_min (m)"]):
                     qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude, longitude, depth", "qc_flag":"pass"})
             except:
                 qc_report_arms_observatories_plutoF_to_gsheets.append({"station":plutoF_data["Station"],"arms_unit":plutoF_data["ARMS_unit"], "qc_param":"latitude, longitude, depth", "qc_flag":"pass"})
@@ -703,13 +703,13 @@ for gsheets_data in json_arms_observatories_gsheets:
             except:
                 qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"longitude", "qc_flag":"fail","gsheets_data":gsheets_data["Longitude"],"plutoF_data":plutoF_data["Longitude"]})
             try:
-                if float(gsheets_data["Depth (m)"]) != float(plutoF_data["Depth_min"]):
-                    if abs(float(gsheets_data["Depth (m)"]) - float(plutoF_data["Depth_min"])) > 1:
-                        qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"depth", "qc_flag":"fail","gsheets_data":gsheets_data["Depth (m)"],"plutoF_data":plutoF_data["Depth_min"]})
+                if float(gsheets_data["Depth_min (m)"]) != float(plutoF_data["Depth_min"]):
+                    if abs(float(gsheets_data["Depth_min (m)"]) - float(plutoF_data["Depth_min"])) > 1:
+                        qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"depth", "qc_flag":"fail","gsheets_data":gsheets_data["Depth_min (m)"],"plutoF_data":plutoF_data["Depth_min"]})
             except:
-                qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"depth", "qc_flag":"fail","gsheets_data":gsheets_data["Depth (m)"],"plutoF_data":plutoF_data["Depth_min"]})
+                qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"depth", "qc_flag":"fail","gsheets_data":gsheets_data["Depth_min (m)"],"plutoF_data":plutoF_data["Depth_min"]})
             try:
-                if float(gsheets_data["Latitude"]) == float(plutoF_data["Latitude"]) and float(gsheets_data["Longitude"]) == float(plutoF_data["Longitude"]) and float(gsheets_data["Depth (m)"]) == float(plutoF_data["Depth_min"]):
+                if float(gsheets_data["Latitude"]) == float(plutoF_data["Latitude"]) and float(gsheets_data["Longitude"]) == float(plutoF_data["Longitude"]) and float(gsheets_data["Depth_min (m)"]) == float(plutoF_data["Depth_min"]):
                     qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude, longitude, depth", "qc_flag":"pass"})
             except:
                 qc_report_arms_observatories_gsheets_to_plutoF.append({"station":gsheets_data["Observatory-ID (corrected)"],"arms_id":gsheets_data["ARMS-ID (corrected)"], "qc_param":"latitude, longitude, depth", "qc_flag":"pass"})
@@ -882,7 +882,7 @@ ImageData = []
 #UnitID gsheets["ARMS-ID (corrected)"]
 #Latitude gsheets["Latitude"]
 #Longitude gsheets["Longitude"]
-#Depth gsheets["Depth (m)"]
+#Depth gsheets["Depth_min (m)"]
 #Field Replicates gsheets["Field Replicates"]
 #Monitoring area  gsheets["Monitoring area"]
 #Habitat keywords gsheets["Habitat keywords (env_local)"]
@@ -902,7 +902,11 @@ for gsheets_data in json_arms_observatories_gsheets:
                 "Habitat keywords":gsheets_data["Habitat keywords (env_local)"],
                 "IUCN habitat type":gsheets_data["IUCN habitat type"],
                 "Description":gsheets_data["Description"],
-                "Notes":gsheets_data["Notes"]
+                "Notes":gsheets_data["Notes"],
+                "env broad scale": gsheets_data["env_broad_scale"],
+                "env local scale": gsheets_data["env_local_scale"],
+                "env medium scale": gsheets_data["env_medium_scale"],
+                "add info": gsheets_data["add. info"],
                 }
             )
 
@@ -960,10 +964,10 @@ for gsheets_data in json_arms_samples_gsheets:
                 "DateCollected":gsheets_data["Collection Date"],
                 "EventID":gsheets_data["Event-ID"],
                 "MaterialSampleID":gsheets_data["MaterialSample-ID"],
-                "Fraction":gsheets_data["Fraction"],
-                "Preservative":gsheets_data["Preservative"],
-                "Filter":gsheets_data["Filter (micrometer)"],
-                "CrateCover":gsheets_data["Crate cover used during retrieval"],
+                "Fraction":gsheets_data["Fraction"] if gsheets_data["Fraction"] != "" else "not provided",
+                "Preservative":gsheets_data["Preservative"] if gsheets_data["Preservative"] != "" else "not provided",
+                "Filter":gsheets_data["Filter (micrometer)"] if gsheets_data["Filter (micrometer)"] != "" else "not provided",
+                "CrateCover":gsheets_data["Crate cover used during retrieval"] if gsheets_data["Crate cover used during retrieval"] != "" else "not provided",
                 "Number of associated data files":str(count),
                 "Number of ENA sequences":str(ENA_count)
                 }
@@ -977,10 +981,10 @@ for gsheets_data in json_arms_samples_gsheets:
                 "DateCollected":gsheets_data["Collection Date"],
                 "EventID":gsheets_data["Event-ID"],
                 "MaterialSampleID":gsheets_data["MaterialSample-ID"],
-                "Fraction":gsheets_data["Fraction"],
-                "Preservative":gsheets_data["Preservative"],
-                "Filter":gsheets_data["Filter (micrometer)"],
-                "CrateCover":gsheets_data["Crate cover used during retrieval"],
+                "Fraction":gsheets_data["Fraction"] if gsheets_data["Fraction"] != "" else "not provided",
+                "Preservative":gsheets_data["Preservative"] if gsheets_data["Preservative"] != "" else "not provided",
+                "Filter":gsheets_data["Filter (micrometer)"] if gsheets_data["Filter (micrometer)"] != "" else "not provided",
+                "CrateCover":gsheets_data["Crate cover used during retrieval"] if gsheets_data["Crate cover used during retrieval"] != "" else "not provided",
                 "Number of associated data files":str(count),
                 "Number of ENA sequences":str(ENA_count)
                 }
@@ -1010,12 +1014,27 @@ for plutoF_data in material_samples_csv_data:
     date_collected = pre_date_collected[0:4]+"-"+pre_date_collected[4:6]+"-"+pre_date_collected[6:8]
     try:
         fraction = plutoF_data["Material_Sample_ID"].split("_")[5]
+        #seperate fraction from the filter by looking at the string, if the first 2 characters SF => sessile fraction, if MF => motile fraction and then use the remainder as the filter value
+        if fraction[0:2] == "SF":
+            v_fraction = "sessile fraction"
+            v_filter = fraction[2:]
+        elif fraction[0:2] == "MF":
+            v_filter = fraction[2:]
+            v_fraction = "motile fraction"
+        else:
+            v_fraction = fraction
+            v_filter= "not provided"
     except:
         fraction = ""
     try:
         preservative = plutoF_data["Material_Sample_ID"].split("_")[6]
+        #check if preservative is either ETOH or DMSO , if not then it is not provided
+        if preservative == "ETOH" or preservative == "DMSO":
+            v_preservative = preservative
+        else:
+            v_preservative = "not provided"
     except:
-        preservative = ""
+        v_preservative = ""
     
     SamplingEventData.append(
         {
@@ -1026,9 +1045,9 @@ for plutoF_data in material_samples_csv_data:
             "DateCollected":date_collected,
             "EventID":plutoF_data["Parent_Event_ID"],
             "MaterialSampleID":plutoF_data["Material_Sample_ID"],
-            "Fraction":fraction,
-            "Preservative":preservative,
-            "Filter":"",
+            "Fraction":v_fraction if v_fraction != "" else "not provided",
+            "Preservative":v_preservative if v_preservative != "" else "not provided",
+            "Filter":v_filter if v_filter != "" else "not provided",
             "CrateCover":"",
             "Number of associated data files":"",
             "Number of ENA sequences":""
