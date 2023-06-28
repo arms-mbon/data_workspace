@@ -19,7 +19,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/40F4B77D241A0AD71F9AC6060F9457961DCC8270F425AE5CB24E7C0EAF0C0D69.json?h=uhCboBOb7ERtjgrkSe7wDQ&e=1687936179'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/40F4B77D241A0AD71F9AC6060F9457961DCC8270F425AE5CB24E7C0EAF0C0D69.json?h=PAwft0q1y31ibTTZa0jbBQ&e=1688043816'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -1048,9 +1048,9 @@ for plutoF_data in material_samples_csv_data:
             "Fraction":v_fraction if v_fraction != "" else "not provided",
             "Preservative":v_preservative if v_preservative != "" else "not provided",
             "Filter":v_filter if v_filter != "" else "not provided",
-            "CrateCover":"",
-            "Number of associated data files":"",
-            "Number of ENA sequences":""
+            "CrateCover":"not provided",
+            "Number of associated data files":"0",
+            "Number of ENA sequences":"0"
         } 
     )
         
