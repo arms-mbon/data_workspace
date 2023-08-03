@@ -1,4 +1,4 @@
-The data here are taken from the ARMS overview sheet in the ARMS google account: https://docs.google.com/spreadsheets/d/1iFwKO4OAmQrgZtIpyOxjdXvyCEPE_jK45V4elh1lwYs/edit#gid=139664176. Each tab there is downloaded into a separate CSV file. 
+The data here are taken from the ARMS overview sheet in the ARMS google account: https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE/edit#gid=1607535453. Each tab there is downloaded into a separate CSV file. 
 
 *  [GS_ARMS_Material_Samples_and_Sequence_Info.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Material_Samples_and_Sequence_Info.csv) for the metadata on the sampling events and the accession numbers of the sequences in ENA 
 *  [GS_ARMS_Samples_Sequences.csv](https://raw.githubusercontent.com/arms-mbon/Data/main/QualityControlledData/FromGS/GS_ARMS_Samples_Sequences.csv) semantic annotation and descriptions of the columns in the samples+sequences spreadsheet 
