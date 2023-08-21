@@ -2,6 +2,15 @@ station,country,unit,qc_param,qc_flag
 Koster,Sweden,VH1,ARMS unit,passed
 Koster,Sweden,VH3,ARMS unit,passed
 Koster,Sweden,VH2,ARMS unit,passed
+Koster,Sweden,Koster_NSF8,ARMS unit,missing
+Koster,Sweden,Koster_NSF1,ARMS unit,missing
+Koster,Sweden,Koster_NSF2,ARMS unit,missing
+Koster,Sweden,Koster_NSF3,ARMS unit,missing
+Koster,Sweden,Koster_NSF4,ARMS unit,missing
+Koster,Sweden,Koster_NSF5,ARMS unit,missing
+Koster,Sweden,Koster_NSF9,ARMS unit,missing
+Koster,Sweden,Koster_NSF6,ARMS unit,missing
+Koster,Sweden,Koster_NSF7,ARMS unit,missing
 Roscoff,France,BasBloS1,ARMS unit,passed
 Roscoff,France,MarBloR1,ARMS unit,passed
 Roscoff,France,MarBloR3,ARMS unit,passed
