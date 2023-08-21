@@ -2,4 +2,4 @@ In here are the input and output files from the first batch of runs on the ARMS-
 
 The following folders are included here:
 * [ParameterFiles](https://github.com/arms-mbon/data_workspace/tree/main/AnalysisData/FromPEMA/processing_batch1/parameter_files): the parameter files for the PEMA runs 
-* [So-called OTU tables](https://github.com/arms-mbon/data_workspace/tree/main/AnalysisData/FromPEMA/processing_batch1/taxonomic_assignments), aka the PEMA output files with the taxonomic assignments
+* [The OTU tables](https://github.com/arms-mbon/data_workspace/tree/main/AnalysisData/FromPEMA/processing_batch1/taxonomic_assignments), aka the PEMA output files with the taxonomic assignments
