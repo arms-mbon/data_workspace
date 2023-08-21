@@ -1,4 +1,7 @@
 Station,Country,ARMS_unit,Latitude,Longitude,Depth_min,Depth_max,Date_start,Date_end,Event_ID,Event_Description,IUCN_Habitat_type,Material Samples,Observations,Sequences,Associated Data,Created,Updated
-AdriaticEastCoast,Italy,Ven3,45.31666700,12.50000000,16,16,2021-06-23,2022-07-12,ARMS_AdriaticEastCoast_Ven3_20210623_20220712,,None,0,0,0,0,2021-06-28,2022-07-26
-AdriaticEastCoast,Italy,Ven1,45.31666700,12.50000000,16,16,2021-06-23,2022-07-12,ARMS_AdriaticEastCoast_Ven1_20210623_20220712,,None,0,0,0,0,2021-06-28,2022-07-26
-AdriaticEastCoast,Italy,Ven2,45.31666700,12.50000000,16,16,2021-06-23,2022-07-12,ARMS_AdriaticEastCoast_Ven2_20210623_20220712,"can you add a few lines here, describing the habitat and the wider environment",None,0,0,0,0,2021-06-28,2022-07-26
+AdriaticEastCoast,Italy,Ven3,45.31666700,12.50000000,16,16,2021-06-23,2022-07-12,ARMS_AdriaticEastCoast_Ven3_20210623_20220712,,None,0,0,0,23,2021-06-28,2023-08-06
+AdriaticEastCoast,Italy,Ven3,45.31666700,12.50000000,16,16,2022-07-13,2023-07-19,ARMS_AdriaticEastCoast_Ven3_20220713_20230719,,None,0,0,0,21,2023-07-24,2023-08-06
+AdriaticEastCoast,Italy,Ven2,45.31666700,12.50000000,16,16,2021-06-23,2022-07-12,ARMS_AdriaticEastCoast_Ven2_20210623_20220712,,None,0,0,0,23,2021-06-28,2023-08-06
+AdriaticEastCoast,Italy,Ven2,45.31666700,12.50000000,16,16,2022-07-13,2023-07-19,ARMS_AdriaticEastCoast_Ven2_20220713_20230719,,None,0,0,0,21,2023-07-24,2023-08-06
+AdriaticEastCoast,Italy,Ven1,45.31666700,12.50000000,16,16,2021-06-23,2022-07-12,ARMS_AdriaticEastCoast_Ven1_20210623_20220712,,None,0,0,0,23,2023-06-26,2023-08-06
+AdriaticEastCoast,Italy,Ven1,45.31666700,12.50000000,16,16,2022-07-13,2023-07-19,ARMS_AdriaticEastCoast_Ven1_20220713_20230719,,None,0,0,0,21,2023-07-24,2023-08-06

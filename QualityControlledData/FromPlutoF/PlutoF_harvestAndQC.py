@@ -19,7 +19,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/40F4B77D241A0AD71F9AC6060F9457961DCC8270F425AE5CB24E7C0EAF0C0D69.json?h=PAwft0q1y31ibTTZa0jbBQ&e=1688043816'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/A8B1342F310D0ABBE33B8540F412A9D6D143FBA0F79B1AF394155638DA7BE7B6.json?h=Q2sjVlR2b9z42cvf44qQSA&e=1692688344'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
