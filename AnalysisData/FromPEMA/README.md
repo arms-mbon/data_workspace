@@ -1,5 +1,6 @@
-[PEMA](https://github.com/hariszaf/pema) is a bioinformatics code we use to process the COI, 18S, and ITS data from ARMS-MBON. 
+[PEMA](https://github.com/hariszaf/pema) is a bioinformatics code we use to process the COI, 18S, and ITS raw sequences obtained from the ARMS-MBON samples. 
 
-Runs of PEMA are performed on >=1 sequence, for a single gene type at a time. For each run of PEMA that we accept (i.e. has been confirmed to produce generally good results that we are happy to share), we create a separate folder here containing the input and output files for that run.
+The sequences processed are in [ENA](https://www.ebi.ac.uk/ena/browser/home). PEMA runs were executed in batches, and within each batch we processed the sequences in chunks (based mainly on gene type, but sometimes on other considerations). The parameters of each run are input via a parameter file: these parameter files, the output taxonomic assignments, and the output fasta files can be found in the batch folders. Currently we have 
+* [the first batch](https://github.com/arms-mbon/data_workspace/tree/main/AnalysisData/FromPEMA/processing_batch001) covering samples collected from 2018 to 2020
 
-Results from PEMA that are then published (as a data paper, a scientific paper, a GBif/EurOBIS record, etc) are taken from here and put in the repositories called analysis_results_###
+  
