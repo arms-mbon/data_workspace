@@ -20,6 +20,6 @@ In addition to these spreadsheets contained in each observatory folder, the same
 
 The metadata downloaded from PlutoF undergo a QC, which modifies the various names (observatory, ARMS units) and IDs (event IDs, material sample IDs, sequence IDs, associated data IDs) where they do follow the rules encoded in the ARMS-MBON Handbook. The QC script and its inputs and outputs can also be found here. Any corrections or additions that are found to be necessary in PlutoF are passed on to the ARMS partners, and once those corrections are made the process is repeated, until no more corrections are necessary. 
 
-_**The current status of the QC**_: :repeat:
+_**The current status of the QC**_: :ballot_box_with_check: 
 
-<!---The current status of the QC_: :ballot_box_with_check: -->
+<!---The current status of the QC_: :repeat: :ballot_box_with_check: -->
