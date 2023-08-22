@@ -9,6 +9,6 @@ Here you will find the combination of the quality-controlled (meta)data taken [f
 
 The metadata here undergo a QC by comparing the PlutoF and google sheet entries as they are combined. Any corrections or additions that are found to be necessary in PlutoF or the google sheet are passed on to the ARMS partners, and once those corrections are made the process is repeated, until no more corrections are necessary. 
 
-_**The current status of the QC**_: :repeat:
+_**The current status of the QC**_: :ballot_box_with_check: 
 
-<!---The current status of the QC_: :ballot_box_with_check: -->
+<!---The current status of the QC_: :ballot_box_with_check: :repeat: -->
