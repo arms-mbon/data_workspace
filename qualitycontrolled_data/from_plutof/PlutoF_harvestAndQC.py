@@ -19,7 +19,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/A8B1342F310D0ABBE33B8540F412A9D6D143FBA0F79B1AF394155638DA7BE7B6.json?h=Q2sjVlR2b9z42cvf44qQSA&e=1692688344'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/A8B1342F310D0ABBE33B8540F412A9D6D143FBA0F79B1AF394155638DA7BE7B6.json?h=-PdGb51DpARl_qG452Uehw&e=1692774174'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -853,13 +853,13 @@ with open(os.path.join(output_dir, 'qc_report_arms_samples_gsheets_to_plutoF.csv
     for row in qc_report_arms_samples_gsheets_to_plutoF:
         writer.writerow(row)
             
-#cut all the files that start with GS_ARMS_ and end with .csv and put them in the parent folder of the output folder /FromGS
+#cut all the files that start with GS_ARMS_ and end with .csv and put them in the parent folder of the output folder /from_gs
 for file in os.listdir(output_dir):
     if file.startswith("GS_ARMS_") and file.endswith(".csv"):
         #make the string of the file path to move
         #split the output_dir string on the os sep and pop the last element and rejoin the string by os.sep
         parent_folder = os.sep.join(output_dir.split(os.sep)[:-1])
-        shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"FromGS",file))
+        shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"from_gs",file))
         
 #do the same for all the files that start with qc_report
 for file in os.listdir(output_dir):
@@ -867,7 +867,7 @@ for file in os.listdir(output_dir):
         #make the string of the file path to move
         #split the output_dir string on the os sep and pop the last element and rejoin the string by os.sep
         parent_folder = os.sep.join(output_dir.split(os.sep)[:-1])
-        shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"FromGS",file))
+        shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"from_gs",file))
         
 #combine gsheets data with plutoF data in one file
 SamplingEventData = []
@@ -907,6 +907,8 @@ for gsheets_data in json_arms_observatories_gsheets:
                 "env local scale": gsheets_data["env_local_scale"],
                 "env medium scale": gsheets_data["env_medium_scale"],
                 "add info": gsheets_data["add. info"],
+                "MarineRegion_larger": gsheets_data["MarineRegion_larger"],
+                "MarineRegion_smaller": gsheets_data["MarineRegion_smaller"]
                 }
             )
 
@@ -1230,4 +1232,4 @@ for file in os.listdir(output_dir):
         #make the string of the file path to move
         #split the output_dir string on the os sep and pop the last element and rejoin the string by os.sep
         parent_folder = os.sep.join(output_dir.split(os.sep)[:-1])
-        shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"Combined",file))
+        shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"combined",file))
