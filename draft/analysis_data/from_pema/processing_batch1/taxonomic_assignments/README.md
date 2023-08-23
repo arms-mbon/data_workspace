@@ -7,7 +7,7 @@ The first chunk of files are "Extended final tables" that contain the following 
 * the associated NBCI taxon ID (where there is one)
    
 Their filenames contain:
-* the date of the processing run (e.g. April2021)
+* the date the samples were sequenced (e.g. April2021)
 * the gene type (COI, ITS, 18S)
 * whether or not the blank (sequences) were included
 
@@ -16,7 +16,7 @@ The second chunk of files are the more detailed taxonomic assignements, containi
 * For each node of the taxonomic classification: its name and its confidence level
   
 Their filenames contain:
-* the date of the processing run (e.g. April2021)
+* the date the samples were sequenced (e.g. April2021)
 * the gene type (COI, ITS, 18S)
 
 There is also a file indicating which samples produced [no results](https://github.com/arms-mbon/data_workspace/blob/main/AnalysisData/FromPEMA/processing_batch1/taxonomic_assignments/Samples_with_no_results.xlsx). 
