@@ -15,5 +15,27 @@ The download URL for these files are the following:
 |all_sequences_grouped_July2019_COI.fa|[https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5aec1c8507131186606](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5aec1c8507131186606)  |
 |all_sequences_grouped_May2021_COI.fa| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5aec1d22f7293220847](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5aec1d22f7293220847) |
 |all_sequences_grouped_September2020_COI.fa| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5aec1ce619790794228](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5aec1ce619790794228) |
+|Aligned_assignments_April2021_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c30492304947055810](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c30492304947055810) |
+|Aligned_assignments_January2020_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304a6079692934739](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304a6079692934739) |
+|Aligned_assignments_January2022_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304974c2824435732](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304974c2824435732) |
+|Aligned_assignments_July2019_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c3049223a375779320](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c3049223a375779320) |
+|Aligned_assignments_May2021_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304a04ec570416353](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304a04ec570416353) |
+|Aligned_assignments_September2020_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c30495306133353334](	https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c30495306133353334) |
+|all_sequences_grouped_April2021_18S.fa| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c30492143175479550](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c30492143175479550) |
+|all_sequences_grouped_January2020_18S.fa| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304922d2186250508](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304922d2186250508) |
+|all_sequences_grouped_January2022_18S.fa| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304921f8455298820](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304921f8455298820) |
+|all_sequences_grouped_July2019_18S.fa| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304a777b329215005](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304a777b329215005) |
+|all_sequences_grouped_May2021_18S.fa| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304924df142213445](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304924df142213445) |
+|all_sequences_grouped_September2020_18S.fa| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304970ae592926655](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304970ae592926655) |
+|final_all_samples_April2021_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c8b956716621278](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c8b956716621278) |
+|final_all_samples_January2020_18S.fasta| [	https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c813a3970262799](	https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c813a3970262799) |
+|final_all_samples_January2022_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c83730731111561](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c83730731111561) |
+|final_all_samples_July2019_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c7eea9982641559](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c7eea9982641559) |
+|final_all_samples_May2021_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c80227525079610](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c80227525079610) |
+|final_all_samples_September2020_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c868fd846188990](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c868fd846188990) |
+
+
+
+
 
 Within these files, each row contains an identifier+the DNA sequence. This identifier is also used in the [taxonomic assignment files](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments), so you can match the information in these files in this way. Note that the date in the filename refers to the date of processing of those data, rather than the date of the sampling event. 
