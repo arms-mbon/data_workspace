@@ -33,8 +33,11 @@ The download URL for these files are the following:
 |final_all_samples_July2019_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c7eea9982641559](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c7eea9982641559) |
 |final_all_samples_May2021_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c80227525079610](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c80227525079610) |
 |final_all_samples_September2020_18S.fasta| [https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c868fd846188990](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c37c868fd846188990) |
-
-
-
+|Aligned_assignments_April2021_ITS.fasta|[https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a7dc04901354082](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a7dc04901354082)|
+|Aligned_assignments_July2019_ITS.fasta|[https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a6455c030029062](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a6455c030029062)|
+|all_samples_April2021_ITS.fasta|[https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a7dee9117163394](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a7dee9117163394)|
+|all_samples_July2019_ITS.fasta|[https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a7e07e102126946](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a7e07e102126946)|
+|all_sequences_grouped_April2021_ITS.fa|[https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a64286428025677](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a64286428025677)|
+|all_sequences_grouped_July2019_ITS.fa|[https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a7dc04477203942](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a7dc04477203942)|
 
 Within these files, each row contains an identifier+the DNA sequence. This identifier is also used in the [taxonomic assignment files](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments), so you can match the information in these files in this way. Note that the date in the filename refers to the date of processing of those data, rather than the date of the sampling event. 
