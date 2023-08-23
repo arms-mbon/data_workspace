@@ -37,5 +37,4 @@ The download URL for these files are the following:
 
 
 
-
 Within these files, each row contains an identifier+the DNA sequence. This identifier is also used in the [taxonomic assignment files](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments), so you can match the information in these files in this way. Note that the date in the filename refers to the date of processing of those data, rather than the date of the sampling event. 
