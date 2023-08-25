@@ -1,5 +1,5 @@
 ColumnTitle,Description,Datatype,Property,ObservablePropertyUrl,Unit,UnitUrl,Cell2URL
- ,,,,,,,18S_demultiplexed,Demultiplexing method used,xsd:string,schema:description,none,none,none,none
+none,none,none,none,none,none,none,18S_demultiplexed,Demultiplexing method used,xsd:string,schema:description,none,none,none,none
 ARMS-ID,ARMS unit ID,xsd:string,schema:identifier,none,none,none,none
 ARMS-ID,ARMS unit ID,xsd:string,schema:identifier,none,none,none,none
 COI_demultiplexed,Demultiplexing method used,xsd:string,schema:description,none,none,none,none
