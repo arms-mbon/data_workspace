@@ -1,5 +1,5 @@
 ColumnTitle,Description,Datatype,Property,ObservablePropertyUrl,Unit,UnitUrl,Cell2URL
- ,,,,,,, ,,,,,,,
+none,none,none,none,none,none,none, ,none,none,none,none,none,none,
 ARMS-ID (corrected),ARMS unit ID,xsd:string,schema:identifier,none,none,none,none
 Country ISO3letter code,Country,xsd:string,schema:country,none,none,none,http://publications.europa.eu/resource/authority/country/{}
 Depth_max (m),Mas depth of the ARMS unit,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/AHGT/,metre,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,none
