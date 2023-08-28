@@ -7,9 +7,7 @@ The data here are taken from the ARMS overview sheet in the ARMS google account:
 
 **Quality Control**
 
-A QC is done on the google sheet data by comparing them to the data from PlutoF and stored [in FromPlutoF](https://github.com/arms-mbon/Data/tree/main/QualityControlledData/FromPlutoF), and by checking for internal consistency. Any differences found are communicated to the ARMS partners who are requested to make corrections in their PlutoF and/or google sheet entries. The data are then downloaded again and the QC steps repeated, until no more corrections are necessary. The QC output files can also be found here (_qc_report_xxx).
+A QC is done on the google sheet data by comparing them to the data from PlutoF and stored [in from_plutof](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/from_plutof), and by checking for internal consistency. Any differences found are communicated to the ARMS partners who are requested to make corrections in their PlutoF and/or google sheet entries. The data are then downloaded again and the QC steps repeated, until no more corrections are necessary. The QC output files can also be found here (_qc_report_xxx).
 
-_**The current status of the QC**_: :repeat:
-
-<!---The current status of the QC_: :ballot_box_with_check: -->
+_**The status of the QC**_: main checks done; on each harvest a comparison to the [plutof](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/from_plutof) data are done and differences corrected
 
