@@ -5,8 +5,7 @@ The source data from the ARMS-MBON project are harvested and placed here. These 
   
 Data downloaded from PlutoF and the google sheet are subjected to a QC process, which involves downloading-checking-correcting-downloading again. This happens every time a download is done. 
 
-_**The current status of the QC**_: :ballot_box_with_check: 
+_**The status of the QC**_: main checks have been made, however with each harvest new checks are run and minor corrections made
 
-<!---The current status of the QC_: :ballot_box_with_check: :repeat: -->
 
 
