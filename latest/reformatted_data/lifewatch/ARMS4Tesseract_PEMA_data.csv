@@ -1,4 +1,4 @@
-Sample_ID,Country,Observatory_ID,ARMS_ID,Deploy_Date,Collect_Date,gene COI,gene 18S,gene ITS,gene COI negative control,gene 18S negative control,gene ITS negative control,AccessRights,Latitude,Longitude,Depth_min,Depth_max,Fraction,Preservative,Filter
+Sample_ID,Country,Observatory_ID,ARMS_ID,Deploy_Date,Collect_Date,Gene_COI,Gene_18S,Gene_ITS,Gene_COI_negative_control,Gene_18S_negative_control,Gene_ITS_negative_control,Access_Rights,Latitude,Longitude,Depth_min,Depth_max,Fraction,Preservative,Filter
 ARMS_BelgiumCoast_AJJC81_20200506_20201012_MF100,BEL,BelgiumCoast,AJJC81,2020-05-06,2020-10-12,ERR7125481,ERR7125480,ERR7125482,ERR7125534,ERR7125533,ERR7125535,CC BY,51.6533567,2.79178508,38,38,Motile,DMSO,100
 ARMS_BelgiumCoast_AJJC81_20200506_20201012_MF500,BEL,BelgiumCoast,AJJC81,2020-05-06,2020-10-12,ERR7125484,ERR7125483,ERR7125485,ERR7125534,ERR7125533,ERR7125535,CC BY,51.6533567,2.79178508,38,38,Motile,DMSO,500
 ARMS_BelgiumCoast_AJJC86_20200506_20201012_MF100,BEL,BelgiumCoast,AJJC86,2020-05-06,2020-10-12,ERR7125487,ERR7125486,ERR7125488,ERR7125534,ERR7125533,ERR7125535,CC BY,51.65264,2.79369998,37,37,Motile,DMSO,100
