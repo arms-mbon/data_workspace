@@ -1017,9 +1017,6 @@
                     "@id": "./qualitycontrolled_data/"
                 },
                 {
-                    "@id": "./config.yml"
-                },
-                {
                     "@id": "./LICENSE"
                 },
                 {
@@ -2126,11 +2123,6 @@
             "@id": "./qualitycontrolled_data/README.md",
             "@type": "File",
             "label": "./qualitycontrolled_data/README.md"
-        },
-        {
-            "@id": "./config.yml",
-            "@type": "File",
-            "label": "./config.yml"
         },
         {
             "@id": "./LICENSE",
