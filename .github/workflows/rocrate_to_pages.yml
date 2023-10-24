@@ -33,6 +33,13 @@ jobs:
       # Build the preview.html file from the rocrate.json
       - name: Build Preview HTML
         uses: vliz-be-opsci/rocrate-to-pages@latest
+        with:
+          multiple_rocrates: false
+          RELEASE_management: true
+          RELEASE_versioning: tag
+          INCLUDE_draft: true
+          index_html: true
+          draft_folder_name: latest
  
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
