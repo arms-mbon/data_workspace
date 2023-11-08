@@ -20,3 +20,5 @@ Their filenames contain:
 * the gene type (COI, ITS, 18S)
 
 There is also a file indicating which samples produced [no results](https://github.com/arms-mbon/data_workspace/blob/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments/Samples_with_no_results.xlsx) and those which [were removed because they occurred in the blanks](https://github.com/arms-mbon/data_workspace/blob/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments/OTUs_ASVs%20that%20were%20removed_modified%20because%20they%20occurred%20in%20the%20blanks.xlsx)
+
+Note: the sample IDs as used by PEMA were not all correctly aligned with the Material Sample IDs used in the rest of the ARMS dataset: hence we copied the Extended_final_tables that were used for subsequent data flows, and added *correctedIDs* to those filenames. 
