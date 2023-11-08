@@ -1,4 +1,7 @@
-The fasta files from the PEMA processing for batch1 (see folder above for details on the batch1 processing) are too large to store here in GitHub, so they have been placed in the Marine Data Archive for access. 
+The fasta files as output from PEMA processing for batch1 (see folder above for details on the batch1 processing). 
+Within these files, each row contains an identifier+the DNA sequence. This identifier is also used in the [taxonomic assignment files](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments), so you can match the information in these files in this way. Note that the date in the filename refers to the date of sequencing, rather than the date of the sampling event.
+XXX add explanation of the file types...
+The files are too large to store here in GitHub, so they have been placed in the Marine Data Archive for access. 
 The download URL for these files are the following:
 
 | filename | download URL | 
@@ -39,5 +42,3 @@ The download URL for these files are the following:
 |all_samples_July2019_ITS.fasta|[https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a7e07e102126946](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a7e07e102126946)|
 |all_sequences_grouped_April2021_ITS.fa|[https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a64286428025677](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a64286428025677)|
 |all_sequences_grouped_July2019_ITS.fa|[https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a7dc04477203942](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c72a7dc04477203942)|
-
-Within these files, each row contains an identifier+the DNA sequence. This identifier is also used in the [taxonomic assignment files](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments), so you can match the information in these files in this way. Note that the date in the filename refers to the date of processing of those data, rather than the date of the sampling event. 
