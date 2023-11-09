@@ -1,4 +1,4 @@
-# ARMS-MBON combined and quality_controlled (meta)data
+## ARMS-MBON combined and quality_controlled (meta)data
 
 Here you will find the combination of the quality-controlled (meta)data taken [from PlutoF](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/from_plutof)) and from the [ARMS overview google sheet](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/from_gs).
 
@@ -15,7 +15,7 @@ _**The current status of the QC**_: :ballot_box_with_check:
 
 <!---The current status of the QC_: :ballot_box_with_check: :repeat: -->
 
-# ATTENTION: Things to consider regarding the omics data in [combined_OmicsData.csv](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined/combined_OmicsData.csv)
+### ATTENTION: Things to consider regarding the omics data in [combined_OmicsData.csv](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined/combined_OmicsData.csv)
 
 ***Demultiplexing info***
 
