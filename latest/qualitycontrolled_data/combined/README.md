@@ -1,4 +1,4 @@
-## ARMS-MBON combined and quality_controlled (meta)data
+## ARMS-MBON combined and quality-controlled (meta)data
 
 Here you will find the combination of the quality-controlled (meta)data taken [from PlutoF](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/from_plutof)) and from the [ARMS overview google sheet](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/from_gs).
 
