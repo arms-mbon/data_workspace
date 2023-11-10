@@ -19,7 +19,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/33311139A8E7862F8D3D24EF7E9147A64917D9AD9964FF6AD2826106E57A3BA0.json?h=QPtgdx-PIe7QM_Y1tT2-Ug&e=1693034968'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/A8B1342F310D0ABBE33B8540F412A9D6D143FBA0F79B1AF394155638DA7BE7B6.json?h=-PdGb51DpARl_qG452Uehw&e=1692774174'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -1233,3 +1233,4 @@ for file in os.listdir(output_dir):
         #split the output_dir string on the os sep and pop the last element and rejoin the string by os.sep
         parent_folder = os.sep.join(output_dir.split(os.sep)[:-1])
         shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"combined",file))
+        
