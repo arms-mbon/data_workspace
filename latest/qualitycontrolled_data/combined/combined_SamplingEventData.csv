@@ -25,24 +25,24 @@ BEL,BelgiumCoast,BirkenfelsA,2020-06-17,2021-03-09,ARMS_BelgiumCoast_BirkenfelsA
 BEL,BelgiumCoast,BirkenfelsB,2020-06-17,2021-03-09,ARMS_BelgiumCoast_BirkenfelsB_20200617_20210309,ARMS_BelgiumCoast_BirkenfelsB_20200617_20210309_MF100,Motile,DMSO,100,no,37,0
 BEL,BelgiumCoast,BirkenfelsB,2020-06-17,2021-03-09,ARMS_BelgiumCoast_BirkenfelsB_20200617_20210309,ARMS_BelgiumCoast_BirkenfelsB_20200617_20210309_MF500,Motile,DMSO,500,no,37,0
 BEL,BelgiumCoast,BirkenfelsB,2020-06-17,2021-03-09,ARMS_BelgiumCoast_BirkenfelsB_20200617_20210309,ARMS_BelgiumCoast_BirkenfelsB_20200617_20210309_SF40,Sessile,DMSO,40,no,37,0
-BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_MF100_A,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_MF100_B,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_MF500_A,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_MF500_B,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_SF40_A,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_SF40_B,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_SF40_C,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_MF100_A,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_MF100_B,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_MF500_A,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_MF500_B,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_SF40_A,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_SF40_B,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_SF40_C,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_MF100_A,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_MF100_B,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_MF500_A,,Not provided,Not provided,Not provided,19,0
-BEL,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_MF500_B,,Not provided,Not provided,Not provided,19,0
+BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_MF100_A,motile fraction,Not provided,100,Not provided,19,0
+BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_MF100_B,motile fraction,Not provided,100,Not provided,19,0
+BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_MF500_A,motile fraction,Not provided,500,Not provided,19,0
+BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_MF500_B,motile fraction,Not provided,500,Not provided,19,0
+BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_SF40_A,sessile fraction,Not provided,40,Not provided,19,0
+BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_SF40_B,sessile fraction,Not provided,40,Not provided,19,0
+BEL,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_SF40_C,sessile fraction,Not provided,40,Not provided,19,0
+BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_MF100_A,motile fraction,Not provided,100,Not provided,19,0
+BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_MF100_B,motile fraction,Not provided,100,Not provided,19,0
+BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_MF500_A,motile fraction,Not provided,500,Not provided,19,0
+BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_MF500_B,motile fraction,Not provided,500,Not provided,19,0
+BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_SF40_A,sessile fraction,Not provided,40,Not provided,19,0
+BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_SF40_B,sessile fraction,Not provided,40,Not provided,19,0
+BEL,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_SF40_C,sessile fraction,Not provided,40,Not provided,19,0
+BEL,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_MF100_A,motile fraction,Not provided,100,Not provided,19,0
+BEL,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_MF100_B,motile fraction,Not provided,100,Not provided,19,0
+BEL,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_MF500_A,motile fraction,Not provided,500,Not provided,19,0
+BEL,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_MF500_B,motile fraction,Not provided,500,Not provided,19,0
 BEL,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_SF40_A,,Not provided,Not provided,Not provided,19,0
 BEL,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_SF40_B,,Not provided,Not provided,Not provided,19,0
 BEL,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_SF40_C,,Not provided,Not provided,Not provided,19,0
@@ -58,27 +58,6 @@ Belgium,BelgiumCoast,AJJC81,2020-05-06,2020-10-12,ARMS_BelgiumCoast_AJJC81_20200
 Belgium,BelgiumCoast,AJJC86,2020-05-06,2020-10-12,ARMS_BelgiumCoast_AJJC86_20200506_20201012,ARMS_BelgiumCoast_AJJC86_20200506_20201012_MF100_A,motile fraction,not provided,100,not provided,0,0
 Belgium,BelgiumCoast,AJJC86,2020-05-06,2020-10-12,ARMS_BelgiumCoast_AJJC86_20200506_20201012,ARMS_BelgiumCoast_AJJC86_20200506_20201012_MF500_A,motile fraction,not provided,500,not provided,0,0
 Belgium,BelgiumCoast,AJJC86,2020-05-06,2020-10-12,ARMS_BelgiumCoast_AJJC86_20200506_20201012,ARMS_BelgiumCoast_AJJC86_20200506_20201012_SF40_A,sessile fraction,not provided,40,not provided,0,0
-Belgium,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_MF100_A,motile fraction,not provided,100,not provided,0,0
-Belgium,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_MF100_B,motile fraction,not provided,100,not provided,0,0
-Belgium,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_MF500_A,motile fraction,not provided,500,not provided,0,0
-Belgium,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_MF500_B,motile fraction,not provided,500,not provided,0,0
-Belgium,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_SF40_A,sessile fraction,not provided,40,not provided,0,0
-Belgium,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_SF40_B,sessile fraction,not provided,40,not provided,0,0
-Belgium,BelgiumCoast,CPowerA,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,ARMS_BelgiumCoast_CPowerA_20210623_20220622_SF40_C,sessile fraction,not provided,40,not provided,0,0
-Belgium,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_MF100_A,motile fraction,not provided,100,not provided,0,0
-Belgium,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_MF100_B,motile fraction,not provided,100,not provided,0,0
-Belgium,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_MF500_A,motile fraction,not provided,500,not provided,0,0
-Belgium,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_MF500_B,motile fraction,not provided,500,not provided,0,0
-Belgium,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_SF40_A,sessile fraction,not provided,40,not provided,0,0
-Belgium,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_SF40_B,sessile fraction,not provided,40,not provided,0,0
-Belgium,BelgiumCoast,CPowerB,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,ARMS_BelgiumCoast_CPowerB_20210623_20220622_SF40_C,sessile fraction,not provided,40,not provided,0,0
-Belgium,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_MF100_A,motile fraction,not provided,100,not provided,0,0
-Belgium,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_MF100_B,motile fraction,not provided,100,not provided,0,0
-Belgium,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_MF500_A,motile fraction,not provided,500,not provided,0,0
-Belgium,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_MF500_B,motile fraction,not provided,500,not provided,0,0
-Belgium,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_SF40_A,sessile fraction,not provided,40,not provided,0,0
-Belgium,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_SF40_B,sessile fraction,not provided,40,not provided,0,0
-Belgium,BelgiumCoast,CPowerC,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,ARMS_BelgiumCoast_CPowerC_20210623_20220622_SF40_C,sessile fraction,not provided,40,not provided,0,0
 DNK,Limfjord,Green33,2019-06-18,2019-10-29,ARMS_Limfjord_Green33_20190618_20191029,ARMS_Limfjord_Green33_20190618_20191029_MF100,Motile,DMSO,100,Yes,28,6
 DNK,Limfjord,Green33,2019-06-18,2019-10-29,ARMS_Limfjord_Green33_20190618_20191029,ARMS_Limfjord_Green33_20190618_20191029_MF500,Motile,DMSO,500,Yes,28,6
 DNK,Limfjord,Green33,2019-06-18,2019-10-29,ARMS_Limfjord_Green33_20190618_20191029,ARMS_Limfjord_Green33_20190618_20191029_SF40,Sessile,DMSO,40,Yes,28,6
