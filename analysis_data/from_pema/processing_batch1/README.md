@@ -1,4 +1,4 @@
-In here are the input and output files from the first processing batch of PEMA runs on the ARMS-MBON sequences. Bioinformatics processing of the sequencing data from ARMS-MBON's first sampling campaign 2018.2020 and processed was performed in April 2022. 
+In here are the input and output files from the first processing batch of PEMA runs on the ARMS-MBON sequences. Bioinformatics processing of the sequencing data from ARMS-MBON's first sampling campaign 2018-2019 (i.e., all ARMS units deployed in 2018 and 2019 and retrieved between 2018 and 2020) was performed in April 2022. 
 
 The following folders are included here:
 * [ParameterFiles](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/parameter_files): the parameter files used as input for the PEMA runs. 
