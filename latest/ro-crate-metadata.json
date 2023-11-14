@@ -176,6 +176,15 @@
                     "@id": "./analysis_data/from_pema/processing_batch1/README.md"
                 },
                 {
+                    "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_corrected.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_corrections.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_original.xlsx"
+                },
+                {
                     "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1.xlsx"
                 }
             ],
@@ -1339,6 +1348,21 @@
             "@id": "./analysis_data/from_pema/processing_batch1/README.md",
             "@type": "File",
             "label": "./analysis_data/from_pema/processing_batch1/README.md"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_corrected.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_corrected.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_corrections.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_corrections.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_original.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_original.xlsx"
         },
         {
             "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1.xlsx",
