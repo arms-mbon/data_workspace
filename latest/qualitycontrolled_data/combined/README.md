@@ -5,7 +5,7 @@ Here you will find the combination of the quality-controlled (meta)data taken [f
 * [combined_ImageData.csv](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined/combined_ImageData.csv): containing the image IDs, filenames and download URLs for each sampling event for each observatory. Where available, the ARMS plate number and face are also indicated (see the [ARMS Handbook](https://github.com/arms-mbon/documentation/tree/main/armsmbon_handbook) for more information). Only the sampling events with images are listed here.  
 * [combined_ObservatoryData.csv](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined/combined_ObservatoryData.csv): containing the observatory metadata.
 * [combined_OmicsData.csv](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined/combined_OmicsData.csv): containing the ENA accession numbers for all sequences that have been stored in ENA. Only sampling events for which sequencing has been performed are listed here. NOTE THE REMARKS ON OMICS DATA BELOW.
-* [combined_SamplingEventData.csv](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined/combined_SamplingEventData.csv): containing a listing of all sampling events that have occurred to date. Included here are incomplete events, where ARMS units have only been deployed and not yet retrieved.
+* [combined_SamplingEventData.csv](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined/combined_SamplingEventData.csv): containing a listing of all sampling events that have occurred to date. Included here are incomplete events, where ARMS units have only been deployed and not yet retrieved. NOTE THE REMARKS ON SAMPLING EVENT DATA BELOW. 
 
 **Quality control**
 
@@ -30,3 +30,9 @@ During the initial phase of the ARMS programme, the omics data accessible from E
 It can happen that there are problems on [ENA](https://www.ebi.ac.uk/ena/browser/home) with the accessions we have submitted there. This is, unfortunately, out of our hands. We here mention these issues we are aware of, and will update this info once problems have been resolved by ENA. As of November 2023, there were issues with the following 18S rRNA accessions:
 * [ERR7125542](https://www.ebi.ac.uk/ena/browser/view/ERR7125542): This accession is displayed on ENA with a read and base count of zero and the ENA *Generated FASTQ Files* are unavailable. For now, we recommend to download the files desposited under *Submitted Files*. These files are good to use.
 * ADD INFO ON 18S July 2019 accessions once Sequenced column is in omics data csv
+
+### Remarks on the sampling event data in [combined_SamplingEventData.csv](https://github.com/arms-mbon/data_workspace/blob/main/qualitycontrolled_data/combined/combined_SamplingEventData.csv)
+
+***Preservative info***
+
+For events from 2018 and 2019, both ETOH and DMSO could be used (see the [ARMS Handbook](https://github.com/arms-mbon/documentation/tree/main/armsmbon_handbook) for details). Note that the preservative could be DMSO or DMSO-EDTA-NaCl, i.e. DESS, this distinction was not tracked for these early sampling events. Later on, only DESS has been used. 
