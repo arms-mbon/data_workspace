@@ -19,7 +19,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 #download the plutoF josn dump 
-plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/A8B1342F310D0ABBE33B8540F412A9D6D143FBA0F79B1AF394155638DA7BE7B6.json?h=-PdGb51DpARl_qG452Uehw&e=1692774174'
+plutoF_url_dmp = 'https://files.plutof.ut.ee/orig/3B1CB74C0F985B9476D0250923138142EFA219AAE98999C96837A7CC321E0980.json?h=seqAZGs-COMJ-j4EMFo_IQ&e=1700388804'
 plutoF_json_dmp = os.path.join(output_dir, 'AllARMSPlutof.json')
 #download the plutoF josn dump 
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -883,7 +883,7 @@ ImageData = []
 #Latitude gsheets["Latitude"]
 #Longitude gsheets["Longitude"]
 #Depth gsheets["Depth_min (m)"]
-#Field Replicates gsheets["Field Replicates"]
+#fieldReplicate gsheets["fieldReplicate"]
 #Monitoring area  gsheets["Monitoring area"]
 #Habitat keywords gsheets["Habitat keywords (env_local)"]
 for gsheets_data in json_arms_observatories_gsheets:
@@ -897,15 +897,15 @@ for gsheets_data in json_arms_observatories_gsheets:
                 "Longitude":gsheets_data["Longitude"],
                 "Depth_min":plutoF_data["Depth_min"],
                 "Depth_max":plutoF_data["Depth_max"],
-                "Field Replicates":gsheets_data["Field replicates"],
+                #"fieldReplicate":gsheets_data["fieldReplicate"],
                 "Monitoring area":gsheets_data["Monitoring area"],
-                "Habitat keywords":gsheets_data["Habitat keywords (env_local)"],
+                "Habitat keywords":gsheets_data["Habitat keywords"],
                 "IUCN habitat type":gsheets_data["IUCN habitat type"],
                 "Description":gsheets_data["Description"],
                 "Notes":gsheets_data["Notes"],
-                "env broad scale": gsheets_data["env_broad_scale"],
-                "env local scale": gsheets_data["env_local_scale"],
-                "env medium scale": gsheets_data["env_medium_scale"],
+                "ENVO broad scale": gsheets_data["ENVO_broad_scale"],
+                "ENVO local scale": gsheets_data["ENVO_local_scale"],
+                "ENVO medium scale": gsheets_data["ENVO_medium_scale"],
                 "add info": gsheets_data["add. info"],
                 "MarineRegion_larger": gsheets_data["MarineRegion_larger"],
                 "MarineRegion_smaller": gsheets_data["MarineRegion_smaller"]
@@ -924,7 +924,7 @@ for gsheets_data in json_arms_observatories_gsheets:
 #Preservative gsheets["Preservative"]
 #Filter gsheets["Filter (micrometer)"]
 #CrateCover gsheets["Crate cover used during retrieval"]
-#Number of associated data files => for item in accomsiated data files, if item["Event-ID"] == gsheets["Event-ID"], count += 1
+#Number of images => for item in accomsiated data files, if item["Event-ID"] == gsheets["Event-ID"], count += 1
 
 for gsheets_data in json_arms_samples_gsheets:
     count = 0
@@ -932,20 +932,23 @@ for gsheets_data in json_arms_samples_gsheets:
         if item["Event_id"] == gsheets_data["Event-ID"]:
             count += 1
         
-    ENA_count = 0
+    Sequences_available = []
     #if gsheets_data["gene_COI"] =starts with ERR
     if gsheets_data["gene_COI"].startswith("ERR"):
-        ENA_count += 1
+        if "COI" not in Sequences_available:
+            Sequences_available.append("COI")
     if gsheets_data["gene_COI_negative_control"].startswith("ERR"):
-        ENA_count += 1
+        pass
     if gsheets_data["gene_ITS"].startswith("ERR"):
-        ENA_count += 1
+        if "ITS" not in Sequences_available:
+            Sequences_available.append("ITS")
     if gsheets_data["gene_ITS_negative_control"].startswith("ERR"):
-        ENA_count += 1
+        pass
     if gsheets_data["gene_18S"].startswith("ERR"):
-        ENA_count += 1
+        if "18S" not in Sequences_available:
+            Sequences_available.append("18S")
     if gsheets_data["gene_18S_negative_control"].startswith("ERR"):
-        ENA_count += 1
+        pass
 
     
     for observatories in ObservatoryData:
@@ -966,12 +969,13 @@ for gsheets_data in json_arms_samples_gsheets:
                 "DateCollected":gsheets_data["Collection Date"],
                 "EventID":gsheets_data["Event-ID"],
                 "MaterialSampleID":gsheets_data["MaterialSample-ID"],
-                "Fraction":gsheets_data["Fraction"] if gsheets_data["Fraction"] != "" else "not provided",
-                "Preservative":gsheets_data["Preservative"] if gsheets_data["Preservative"] != "" else "not provided",
-                "Filter":gsheets_data["Filter (micrometer)"] if gsheets_data["Filter (micrometer)"] != "" else "not provided",
-                "CrateCover":gsheets_data["Crate cover used during retrieval"] if gsheets_data["Crate cover used during retrieval"] != "" else "not provided",
-                "Number of associated data files":str(count),
-                "Number of ENA sequences":str(ENA_count)
+                "FieldReplicate":gsheets_data["fieldReplicate"] if gsheets_data["fieldReplicate"] != "" else "Not provided",
+                "Fraction":gsheets_data["Fraction"] if gsheets_data["Fraction"] != "" else "Not provided",
+                "Preservative":gsheets_data["Preservative"] if gsheets_data["Preservative"] != "" else "Not provided",
+                "Filter":gsheets_data["Filter (micrometer)"] if gsheets_data["Filter (micrometer)"] != "" else "Not provided",
+                "CrateCover":gsheets_data["Crate cover used during retrieval"] if gsheets_data["Crate cover used during retrieval"] != "" else "Not provided",
+                "Number of images":str(count),
+                "Sequences available":"; ".join(Sequences_available)
                 }
             )
         else:
@@ -983,12 +987,13 @@ for gsheets_data in json_arms_samples_gsheets:
                 "DateCollected":gsheets_data["Collection Date"],
                 "EventID":gsheets_data["Event-ID"],
                 "MaterialSampleID":gsheets_data["MaterialSample-ID"],
-                "Fraction":gsheets_data["Fraction"] if gsheets_data["Fraction"] != "" else "not provided",
-                "Preservative":gsheets_data["Preservative"] if gsheets_data["Preservative"] != "" else "not provided",
-                "Filter":gsheets_data["Filter (micrometer)"] if gsheets_data["Filter (micrometer)"] != "" else "not provided",
-                "CrateCover":gsheets_data["Crate cover used during retrieval"] if gsheets_data["Crate cover used during retrieval"] != "" else "not provided",
-                "Number of associated data files":str(count),
-                "Number of ENA sequences":str(ENA_count)
+                "FieldReplicate":gsheets_data["fieldReplicate"] if gsheets_data["fieldReplicate"] != "" else "Not provided",
+                "Fraction":gsheets_data["Fraction"] if gsheets_data["Fraction"] != "" else "Not provided",
+                "Preservative":gsheets_data["Preservative"] if gsheets_data["Preservative"] != "" else "Not provided",
+                "Filter":gsheets_data["Filter (micrometer)"] if gsheets_data["Filter (micrometer)"] != "" else "Not provided",
+                "CrateCover":gsheets_data["Crate cover used during retrieval"] if gsheets_data["Crate cover used during retrieval"] != "" else "Not provided",
+                "Number of images":str(count),
+                "Sequences available":"; ".join(Sequences_available)
                 }
             )
 
@@ -1025,16 +1030,16 @@ for plutoF_data in material_samples_csv_data:
             v_fraction = "motile fraction"
         else:
             v_fraction = fraction
-            v_filter= "not provided"
+            v_filter= "Not provided"
     except:
         fraction = ""
     try:
         preservative = plutoF_data["Material_Sample_ID"].split("_")[6]
-        #check if preservative is either ETOH or DMSO , if not then it is not provided
+        #check if preservative is either ETOH or DMSO , if not then it is Not provided
         if preservative == "ETOH" or preservative == "DMSO":
             v_preservative = preservative
         else:
-            v_preservative = "not provided"
+            v_preservative = "Not provided"
     except:
         v_preservative = ""
     
@@ -1047,12 +1052,13 @@ for plutoF_data in material_samples_csv_data:
             "DateCollected":date_collected,
             "EventID":plutoF_data["Parent_Event_ID"],
             "MaterialSampleID":plutoF_data["Material_Sample_ID"],
-            "Fraction":v_fraction if v_fraction != "" else "not provided",
-            "Preservative":v_preservative if v_preservative != "" else "not provided",
-            "Filter":v_filter if v_filter != "" else "not provided",
-            "CrateCover":"not provided",
-            "Number of associated data files":"0",
-            "Number of ENA sequences":"0"
+            "FieldReplicate": "Not provided",
+            "Fraction":v_fraction if v_fraction != "" else "Not provided",
+            "Preservative":v_preservative if v_preservative != "" else "Not provided",
+            "Filter":v_filter if v_filter != "" else "Not provided",
+            "CrateCover":"Not provided",
+            "Number of images":"0",
+            "Sequences available":""
         } 
     )
         
@@ -1073,20 +1079,23 @@ for plutoF_data in material_samples_csv_data:
         if plutoF_data["Parent_Event_ID"] == gsheets_data["Event-ID"]:
             inGoogleSheets = True
             #check if ENA sequences are available
-            ENA_count = 0
+            Sequences_available = []
             #if gsheets_data["gene_COI"] =starts with ERR
             if gsheets_data["gene_COI"].startswith("ERR"):
-                ENA_count += 1
+                if "COI" not in Sequences_available:
+                    Sequences_available.append("COI")
             if gsheets_data["gene_COI_negative_control"].startswith("ERR"):
-                ENA_count += 1
+                pass
             if gsheets_data["gene_ITS"].startswith("ERR"):
-                ENA_count += 1
+                if "ITS" not in Sequences_available:
+                    Sequences_available.append("ITS")
             if gsheets_data["gene_ITS_negative_control"].startswith("ERR"):
-                ENA_count += 1
+                pass
             if gsheets_data["gene_18S"].startswith("ERR"):
-                ENA_count += 1
+                if "18S" not in Sequences_available:
+                    Sequences_available.append("18S")
             if gsheets_data["gene_18S_negative_control"].startswith("ERR"):
-                ENA_count += 1
+                pass
             print(gsheets_data["Event-ID"] + " is in google sheets")
     if inGoogleSheets == False:
         SamplingEventData.append(
@@ -1097,12 +1106,13 @@ for plutoF_data in material_samples_csv_data:
             "DateCollected":collection_date,
             "EventID":plutoF_data["Parent_Event_ID"],
             "MaterialSampleID":plutoF_data["Material_Sample_ID"],
+            "FieldReplicate":gsheets_data["fieldReplicate"] if gsheets_data["fieldReplicate"] != "" else "Not provided",
             "Fraction":gsheets_data["Fraction"],
             "Preservative":"Not provided",
             "Filter":"Not provided",
             "CrateCover":"Not provided",
-            "Number of associated data files":plutoF_data["Associated data"],
-            "Number of ENA sequences": str(ENA_count)
+            "Number of images":plutoF_data["Associated data"],
+            "Sequences available": "; ".join(Sequences_available)
             }
         )
         NonMatchingSamplingEventData.append(
@@ -1188,6 +1198,13 @@ for gsheets_data in json_arms_samples_gsheets:
             )
 #go over the ImageData list and remove duplicates
 ImageData = [dict(t) for t in {tuple(d.items()) for d in ImageData}]
+
+# Create OtherData
+OtherData = [item for item in ImageData if item["Filetype"] != "Image"]
+
+#create mask to remove rows with file_type != "Image"
+ImageData = [item for item in ImageData if item["Filetype"] == "Image"]
+
 SamplingEventData = [dict(t) for t in {tuple(d.items()) for d in SamplingEventData}]
 ObservatoryData = [dict(t) for t in {tuple(d.items()) for d in ObservatoryData}]
 OmicsData = [dict(t) for t in {tuple(d.items()) for d in OmicsData}]
@@ -1196,7 +1213,15 @@ with open(os.path.join(output_dir,"combined_SamplingEventData.csv"), 'w', newlin
     w = csv.DictWriter(f, SamplingEventData[0].keys())
     w.writeheader()
     for row in SamplingEventData:
+        print(row)
         #row = {k: v.encode('cp850','replace').decode('cp850') for k, v in row.items()}
+        w.writerow(row)
+
+# Write OtherData to a new file
+with open(os.path.join(output_dir,"combined_OtherDataFiles.csv"), 'w', newline='', encoding="utf-8") as f:
+    w = csv.DictWriter(f, OtherData[0].keys())
+    w.writeheader()
+    for row in OtherData:
         w.writerow(row)
 
 with open(os.path.join(output_dir,"combined_ObservatoryData.csv"), 'w', newline='', encoding="utf-8") as f:
@@ -1233,4 +1258,3 @@ for file in os.listdir(output_dir):
         #split the output_dir string on the os sep and pop the last element and rejoin the string by os.sep
         parent_folder = os.sep.join(output_dir.split(os.sep)[:-1])
         shutil.move(os.path.join(output_dir,file),os.path.join(parent_folder,"combined",file))
-        
