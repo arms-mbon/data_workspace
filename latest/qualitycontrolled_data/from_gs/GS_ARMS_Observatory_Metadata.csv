@@ -1,16 +1,15 @@
 ColumnTitle,Description,Datatype,Property,ObservablePropertyUrl,Unit,UnitUrl,Cell2URL
-none,none,none,none,none,none,none, ,none,none,none,none,none,none,
-ARMS-ID (corrected),ARMS unit ID,xsd:string,schema:identifier,none,none,none,none
+ ,,,,,,,ARMS-ID (corrected),ARMS unit ID,xsd:string,schema:identifier,none,none,none,none
 Country ISO3letter code,Country,xsd:string,schema:country,none,none,none,http://publications.europa.eu/resource/authority/country/{}
 Depth_max (m),Mas depth of the ARMS unit,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/AHGT/,metre,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,none
 Depth_min (m),Min depth of the ARMS unit,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/AHGT/,metre,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,none
 Description,Description,xsd:string,schema:description,none,none,none,none
-Field replicates,Whether this is a field replicate: y(es)/n(o) ; master name of the replicate set,xsd:string,schema:description,none,none,none,none
 Habitat keywords (env_local),"Habitat keywords, semi-colon separated",xsd:string,schema:description,none,none,none,http://purl.obolibrary.org/obo/{}
 IUCN habitat type,IUCN habitat keyword,xsd:string,schema:description,none,none,none,none
 Latitude,Latitude of the ARMS unit,xsd:double,schema:latitude,none,decimal degree,http://vocab.nerc.ac.uk/collection/P06/current/UAAA/,none
 Longitude,Longitude of the ARMS unit,xsd:double,schema:longitude,none,decimal degree,http://vocab.nerc.ac.uk/collection/P06/current/UAAA/,none
-Marine region,reference to geographic place,xsd:string,schema:description,none,none,none,none
+MarineRegion_larger,"The marine regions that encompasses the site, being larger that the _smaller ones",xsd:string,schema:description,none,none,none,none
+MarineRegion_smaller,"The marine regions that encompasses the site, as specific as possible without being too small",xsd:string,schema:description,none,none,none,none
 Monitoring area,Type of monitoring area,xsd:string,schema:description,none,none,none,none
 Notes,Notes ,xsd:string,schema:comment,none,none,none,none
 Observatory-ID (corrected),Observatory ID,xsd:string,schema:identifier,none,none,none,none

@@ -2,15 +2,6 @@ station,country,unit,qc_param,qc_flag
 Koster,Sweden,VH1,ARMS unit,passed
 Koster,Sweden,VH3,ARMS unit,passed
 Koster,Sweden,VH2,ARMS unit,passed
-Koster,Sweden,Koster_NSF8,ARMS unit,missing
-Koster,Sweden,Koster_NSF1,ARMS unit,missing
-Koster,Sweden,Koster_NSF2,ARMS unit,missing
-Koster,Sweden,Koster_NSF3,ARMS unit,missing
-Koster,Sweden,Koster_NSF4,ARMS unit,missing
-Koster,Sweden,Koster_NSF5,ARMS unit,missing
-Koster,Sweden,Koster_NSF9,ARMS unit,missing
-Koster,Sweden,Koster_NSF6,ARMS unit,missing
-Koster,Sweden,Koster_NSF7,ARMS unit,missing
 Roscoff,France,BasBloS1,ARMS unit,passed
 Roscoff,France,MarBloR1,ARMS unit,passed
 Roscoff,France,MarBloR3,ARMS unit,passed
@@ -49,6 +40,9 @@ BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,CPOWER_Mooring_JDA_EMBRC_BE,ARMS unit,missing
+BelgiumCoast,Belgium,CPOWER_Tripod1_JDA_EMBRC_BE,ARMS unit,missing
+BelgiumCoast,Belgium,CPOWER_Tripod2_JDA_EMBRC_BE,ARMS unit,missing
 Vigo,Spain,TorallaC,ARMS unit,passed
 Vigo,Spain,TorallaD,ARMS unit,passed
 Vigo,Spain,TorallaA,ARMS unit,passed
@@ -62,6 +56,7 @@ GulfOfPiran,Slovenia,NA,Station,passed
 GulfOfPiran,Slovenia,NA,Station,passed
 GulfOfPiran,Slovenia,LukaKP,ARMS unit,passed
 GulfOfPiran,Slovenia,BojaVida,ARMS unit,passed
+Daneborg,Greenland,Daneborg 1,ARMS unit,missing
 Getxo,Spain,G2,ARMS unit,passed
 Getxo,Spain,G1,ARMS unit,passed
 Getxo,Spain,G3,ARMS unit,passed
@@ -106,3 +101,14 @@ SWC,Sweden,Preemraff1,ARMS unit,passed
 AdriaticEastCoast,Italy,NA,Station,passed
 AdriaticEastCoast,Italy,NA,Station,passed
 AdriaticEastCoast,Italy,NA,Station,passed
+KosterSeafarm,Sweden,NA,Station,missing
+KosterSeafarm,Sweden,KosterSeafarm_NSF1,ARMS unit,missing
+KosterSeafarm,Sweden,KosterSeafarm_NSF2,ARMS unit,missing
+KosterSeafarm,Sweden,KosterSeafarm_NSF3,ARMS unit,missing
+KosterSeafarm,Sweden,KosterSeafarm_NSF4,ARMS unit,missing
+KosterSeafarm,Sweden,KosterSeafarm_NSF5,ARMS unit,missing
+KosterSeafarm,Sweden,KosterSeafarm_NSF6,ARMS unit,missing
+KosterSeafarm,Sweden,KosterSeafarm_NSF7,ARMS unit,missing
+KosterSeafarm,Sweden,KosterSeafarm_NSF8,ARMS unit,missing
+KosterSeafarm,Sweden,KosterSeafarm_NSF9,ARMS unit,missing
+Disko Island,Greenland,NA,Station,missing
