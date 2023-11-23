@@ -292,6 +292,9 @@
                     "@id": "./qualitycontrolled_data/combined/combined_SamplingEventData.csv"
                 },
                 {
+                    "@id": "./qualitycontrolled_data/combined/combined_OtherDataFiles.csv"
+                },
+                {
                     "@id": "./qualitycontrolled_data/combined/combined_OmicsData.csv"
                 },
                 {
@@ -568,6 +571,28 @@
             ]
         },
         {
+            "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/",
+            "@type": "Dataset",
+            "label": "./qualitycontrolled_data/from_plutof/Disko_Island/",
+            "hasPart": [
+                {
+                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
+                },
+                {
+                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
+                },
+                {
+                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
+                },
+                {
+                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
+                },
+                {
+                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv"
+                }
+            ]
+        },
+        {
             "@id": "./qualitycontrolled_data/from_plutof/RavMarina/",
             "@type": "Dataset",
             "label": "./qualitycontrolled_data/from_plutof/RavMarina/",
@@ -652,6 +677,28 @@
                 },
                 {
                     "@id": "./qualitycontrolled_data/from_plutof/Gulf_of_FInland_TZS/associated_data_TZS.csv"
+                }
+            ]
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/KosterSeafarm/",
+            "@type": "Dataset",
+            "label": "./qualitycontrolled_data/from_plutof/KosterSeafarm/",
+            "hasPart": [
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/KosterSeafarm/material_samples_KosterSeafarm.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/KosterSeafarm/associated_data_KosterSeafarm.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/KosterSeafarm/overview_data_KosterSeafarm.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/KosterSeafarm/sequences_KosterSeafarm.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/KosterSeafarm/observations_KosterSeafarm.csv"
                 }
             ]
         },
@@ -851,6 +898,9 @@
                     "@id": "./qualitycontrolled_data/from_plutof/Svalbard/"
                 },
                 {
+                    "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/"
+                },
+                {
                     "@id": "./qualitycontrolled_data/from_plutof/RavMarina/"
                 },
                 {
@@ -861,6 +911,9 @@
                 },
                 {
                     "@id": "./qualitycontrolled_data/from_plutof/Gulf_of_FInland_TZS/"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/KosterSeafarm/"
                 },
                 {
                     "@id": "./qualitycontrolled_data/from_plutof/Adriatic_East_Coast/"
@@ -1460,6 +1513,11 @@
             "label": "./qualitycontrolled_data/combined/combined_SamplingEventData.csv"
         },
         {
+            "@id": "./qualitycontrolled_data/combined/combined_OtherDataFiles.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/combined/combined_OtherDataFiles.csv"
+        },
+        {
             "@id": "./qualitycontrolled_data/combined/combined_OmicsData.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/combined/combined_OmicsData.csv"
@@ -1770,6 +1828,31 @@
             "label": "./qualitycontrolled_data/from_plutof/Svalbard/overview_data_Svalbard.csv"
         },
         {
+            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv",
+            "@type": "File",
+            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
+        },
+        {
+            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv",
+            "@type": "File",
+            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
+        },
+        {
+            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv",
+            "@type": "File",
+            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
+        },
+        {
+            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv",
+            "@type": "File",
+            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
+        },
+        {
+            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv",
+            "@type": "File",
+            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv"
+        },
+        {
             "@id": "./qualitycontrolled_data/from_plutof/RavMarina/overview_data_RavMarina.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/from_plutof/RavMarina/overview_data_RavMarina.csv"
@@ -1868,6 +1951,31 @@
             "@id": "./qualitycontrolled_data/from_plutof/Gulf_of_FInland_TZS/associated_data_TZS.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/from_plutof/Gulf_of_FInland_TZS/associated_data_TZS.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/KosterSeafarm/material_samples_KosterSeafarm.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/KosterSeafarm/material_samples_KosterSeafarm.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/KosterSeafarm/associated_data_KosterSeafarm.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/KosterSeafarm/associated_data_KosterSeafarm.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/KosterSeafarm/overview_data_KosterSeafarm.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/KosterSeafarm/overview_data_KosterSeafarm.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/KosterSeafarm/sequences_KosterSeafarm.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/KosterSeafarm/sequences_KosterSeafarm.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/KosterSeafarm/observations_KosterSeafarm.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/KosterSeafarm/observations_KosterSeafarm.csv"
         },
         {
             "@id": "./qualitycontrolled_data/from_plutof/Adriatic_East_Coast/overview_data_AdriaticEastCoast.csv",
