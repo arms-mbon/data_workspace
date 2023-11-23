@@ -165,6 +165,9 @@
                 },
                 {
                     "@id": "./analysis_data/from_pema/processing_batch1/README.md"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1.xlsx"
                 }
             ],
             "description": "Selected input and output files arising from PEMA processing of ARMS-MBON data (batch 1)",
@@ -1365,6 +1368,11 @@
             "@id": "./analysis_data/from_pema/processing_batch1/README.md",
             "@type": "File",
             "label": "./analysis_data/from_pema/processing_batch1/README.md"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1.xlsx"
         },
         {
             "@id": "./analysis_data/from_pema/README.md",
