@@ -173,16 +173,10 @@
                     "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/"
                 },
                 {
+                    "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_old.xlsx"
+                },
+                {
                     "@id": "./analysis_data/from_pema/processing_batch1/README.md"
-                },
-                {
-                    "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_corrected.xlsx"
-                },
-                {
-                    "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_corrections.xlsx"
-                },
-                {
-                    "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_original.xlsx"
                 },
                 {
                     "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1.xlsx"
@@ -576,19 +570,19 @@
             "label": "./qualitycontrolled_data/from_plutof/Disko_Island/",
             "hasPart": [
                 {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
+                    "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
                 },
                 {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
+                    "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
                 },
                 {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
+                    "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv"
                 },
                 {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
+                    "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
                 },
                 {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv"
+                    "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
                 }
             ]
         },
@@ -1398,24 +1392,14 @@
             "label": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.COI_Jan2020.tsv"
         },
         {
+            "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_old.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_old.xlsx"
+        },
+        {
             "@id": "./analysis_data/from_pema/processing_batch1/README.md",
             "@type": "File",
             "label": "./analysis_data/from_pema/processing_batch1/README.md"
-        },
-        {
-            "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_corrected.xlsx",
-            "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_corrected.xlsx"
-        },
-        {
-            "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_corrections.xlsx",
-            "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_corrections.xlsx"
-        },
-        {
-            "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_original.xlsx",
-            "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1_original.xlsx"
         },
         {
             "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1.xlsx",
@@ -1828,29 +1812,29 @@
             "label": "./qualitycontrolled_data/from_plutof/Svalbard/overview_data_Svalbard.csv"
         },
         {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv",
+            "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv",
             "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
+            "label": "./qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
         },
         {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv",
+            "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv",
             "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
+            "label": "./qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
         },
         {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv",
+            "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv",
             "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
+            "label": "./qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv"
         },
         {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv",
+            "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv",
             "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
+            "label": "./qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
         },
         {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv",
+            "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv",
             "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv"
+            "label": "./qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
         },
         {
             "@id": "./qualitycontrolled_data/from_plutof/RavMarina/overview_data_RavMarina.csv",
