@@ -75,9 +75,6 @@
                     "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_18S_noBlank.xlsx"
                 },
                 {
-                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_18S_noBlank.xlsx"
-                },
-                {
                     "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_ITS_noBlank.xlsx"
                 },
                 {
@@ -1265,11 +1262,6 @@
             "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_18S_noBlank.xlsx",
             "@type": "File",
             "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_18S_noBlank.xlsx"
-        },
-        {
-            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_18S_noBlank.xlsx",
-            "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_18S_noBlank.xlsx"
         },
         {
             "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_ITS_noBlank.xlsx",
