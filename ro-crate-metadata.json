@@ -880,7 +880,13 @@
                     "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_18S_noBlank.xlsx"
                 },
                 {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_August2023_COI_noBlank.tsv"
+                },
+                {
                     "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_COI_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_August2023_COI_noBlank.xlsx"
                 },
                 {
                     "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_September2020_COI_noBlank.tsv"
@@ -2088,9 +2094,19 @@
             "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_18S_noBlank.xlsx"
         },
         {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_August2023_COI_noBlank.tsv",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_August2023_COI_noBlank.tsv"
+        },
+        {
             "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_COI_noBlank.xlsx",
             "@type": "File",
             "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_COI_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_August2023_COI_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_August2023_COI_noBlank.xlsx"
         },
         {
             "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_September2020_COI_noBlank.tsv",
