@@ -819,10 +819,16 @@
                     "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.18S_Jan2022.tsv"
                 },
                 {
+                    "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.18S_Aug2023.tsv"
+                },
+                {
                     "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/README.md"
                 },
                 {
                     "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.COI_Sept2020.tsv"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.COI_Aug2023.tsv"
                 },
                 {
                     "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.COI_May2021.tsv"
@@ -2007,6 +2013,11 @@
             "label": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.18S_Jan2022.tsv"
         },
         {
+            "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.18S_Aug2023.tsv",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.18S_Aug2023.tsv"
+        },
+        {
             "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/README.md",
             "@type": "File",
             "label": "./analysis_data/from_pema/processing_batch1/parameter_files/README.md"
@@ -2015,6 +2026,11 @@
             "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.COI_Sept2020.tsv",
             "@type": "File",
             "label": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.COI_Sept2020.tsv"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.COI_Aug2023.tsv",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.COI_Aug2023.tsv"
         },
         {
             "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/parameters0f.COI_May2021.tsv",
