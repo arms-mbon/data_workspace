@@ -877,9 +877,6 @@
                     "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_January2022_COI_noBlank.tsv"
                 },
                 {
-                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Samples_with_no_results.xlsx"
-                },
-                {
                     "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_ITS_noBlank.xlsx"
                 },
                 {
@@ -905,9 +902,6 @@
                 },
                 {
                     "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2020_18S_noBlank.xlsx"
-                },
-                {
-                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/OTUs_ASVs_that_were_removed_modified_because_they_occurred_in_the_blanks.xlsx"
                 },
                 {
                     "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_April2021_COI_noBlank.tsv"
@@ -2098,11 +2092,6 @@
             "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_January2022_COI_noBlank.tsv"
         },
         {
-            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Samples_with_no_results.xlsx",
-            "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Samples_with_no_results.xlsx"
-        },
-        {
             "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_ITS_noBlank.xlsx",
             "@type": "File",
             "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_ITS_noBlank.xlsx"
@@ -2146,11 +2135,6 @@
             "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2020_18S_noBlank.xlsx",
             "@type": "File",
             "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2020_18S_noBlank.xlsx"
-        },
-        {
-            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/OTUs_ASVs_that_were_removed_modified_because_they_occurred_in_the_blanks.xlsx",
-            "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/OTUs_ASVs_that_were_removed_modified_because_they_occurred_in_the_blanks.xlsx"
         },
         {
             "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_April2021_COI_noBlank.tsv",
