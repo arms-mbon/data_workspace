@@ -36,6 +36,9 @@
                 },
                 {
                     "@id": "./qualitycontrolled_data/combined/combined_SamplingEventData.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/combined/demultiplexing_details_OmicsData.csv"
                 }
             ],
             "description": "The combined data taken from qualitycontrolled_data and reformatted for particular end users (only of interest to the managers of ARMS-MBON)",
@@ -1236,6 +1239,11 @@
             "@id": "./qualitycontrolled_data/combined/combined_SamplingEventData.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/combined/combined_SamplingEventData.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/combined/demultiplexing_details_OmicsData.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/combined/demultiplexing_details_OmicsData.csv"
         },
         {
             "@id": "./qualitycontrolled_data/from_gs/GS_ARMS_Observatory_Metadata.csv",
