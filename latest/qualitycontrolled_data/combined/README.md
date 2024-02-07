@@ -27,7 +27,7 @@ During the initial phase of the ARMS programme, the omics data accessible from E
 
 ***Issues with accessions on ENA***
 
-It can happen that there are problems on [ENA](https://www.ebi.ac.uk/ena/browser/home) with the accessions we have submitted there. This is, unfortunately, out of our hands. We here mention these issues we are aware of, and will update this info once problems have been resolved by ENA. As of November 2023, there were issues with the following 18S rRNA accessions:
+It can happen that there are problems on [ENA](https://www.ebi.ac.uk/ena/browser/home) with the accessions we have submitted there. This is, unfortunately, out of our hands. We here mention these issues we are aware of, and will update this info once problems have been resolved by ENA. As of February 2024, there were issues with the following 18S rRNA accessions:
 * [ERR7125542](https://www.ebi.ac.uk/ena/browser/view/ERR7125542): This accession is displayed on ENA with a read and base count of zero and the ENA *Generated FASTQ Files* are unavailable. For now, we recommend to download the files desposited under *Submitted Files*. These files are good to use.
 * ADD INFO ON 18S July 2019 accessions once Sequenced column is in omics data csv
 
