@@ -358,16 +358,7 @@
             "label": "./qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/",
             "hasPart": [
                 {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/material_samples_Spain,_Andalusia,_C\u00e1diz.csv"
-                },
-                {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/observations_Spain,_Andalusia,_C\u00e1diz.csv"
-                },
-                {
                     "@id": "./qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/material_samples_Spain,_Andalusia,_C\u00e1diz.csv"
-                },
-                {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/sequences_Spain,_Andalusia,_C\u00e1diz.csv"
                 },
                 {
                     "@id": "./qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/sequences_Spain,_Andalusia,_C\u00e1diz.csv"
@@ -380,12 +371,6 @@
                 },
                 {
                     "@id": "./qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/associated_data_Spain,_Andalusia,_C\u00e1diz.csv"
-                },
-                {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/associated_data_Spain,_Andalusia,_C\u00e1diz.csv"
-                },
-                {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/overview_data_Spain,_Andalusia,_C\u00e1diz.csv"
                 }
             ]
         },
@@ -445,28 +430,13 @@
                     "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
                 },
                 {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
-                },
-                {
                     "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
                 },
                 {
                     "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
                 },
                 {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
-                },
-                {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
-                },
-                {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv"
-                },
-                {
                     "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
-                },
-                {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
                 }
             ]
         },
@@ -1656,24 +1626,9 @@
             "label": "./qualitycontrolled_data/from_plutof/Adriatic_East_Coast/overview_data_AdriaticEastCoast.csv"
         },
         {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/material_samples_Spain,_Andalusia,_C\u00e1diz.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/material_samples_Spain,_Andalusia,_C\u00e1diz.csv"
-        },
-        {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/observations_Spain,_Andalusia,_C\u00e1diz.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/observations_Spain,_Andalusia,_C\u00e1diz.csv"
-        },
-        {
             "@id": "./qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/material_samples_Spain,_Andalusia,_C\u00e1diz.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/material_samples_Spain,_Andalusia,_C\u00e1diz.csv"
-        },
-        {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/sequences_Spain,_Andalusia,_C\u00e1diz.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/sequences_Spain,_Andalusia,_C\u00e1diz.csv"
         },
         {
             "@id": "./qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/sequences_Spain,_Andalusia,_C\u00e1diz.csv",
@@ -1694,16 +1649,6 @@
             "@id": "./qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/associated_data_Spain,_Andalusia,_C\u00e1diz.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/associated_data_Spain,_Andalusia,_C\u00e1diz.csv"
-        },
-        {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/associated_data_Spain,_Andalusia,_C\u00e1diz.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/associated_data_Spain,_Andalusia,_C\u00e1diz.csv"
-        },
-        {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/overview_data_Spain,_Andalusia,_C\u00e1diz.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Spain,_Andalusia,_C\u00e1diz/overview_data_Spain,_Andalusia,_C\u00e1diz.csv"
         },
         {
             "@id": "./qualitycontrolled_data/from_plutof/Gulf_of_Piran/material_samples_GulfOfPiran.csv",
@@ -1766,11 +1711,6 @@
             "label": "./qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
         },
         {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
-        },
-        {
             "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
@@ -1781,29 +1721,9 @@
             "label": "./qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
         },
         {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
-        },
-        {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
-        },
-        {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv"
-        },
-        {
             "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
-        },
-        {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
         },
         {
             "@id": "./qualitycontrolled_data/from_plutof/Koster/associated_data_Koster.csv",
