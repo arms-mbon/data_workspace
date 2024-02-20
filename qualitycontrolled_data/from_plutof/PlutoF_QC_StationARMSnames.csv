@@ -14,9 +14,10 @@ Plymouth,,United Kingdom,,MBA_ARMS1,MBA1
 Plymouth,,United Kingdom,,MBA_ARMS1A,MBA1A
 Plymouth,,United Kingdom,,MBA_ARMS1B,MBA1B
 Plymouth,,United Kingdom,,MBA_ARMS1C,MBA1C
-Gulf_of_FInland_TZS,TZS,Finland,,Spikarna,
-Gulf_of_FInland_TZS,TZS,Finland,,Angbat,
-Gulf_of_FInland_TZS,TZS,Finland,,Kummelkobben,
+Gulf_of_Finland_TZS,TZS,Finland,,Spikarna,
+Gulf_of_Finland_TZS,TZS,Finland,,Angbat,
+Gulf_of_Finland_TZS,TZS,Finland,,Kummelkobben,
+Gulf_of_Finland_TZS,TZS,Finland,,Kolaviken,
 Svalbard,,Norway,,Svalbard_S2,S2
 Svalbard,,Norway,,Svalbard_S1,S1
 Svalbard,,Norway,,Svalbard_S1A,S1A
@@ -43,6 +44,9 @@ Belgium,BelgiumCoast,Belgium, ,CoastbustersB,
 Belgium,BelgiumCoast,Belgium, ,CPowerA,
 Belgium,BelgiumCoast,Belgium, ,CPowerB,
 Belgium,BelgiumCoast,Belgium, ,CPowerC,
+Belgium,BelgiumCoast,Belgium,,CPowerTripod1
+Belgium,BelgiumCoast,Belgium,,CPowerTripod2
+Belgium,BelgiumCoast,Belgium,,CPowerMooring
 Vigo,,Spain,,Toralla_A,TorallaA
 Vigo,,Spain,,Toralla_B,TorallaB
 Vigo,,Spain,,Toralla_C,TorallaC
@@ -107,3 +111,12 @@ RavHarbour,,Italy,,RavH3,
 Adriatic East Coast,AdriaticEastCoast,Italy,,Ven3,
 Adriatic East Coast,AdriaticEastCoast,Italy,,Ven1,
 Adriatic East Coast,AdriaticEastCoast,Italy,,Ven2,
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF1,KosterSeafarmNSF1
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF2,KosterSeafarmNSF2
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF3,KosterSeafarmNSF3
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF4,KosterSeafarmNSF4
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF5,KosterSeafarmNSF5
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF6,KosterSeafarmNSF6
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF7,KosterSeafarmNSF7
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF8,KosterSeafarmNSF8
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF9,KosterSeafarmNSF9
