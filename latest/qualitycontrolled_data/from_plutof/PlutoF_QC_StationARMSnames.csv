@@ -44,9 +44,9 @@ Belgium,BelgiumCoast,Belgium, ,CoastbustersB,
 Belgium,BelgiumCoast,Belgium, ,CPowerA,
 Belgium,BelgiumCoast,Belgium, ,CPowerB,
 Belgium,BelgiumCoast,Belgium, ,CPowerC,
-Belgium,BelgiumCoast,Belgium,,CPowerTripod1
-Belgium,BelgiumCoast,Belgium,,CPowerTripod2
-Belgium,BelgiumCoast,Belgium,,CPowerMooring
+Belgium,BelgiumCoast,Belgium,,CPOWER_Tripod1_JDA_EMBRC_BE,CPowerTripod1
+Belgium,BelgiumCoast,Belgium,,CPOWER_Tripod2_JDA_EMBRC_BE,CPowerTripod2
+Belgium,BelgiumCoast,Belgium,,CPOWER_Mooring_JDA_EMBRC_BE,CPowerMooring
 Vigo,,Spain,,Toralla_A,TorallaA
 Vigo,,Spain,,Toralla_B,TorallaB
 Vigo,,Spain,,Toralla_C,TorallaC
