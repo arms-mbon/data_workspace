@@ -82,9 +82,9 @@ BelgiumCoast,AJJC81,"latitude, longitude, depth",pass,,
 BelgiumCoast,BirkenfelsA,"latitude, longitude, depth",pass,,
 BelgiumCoast,AJJCD78,"latitude, longitude, depth",pass,,
 BelgiumCoast,AJJCD78,"latitude, longitude, depth",pass,,
-BelgiumCoast,CPOWERMooringJDAEMBRCBE,arms_unit,fail,CPOWERMooringJDAEMBRCBE,TorallaD
-BelgiumCoast,CPOWERTripod1JDAEMBRCBE,arms_unit,fail,CPOWERTripod1JDAEMBRCBE,TorallaD
-BelgiumCoast,CPOWERTripod2JDAEMBRCBE,arms_unit,fail,CPOWERTripod2JDAEMBRCBE,TorallaD
+BelgiumCoast,CPowerMooring,arms_unit,fail,CPowerMooring,TorallaD
+BelgiumCoast,CPowerTripod1,arms_unit,fail,CPowerTripod1,TorallaD
+BelgiumCoast,CPowerTripod2,arms_unit,fail,CPowerTripod2,TorallaD
 BelgiumCoast,CoastbustersB,"latitude, longitude, depth",pass,,
 Vigo,TorallaC,"latitude, longitude, depth",pass,,
 Vigo,TorallaC,"latitude, longitude, depth",pass,,

@@ -13,10 +13,14 @@ Plymouth,United Kingdom,MBA1,ARMS unit,passed
 Plymouth,United Kingdom,MBA1A,ARMS unit,passed
 Plymouth,United Kingdom,MBA1B,ARMS unit,passed
 Plymouth,United Kingdom,MBA1C,ARMS unit,passed
+Plymouth,United Kingdom,PLY4,ARMS unit,missing
+Plymouth,United Kingdom,PLY1,ARMS unit,missing
+Plymouth,United Kingdom,PLY2,ARMS unit,missing
+Plymouth,United Kingdom,PLY3,ARMS unit,missing
 TZS,Finland,NA,Station,passed
 TZS,Finland,NA,Station,passed
 TZS,Finland,NA,Station,passed
-TZS,Finland,Kolaviken,ARMS unit,missing
+TZS,Finland,NA,Station,passed
 Svalbard,Norway,S2,ARMS unit,passed
 Svalbard,Norway,S1A,ARMS unit,passed
 Svalbard,Norway,S1B,ARMS unit,passed
@@ -40,9 +44,12 @@ BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
-BelgiumCoast,Belgium,CPOWER_Mooring_JDA_EMBRC_BE,ARMS unit,missing
-BelgiumCoast,Belgium,CPOWER_Tripod1_JDA_EMBRC_BE,ARMS unit,missing
-BelgiumCoast,Belgium,CPOWER_Tripod2_JDA_EMBRC_BE,ARMS unit,missing
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,NA,Station,passed
+BelgiumCoast,Belgium,CPowerMooring,ARMS unit,passed
+BelgiumCoast,Belgium,CPowerTripod1,ARMS unit,passed
+BelgiumCoast,Belgium,CPowerTripod2,ARMS unit,passed
 Vigo,Spain,TorallaC,ARMS unit,passed
 Vigo,Spain,TorallaD,ARMS unit,passed
 Vigo,Spain,TorallaA,ARMS unit,passed
@@ -101,15 +108,14 @@ SWC,Sweden,Preemraff1,ARMS unit,passed
 AdriaticEastCoast,Italy,NA,Station,passed
 AdriaticEastCoast,Italy,NA,Station,passed
 AdriaticEastCoast,Italy,NA,Station,passed
-KosterSeafarm,Sweden,NA,Station,missing
-KosterSeafarm,Sweden,KosterSeafarm_NSF1,ARMS unit,missing
-KosterSeafarm,Sweden,KosterSeafarm_NSF2,ARMS unit,missing
-KosterSeafarm,Sweden,KosterSeafarm_NSF3,ARMS unit,missing
-KosterSeafarm,Sweden,KosterSeafarm_NSF4,ARMS unit,missing
-KosterSeafarm,Sweden,KosterSeafarm_NSF5,ARMS unit,missing
-KosterSeafarm,Sweden,KosterSeafarm_NSF6,ARMS unit,missing
-KosterSeafarm,Sweden,KosterSeafarm_NSF7,ARMS unit,missing
-KosterSeafarm,Sweden,KosterSeafarm_NSF8,ARMS unit,missing
-KosterSeafarm,Sweden,KosterSeafarm_NSF9,ARMS unit,missing
+KosterSeafarm,Sweden,KosterSeafarmNSF1,ARMS unit,passed
+KosterSeafarm,Sweden,KosterSeafarmNSF2,ARMS unit,passed
+KosterSeafarm,Sweden,KosterSeafarmNSF3,ARMS unit,passed
+KosterSeafarm,Sweden,KosterSeafarmNSF4,ARMS unit,passed
+KosterSeafarm,Sweden,KosterSeafarmNSF5,ARMS unit,passed
+KosterSeafarm,Sweden,KosterSeafarmNSF6,ARMS unit,passed
+KosterSeafarm,Sweden,KosterSeafarmNSF7,ARMS unit,passed
+KosterSeafarm,Sweden,KosterSeafarmNSF8,ARMS unit,passed
+KosterSeafarm,Sweden,KosterSeafarmNSF9,ARMS unit,passed
 Disko Island,Greenland,NA,Station,missing
-"Spain, Andalusia, Cádiz",Spain,NA,Station,missing
+Cadiz,Spain,NA,Station,missing
