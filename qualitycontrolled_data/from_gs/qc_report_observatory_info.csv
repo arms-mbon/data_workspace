@@ -1,9 +1,9 @@
 ARMS_unit,Station,QC_comment,QC_param,QC_value_plutoF,QC_value_gsheets
 Kolaviken,TZS,ARMS ID not found in GS,ARMS_ID,Kolaviken,
 Kolaviken,TZS,ARMS ID not found in GS,ARMS_ID,Kolaviken,
-CPOWERMooringJDAEMBRCBE,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPOWERMooringJDAEMBRCBE,
-CPOWERTripod1JDAEMBRCBE,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPOWERTripod1JDAEMBRCBE,
-CPOWERTripod2JDAEMBRCBE,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPOWERTripod2JDAEMBRCBE,
+CPowerMooring,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPowerMooring,
+CPowerTripod1,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPowerTripod1,
+CPowerTripod2,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPowerTripod2,
 Nuuk1,Nuuk,ARMS ID not found in GS,ARMS_ID,Nuuk1,
 Daneborg 1,Daneborg,ARMS ID not found in GS,ARMS_ID,Daneborg 1,
 KosterSeafarmNSF1,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF1,
