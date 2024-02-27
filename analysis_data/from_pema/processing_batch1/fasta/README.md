@@ -1,6 +1,11 @@
 The fasta files as output from PEMA processing for batch1 (see folder above for details on the batch1 processing). 
 Within these files, each row contains an identifier+the DNA sequence. This identifier is also used in the [taxonomic assignment files](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments), so you can match the information in these files in this way. Note that the date in the filename refers to the date of sequencing, rather than the date of the sampling event.
-XXX add explanation of the file types...
+
+* The files called all_samples_xxx: contain all the sequences found in all samples and their respective unique identifiers based on abundances and sequences. This is the main input file for all clustering algorithms
+* The files called all_sequences_grouped_xxx: contain the sequences, their abundances and identifiers after chimera removal and clustering
+* The files called Aligned_assignments_xxx: contain two lines per ASV/OTU, the first is the identifier followed by the taxonomy, the second is the sequence
+* The files called final_all_samples_xxx: contain individual sample files (.fasta) but only with the sequences that remained after the quality control and the pre-processing steps; thess are used to form a single .fasta (“final_all_samples.fasta”). This is the file PEMA uses from this point onwards for the clustering and taxonomy assignment steps. 
+
 The files are too large to store here in GitHub, so they have been placed in the Marine Data Archive for access. 
 The download URL for these files are the following:
 
