@@ -6,7 +6,8 @@ Here you will find the combination of the quality-controlled (meta)data taken [f
 * [combined_ObservatoryData.csv](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined/combined_ObservatoryData.csv): containing the observatory metadata.
 * [combined_OmicsData.csv](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined/combined_OmicsData.csv): containing the ENA accession numbers for all sequences that have been stored in ENA. Only sampling events for which sequencing has been performed are listed here. NOTE THE REMARKS ON OMICS DATA BELOW.
 * [combined_SamplingEventData.csv](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined/combined_SamplingEventData.csv): containing a listing of all sampling events that have occurred to date. Included here are incomplete events, where ARMS units have only been deployed and not yet retrieved. NOTE THE REMARKS ON SAMPLING EVENT DATA BELOW.
-*  [combined_OtherDataFiles.csv](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined/combined_OtherDataFiles.csv): containing the IDs, filenames and download URLs for other files that the observatories uploaded for their sampling events, e.g. spreadsheets containing information about the images or visual observations.  
+*  [combined_OtherDataFiles.csv](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined/combined_OtherDataFiles.csv): containing the IDs, filenames and download URLs for other files that the observatories uploaded for their sampling events, e.g. spreadsheets containing information about the images or visual observations.
+*  For each data file there is a metadata files that explains what the columns are and what type of values are contained therein
 
 **Quality control**
 
