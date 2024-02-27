@@ -199,11 +199,7 @@
                 {
                     "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1.xlsx"
                 }
-            ],
-            "description": "Selected input and output files arising from PEMA processing of ARMS-MBON data (batch 1)",
-            "startDate": "2018-01-01",
-            "endDate": "2023-10-10",
-            "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./analysis_data/from_pema/processing_batch1/"
+            ]
         },
         {
             "@id": "./analysis_data/from_pema/",
@@ -216,11 +212,7 @@
                 {
                     "@id": "./analysis_data/from_pema/README.md"
                 }
-            ],
-            "description": "Selected input and output files arising from PEMA processing of ARMS-MBON data",
-            "startDate": "2018-01-01",
-            "endDate": "2023-10-10",
-            "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./analysis_data/from_pema/"
+            ]
         },
         {
             "@id": "./analysis_data/",
@@ -233,11 +225,7 @@
                 {
                     "@id": "./analysis_data/README.md"
                 }
-            ],
-            "description": "The data files arising from analysis of the ARMS-MBON data (sequences and images)",
-            "startDate": "2018-01-01",
-            "endDate": "2023-10-10",
-            "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./analysis_data/"
+            ]
         },
         {
             "@id": "./qualitycontrolled_data/from_plutof/Cadiz/",
@@ -986,11 +974,7 @@
                 {
                     "@id": "./qualitycontrolled_data/from_plutof/PlutoF_QC_StationARMSnames.csv"
                 }
-            ],
-            "description": "The harvested and quality controlled metadata from the ARMS-MBON PlutoF project account",
-            "startDate": "2018-01-01",
-            "endDate": "2023-10-10",
-            "downloadURL": "https://arms-mbon.github.io/data_workspace/latest/#./qualitycontrolled_data/from_plutof/"
+            ]
         },
         {
             "@id": "./qualitycontrolled_data/combined/",
@@ -1033,11 +1017,7 @@
                 {
                     "@id": "./qualitycontrolled_data/combined/combined_SamplingEventData.csv"
                 }
-            ],
-            "description": "The combined data taken from qualitycontrolled_data and reformatted for particular end users (only of interest to the managers of ARMS-MBON)",
-            "startDate": "2018-01-01",
-            "endDate": "2023-10-10",
-            "downloadURL": "https://data.arms-mbon.org/data_workspace/combined/"
+            ]
         },
         {
             "@id": "./qualitycontrolled_data/from_gs/",
@@ -1080,11 +1060,7 @@
                 {
                     "@id": "./qualitycontrolled_data/from_gs/GS_ARMS_MaterialSamples_Sequences.csv"
                 }
-            ],
-            "description": "The harvested and quality controlled metadata from the ARMS-MBON Google Sheets",
-            "startDate": "2018-01-01",
-            "endDate": "2023-10-10",
-            "downloadURL": "https://arms-mbon.github.io/data_workspace/latest/#./qualitycontrolled_data/from_gs/"
+            ]
         },
         {
             "@id": "./qualitycontrolled_data/",
@@ -1106,11 +1082,7 @@
                 {
                     "@id": "./qualitycontrolled_data/Mapping_PlutoF_GS.csv"
                 }
-            ],
-            "description": "The metadata harvested from PlutoF and the ARMS Google Sheet, quality controlled, and combined",
-            "startDate": "2018-01-01",
-            "endDate": "2023-10-10",
-            "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./qualitycontrolled_data/"
+            ]
         },
         {
             "@id": "./reformatted_data/imis/",
@@ -1126,11 +1098,7 @@
                 {
                     "@id": "./reformatted_data/imis/ARMS_Events_OmicsData.csv"
                 }
-            ],
-            "description": "The combined data taken from qualitycontrolled_data and reformatted for submission to IMIS",
-            "startDate": "2018-01-01",
-            "endDate": "2023-10-10",
-            "downloadURL": "https://arms-mbon.github.io/data_workspace/latest/#./reformatted_data/imis"
+            ]
         },
         {
             "@id": "./reformatted_data/lifewatch/",
@@ -1146,11 +1114,7 @@
                 {
                     "@id": "./reformatted_data/lifewatch/ARMS4Tesseract_PEMA_metadata.csv"
                 }
-            ],
-            "description": "The combined data taken from qualitycontrolled_data and reformatted for use in the ARMS workflow in the Tesseract",
-            "startDate": "2018-01-01",
-            "endDate": "2023-10-10",
-            "downloadURL": "https://arms-mbon.github.io/data_workspace/latest/#./reformatted_data/lifewatch"
+            ]
         },
         {
             "@id": "./reformatted_data/",
@@ -1166,11 +1130,7 @@
                 {
                     "@id": "./reformatted_data/README.md"
                 }
-            ],
-            "description": "The combined data taken from qualitycontrolled_data and reformatted for particular end users (only of interest to the managers of ARMS-MBON)",
-            "startDate": "2018-01-01",
-            "endDate": "2023-10-10",
-            "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./reformatted_data/"
+            ]
         },
         {
             "@id": "./",
@@ -1190,61 +1150,14 @@
                     "@id": "./LICENSE"
                 },
                 {
+                    "@id": "./provenance_metadata.json"
+                },
+                {
                     "@id": "./Mapping_PlutoF_GS.csv"
                 },
                 {
                     "@id": "./combined_SamplingEventData.csv"
                 }
-            ],
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "title": "data_workspace",
-            "wasAccosiatedWith": [
-                {
-                    "@id": "_:MatthiasObst"
-                },
-                {
-                    "@id": "_:KatrinaExter"
-                },
-                {
-                    "@id": "_:ChristinaPavloudi"
-                }
-            ],
-            "creator": [
-                {
-                    "@id": "_:MatthiasObst"
-                },
-                {
-                    "@id": "_:KatrinaExter"
-                },
-                {
-                    "@id": "_:ChristinaPavloudi"
-                },
-                {
-                    "@id": "_:ARMSProject"
-                },
-                {
-                    "@id": "_:AssemblePlus"
-                }
-            ],
-            "publisher": {
-                "@id": "_:VLIZ"
-            },
-            "ContactPoint": [
-                "opsci@vliz.be",
-                "matthias.obst@marine.gu.se"
-            ],
-            "description": "The data workspace: data are harvested, quality controlled, and combined",
-            "keywords": [
-                "https://dwc.tdwg.org/terms/#materialsample",
-                "https://schema.org/Dataset",
-                "ARMS",
-                "MBON",
-                "https://vocabularyserver.com/asfa/index.php?tema=2185&/Biodiversity",
-                "https://vocabularyserver.com/asfa/index.php?tema=2091&/benthic-communities",
-                "https://vocabularyserver.com/asfa/index.php?tema=3505&/Long-term-changes",
-                "https://vocabularyserver.com/asfa/index.php?tema=2146&/biology",
-                "https://vocabularyserver.com/asfa/index.php?tema=1150&/marine-environment",
-                "https://vocabularyserver.com/asfa/index.php?tema=2365&/genetics"
             ]
         },
         {
@@ -2501,6 +2414,11 @@
             "@id": "./LICENSE",
             "@type": "File",
             "label": "./LICENSE"
+        },
+        {
+            "@id": "./provenance_metadata.json",
+            "@type": "File",
+            "label": "./provenance_metadata.json"
         },
         {
             "@id": "./Mapping_PlutoF_GS.csv",
