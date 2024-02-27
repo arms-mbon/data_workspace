@@ -2,7 +2,7 @@
     "./":{
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "title": "data_workspace",
-        "wasAccosiatedWith":[
+        "wasAssociatedWith":[
             {"@id":"_:MatthiasObst"},
             {"@id":"_:KatrinaExter"},
             {"@id":"_:ChristinaPavloudi"}
@@ -19,7 +19,7 @@
             "opsci@vliz.be",
             "matthias.obst@marine.gu.se"
         ],
-        "description":"The data workspace: data are harvested, quality controlled, and combined",
+        "description":"The data workspace: ARMS-MBON data are harvested, quality controlled, and combined",
         "keywords":[
             "https://dwc.tdwg.org/terms/#materialsample",
             "https://schema.org/Dataset",
@@ -115,12 +115,12 @@
         "endDate": "2023-10-10",
         "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./analysis_data/from_pema/processing_batch1/taxonomic_assignments"
     },
-    "./analysis_data/from_pema/processing_batch1/peme_overview_match1.xlsx":{
+    "./analysis_data/from_pema/processing_batch1/peme_overview_batch1.xlsx":{
         "fileFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         "description": "The PEMA overview file arising from PEMA processing of ARMS-MBON data (batch 1)",
         "startDate": "2018-01-01",
         "endDate": "2023-10-10",
-        "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./analysis_data/from_pema/processing_batch1/peme_overview_match1.xlsx"
+        "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./analysis_data/from_pema/processing_batch1/pema_overview_batch1.xlsx"
     },
     "./qualitycontrolled_data/combined/":{
         "description": "The combined data taken from qualitycontrolled_data and reformatted for particular end users (only of interest to the managers of ARMS-MBON)",
