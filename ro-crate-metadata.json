@@ -1004,10 +1004,22 @@
                     "@id": "./qualitycontrolled_data/combined/combined_ObservatoryData.csv"
                 },
                 {
+                    "@id": "./qualitycontrolled_data/combined/combined_OtherFilesMetadata.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/combined/combined_OmicsMetadata.csv"
+                },
+                {
                     "@id": "./qualitycontrolled_data/combined/combined_OtherDataFiles.csv"
                 },
                 {
                     "@id": "./qualitycontrolled_data/combined/demultiplexing_details_OmicsData.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/combined/combined_ImageMetadata.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/combined/combined_ObservatoryMetadata.csv"
                 },
                 {
                     "@id": "./qualitycontrolled_data/combined/combined_OmicsData.csv"
@@ -2326,6 +2338,16 @@
             "label": "./qualitycontrolled_data/combined/combined_ObservatoryData.csv"
         },
         {
+            "@id": "./qualitycontrolled_data/combined/combined_OtherFilesMetadata.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/combined/combined_OtherFilesMetadata.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/combined/combined_OmicsMetadata.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/combined/combined_OmicsMetadata.csv"
+        },
+        {
             "@id": "./qualitycontrolled_data/combined/combined_OtherDataFiles.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/combined/combined_OtherDataFiles.csv"
@@ -2334,6 +2356,16 @@
             "@id": "./qualitycontrolled_data/combined/demultiplexing_details_OmicsData.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/combined/demultiplexing_details_OmicsData.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/combined/combined_ImageMetadata.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/combined/combined_ImageMetadata.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/combined/combined_ObservatoryMetadata.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/combined/combined_ObservatoryMetadata.csv"
         },
         {
             "@id": "./qualitycontrolled_data/combined/combined_OmicsData.csv",
