@@ -1,0 +1,19 @@
+Column title,Definition,Data type,Property,ObservablePropertyUrl,Unit,UnitURL
+Country,Country (ISO 3-letter code),xsd:string,schema:country,none,none,none
+ObservatoryID,Observatory identifier,xsd:string,schema:identifier,none,none,none
+UnitID,ARMS unit identifier,xsd:string,schema:identifier,none,none,none
+Latitude,Latitude of the unit,xsd:double,schema:latitude,none,decimal degree,http://vocab.nerc.ac.uk/collection/P06/current/UAAA/
+Longitude,Longitude of the unit,xsd:double,schema:longitude,none,decimal degree,http://vocab.nerc.ac.uk/collection/P06/current/UAAA/
+Depth_min,Minimum depth of the unit (e.g. for deep tides),xsd:float,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/AHGT/,metre,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/
+Depth_max,Maximum depth of the unit (e.g. for deep tides),xsd:float,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/AHGT/,metre,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/
+Monitoring Area,Monitoring area of the unit,xsd:string,schema:description,none,none,none
+Anthropogenic influence,Habitat keywords of the unit,xsd:string,schema:description,none,none,none
+IUCN habitat type,IUCN habitat type of the unit,xsd:string,schema:description,none,none,none
+Description,Description of the aread where the unit is placed,xsd:string,schema:description,none,none,none
+Notes,Additional general notes provided by the observatory,xsd:string,schema:description,none,none,none
+ENVO broad scale,Broad-scale ENVO term,xsd:string,schema:description,none,none,none
+ENVO local scale,Local-scale ENVO term,xsd:string,schema:description,none,none,none
+ENVO medium scale,Medium-scale ENVO term,xsd:string,schema:description,none,none,none
+add info,Additional environmental notes provided by the observatory,xsd:string,schema:description,none,none,none
+MarineRegion_larger,"The larger marine region where the unit is placed (chosen manually, usually specific to a sea, harbour, island, etc level)",xsd:string,schema:description,none,none,none
+MarineRegion_smaller,"The smaller marine region where the unit is placed, when available (specific to a",xsd:string,schema:description,none,none,none
