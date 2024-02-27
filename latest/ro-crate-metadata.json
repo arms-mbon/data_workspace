@@ -452,28 +452,13 @@
                     "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
                 },
                 {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
-                },
-                {
                     "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
                 },
                 {
                     "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
                 },
                 {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
-                },
-                {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
-                },
-                {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv"
-                },
-                {
                     "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
-                },
-                {
-                    "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
                 }
             ]
         },
@@ -1776,11 +1761,6 @@
             "label": "./qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
         },
         {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
-        },
-        {
             "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
@@ -1791,29 +1771,9 @@
             "label": "./qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
         },
         {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/associated_data_Disko_Island.csv"
-        },
-        {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/overview_data_Disko_Island.csv"
-        },
-        {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/observations_Disko_Island.csv"
-        },
-        {
             "@id": "./qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/from_plutof/Disko_Island/sequences_Disko_Island.csv"
-        },
-        {
-            "@id": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv",
-            "@type": "File",
-            "label": "/github/workspace/qualitycontrolled_data/from_plutof/Disko_Island/material_samples_Disko_Island.csv"
         },
         {
             "@id": "./qualitycontrolled_data/from_plutof/Koster/associated_data_Koster.csv",
