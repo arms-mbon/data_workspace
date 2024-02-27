@@ -48,8 +48,8 @@ BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,NA,Station,passed
 BelgiumCoast,Belgium,CPowerMooring,ARMS unit,passed
-BelgiumCoast,Belgium,CPowerTripod1,ARMS unit,passed
 BelgiumCoast,Belgium,CPowerTripod2,ARMS unit,passed
+BelgiumCoast,Belgium,CPowerTripod1,ARMS unit,passed
 Vigo,Spain,TorallaC,ARMS unit,passed
 Vigo,Spain,TorallaD,ARMS unit,passed
 Vigo,Spain,TorallaA,ARMS unit,passed
@@ -117,5 +117,14 @@ KosterSeafarm,Sweden,KosterSeafarmNSF6,ARMS unit,passed
 KosterSeafarm,Sweden,KosterSeafarmNSF7,ARMS unit,passed
 KosterSeafarm,Sweden,KosterSeafarmNSF8,ARMS unit,passed
 KosterSeafarm,Sweden,KosterSeafarmNSF9,ARMS unit,passed
-Disko Island,Greenland,NA,Station,missing
+DiskoIsland,Greenland,NA,Station,missing
+DiskoIsland,Greenland,DiskoIsland1,ARMS unit,missing
+DiskoIsland,Greenland,DiskoIsland2,ARMS unit,missing
+DiskoIsland,Greenland,DiskoIsland3,ARMS unit,missing
 Cadiz,Spain,NA,Station,missing
+Cadiz,Spain,FP2,ARMS unit,missing
+Cadiz,Spain,GT1,ARMS unit,missing
+Cadiz,Spain,GT2,ARMS unit,missing
+Cadiz,Spain,FP1,ARMS unit,missing
+Cadiz,Spain,FP3,ARMS unit,missing
+Cadiz,Spain,GT3,ARMS unit,missing

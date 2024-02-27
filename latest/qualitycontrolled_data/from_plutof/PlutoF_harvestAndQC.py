@@ -20,7 +20,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 # download the plutoF josn dump
-plutoF_url_dmp = "https://files.plutof.ut.ee/orig/136628840E66B50B19CEAB94CF5480A6B5E7501E91227017B1919E3F6B7AB386.json?h=YzW4OqyQyies3A4AL4ZcrA&e=1708595606"
+plutoF_url_dmp = "https://files.plutof.ut.ee/orig/3499F3A9B37BD8DA30F60A8CBE22580C403269818043A9324758C3F84434BAEB.json?h=ElLrRhiem2_CsKIFERNmOg&e=1709113942"
 plutoF_json_dmp = os.path.join(output_dir, "AllARMSPlutof.json")
 # download the plutoF josn dump
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -1637,7 +1637,7 @@ ImageData = []
 # Depth gsheets["Depth_min (m)"]
 # fieldReplicate gsheets["fieldReplicate"]
 # Monitoring area  gsheets["Monitoring area"]
-# Habitat keywords gsheets["Habitat keywords (env_local)"]
+# Anthropogenic influence gsheets["Anthropogenic influence (env_local)"]
 for gsheets_data in json_arms_observatories_gsheets:
     for plutoF_data in main_csv_data:
         if gsheets_data["ARMS-ID (corrected)"] == plutoF_data["ARMS_unit"]:
@@ -1652,7 +1652,7 @@ for gsheets_data in json_arms_observatories_gsheets:
                     "Depth_max": plutoF_data["Depth_max"],
                     # "fieldReplicate":gsheets_data["fieldReplicate"],
                     "Monitoring area": gsheets_data["Monitoring area"],
-                    "Habitat keywords": gsheets_data["Habitat keywords"],
+                    "Anthropogenic influence": gsheets_data["Anthropogenic influence"],
                     "IUCN habitat type": gsheets_data["IUCN habitat type"],
                     "Description": gsheets_data["Description"],
                     "Notes": gsheets_data["Notes"],
