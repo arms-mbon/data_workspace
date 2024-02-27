@@ -2,7 +2,7 @@ In here are the input and output files from the first processing batch of PEMA r
 
 The following folders are included here:
 * [ParameterFiles](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/parameter_files): the parameter files used as input for the PEMA runs. 
-* [The taxonomic assignments](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments): as output by PEMA, containing ASV/OTU read count tables (corrected for ASVs/OTUs occuring in blank samples), ASV/OTU taxonomy assignments and files denoting which ASVs/OTUs got removed/modified because they occurred in blank samples and which samples did not yield any ASVs/OTUs.
+* [The taxonomic assignments](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments): as output by PEMA, containing ASV/OTU read count tables (corrected for ASVs/OTUs occuring in blank samples), ASV/OTU taxonomy assignments and files denoting which ASVs/OTUs got removed/modified because they occurred in blank samples, and a file indicating which samples did not yield any ASVs/OTUs.
 * [The fasta files](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/fasta): as output by PEMA, containing the sequences of each run.
 
 PEMA was run on sequences grouped by marker gene and by MiSeq sequencing run, and each group has its own parameter files, taxonomic assignment files, and fasta files. An overview of the processing -- including the material sample IDs, ENA accession numbers, dates and observatories etc -- from which one can identify which samples were processed in which group, is provided as here: 
