@@ -14,4 +14,3 @@ Gene_18S_negative_control,Demultiplexing method used,xsd:string,schema:descripti
 Gene_18S_demultiplexed,ENA run accession number for the  negative control18S sequence,xsd:string,schema:identifier,http://edamontology.org/data_1093,none,none
 Gene_18S_comment,comments regarding the sequencing success,xsd:string,schema:description,none,none,none
 OriginalSampleID,Material Sample ID as written on the shipped samples,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/materialSampleID,none,none
-, ,,,,,
