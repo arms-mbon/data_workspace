@@ -997,6 +997,9 @@
                     "@id": "./qualitycontrolled_data/combined/combined_OtherDataFiles.csv"
                 },
                 {
+                    "@id": "./qualitycontrolled_data/combined/combined_SamplingEventMetadata.csv"
+                },
+                {
                     "@id": "./qualitycontrolled_data/combined/demultiplexing_details_OmicsData.csv"
                 },
                 {
@@ -2264,6 +2267,11 @@
             "@id": "./qualitycontrolled_data/combined/combined_OtherDataFiles.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/combined/combined_OtherDataFiles.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/combined/combined_SamplingEventMetadata.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/combined/combined_SamplingEventMetadata.csv"
         },
         {
             "@id": "./qualitycontrolled_data/combined/demultiplexing_details_OmicsData.csv",

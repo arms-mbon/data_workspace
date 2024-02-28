@@ -20,7 +20,7 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 # download the plutoF josn dump
-plutoF_url_dmp = "https://files.plutof.ut.ee/orig/3499F3A9B37BD8DA30F60A8CBE22580C403269818043A9324758C3F84434BAEB.json?h=ElLrRhiem2_CsKIFERNmOg&e=1709113942"
+plutoF_url_dmp = "https://files.plutof.ut.ee/orig/3499F3A9B37BD8DA30F60A8CBE22580C403269818043A9324758C3F84434BAEB.json?h=hW-cqCf3zI5m7Yv6Vg1gJA&e=1709216887"
 plutoF_json_dmp = os.path.join(output_dir, "AllARMSPlutof.json")
 # download the plutoF josn dump
 file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
@@ -2003,6 +2003,8 @@ for gsheets_data in json_arms_samples_gsheets:
                 "Gene_18S_demultiplexed": gsheets_data["18S_demultiplexed"],
                 "Gene_18S_comment": gsheets_data["comment_18S"],
                 "OriginalSampleID": gsheets_data["OriginalSample-ID"],
+                "SequencingRunRepeat": gsheets_data["SequencingRunRepeat"],
+                "SequencingRunComment": gsheets_data["SequencingRunComment"],
             }
         )
 ##ImageData
