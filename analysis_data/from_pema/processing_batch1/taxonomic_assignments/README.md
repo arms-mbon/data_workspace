@@ -7,8 +7,7 @@ The first chunk of files are "Extended final tables" that contain the following 
 * the taxon name and the NBCI taxon ID for the taxon level within that full classification for which an ID could be found 
 
 Important Information for PEMA v.2.1.4 Users: 
-For COI gene sequences, the taxonomic classification in these tables stops at the genus level. The species-level classification is not included in the Extended Final Tables. To obtain species-level classification for COI gene sequences, users should refer to the "tax_assignments" files (see below). These documents include detailed classifications beyond the genus level for each ASV provided in the Extended Final Tables.
-This should be solved in the next PEMA version.
+In this version of PEMA, for COI gene sequences, the taxonomic classification in these tables stops at the genus level. The species-level classification is not included in the Extended Final Tables. To obtain species-level classification for COI gene sequences, users should refer to the "tax_assignments" files (see below). These documents include detailed classifications beyond the genus level for each ASV provided in the Extended Final Tables.
    
 Their filenames contain:
 * the date the samples were sequenced (e.g. April2021)
