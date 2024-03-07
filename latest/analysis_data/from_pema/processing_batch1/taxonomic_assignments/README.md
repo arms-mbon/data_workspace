@@ -5,6 +5,8 @@ The first chunk of files are "Extended final tables" that contain the following 
 * the number of reads for each sample that was processed: each sample is in a separate column, with the title being the material sample ID that can be found in ENA  
 * the full taxonomic classification as returned by the reference database used
 * the taxon name and the NBCI taxon ID for the taxon level within that full classification for which an ID could be found 
+
+Important Information for PEMA v.2.1.4 Users: For COI gene sequences, the taxonomic classification in these tables stops at the genus level. The species-level classification is not included in the Extended Final Tables. To obtain species-level classification for COI gene sequences, users should refer to the "tax_assignments" files (see below). These documents include detailed classifications beyond the genus level for each ASV provided in the Extended Final Tables.
    
 Their filenames contain:
 * the date the samples were sequenced (e.g. April2021)
