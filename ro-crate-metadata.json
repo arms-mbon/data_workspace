@@ -220,7 +220,7 @@
             "description": "Selected input and output files arising from PEMA processing of ARMS-MBON data",
             "startDate": "2018-01-01",
             "endDate": "2023-10-10",
-            "wasInfluencdBy": "https://github.com/hariszaf/pema/tree/v.2.1.4",
+            "wasInfluencedBy": "https://github.com/hariszaf/pema/tree/v.2.1.4",
             "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./analysis_data/from_pema/"
         },
         {
