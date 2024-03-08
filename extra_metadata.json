@@ -95,6 +95,7 @@
         "description": "Selected input and output files arising from PEMA processing of ARMS-MBON data",
         "startDate": "2018-01-01",
         "endDate": "2023-10-10",
+        "wasInfluencdBy": "https://github.com/hariszaf/pema/tree/v.2.1.4",
         "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./analysis_data/from_pema/"
     },
     "./analysis_data/from_pema/processing_batch1/":{
@@ -104,7 +105,7 @@
         "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./analysis_data/from_pema/processing_batch1/"
     },
     "./analysis_data/from_pema/processing_batch1/fasta":{
-        "description": "The fasta files arising from PEMA processing of ARMS-MBON data (batch 1)",
+        "description": "The links to the archived fasta files arising from PEMA processing of ARMS-MBON data (batch 1)",
         "startDate": "2018-01-01",
         "endDate": "2023-10-10",
         "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./analysis_data/from_pema/processing_batch1/fasta"
@@ -115,7 +116,7 @@
         "endDate": "2023-10-10",
         "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./analysis_data/from_pema/processing_batch1/taxonomic_assignments"
     },
-    "./analysis_data/from_pema/processing_batch1/peme_overview_batch1.xlsx":{
+    "./analysis_data/from_pema/processing_batch1/pema_overview_batch1.xlsx":{
         "fileFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         "description": "The PEMA overview file arising from PEMA processing of ARMS-MBON data (batch 1)",
         "startDate": "2018-01-01",
@@ -126,18 +127,24 @@
         "description": "The combined data taken from qualitycontrolled_data and reformatted for particular end users (only of interest to the managers of ARMS-MBON)",
         "startDate": "2018-01-01",
         "endDate": "2023-10-10",
+        "wasDerivedFrom":[
+            "https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/from_gs",
+            "https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/from_plutof"
+        ],
         "downloadURL": "https://data.arms-mbon.org/data_workspace/combined/"
     },
     "./qualitycontrolled_data/from_gs/":{
         "description": "The harvested and quality controlled metadata from the ARMS-MBON Google Sheets",
         "startDate": "2018-01-01",
         "endDate": "2023-10-10",
+        "wasDerivedFrom":"https://docs.google.com/spreadsheets/d/1j3yuY5lmoPMo91w6e3kkJ6pmp1X6FVGUtLealuKJ3wE",
         "downloadURL": "https://arms-mbon.github.io/data_workspace/latest/#./qualitycontrolled_data/from_gs/"
     },
     "./qualitycontrolled_data/from_plutof/":{
         "description": "The harvested and quality controlled metadata from the ARMS-MBON PlutoF project account",
         "startDate": "2018-01-01",
         "endDate": "2023-10-10",
+        "wasDerivedFrom":"https://app.plutof.ut.ee/study/view/81139",
         "downloadURL": "https://arms-mbon.github.io/data_workspace/latest/#./qualitycontrolled_data/from_plutof/"
     },
     "./qualitycontrolled_data/Mapping_PlutoF_GS.csv":{
@@ -151,12 +158,20 @@
         "description": "The combined data taken from qualitycontrolled_data and reformatted for submission to IMIS",
         "startDate": "2018-01-01",
         "endDate": "2023-10-10",
+        "wasDerivedFrom":[
+            "https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined",
+            "https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1"
+        ],
         "downloadURL": "https://arms-mbon.github.io/data_workspace/latest/#./reformatted_data/imis"
     },
     "./reformatted_data/lifewatch/":{
         "description": "The combined data taken from qualitycontrolled_data and reformatted for use in the ARMS workflow in the Tesseract",
         "startDate": "2018-01-01",
         "endDate": "2023-10-10",
+        "wasDerivedFrom":[
+            "https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined",
+            "https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1"
+        ],
         "downloadURL": "https://arms-mbon.github.io/data_workspace/latest/#./reformatted_data/lifewatch"
     }
 }
