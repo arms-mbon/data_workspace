@@ -1214,9 +1214,6 @@
                     "@id": "./Mapping_PlutoF_GS.csv"
                 },
                 {
-                    "@id": "./combined_SamplingEventData.csv"
-                },
-                {
                     "@id": "./LICENSE"
                 }
             ],
@@ -2550,11 +2547,6 @@
             "startDate": "2018-01-01",
             "endDate": "2023-10-10",
             "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./Mapping_PlutoF_GS.csv"
-        },
-        {
-            "@id": "./combined_SamplingEventData.csv",
-            "@type": "File",
-            "label": "./combined_SamplingEventData.csv"
         },
         {
             "@id": "./LICENSE",
