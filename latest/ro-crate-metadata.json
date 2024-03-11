@@ -1122,6 +1122,9 @@
                     "@id": "./qualitycontrolled_data/combined/combined_ImageMetadata.csv"
                 },
                 {
+                    "@id": "./qualitycontrolled_data/combined/replicates-list.csv"
+                },
+                {
                     "@id": "./qualitycontrolled_data/combined/combined_ObservatoryMetadata.csv"
                 },
                 {
@@ -1150,9 +1153,6 @@
                 },
                 {
                     "@id": "./qualitycontrolled_data/combined/combined_OtherDataFiles.csv"
-                },
-                {
-                    "@id": "./qualitycontrolled_data/combined/ReplicatesList.csv"
                 },
                 {
                     "@id": "./qualitycontrolled_data/combined/combined_SamplingEventData.csv"
@@ -2459,6 +2459,11 @@
             "label": "./qualitycontrolled_data/combined/combined_ImageMetadata.csv"
         },
         {
+            "@id": "./qualitycontrolled_data/combined/replicates-list.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/combined/replicates-list.csv"
+        },
+        {
             "@id": "./qualitycontrolled_data/combined/combined_ObservatoryMetadata.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/combined/combined_ObservatoryMetadata.csv"
@@ -2507,11 +2512,6 @@
             "@id": "./qualitycontrolled_data/combined/combined_OtherDataFiles.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/combined/combined_OtherDataFiles.csv"
-        },
-        {
-            "@id": "./qualitycontrolled_data/combined/ReplicatesList.csv",
-            "@type": "File",
-            "label": "./qualitycontrolled_data/combined/ReplicatesList.csv"
         },
         {
             "@id": "./qualitycontrolled_data/combined/combined_SamplingEventData.csv",
