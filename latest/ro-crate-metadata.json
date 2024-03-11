@@ -1116,13 +1116,16 @@
             "label": "./qualitycontrolled_data/combined/",
             "hasPart": [
                 {
+                    "@id": "./qualitycontrolled_data/combined/replicates_list.csv"
+                },
+                {
                     "@id": "./qualitycontrolled_data/combined/README.md"
                 },
                 {
                     "@id": "./qualitycontrolled_data/combined/combined_ImageMetadata.csv"
                 },
                 {
-                    "@id": "./qualitycontrolled_data/combined/replicates-list.csv"
+                    "@id": "./qualitycontrolled_data/combined/ena_accession_numbers.xlsx"
                 },
                 {
                     "@id": "./qualitycontrolled_data/combined/combined_ObservatoryMetadata.csv"
@@ -1144,9 +1147,6 @@
                 },
                 {
                     "@id": "./qualitycontrolled_data/combined/combined_OmicsMetadata.csv"
-                },
-                {
-                    "@id": "./qualitycontrolled_data/combined/ENA-accession-numbers.xlsx"
                 },
                 {
                     "@id": "./qualitycontrolled_data/combined/combined_OmicsData.csv"
@@ -2449,6 +2449,11 @@
             "label": "./qualitycontrolled_data/from_plutof/PlutoF_harvestAndQC.py"
         },
         {
+            "@id": "./qualitycontrolled_data/combined/replicates_list.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/combined/replicates_list.csv"
+        },
+        {
             "@id": "./qualitycontrolled_data/combined/README.md",
             "@type": "File",
             "label": "./qualitycontrolled_data/combined/README.md"
@@ -2459,9 +2464,9 @@
             "label": "./qualitycontrolled_data/combined/combined_ImageMetadata.csv"
         },
         {
-            "@id": "./qualitycontrolled_data/combined/replicates-list.csv",
+            "@id": "./qualitycontrolled_data/combined/ena_accession_numbers.xlsx",
             "@type": "File",
-            "label": "./qualitycontrolled_data/combined/replicates-list.csv"
+            "label": "./qualitycontrolled_data/combined/ena_accession_numbers.xlsx"
         },
         {
             "@id": "./qualitycontrolled_data/combined/combined_ObservatoryMetadata.csv",
@@ -2497,11 +2502,6 @@
             "@id": "./qualitycontrolled_data/combined/combined_OmicsMetadata.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/combined/combined_OmicsMetadata.csv"
-        },
-        {
-            "@id": "./qualitycontrolled_data/combined/ENA-accession-numbers.xlsx",
-            "@type": "File",
-            "label": "./qualitycontrolled_data/combined/ENA-accession-numbers.xlsx"
         },
         {
             "@id": "./qualitycontrolled_data/combined/combined_OmicsData.csv",
