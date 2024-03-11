@@ -1143,6 +1143,9 @@
                     "@id": "./qualitycontrolled_data/combined/combined_OmicsMetadata.csv"
                 },
                 {
+                    "@id": "./qualitycontrolled_data/combined/ENA-accession-numbers.xlsx"
+                },
+                {
                     "@id": "./qualitycontrolled_data/combined/combined_OmicsData.csv"
                 },
                 {
@@ -2489,6 +2492,11 @@
             "@id": "./qualitycontrolled_data/combined/combined_OmicsMetadata.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/combined/combined_OmicsMetadata.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/combined/ENA-accession-numbers.xlsx",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/combined/ENA-accession-numbers.xlsx"
         },
         {
             "@id": "./qualitycontrolled_data/combined/combined_OmicsData.csv",
