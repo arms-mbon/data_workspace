@@ -5,6 +5,6 @@ PEMA runs were executed in batches, with the first batch being for the first ARM
 The parameters of each PEMA run are input via a parameter file. These parameter files, the output tables including taxonomic assignments, and the output fasta files can be found in the batch folders. Currently we have 
   * [the first batch](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1) covering samples from ARMS-MBON's first sampling campaign (all ARMS deployed in 2018 and 2019 and retrieved between and 2018 and 2020). 
 
-These PEMA outputs are the source data for the species identifications published in EurOBIS, which can also be found here in 
-  * [data_release_001](https://github.com/arms-mbon/data_release_001) (the EurOBIS DwC files and the sampling event files); [analysis_release_001](https://github.com/arms-mbon/analysis_release_001) (the specific PEMA files related to this data release); and  [code_release_001](https://github.com/arms-mbon/code_release_001) (including the other software that was used in the analysis of the species results from PEMA)
+These PEMA outputs are the source data for all taxonomic occurrences published in EurOBIS. The corresponding data release of ARMS-MBON's first sampling campaign can be found here: 
+  * [data_release_001](https://github.com/arms-mbon/data_release_001) (the EurOBIS DwC files and the sampling event files); [analysis_release_001](https://github.com/arms-mbon/analysis_release_001) (the specific PEMA outout files related to this data release); and [code_release_001](https://github.com/arms-mbon/code_release_001) (all code used for the resulting manuscript associated with data_release_001)
   
