@@ -2,12 +2,13 @@ The fasta files as output from PEMA processing for batch1 (see folder above for 
 Within these files, each row contains an identifier+the DNA sequence. This identifier is also used in the [taxonomic assignment files](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments), so you can match the information in these files in this way. Note that the date in the filename refers to the date of sequencing, rather than the date of the sampling event.
 
 For COI and ITS:
-* The files called __all_samples_xxx__ contain all the sequences found in all samples. The sequence identifiers are of the format ID;size=readAbundance. These are the input files for the clustering algorithm.
-* The files called __all_sequences_grouped_xxx__ contain the sequences remaining after chimera removal and clustering. The sequence identifiers are of the format ID_readAbundance. Because there was an error within PEMA at the time of usage regarding the sequence identifier format, the ITS sequence identifiers in these files are of the format OtuXY.
+* The files called __all_samples_xxx__ contain all the sequences inferred in all samples. The sequence identifiers are of the format __ID;size=readAbundance__. These are the input files for the clustering algorithm.
+* The files called __all_sequences_grouped_xxx__ contain the sequences remaining after chimera removal and clustering. The sequence identifiers are of the format __ID_readAbundance__. Because there was an error within PEMA at the time of usage regarding the sequence identifier format, the ITS sequence identifiers in these files are of the format __OtuXY__.
 
 For 18S:
-* The files called __Aligned_assignments_xxx__ contain two lines per ASV/OTU, the first is the identifier followed by the taxonomy, the second is the sequence
-* The files called final_all_samples_xxx: contain individual sample files (.fasta) but only with the sequences that remained after the quality control and the pre-processing steps; thess are used to form a single .fasta (“final_all_samples.fasta”). This is the file PEMA uses from this point onwards for the clustering and taxonomy assignment steps. 
+* The files called __final_all_samples_xxx__ contain all the sequences inferred in all samples. The sequence identifiers are of the format __ID_readAbundance__. These are the input files for the clustering algorithm.
+* The files called __all_sequences_grouped_xxx__ contain contain the sequences remaining after chimera removal and clustering. The sequence identifiers are of the format __OtuXY__.
+* The files called __Aligned_assignments_xxx__ contain clustered sequences which could be assigned to any taxonomic level. The sequence identifiers are of the format __OtuXY__ __Main genome; Eukaryota;etc.__
 
 The files are too large to store here in GitHub, so they have been placed in the Marine Data Archive for access. 
 The download URL for these files are the following:
