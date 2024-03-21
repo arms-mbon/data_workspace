@@ -1,7 +1,9 @@
-Here are the output files containing the taxonomic assignments from the PEMA processing of the ARMS-MBON sequences. 
+Here are the output files containing read count tables and taxonomic assignments from the PEMA processing of the ARMS-MBON sequence data. 
 
-The first chunk of files are "Extended final tables" that contain the following information:
-* an ASV/OTU identifier (these numbers being unique with a single PEMA run)
+The __Extended_final_table__ files contain the following information:
+* an ASV/OTU identifier of the following format:
+  * For COI: __ASV_XY:ID__. The ID part matches the ID in the corresponding __tax_assignments__ and __fasta__ files. The "ASV" part of the identifier is unique _within_ a single PEMA run, while the "ID" part is unique for each DNA sequence and can therefore occur in files across processing runs. This means that while ASV_1 for example can occur in each sequencing run
+  * For 18S: __OtuXY__. The identifiers are unique _within_ a single PEMA run
 * the number of reads for each sample that was processed: each sample is in a separate column, with the title being the material sample ID that can be found in ENA  
 * the full taxonomic classification as returned by the reference database used
 * the taxon name and the NBCI taxon ID for the taxon level within that full classification for which an ID could be found 
