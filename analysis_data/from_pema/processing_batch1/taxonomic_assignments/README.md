@@ -2,7 +2,7 @@ Here are the output files containing read count tables and taxonomic assignments
 
 The __Extended_final_table__ files contain the following information:
 
-* An ASV/OTU identifier of the following format:
+* ASV/OTU identifiers of the following format:
   * For COI: __ASV_XY:ID__. The ID part matches the ID in the corresponding __tax_assignments__ and __fasta__ files. The "ASV" part of the identifier is unique _within_ a single PEMA run, while the "ID" part is unique for each DNA sequence and can therefore occur in files across processing runs. This means that while the "ASV_1" prefix for example can occur in each sequencing run, it does not necessarily represent the same DNA sequence in these runs, while the ID is unqiue across all runs for each unique sequence.
   * For 18S and ITS: __OtuXY__. The identifiers match the identifiers in the corresponding __fasta__ files for each run and they are unique _within_ a single PEMA run. This means that while "Otu 1" for example can occur in each sequencing run, it does not necessarily represent the same DNA sequence across runs. Unique sequences across runs can be identified by matching OTUs/ASVs to the seqeuences in the fasta files. Because there was an error within PEMA at the time of usage regarding the sequence identifier format for ITS runs, the sequence identifiers in these files are of the format OtuXY. However, these sequences represent ASVs clustered with Swarm v2.
 
@@ -19,7 +19,7 @@ The __Extended_final_table__ files contain the following information:
 
 The __tax_assignements__ files are only generated for COI data and contain:
 
-* An ASV identifier of the format __ID_readAbundance__. The ID part matches the ID part in the corresponding Extended_final_table file (see above).
+* ASV identifiers of the format __ID_readAbundance__. The ID part matches the ID part in the corresponding Extended_final_table file (see above).
   
 * For each level in the taxonomic classification: its assignment and correspoding confidence value as determined by the RDP classifier used for COI classification.
   
