@@ -13,22 +13,22 @@ The __Extended_final_table__ files contain the following information:
 * The last column contains the NBCI taxon ID and taxon name for the lowest taxonomic level the respective ASV/OTU could be assigned to and for which and NCBI taxon ID could be found. 
 
 * The filenames contain:
- * The date the samples were sequenced (e.g., April2021)
- * The marker gene (i.e., COI, ITS, 18S)
- * The __noBlank__ denotion: This means that a) Negative control samples were already removed; b) potential contaminant sequences (OTUs/ASVs that were more abundant in the negative control samples compared to actual samples) were removed; and c) for OTUs/ASVs that were present in negative control samples in lower abundances than in actual samples, their corresponding read number in the negative controls was subtracted from their read number in actual samples.
+  * The date the samples were sequenced (e.g., April2021)
+  * The marker gene (i.e., COI, ITS, 18S)
+  * The __noBlank__ denotion: This means that a) negative control samples were already removed; b) potential contaminant sequences (OTUs/ASVs that were more abundant in the negative control samples compared to actual samples) were removed; and c) for OTUs/ASVs that were present in negative control samples in lower abundances than in actual samples, their corresponding read number in the negative controls was subtracted from their read number in actual samples.
 
 The __tax_assignements__ files are only generated for COI data and contain:
 
-* An ASV identifier of the format __ID_readAbundance__. The ID part matched the ID part in the corresponding Extended_final_table file (see above).
+* An ASV identifier of the format __ID_readAbundance__. The ID part matches the ID part in the corresponding Extended_final_table file (see above).
   
 * For each level in the taxonomic classification: its assignment and correspoding confidence value as determined by the RDP classifier used for COI classification.
   
 * These documents include detailed classifications beyond the genus level for each ASV provided in the Extended Final Tables.
   
 * The filenames contain:
- * The date the samples were sequenced (e.g., April2021)
- * The marker gene (only COI in this case)
- * The __noBlank__ dentotion, which means potential contaminant ASVs that were more abundant in the negative control samples compared to actual samples were removed.
+  * The date the samples were sequenced (e.g., April2021)
+  * The marker gene (only COI in this case)
+  * The __noBlank__ dentotion, which means potential contaminant ASVs that were more abundant in the negative control samples compared to actual samples were removed.
 
 There is also a file indicating which samples produced [no results](https://github.com/arms-mbon/data_workspace/blob/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments/Samples_with_no_results.xlsx) and those which [were removed because they occurred in the blanks](https://github.com/arms-mbon/data_workspace/blob/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments/OTUs_ASVs%20that%20were%20removed_modified%20because%20they%20occurred%20in%20the%20blanks.xlsx)
 
