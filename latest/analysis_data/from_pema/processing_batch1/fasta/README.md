@@ -12,7 +12,7 @@ For 18S:
 
 For ITS:
 * The files called __all_samples_xxx__ contain all the sequences inferred in all samples. The sequence identifiers are of the format __ID;size=readAbundance__. These are the input files for the clustering algorithm.
-* The files called __all_sequences_grouped_xxx__ contain the sequences remaining after chimera removal and clustering. Because there was an error within PEMA at the time of usage regarding the sequence identifier format for ITS runs, the sequence identifiers in these files are of the format __OtuXY__. However, these sequences 
+* The files called __all_sequences_grouped_xxx__ contain the sequences remaining after chimera removal and clustering. Because there was an error within PEMA at the time of usage regarding the sequence identifier format for ITS runs, the sequence identifiers in these files are of the format __OtuXY__. However, these sequences represent ASVs clustered with Swarm v2.
 * The files called __Aligned_assignments_xxx__ contain clustered sequences which could be assigned to any taxonomic level. The sequence identifiers are of the format __OtuXY__ __Cellular__ __organisms; Eukaryota;etc.__ Because of the previously mentioned error, the sequences are called OTUs, even though they represent ASVs clustered with Swarm v2.
   
 The files are too large to store here in GitHub, so they have been placed in the Marine Data Archive for access. 
