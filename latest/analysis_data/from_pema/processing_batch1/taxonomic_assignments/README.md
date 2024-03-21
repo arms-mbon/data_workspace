@@ -30,6 +30,4 @@ The __tax_assignements__ files are only generated for COI data and contain:
   * The marker gene (only COI in this case)
   * The __noBlank__ dentotion, which means potential contaminant ASVs that were more abundant in the negative control samples compared to actual samples were removed.
 
-There is also a file indicating which samples produced [no results](https://github.com/arms-mbon/data_workspace/blob/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments/Samples_with_no_results.xlsx) and those which [were removed because they occurred in the blanks](https://github.com/arms-mbon/data_workspace/blob/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments/OTUs_ASVs%20that%20were%20removed_modified%20because%20they%20occurred%20in%20the%20blanks.xlsx)
-
-Note: the sample IDs as used by PEMA were not all correctly aligned with the Material Sample IDs used in the rest of the ARMS dataset, however these were corrected manually in the files that you see here. 
+We also provide files indicating which samples produced [no ASvs/OTUs](https://github.com/arms-mbon/data_workspace/blob/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments/Samples_with_no_results.xlsx) and which [ASVs/OTUs were removed or whose counts were adjusted because they occurred in the blanks](https://github.com/arms-mbon/data_workspace/blob/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments/OTUs_ASVs%20that%20were%20removed_modified%20because%20they%20occurred%20in%20the%20blanks.xlsx)
