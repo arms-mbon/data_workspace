@@ -12,6 +12,16 @@
             }
         },
         {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/",
+            "@type": "Dataset",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/",
+            "hasPart": [
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/abc.txt"
+                }
+            ]
+        },
+        {
             "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/",
             "@type": "Dataset",
             "label": "./analysis_data/from_pema/processing_batch1/parameter_files/",
@@ -90,6 +100,9 @@
             "@type": "Dataset",
             "label": "./analysis_data/from_pema/processing_batch1/",
             "hasPart": [
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/"
+                },
                 {
                     "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/"
                 },
@@ -1215,6 +1228,11 @@
             "name": "Flanders Marine Institute",
             "url": "https://www.vliz.be/en",
             "label": "_:VLIZ"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/abc.txt",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/abc.txt"
         },
         {
             "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/README.md",
