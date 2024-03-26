@@ -1,6 +1,0 @@
-Station,Country,ARMS_unit,Latitude,Longitude,Depth,Date_start,Date_end,Event_ID,Material Samples,Observations,Sequences,Associated Data,Created,Updated
-Rothera,Antarctica,SouthCove1,-67.57500000,-68.13466666,21,2019-08-29,2021-01,ARMS_Rothera_SouthCove1_20190829_00000000,0,0,0,0,2019-11-11,2020-04-27
-Rothera,Antarctica,HangarCove2,-67.56416666,-68.12496670,13,2019-07-08,2021-01,ARMS_Rothera_HangarCove2_20190708_00000000,0,0,0,0,2019-11-11,2020-04-27
-Rothera,Antarctica,HangarCove1,-67.56416670,-68.12496670,13,2019-07-08,2021-01,ARMS_Rothera_HangarCove1_20190708_00000000,0,0,0,5,2019-11-11,2020-04-27
-Rothera,Antarctica,Cheshire1,-67.57383333,-68.12523333,20,2019-12-10,2021-01,ARMS_Rothera_Cheshire1_20191210_00000000,0,0,0,0,2019-11-11,2020-04-27
-Rothera,Antarctica,HangarCove3,-67.56416666,-68.12496670,13,2019-07-08,2021-01,ARMS_Rothera_HangarCove3_20190708_00000000,0,0,0,0,2019-11-11,2020-04-27

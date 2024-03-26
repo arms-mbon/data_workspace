@@ -1,7 +1,0 @@
-Station,Country,ARMS_unit,Latitude,Longitude,Depth,Date_start,Date_end,Event_ID,Event_Description,IUCN_Habitat_type,Material Samples,Observations,Sequences,Associated Data,Created,Updated
-Eilat,Israel,NR2,29.50555000,34.92027800,10,2018-10-17,2020-05-24,ARMS_Eilat_NR2_20181017_20200524,Coral reef in Nature Reserve,9.8 - Coral Reef,0,0,0,183,2020-08-04,2022-10-28
-Eilat,Israel,NR2,29.50555000,34.92027800,10,2020-12-27,None,ARMS_Eilat_NR2_00000000_00000000,NR2,None,0,0,0,0,2021-01-05,2023-02-06
-Eilat,Israel,NR1,29.50555000,34.92027800,10,2020-12-27,None,ARMS_Eilat_NR1_00000000_00000000,NR1,None,0,0,0,0,2020-12-16,2021-01-05
-Eilat,Israel,NR1,29.50555000,34.92027800,10,2018-10-17,2020-02-04,ARMS_Eilat_NR1_20181017_20200204,"Fringing reef, sand areas with coral knolls, and segmented reef patches.",9.8 - Coral Reef,0,0,0,151,2019-11-11,2022-11-01
-Eilat,Israel,Katza2,29.52000000,34.93444400,10,2018-10-24,2020-08-03,ARMS_Eilat_Katza2_20181024_20200803,Coral reef close to oil jetty,9.8 - Coral Reef,0,0,0,231,2020-08-04,2022-10-28
-Eilat,Israel,Katza1,29.52000000,34.93444400,10,2018-10-24,2020-07-06,ARMS_Eilat_Katza1_20181024_20200706,"Fringing coral reef near the port. the site is where the oil jetty is for the trans-Israel pipeline. there are 2 jetty's there, one is not used already for a long time and the other one is rarely used. we put the ARMS in the reef area closer to the 1st jetty.",9.8 - Coral Reef,0,0,0,213,2019-11-11,2020-09-15
