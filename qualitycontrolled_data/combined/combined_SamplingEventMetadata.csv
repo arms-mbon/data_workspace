@@ -1,17 +1,18 @@
-Column title,Definition,Data type,Property,ObservablePropertyUrl,Unit,UnitURL,
-Country,Country ,xsd:string,schema:country,none,none,none,
-CrateCover,Was a crate cover used during retrieval of the unit,xsd:string,schema:description,none,none,none,
-DateCollected,Date the ARMS unit was collected,xsd:datetime,schema:endDate,none,none,none,
-DateDeployed,Date the ARMS unit was deployed,xsd:datetime,schema:startDate,none,none,none,
-EventID,Sampling event identifier,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/eventID,none,none, 
-FieldReplicate,The ID of the replicate field that this unit is part of,xsd:string,schema:identifier,none,none,none,
-Filter,The pore size of the filter (lower limit; material larger than this is collected),xsd:integer,qudt:numericValue,http://vocab.nerc.ac.uk/collection/Q01/current/Q0100011/,micrometre,http://vocab.nerc.ac.uk/collection/P06/current/UMIC/,
-Fraction,The filtered fraction of the material sample,xsd:string,schema:description,none,none,none,
-MaterialSampleID,Material sample identifier,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/materialSampleID,none,none, 
-Number of images,Number of images associated with this event,xsd:integer,schema:description,none,none,none,
-ObservatoryID,Observatory identifier,xsd:string,schema:identifier,none,none,none,
-Preservative,"The preservative used: ETOH or DMSO (see the ARMS Handbook for details; note that the preservative could be DMSO or DMSO-EDTA-NaCl, i.e. DESS, this distinction was not tracked for these sampling events). For events in 2018 and 2019 both where used, thereafter only DMSO",xsd:string,schema:description,none,none,none,
-Sequences available ,The gene types for which sequences are available in ENA,xsd:string,schema:description,none,none,none,
-SequencingRunComment,Information about why sequencing was repeated (where relevant),xsd:string,schema:description,none,none,none,
-SequencingRunRepeat,"As sequencing runs were sometimes repeated, but previous runs retained, this contains the repeat value (first, second, etc) of the run",xsd:string,schema:description,none,none,none,
-UnitID,ARMS unit identifier,xsd:string,schema:identifier,none,none,none,
+Column title,Definition,Data type,Property,ObservablePropertyUrl,Unit,UnitURL
+Country,Country ,xsd:string,schema:country,none,none,none
+ObservatoryID,Observatory identifier,xsd:string,schema:identifier,none,none,none
+UnitID,ARMS unit identifier,xsd:string,schema:identifier,none,none,none
+DateDeployed,Date the ARMS unit was deployed,xsd:datetime,schema:startDate,none,none,none
+DateCollected,Date the ARMS unit was collected,xsd:datetime,schema:endDate,none,none,none
+EventID,Sampling event identifier,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/eventID,none,none
+MaterialSampleID,Material sample identifier,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/materialSampleID,none,none
+FieldReplicate,The ID of the replicate field that this unit is part of,xsd:string,schema:identifier,none,none,none
+Fraction,The filtered fraction of the material sample,xsd:string,schema:description,none,none,none
+Preservative,"The preservative used: ETOH or DMSO (see the ARMS Handbook for details; note that the preservative could be DMSO or DMSO-EDTA-NaCl, i.e. DESS, this distinction was not tracked for these sampling events). For events in 2018 and 2019 both where used, thereafter only DMSO",xsd:string,schema:description,none,none,none
+ReplicateMaterialSampleID,Material sample ID with _r1 (technical replicate 1) or _r2 (technical replicate 2) appended,xsd:string,schema:identifier,none,none,none
+SequencingRunRepeat,"As sequencing runs were sometimes repeated, but previous runs retained, this contains the repeat value (first, second, etc) of the run",xsd:string,schema:description,none,none,none
+SequencingRunComment,Information about why sequencing was repeated (where relevant),xsd:string,schema:description,none,none,none
+Filter,The pore size of the filter (lower limit; material larger than this is collected),xsd:integer,qudt:numericValue,http://vocab.nerc.ac.uk/collection/Q01/current/Q0100011/,micrometre,http://vocab.nerc.ac.uk/collection/P06/current/UMIC/
+CrateCover,Was a crate cover used during retrieval of the unit,xsd:string,schema:description,none,none,none
+Number of images,Number of images associated with this event,xsd:integer,schema:description,none,none,none
+Sequences available,The gene types for which sequences are available in ENA,"xsd:string,schema:description,none,none,none,",schema:description,none,none,none
