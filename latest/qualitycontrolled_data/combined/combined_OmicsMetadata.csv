@@ -1,0 +1,19 @@
+Column title,Definition,Data type,Property,ObservablePropertyUrl,Unit,UnitURL
+EventID,Sampling event identifier,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/eventID,none,none
+MaterialSampleID,Material sample identifier,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/materialSampleID,none,none
+Gene_COI,ENA run accession number for the COI sequence,xsd:string,schema:identifier,http://edamontology.org/data_1093,none,none
+Gene_COI_negative_control,Demultiplexing method used,xsd:string,schema:description,none,none,none
+Gene_COI_demultiplexed,ENA run accession number for the negative control COI sequence,xsd:string,schema:identifier,http://edamontology.org/data_1093,none,none
+Gene_COI_comment,comments regarding the sequencing success,xsd:string,schema:description,none,none,none
+Gene_ITS,ENA run accession number for the ITS sequence,xsd:string,schema:identifier,http://edamontology.org/data_1093,none,none
+Gene_ITS_negative_control,Demultiplexing method used,xsd:string,schema:description,none,none,none
+Gene_ITS_demultiplexed,ENA run accession number for the  negative control ITS sequence,xsd:string,schema:identifier,http://edamontology.org/data_1093,none,none
+Gene_ITS_comment,comments regarding the sequencing success,xsd:string,schema:description,none,none,none
+Gene_18S,ENA run accession number for the 18S sequence,xsd:string,schema:identifier,http://edamontology.org/data_1093,none,none
+Gene_18S_negative_control,Demultiplexing method used,xsd:string,schema:description,none,none,none
+Gene_18S_demultiplexed,ENA run accession number for the  negative control18S sequence,xsd:string,schema:identifier,http://edamontology.org/data_1093,none,none
+Gene_18S_comment,comments regarding the sequencing success,xsd:string,schema:description,none,none,none
+OriginalSampleID,Material Sample ID as written on the shipped samples,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/materialSampleID,none,none
+ReplicateMaterialSampleID,Material sample ID with _r1 (technical replicate 1) or _r2 (technical replicate 2) appended,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/materialSampleID,none,none
+SequencingRunRepeat,"As sequencing runs were sometimes repeated, but previous runs retained, this contains the repeat value (first, second, etc) of the run",xsd:string,schema:description,none,none,none
+SequencingRunComment,Information about why sequencing was repeated (where relevant),xsd:string,schema:description,none,none,none

@@ -1,0 +1,13 @@
+Station,Country,ARMS_unit,Latitude,Longitude,Depth_min,Depth_max,Date_start,Date_end,Event_ID,Event_Description,IUCN_Habitat_type,Material Samples,Observations,Sequences,Associated Data,Created,Updated
+TZS,Finland,Spikarna,59.81094000,23.20621600,3,3,2020-06-08,2020-11-18,ARMS_TZS_Spikarna_20200608_20201118,"Spikarna: a group of small islands and sublittoral reefs with a fragmented distribution of mussel beds interspersed by pockets of sand fields, stones and gravel. A canopy-forming bladder-wrack belt on a hard-bottom habitat. #### The sieve for the SF40 fraction was 48 micron in size ###",None,0,0,0,114,2020-11-27,2021-01-13
+TZS,Finland,Spikarna,59.81094000,23.20621600,3,3,2018-07-11,2018-11-07,ARMS_TZS_Spikarna_20180711_20181107,"Spikarna: a group of small islands and sublittoral reefs with a fragmented distribution of mussel beds interspersed by pockets of sand fields, stones and gravel. A canopy-forming bladder-wrack belt on a hard-bottom habitat. #### The sieve for the SF40 fraction was 48 micron in size ###",9.4 - Subtidal Sandy,0,0,0,111,2019-11-11,2020-12-19
+TZS,Finland,Spikarna,59.81094000,23.20621600,3,3,2021-06-07,2021-11-22,ARMS_TZS_Spikarna_20210607_20211122,,None,0,0,0,0,2023-03-31,2023-03-31
+TZS,Finland,Angbat,59.84150500,23.24887900,4,4,2020-06-08,2020-11-17,ARMS_TZS_Angbat_20200608_20201117,"Ångbåtsbryggan: a vegetated habitat comprised of mixed macrophyte species (mixed meadow) on sand bottom.
+### the sieve in the SF40 fraction was 48 micron ###",None,0,0,0,109,2020-11-27,2021-01-13
+TZS,Finland,Angbat,59.84150500,23.24887900,4,4,2018-07-11,2018-11-06,ARMS_TZS_Angbat_20180711_20181106,"Ångbåtsbryggan: a vegetated habitat comprised of mixed macrophyte scpecies (mixed meadow) on sand bottom.
+### the sieve in the SF40 fraction was 48 micron ###",9.3 - Subtidal Loose Rock/Pebble/Gravel,0,0,0,105,2019-11-11,2020-12-19
+TZS,Finland,Angbat,59.84150500,23.24887900,4,4,2021-06-08,2021-11-24,ARMS_TZS_Angbat_20210608_20211124,,None,0,0,0,0,2023-03-31,2023-03-31
+TZS,Finland,Angbat,59.84150500,23.24887900,4,4,2021-06-09,2022-06-30,ARMS_TZS_Angbat_20210609_20220630,,None,0,0,0,0,2023-03-31,2023-03-31
+TZS,Finland,Kummelkobben,59.86442000,23.26508400,3,6,2020-06-08,2020-11-20,ARMS_TZS_Kummelkobben_20200608_20201120,,None,0,0,0,107,2020-11-30,2022-01-24
+TZS,Finland,Kummelkobben,59.86442000,23.26508400,3,6,2021-06-09,2022-06-22,ARMS_TZS_Kummelkobben_20210609_20220622,,None,0,0,0,0,2023-03-31,2023-03-31
+TZS,Finland,Kummelkobben,59.86442000,23.26508400,3,6,2021-06-08,2021-11-22,ARMS_TZS_Kummelkobben_20210608_20211122,,None,0,0,0,0,2023-03-31,2023-03-31

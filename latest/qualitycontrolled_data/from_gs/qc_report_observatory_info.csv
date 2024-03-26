@@ -1,0 +1,140 @@
+ARMS_unit,Station,QC_comment,QC_param,QC_value_plutoF,QC_value_gsheets
+Kolaviken,TZS,ARMS ID not found in GS,ARMS_ID,Kolaviken,
+Kolaviken,TZS,ARMS ID not found in GS,ARMS_ID,Kolaviken,
+CPowerMooring,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPowerMooring,
+CPowerTripod2,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPowerTripod2,
+CPowerTripod1,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPowerTripod1,
+Nuuk1,Nuuk,ARMS ID not found in GS,ARMS_ID,Nuuk1,
+Daneborg 1,Daneborg,ARMS ID not found in GS,ARMS_ID,Daneborg 1,
+KosterSeafarmNSF1,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF1,
+KosterSeafarmNSF2,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF2,
+KosterSeafarmNSF4,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF4,
+KosterSeafarmNSF5,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF5,
+KosterSeafarmNSF7,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF7,
+KosterSeafarmNSF8,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF8,
+DiskoIsland1,DiskoIsland,ARMS ID not found in GS,ARMS_ID,DiskoIsland1,
+DiskoIsland1,DiskoIsland,Observatory not found in GS,Observatory,DiskoIsland,
+DiskoIsland2,DiskoIsland,ARMS ID not found in GS,ARMS_ID,DiskoIsland2,
+DiskoIsland2,DiskoIsland,Observatory not found in GS,Observatory,DiskoIsland,
+DiskoIsland3,DiskoIsland,ARMS ID not found in GS,ARMS_ID,DiskoIsland3,
+DiskoIsland3,DiskoIsland,Observatory not found in GS,Observatory,DiskoIsland,
+Ven1,ITA,OK,,,
+Ven2,ITA,OK,,,
+Ven3,ITA,OK,,,
+AJJBC89,BEL,OK,,,
+AJJC81,BEL,OK,,,
+AJJC86,BEL,OK,,,
+AJJCD78,BEL,OK,,,
+AJJCD89,BEL,OK,,,
+AZBE1,BEL,OK,,,
+AZBW1,BEL,OK,,,
+AZFPin,BEL,OK,,,
+AZFPout,BEL,OK,,,
+BirkenfelsA,BEL,OK,,,
+BirkenfelsB,BEL,OK,,,
+CoastbustersA,BEL,OK,,,
+CoastbustersB,BEL,OK,,,
+CPowerA,BEL,OK,,,
+CPowerB,BEL,OK,,,
+CPowerC,BEL,OK,,,
+GStraM,NOR,OK,,,
+GStraB,NOR,OK,,,
+1HERP,GRC,OK,,,
+2UBPC,GRC,OK,,,
+Daneborg2,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Daneborg2
+Daneborg3,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Daneborg3
+Daneborg1,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Daneborg1
+NR1,ISR,OK,,,
+NR2,ISR,OK,,,
+Katza1,ISR,OK,,,
+Katza2,ISR,OK,,,
+Gurr3,IRL,OK,,,
+Gurr2,IRL,OK,,,
+Gurr1,IRL,OK,,,
+Gurr4,IRL,ARMS ID not found in PlutoF,ARMS_ID,,Gurr4
+GDY1,POL,OK,,,
+G3,ESP,OK,,,
+G1,ESP,OK,,,
+G2,ESP,OK,,,
+Fornace,SVN,OK,,,
+BojaVida,SVN,OK,,,
+LukaKP,SVN,OK,,,
+VH3,SWE,OK,,,
+VH1,SWE,OK,,,
+VH2,SWE,OK,,,
+NSF1,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF1
+NSF2,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF2
+NSF3,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF3
+NSF4,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF4
+NSF5,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF5
+NSF6,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF6
+NSF7,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF7
+NSF8,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF8
+NSF9,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF9
+Laeso1,DNK,OK,,,
+Laeso2,DNK,OK,,,
+Laeso3,DNK,OK,,,
+Red2,DNK,OK,,,
+Yellow8,DNK,OK,,,
+Green33,DNK,OK,,,
+Kobbefjord2,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Kobbefjord2
+Kobbefjord1,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Kobbefjord1
+Kobberfjord3,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Kobberfjord3
+MBA2,GBR,OK,,,
+MBA1B,GBR,OK,,,
+MBA1A,GBR,OK,,,
+MBA1,GBR,OK,,,
+MBA1C,GBR,OK,,,
+RavH3,ITA,OK,,,
+RavH2,ITA,OK,,,
+RavH1,ITA,OK,,,
+RavM2,ITA,OK,,,
+RavM3,ITA,OK,,,
+RavM1,ITA,OK,,,
+MarBloR1,FRA,OK,,,
+MarBloR2,FRA,OK,,,
+MarBloR3,FRA,OK,,,
+BasBloS1,FRA,OK,,,
+BasBloS2,FRA,OK,,,
+BasBloS3,FRA,OK,,,
+SouthCove1,GBR,Observatory and ARMS ID found but lat and long are different,Lat_Long,-67.57500000 -68.13466667,-67.575 -68.1346667
+Cheshire1,GBR,Observatory and ARMS ID found but lat and long are different,Lat_Long,-67.57383333 -68.12523333,-67.5738333 -68.1252333
+HangarCove1,GBR,ARMS ID not found in PlutoF,ARMS_ID,,HangarCove1
+HangarCove2,GBR,ARMS ID not found in PlutoF,ARMS_ID,,HangarCove2
+HangarCove3,GBR,ARMS ID not found in PlutoF,ARMS_ID,,HangarCove3
+SHNP4,DEU,ARMS ID not found in PlutoF,ARMS_ID,,SHNP4
+SHNP4,DEU,Observatory not found in PlutoF,Observatory,,DEU
+SHNP3,DEU,ARMS ID not found in PlutoF,ARMS_ID,,SHNP3
+SHNP3,DEU,Observatory not found in PlutoF,Observatory,,DEU
+SHNP2,DEU,ARMS ID not found in PlutoF,ARMS_ID,,SHNP2
+SHNP2,DEU,Observatory not found in PlutoF,Observatory,,DEU
+SHNP1,DEU,ARMS ID not found in PlutoF,ARMS_ID,,SHNP1
+SHNP1,DEU,Observatory not found in PlutoF,Observatory,,DEU
+S2,NOR,OK,,,
+S1,NOR,OK,,,
+S1C,NOR,OK,,,
+S1B,NOR,OK,,,
+S1A,NOR,OK,,,
+Helsingborg2,SWE,OK,,,
+Helsingborg1,SWE,OK,,,
+Varberg3,SWE,OK,,,
+Varberg2,SWE,OK,,,
+Varberg1,SWE,OK,,,
+Gbg2,SWE,OK,,,
+Gbg1,SWE,OK,,,
+Gbg3,SWE,OK,,,
+Gbg4,SWE,OK,,,
+Hjuvik1,SWE,OK,,,
+Bjorko1,SWE,OK,,,
+Marstrand3,SWE,OK,,,
+Marstrand2,SWE,OK,,,
+Marstrand1,SWE,OK,,,
+Preemraff1,SWE,OK,,,
+Preemraff2,SWE,OK,,,
+Spikarna,FIN,OK,,,
+Angbat,FIN,OK,,,
+Kummelkobben,FIN,OK,,,
+TorallaA,ESP,OK,,,
+TorallaB,ESP,OK,,,
+TorallaC,ESP,OK,,,
+TorallaD,ESP,ARMS ID not found in PlutoF,ARMS_ID,,TorallaD

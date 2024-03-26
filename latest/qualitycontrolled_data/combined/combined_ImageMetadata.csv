@@ -1,0 +1,9 @@
+Column title,Definition,Data type,Property,ObservablePropertyUrl,Unit,UnitURL
+ObservatoryID,Observatory identifier,xsd:string,schema:identifier,none,none,none
+UnitID,ARMS unit identifier,xsd:string,schema:identifier,none,none,none
+EventID,Sampling event identifier,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/eventID,none,none
+Filename,File name,xsd:string,schema:name ,none,none,none
+Filetype,File type,xsd:string,schema:fileFormat,none,none,none
+PlateNumber,ARMS plate number (0 at bottom),xsd:integer,schema:description,none,none,none
+Position,ARMS plate face (top/bottom),xsd:string,schema:description,none,none,none
+Download URL,URL to download the image,xsd:anyURI,schema:url,none,none,none

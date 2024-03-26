@@ -1,0 +1,107 @@
+Country,ObservatoryID,UnitID,Latitude,Longitude,Depth,Field Replicates,Monitoring area,Habitat keywords
+DEU,SchleswigHolstein,SHNP2,54.482,8.395,not provided,SHNP,not provided,protected
+NOR,Svalbard,S1A,78.21302778,15.23361111,14,S1,LTER site,LHI (Low human influence)
+BEL,BelgiumCoast,AJJC86,51.65264,2.79369998,37,AJJ,Wind farm,LHI (Low human influence)
+POL,Gdynia,GDY1,54.48522,18.57111,4,not replicate,LTER site; MPA,LHI (Low human influence)
+SWE,SWC,Preemraff2,58.35405,11.43394,3,Preemraff,Industrial port,industrial
+GRL,Daneborg,Daneborg1,74.24005445,-20.33723818,15,Danborg,LTER site,LHI (Low human influence)
+GRL,Daneborg,Daneborg2,74.24005445,-20.33723818,15,Danborg,LTER site,LHI (Low human influence)
+ITA,RavMarina,RavM2,44.492426,12.287623,1.5,RavM,Marina,semi-industrial
+BEL,BelgiumCoast,AZBE1,51.364298,3.20701,7,not replicate,Marina,semi-industrial
+GRC,Crete,2UBPC,35.34662,25.27876,21,not replicate,UBP,semi-industrial
+SWE,SWC,Marstrand3,57.889278,11.585722,5,Marstrand,Marina,semi-industrial
+DNK,Limfjord,Yellow8,56.902366,9.055797,4,Limfjord,LTER site,LHI (Low human influence)
+FRA,Roscoff,BasBloS2,48.72872,-3.95894,12,BasBloS,MPA,protected
+ESP,Vigo,TorallaC,42.233333,-8.783333,12,Toralla,Industrial port,industrial
+BEL,BelgiumCoast,AZBW1,51.362906,3.183634,12,not replicate,Marina,semi-industrial
+IRL,Galway,Gurr4,53.314849,-9.673079,6.4,Gurr,SAC,protected
+SVN,GulfOfPiran,BojaVida,45.54875,13.5507,22,not replicate,LTER site,LHI (Low human influence)
+GBR,Plymouth,MBA1C,50.3674,-4.1544,2,MBA1,Marina,semi-industrial
+GRC,Crete,1HERP,35.343153,25.136605,4,not replicate,Marina/Harbour,semi-industrial
+GBR,Rothera,HangarCove1,-67.5641667,-68.1249667,12,HangarCove,LTER site,LHI (Low human influence)
+NOR,Svalbard,S2,78.18833333,15.14472222,14,S,LTER site,LHI (Low human influence)
+GRL,Nuuk,Nuuk2,64.1404,-51.3904,15,Nuuk,LTER site,LHI (Low human influence)
+GBR,Plymouth,MBA1A,50.3673,-4.1554,2,MBA1,Marina,semi-industrial
+FRA,Roscoff,MarBloR2,48.71751,-3.96649,1,MarBloR,Marina,semi-industrial
+SWE,SWC,Marstrand2,57.903512,11.581548,5,Marstrand,Marina,semi-industrial
+FRA,Roscoff,MarBloR1,48.71751,-3.96649,1,MarBloR,Marina,semi-industrial
+FRA,Roscoff,MarBloR3,48.71751,-3.96649,1,MarBloR,Marina,semi-industrial
+FIN,TZS,Angbat,59.841505,23.248879,4,not replicate,MPA; LTER site; continuous hydrographic monitoring,LHI (Low human influence)
+DEU,SchleswigHolstein,SHNP3,54.482,8.395,not provided,SHNP,not provided,protected
+ESP,Getxo,G3,43.33843,-3.01483,5,Getxo,Marina,semi-industrial
+SWE,SWC,Gbg4,57.680805,11.728331,6,Gbg  ???,Industrial port,industrial
+ITA,AdriaticEastCoast,Ven2,45.314167,12.508333,16,Ven,LTER site,LHI (Low human influence)
+NOR,Bodo,GStraB,67.24035,14.711733,2,GStra,MPA,protected
+IRL,Galway,Gurr1,53.315693,-9.670278,8,Gurr,SAC,protected
+FRA,Roscoff,BasBloS1,48.72872,-3.95894,12,BasBloS,MPA,protected
+SWE,SWC,Gbg1,57.664805,11.714735,6,Gbg ???,Industrial port,industrial
+ESP,Getxo,G1,43.338452,-3.014833,5,Getxo,Marina,semi-industrial
+DNK,Limfjord,Red2,56.89985,9.05663333,4,Limfjord,LTER site,LHI (Low human influence)
+BEL,BelgiumCoast,CPowerC,51.579833,2.995500,26,CPower,Wind farm,LHI (Low human influence)
+DEU,SchleswigHolstein,SHNP1,54.482,8.395,not provided,SHNP,not provided,protected
+DNK,Laeso,Laeso2,57.25692,11.14197,10,Laeso,LTER site,LHI (Low human influence)
+SWE,SWC,Gbg2,57.664608,11.732876,24,Gbg ???,Industrial port,industrial
+BEL,BelgiumCoast,AJJCD78,51.65374944,2.79602577,38,AJJ,Wind farm,LHI (Low human influence)
+SWE,SWC,Hjuvik1,57.703221,11.711363,2,not replicate,Marina,semi-industrial
+IRL,Galway,Gurr3,53.315693,-9.670278,8,Gurr,SAC,protected
+ITA,RavMarina,RavM3,44.492426,12.287623,1.5,RavM,Marina,semi-industrial
+ESP,Vigo,TorallaA,42.233333,-8.783333,12,Toralla,Industrial port,industrial
+GBR,Plymouth,MBA1B,50.3668,-4.1561,2,MBA1,Marina,semi-industrial
+GBR,Rothera,HangarCove3,-67.5641667,-68.1249667,12,HangarCove,LTER site,LHI (Low human influence)
+BEL,BelgiumCoast,AZFPout,51.68821,2.84921,38,not replicate,Wind farm,LHI (Low human influence)
+BEL,BelgiumCoast,AJJC81,51.6533567,2.79178508,38,AJJ,Wind farm,LHI (Low human influence)
+SWE,SWC,Helsingborg1,56.026272,12.695728,2,Helsingborg,Industrial port,industrial
+ITA,RavHarbour,RavH3,44.421488,12.209497,1.5,RavH,Harbour,industrial
+GBR,Rothera,Cheshire1,-67.5738333,-68.1252333,20,not replicate,LTER site,LHI (Low human influence)
+GBR,Plymouth,MBA2,50.350134,-4.159167,10,MBA,Marina,semi-industrial
+SWE,SWC,Varberg1,57.1133741,12.2299832,2,Varberg,Industrial port,industrial
+SVN,GulfOfPiran,LukaKP,45.564856,13.743586,3,not replicate,not provided,industrial
+SWE,SWC,Helsingborg2,56.018061,12.700541,2,Helsingborg,Industrial port,industrial
+SWE,SWC,Varberg2,57.1126278,12.2302732,2,Varberg,Industrial port,industrial
+GRL,Daneborg,Daneborg3,74.24005445,-20.33723818,15,Danborg,LTER site,LHI (Low human influence)
+SWE,SWC,Bjorko1,57.717984,11.679989,2,not replicate,Marina,semi-industrial
+ISR,Eilat,Katza2,29.520000,34.934444,10,not replicate,Industrial port,industrial
+SWE,SWC,Marstrand1,57.914434,11.594154,5,Marstrand,Marina,semi-industrial
+SWE,Koster,VH1,58.875155,11.103194,24,VH,MPA,protected
+ISR,Eilat,NR1,29.50555,34.920278,10,not replicate,LTER site,LHI (Low human influence)
+DNK,Laeso,Laeso3,57.25692,11.14199,10,Laeso,LTER site,LHI (Low human influence)
+SVN,GulfOfPiran,Fornace,45.5188,13.5673,9,not replicate,Research site,semi-industrial
+ITA,AdriaticEastCoast,Ven3,45.314167,12.508333,16,Ven,LTER site,LHI (Low human influence)
+DNK,Limfjord,Green33,56.901246,9.058189,4,Limfjord,LTER site,LHI (Low human influence)
+GRL,Nuuk,Nuuk1,64.1405,-51.3906,15,Nuuk,LTER site,LHI (Low human influence)
+BEL,BelgiumCoast,CoastbustersB,51.11529044,2.57995513,9,not replicate,bioanchoring facility Coastbusters project,LHI (Low human influence)
+ISR,Eilat,Katza1,29.520000,34.934444,10,not replicate,Industrial port,industrial
+BEL,BelgiumCoast,CPowerB,51.579833,2.995500,26,CPower,Wind farm,LHI (Low human influence)
+ITA,RavHarbour,RavH1,44.421488,12.209497,1.5,RavH,Harbour,industrial
+SWE,Koster,VH3,58.859877,11.080491,25,VH,MPA,protected
+ESP,Getxo,G2,43.3385,-3.01491,5,Getxo,Marina,semi-industrial
+ESP,Vigo,TorallaB,42.233333,-8.783333,12,Toralla,Industrial port,industrial
+GRL,Nuuk,Nuuk3,64.1408,-51.3908,15,Nuuk,LTER site,LHI (Low human influence)
+ITA,RavMarina,RavM1,44.492426,12.287623,1.5,RavM,Marina,semi-industrial
+GBR,Plymouth,MBA1,50.3674,-4.1552,1,MBA ,Marina,semi-industrial
+ITA,AdriaticEastCoast,Ven1,45.314167,12.508333,16,Ven,LTER site,LHI (Low human influence)
+NOR,Bodo,GStraM,67.240217,14.711533,2,GStra,MPA,protected
+SWE,SWC,Varberg3,57.1107004,12.2439775,2,Varberg,Industrial port,industrial
+BEL,BelgiumCoast,CoastbustersA,51.11485,2.57858333,9,not replicate,bioanchoring facility Coastbusters project,LHI (Low human influence)
+FIN,TZS,Spikarna,59.81094,23.206216,3,not replicate,MPA; LTER site,LHI (Low human influence)
+SWE,Koster,VH2,58.87633,11.111884,22,VH,MPA,protected
+GBR,Rothera,HangarCove2,-67.5641667,-68.1249667,12,HangarCove,LTER site,LHI (Low human influence)
+NOR,Svalbard,S1B,78.21302778,15.23361111,14,S1,LTER site,LHI (Low human influence)
+BEL,BelgiumCoast,AJJCD89,51.64505,2.793074,18.64,AJJ,Wind farm,LHI (Low human influence)
+ISR,Eilat,NR2,29.50555,34.920278,10,not replicate,LTER site,LHI (Low human influence)
+FIN,TZS,Kummelkobben,59.86442,23.265084,6,not replicate,LTER site; close to industrial port; continuous hydrographic monitoring,LHI (Low human influence)
+SWE,SWC,Gbg3,57.680533,11.740578,8,Gbg  ???,Industrial port,industrial
+BEL,BelgiumCoast,BirkenfelsA,51.64816667,2.53583333,38.81,Birkenfels,near ship wreck with very fine silt ,semi-industrial
+DEU,SchleswigHolstein,SHNP4,54.482,8.395,not provided,SHNP,not provided,protected
+NOR,Svalbard,S1C,78.21302778,15.23361111,14,S1,LTER site,LHI (Low human influence)
+DNK,Laeso,Laeso1,57.25689,11.14193,10,Laeso,LTER site,LHI (Low human influence)
+SWE,SWC,Preemraff1,58.3533,11.43486,3,Preemraff,Industrial port,industrial
+IRL,Galway,Gurr2,53.315693,-9.670278,8,Gurr,SAC,protected
+ITA,RavHarbour,RavH2,44.421488,12.209497,1.5,RavH,Harbour,industrial
+BEL,BelgiumCoast,AZFPin,51.66522,2.82558,37,not replicate,Wind farm,LHI (Low human influence)
+NOR,Svalbard,S1,78.21302778,15.23361111,14,S,LTER site,LHI (Low human influence)
+BEL,BelgiumCoast,BirkenfelsB,51.64816667,2.53583333,38.81,Birkenfels,near ship wreck with very fine silt ,semi-industrial
+FRA,Roscoff,BasBloS3,48.72872,-3.95894,12,BasBloS,MPA,protected
+BEL,BelgiumCoast,CPowerA,51.579833,2.995500,26,CPower,Wind farm,LHI (Low human influence)
+BEL,BelgiumCoast,AJJBC89,51.64971,2.789374,20.815624,AJJ,Wind farm,LHI (Low human influence)
+GBR,Rothera,SouthCove1,-67.575,-68.1346667,21,not replicate,LTER site,LHI (Low human influence)
