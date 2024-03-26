@@ -17,7 +17,91 @@
             "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/",
             "hasPart": [
                 {
-                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/abc.txt"
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/README.md"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_August2023_18S_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_September2020_COI_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/OTUs_ASVs_that_were_removed_modified_because_they_occurred_in_the_blanks.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2022_18S_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_September2020_18S_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO_COI_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2022_COI_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_ITS_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_May2021_COI_noBlank.tsv"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_COI_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_July2019_COI_noBlank.tsv"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_August2023_COI_noBlank.tsv"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_August2023_COI_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_May2021_18S_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_May2021_COI_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_September2020_COI_noBlank.tsv"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_ITS_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_COI_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2020_COI_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_April2021_COI_noBlank.tsv"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO_COI_noBlank.tsv"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO_18S_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_January2020_COI_noBlank.tsv"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2020_18S_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_January2022_COI_noBlank.tsv"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_18S_noBlank.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Samples_with_no_results.xlsx"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_18S_noBlank.xlsx"
                 }
             ]
         },
@@ -1230,9 +1314,149 @@
             "label": "_:VLIZ"
         },
         {
-            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/abc.txt",
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/README.md",
             "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/abc.txt"
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/README.md"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_August2023_18S_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_August2023_18S_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_September2020_COI_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_September2020_COI_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/OTUs_ASVs_that_were_removed_modified_because_they_occurred_in_the_blanks.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/OTUs_ASVs_that_were_removed_modified_because_they_occurred_in_the_blanks.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2022_18S_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2022_18S_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_September2020_18S_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_September2020_18S_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO_COI_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO_COI_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2022_COI_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2022_COI_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_ITS_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_ITS_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_May2021_COI_noBlank.tsv",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_May2021_COI_noBlank.tsv"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_COI_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_COI_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_July2019_COI_noBlank.tsv",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_July2019_COI_noBlank.tsv"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_August2023_COI_noBlank.tsv",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_August2023_COI_noBlank.tsv"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_August2023_COI_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_August2023_COI_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_May2021_18S_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_May2021_18S_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_May2021_COI_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_May2021_COI_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_September2020_COI_noBlank.tsv",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_September2020_COI_noBlank.tsv"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_ITS_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_ITS_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_COI_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_COI_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2020_COI_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2020_COI_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_April2021_COI_noBlank.tsv",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_April2021_COI_noBlank.tsv"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO_COI_noBlank.tsv",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO_COI_noBlank.tsv"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO_18S_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO_18S_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_January2020_COI_noBlank.tsv",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_January2020_COI_noBlank.tsv"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2020_18S_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_January2020_18S_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_January2022_COI_noBlank.tsv",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_January2022_COI_noBlank.tsv"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_18S_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_July2019_18S_noBlank.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Samples_with_no_results.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Samples_with_no_results.xlsx"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_18S_noBlank.xlsx",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_April2021_18S_noBlank.xlsx"
         },
         {
             "@id": "./analysis_data/from_pema/processing_batch1/parameter_files/README.md",
