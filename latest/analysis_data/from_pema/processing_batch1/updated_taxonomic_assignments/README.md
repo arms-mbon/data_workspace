@@ -14,5 +14,6 @@ The taxonomic assignments from PEMA for COI and 18S from the batch 1 processing 
    *  Some taxonomic levels above the species level may have a "var." string remaining. Check if this is the case and manually adjust species level taxonomy for those cases (i.e., set the species level string to "GenusXY_speciesXY_var._XY")
    *  Remove numeric characters and "-" in species level assignments
  
-     
+
+The code used to work on the 18S files is [FixPEMAtaxassigments_18S_taxonomist.py](https://github.com/arms-mbon/data_workspace/blob/main/analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/FixPEMAtaxassigments_18S_taxonomist.py), a python script which has comments and should be useable therefrom. Licence: [CC BY SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en).    
 
