@@ -1,0 +1,4 @@
+OTUID,taxonomicClassificationOrig,Domain,Supergroup,Division/Kingdom,Phylum/Class,Level_X,Level_XX,Level_XXX,Level_XXXX,Level_XXXXX,genus_species
+Otu15,Main genome;Eukaryota;Opisthokonta;Metazoa;Bryozoa;Bryozoa (class);X (Bryozoa (class));Bryozoa (X (Bryozoa (class)));XX (Bryozoa (X (Bryozoa (class))));Favosipora;Favosipora (strain);rosea,Eukaryota,Opisthokonta,Metazoa,Bryozoa,Favosipora,rosea,NA,NA,NA,Favosipora_rosea
+Otu8,Main genome;Eukaryota;Opisthokonta;Metazoa;Cnidaria;Cnidaria (class);X (Cnidaria (class));Anthozoa,Eukaryota,Opisthokonta,Metazoa,Cnidaria,Anthozoa,NA,NA,NA,NA,NA
+Otu14,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Maxillopoda;Megabalanus;Megabalanus (genus);Unknown Megabalanus (genus) species 1,Eukaryota,Opisthokonta,Metazoa,Arthropoda,Crustacea,Maxillopoda,Megabalanus,NA,NA,NA
