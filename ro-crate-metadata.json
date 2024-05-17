@@ -152,22 +152,7 @@
                     "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Extended_final_table_April2021_18S_noBlank_TaxonomyCurated.csv"
                 },
                 {
-                    "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/May2021_18S_noBlank_TaxonomyCurated.csv"
-                },
-                {
-                    "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/July2019_18S_noBlank_TaxonomyCurated.csv"
-                },
-                {
                     "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Extended_final_table_ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO_18S_noBlank_TaxonomyCurated.csv"
-                },
-                {
-                    "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Gdynia_GDY1_20180813_20191029_SF38_DMSO_18S_noBlank_TaxonomyCurated.csv"
-                },
-                {
-                    "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/September2020_18S_noBlank_TaxonomyCurated.csv"
-                },
-                {
-                    "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/January2020_18S_noBlank_TaxonomyCurated.csv"
                 },
                 {
                     "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/README.md"
@@ -189,12 +174,6 @@
                 },
                 {
                     "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Extended_final_table_July2019_18S_noBlank_TaxonomyCurated.csv"
-                },
-                {
-                    "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/April2021_18S_noBlank_TaxonomyCurated.csv"
-                },
-                {
-                    "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/January2022_18S_noBlank_TaxonomyCurated.csv"
                 }
             ]
         },
@@ -1507,34 +1486,9 @@
             "label": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Extended_final_table_April2021_18S_noBlank_TaxonomyCurated.csv"
         },
         {
-            "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/May2021_18S_noBlank_TaxonomyCurated.csv",
-            "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/May2021_18S_noBlank_TaxonomyCurated.csv"
-        },
-        {
-            "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/July2019_18S_noBlank_TaxonomyCurated.csv",
-            "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/July2019_18S_noBlank_TaxonomyCurated.csv"
-        },
-        {
             "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Extended_final_table_ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO_18S_noBlank_TaxonomyCurated.csv",
             "@type": "File",
             "label": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Extended_final_table_ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO_18S_noBlank_TaxonomyCurated.csv"
-        },
-        {
-            "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Gdynia_GDY1_20180813_20191029_SF38_DMSO_18S_noBlank_TaxonomyCurated.csv",
-            "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Gdynia_GDY1_20180813_20191029_SF38_DMSO_18S_noBlank_TaxonomyCurated.csv"
-        },
-        {
-            "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/September2020_18S_noBlank_TaxonomyCurated.csv",
-            "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/September2020_18S_noBlank_TaxonomyCurated.csv"
-        },
-        {
-            "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/January2020_18S_noBlank_TaxonomyCurated.csv",
-            "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/January2020_18S_noBlank_TaxonomyCurated.csv"
         },
         {
             "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/README.md",
@@ -1570,16 +1524,6 @@
             "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Extended_final_table_July2019_18S_noBlank_TaxonomyCurated.csv",
             "@type": "File",
             "label": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Extended_final_table_July2019_18S_noBlank_TaxonomyCurated.csv"
-        },
-        {
-            "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/April2021_18S_noBlank_TaxonomyCurated.csv",
-            "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/April2021_18S_noBlank_TaxonomyCurated.csv"
-        },
-        {
-            "@id": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/January2022_18S_noBlank_TaxonomyCurated.csv",
-            "@type": "File",
-            "label": "./analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/January2022_18S_noBlank_TaxonomyCurated.csv"
         },
         {
             "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_August2023_COI_noBlank.xlsx",
