@@ -322,7 +322,7 @@ Otu562,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,30,0,0,0,0,0,0,0,0,0,0,0,Ma
 Otu560,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Apicomplexa;Coccidiomorphea;Eimeriida;Eimeriidae;NA;NA;NA;NA,Eimeriidae:5799
 Otu569,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Maxillopoda;NA;NA;NA;NA,Crustacea:6657
 Otu568,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;NA;NA;NA;NA;NA;NA;NA,Metazoa:33208
-Otu100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Sagenista;Labyrinthulomycetes;Thraustochytrida;Thraustochytriaceae;LAB17;NA;NA;NA,Thraustochytriaceae:33674
+Otu1008,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Sagenista;Labyrinthulomycetes;Thraustochytrida;Thraustochytriaceae;LAB17;NA;NA;NA,Thraustochytriaceae:33674
 Otu1186,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,1,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Annelida;NA;NA;NA;NA;NA;NA,Annelida:6340
 Otu1006,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Platyhelminthes;Turbellaria;Polycladida;Stylochus;NA;NA;NA,Stylochus:31257
 Otu1007,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Dinoflagellata;Dinophyceae;NA;NA;NA;NA;NA;NA,Dinophyceae:2864
