@@ -86,7 +86,7 @@ Otu172,0,0,0,133,0,0,0,0,0,0,2,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Me
 Otu173,8,4,0,0,22,165,260,10,204,119,0,6,2,53,2,0,65,Main genome;Eukaryota;Alveolata;Dinoflagellata;Dinophyceae;NA;NA;NA;NA;NA;NA,Dinophyceae:2864
 Otu178,0,0,0,0,0,0,0,0,0,0,0,10,0,125,2,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Urochordata;Ascidiacea;NA;NA;NA;NA;NA,Ascidiacea:7713
 Otu179,17,129,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Archaeplastida;Chlorophyta;Ulvophyceae;Cladophorales;Cladophora;NA;NA;NA;NA,Cladophora:34125
-Otu1692,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;NA;NA;NA;NA;NA,Ventricleftida:1938500_r1
+Otu1692,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;NA;NA;NA;NA;NA,Ventricleftida:1938500
 Otu1691,0,0,0,0,0,0,0,0,0,0,0,1,0,0,2,0,0,Main genome;Eukaryota;Stramenopiles;Ochrophyta;Bacillariophyta;Raphid-pennate;NA;NA;NA;NA;NA,Bacillariophyta:2836
 Otu1690,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,Main genome;Eukaryota;Stramenopiles;Pseudofungi;Oomycota;Haliphthorales;NA;NA;NA;NA;NA,Oomycota:4762
 Otu1697,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,Main genome;Eukaryota;Stramenopiles;Sagenista;Labyrinthulomycetes;LAB1;NA;NA;NA;NA;NA,Labyrinthulomycetes:35131
@@ -133,7 +133,7 @@ Otu1025,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Apicom
 Otu1026,0,0,0,0,1,3,0,0,4,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;NA;NA;NA;NA;NA;NA;NA,Cercozoa:136419
 Otu1020,0,0,0,0,0,0,0,1,5,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Fungi;Ascomycota;Saccharomycotina;Saccharomycetales;NA;NA;NA;NA,Saccharomycetales:4892
 Otu1021,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Dinoflagellata;NA;NA;NA;NA;NA;NA;NA,Dinoflagellata:2864
-Otu1022,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Archaeplastida;Chlorophyta;Scotinosphaera;NA;NA;NA;NA;NA;NA,Scotinosphaera:1199100_r1
+Otu1022,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Archaeplastida;Chlorophyta;Scotinosphaera;NA;NA;NA;NA;NA;NA,Scotinosphaera:1199100
 Otu1023,0,0,0,0,0,3,0,0,6,0,0,0,0,2,0,0,0,Main genome;Eukaryota;Alveolata;Apicomplexa;Coccidiomorphea;Adeleida;Adeleidae;Adelina;NA;NA;NA,Adelina:203141
 Otu545,2,13,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Annelida;Platynereis;dumerilii;NA;NA;NA;Platynereis_dumerilii,Platynereis_dumerilii:6359
 Otu544,8,13,0,0,0,0,0,0,0,0,0,0,15,0,0,0,0,Main genome;Eukaryota;Alveolata;Ciliophora;Oligohymenophorea;Peritrichia;Vaginicolidae;NA;NA;NA;NA,Vaginicolidae:168252
@@ -201,7 +201,7 @@ Otu952,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Meta
 Otu35,0,0,0,1682,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Maxillopoda;Stenhelia;NA;NA;NA,Stenhelia:512249
 Otu953,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Endomyxa;Vampyrellida;Sey055-lineage;NA;NA;NA;NA,Vampyrellida:1367446
 Otu1565,0,0,0,0,1,1,0,0,2,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Fungi;Ascomycota;Pezizomycotina;Eurotiomycetes;NA;NA;NA;NA,Eurotiomycetes:147545
-Otu950,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;NA;NA;NA;NA;NA,Ventricleftida:1938500_r1
+Otu950,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;NA;NA;NA;NA;NA,Ventricleftida:1938500
 Otu33,0,0,0,0,0,0,0,0,0,0,0,18,0,1791,2,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Platyhelminthes;Turbellaria;Rhabdocoela;Phonorhynchus;NA;NA;NA,Phonorhynchus:162282
 Otu30,2159,246,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Maxillopoda;NA;NA;NA;NA,Crustacea:6657
 Otu956,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Ochrophyta;Phaeophyceae;NA;NA;NA;NA;NA;NA,Phaeophyceae:2870
@@ -308,7 +308,7 @@ Otu1652,0,0,0,0,0,0,1,0,0,0,0,0,0,2,0,0,0,Main genome;Eukaryota;Opisthokonta;Fun
 Otu1650,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,Main genome;Eukaryota;NA;NA;NA;NA;NA;NA;NA;NA;NA,Eukaryota:2759
 Otu1538,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Nematoda;Chromadorea;NA;NA;NA;NA;NA,Chromadorea:119089
 Otu1539,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Foraminifera;Monothalamids;Phainogullmia;NA;NA;NA;NA;NA,Phainogullmia:212489
-Otu49,100_r19,7,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Maxillopoda;NA;NA;NA;NA,Crustacea:6657
+Otu49,1009,7,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Maxillopoda;NA;NA;NA;NA,Crustacea:6657
 Otu46,0,0,0,0,38,5,20,104,0,764,0,0,0,1060,0,0,72,Main genome;Eukaryota;Archaeplastida;Rhodophyta;Florideophyceae;Corallinales;NA;NA;NA;NA;NA,Corallinales:31395
 Otu1536,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Maxillopoda;NA;NA;NA;NA,Crustacea:6657
 Otu42,29,0,0,0,23,1144,152,32,1325,287,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Apicomplexa;Gregarinomorphea;Eugregarinorida;EUG3;NA;NA;NA;NA,Eugregarinorida:35087
@@ -428,7 +428,7 @@ Otu59,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,934,Main genome;Eukaryota;Alveolata;Apicom
 Otu50,0,0,0,970,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Entoprocta;Barentsia;NA;NA;NA;NA;NA,Barentsia:43125
 Otu51,958,391,0,0,0,0,5,0,0,0,0,0,1,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Malacostraca;Sinelobus;NA;NA;NA,Sinelobus:992985
 Otu52,0,0,0,0,983,199,312,2,263,21,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Apicomplexa;Gregarinomorphea;Eugregarinorida;Cephaloidophoridae;NA;NA;NA;NA,Cephaloidophoridae:947083
-Otu53,0,0,0,0,0,0,0,0,0,0,0,0,100_r16,0,247,411,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;NA;NA;NA;NA;NA;NA,Arthropoda:6656
+Otu53,0,0,0,0,0,0,0,0,0,0,0,0,1006,0,247,411,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;NA;NA;NA;NA;NA;NA,Arthropoda:6656
 Otu54,0,0,0,0,950,0,0,106,0,0,0,0,2,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Ostracoda;Cythere;NA;NA;NA,Cythere:182576
 Otu55,0,0,0,0,27,23,0,7,0,0,0,11,992,0,89,198,3,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Malacostraca;Thoralus;NA;NA;NA,Thoralus:576235
 Otu1253,0,0,0,0,0,0,0,0,0,0,0,3,0,0,3,1,0,Main genome;Eukaryota;Stramenopiles;Sagenista;Labyrinthulomycetes;Amphifilida;Amphifilaceae;NA;NA;NA;NA,Amphifilaceae:1678346
@@ -485,7 +485,7 @@ Otu225,0,0,0,0,0,0,0,0,0,0,0,2,0,2,6,148,2,Main genome;Eukaryota;Opisthokonta;Me
 Otu226,76,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Nematoda;Chromadorea;NA;NA;NA;NA;NA,Chromadorea:119089
 Otu227,5,0,0,0,6,87,0,2,30,0,0,5,1,42,1,0,0,Main genome;Eukaryota;Alveolata;Dinoflagellata;Dinophyceae;NA;NA;NA;NA;NA;NA,Dinophyceae:2864
 Otu1107,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Sarcomonadea;Cercomonadida;Cercomonadidae;NA;NA;NA;NA,Cercomonadidae:45108
-Otu1106,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;CCW10-lineage;NA;NA;NA;NA,Ventricleftida:1938500_r1
+Otu1106,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;CCW10-lineage;NA;NA;NA;NA,Ventricleftida:1938500
 Otu1105,3,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ebriida;Botuliformidae;Botuliforma;NA;NA;NA,Botuliforma:2566138
 Otu1104,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Ciliophora;Phyllopharyngea;Cyrtophoria;Hartmannulidae;NA;NA;NA;NA,Hartmannulidae:247151
 Otu1103,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Apusozoa;Hilomonadea;Planomonadida;Planomonadidae;NA;NA;NA;NA;NA,Planomonadidae:1294546
@@ -623,7 +623,7 @@ Otu100,0,0,0,0,0,2,0,0,8,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Archaeplastida;Ch
 Otu9,0,0,0,0,936,1,0,276,0,139,0,5545,1,6,3314,23,8,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Maxillopoda;Diarthrodes;NA;NA;NA,Diarthrodes:512218
 Otu6,0,0,0,0,26,5768,6,37,2,0,0,0,0,1,1,0,1,Main genome;Eukaryota;Opisthokonta;Metazoa;Annelida;NA;NA;NA;NA;NA;NA,Annelida:6340
 Otu7,2,0,0,1,103,115,2436,9,7,9559,0,0,0,0,0,0,0,Main genome;Eukaryota;Archaeplastida;Rhodophyta;Florideophyceae;Corallinales;Lithothamnion;NA;NA;NA;NA,Lithothamnion:48598
-Otu4,515,100_r147,0,0,11,24,390,3,0,45,1,3,13,16,1,4,10,Main genome;Eukaryota;Opisthokonta;Metazoa;Mollusca;Bivalvia;Mytiloida;NA;NA;NA;NA,Mytiloida:6546
+Otu4,515,10047,0,0,11,24,390,3,0,45,1,3,13,16,1,4,10,Main genome;Eukaryota;Opisthokonta;Metazoa;Mollusca;Bivalvia;Mytiloida;NA;NA;NA;NA,Mytiloida:6546
 Otu5,324,6914,0,0,4,0,0,0,0,0,0,0,0,1,0,0,4,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Maxillopoda;NA;NA;NA;NA,Crustacea:6657
 Otu2,0,0,0,6,73,5,19,21793,650,718,0,18,0,54,0,0,21,Main genome;Eukaryota;Opisthokonta;Metazoa;Cnidaria;Anthozoa;NA;NA;NA;NA;NA,Anthozoa:6101
 Otu1559,0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Dinoflagellata;Syndiniales;Dino-Group-I;Dino-Group-I-Clade-3;NA;NA;NA;NA,Syndiniales:88547
@@ -633,7 +633,7 @@ Otu1666,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,Main genome;Eukaryota;Archaeplastida;C
 Otu1667,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,2,Main genome;Eukaryota;NA;NA;NA;NA;NA;NA;NA;NA;NA,Eukaryota:2759
 Otu1664,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,Main genome;Eukaryota;Stramenopiles;Opalozoa;MAST-12;MAST-12B;NA;NA;NA;NA;NA,Opalozoa:2683629
 Otu1665,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,Main genome;Eukaryota;Stramenopiles;Ochrophyta;NA;NA;NA;NA;NA;NA;NA,Ochrophyta:2696291
-Otu1663,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:100_r14930
+Otu1663,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:1004930
 Otu1660,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,Main genome;Eukaryota;Alveolata;Dinoflagellata;NA;NA;NA;NA;NA;NA;NA,Dinoflagellata:2864
 Otu1661,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;NA;NA;NA;NA;NA;NA;NA,Cercozoa:136419
 Otu747,0,0,0,0,0,0,0,0,7,0,0,0,0,3,0,0,0,Main genome;Eukaryota;Alveolata;Apicomplexa;Gregarinomorphea;Eugregarinorida;NA;NA;NA;NA;NA,Eugregarinorida:35087
@@ -642,7 +642,7 @@ Otu745,0,0,0,0,0,8,1,0,8,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Pse
 Otu744,0,0,0,0,0,1,0,0,7,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Fungi;Basidiomycota;Agaricomycotina;Agaricomycetes;NA;NA;NA;NA,Agaricomycetes:155619
 Otu743,0,0,0,0,1,1,0,0,7,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Fungi;Cryptomycota;Cryptomycotina;NA;NA;NA;NA;NA,Cryptomycota:1031332
 Otu742,0,0,0,0,0,4,0,0,7,1,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Ochrophyta;NA;NA;NA;NA;NA;NA;NA,Ochrophyta:2696291
-Otu741,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:100_r14930
+Otu741,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:1004930
 Otu740,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Apicomplexa;Gregarinomorphea;Neogregarinorida;Actinocephalidae;Monocystis;NA;NA;NA,Monocystis:110315
 Otu1279,0,0,0,0,0,2,0,0,0,1,0,0,0,3,0,0,0,Main genome;Eukaryota;NA;NA;NA;NA;NA;NA;NA;NA;NA,Eukaryota:2759
 Otu1275,1,0,0,0,1,2,0,0,0,0,0,0,0,3,0,0,0,Main genome;Eukaryota;Opisthokonta;Fungi;Ascomycota;Pezizomycotina;Dothideomycetes;NA;NA;NA;NA,Dothideomycetes:147541
@@ -714,7 +714,7 @@ Otu666,0,0,0,0,0,2,0,0,0,0,0,3,1,9,0,0,7,Main genome;Eukaryota;Rhizaria;Cercozoa
 Otu667,0,0,0,0,0,0,0,0,1,0,0,2,0,9,4,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;NA;NA;NA;NA;NA;NA;NA,Cercozoa:136419
 Otu669,0,0,0,0,0,0,0,0,0,0,0,0,1,0,9,4,0,Main genome;Eukaryota;Stramenopiles;Ochrophyta;Bacillariophyta;Polar-centric-Mediophyceae;Biddulphia;NA;NA;NA;NA,Biddulphia:420276
 Otu886,0,0,0,0,1,3,4,0,6,1,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Opalozoa;MAST-12;MAST-12A;NA;NA;NA;NA;NA,Opalozoa:2683629
-Otu887,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Fungi;Basidiomycota;Agaricomycotina;Agaricomycetes;Nia;NA;NA;NA,Nia:15500_r12
+Otu887,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Fungi;Basidiomycota;Agaricomycotina;Agaricomycetes;Nia;NA;NA;NA,Nia:155002
 Otu880,0,0,0,0,0,0,4,0,5,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Granofilosea;Novel-Massiteriidae;NA;NA;NA;NA;NA,Filosa-Granofilosea:1938466
 Otu881,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Ochrophyta;Phaeophyceae;NA;NA;NA;NA;NA;NA,Phaeophyceae:2870
 Otu882,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;NA;NA;NA;NA;NA;NA;NA;NA,Stramenopiles:33634
@@ -728,7 +728,7 @@ Otu396,0,0,0,0,6,7,3,53,5,0,2,0,0,0,0,3,0,Main genome;Eukaryota;Opisthokonta;Met
 Otu397,1,0,0,0,0,27,30,1,40,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Apicomplexa;Gregarinomorphea;Eugregarinorida;Lecudinidae;Lecudina;NA;NA;NA,Lecudina:198478
 Otu980,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Imbricatea;Marimonadida;NA;NA;NA;NA;NA,Marimonadida:1736122
 Otu243,0,0,0,0,0,1,66,0,1,6,0,0,0,0,0,0,0,Main genome;Eukaryota;Archaeplastida;Chlorophyta;Ulvophyceae;Ulvales-relatives;Phaeophila;NA;NA;NA;NA,Phaeophila:262508
-Otu240,3,0,0,0,1,28,0,0,46,12,0,3,1,63,0,3,90,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Mataza-lineage;NA;NA;NA;NA;NA,Filosa-Thecofilosea:100_r14930
+Otu240,3,0,0,0,1,28,0,0,46,12,0,3,1,63,0,3,90,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Mataza-lineage;NA;NA;NA;NA;NA,Filosa-Thecofilosea:1004930
 Otu241,71,20,0,0,0,0,0,0,0,0,0,0,2,0,0,0,2,Main genome;Eukaryota;Archaeplastida;Rhodophyta;Florideophyceae;NA;NA;NA;NA;NA;NA,Florideophyceae:2806
 Otu246,64,44,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Ochrophyta;Bacillariophyta;Raphid-pennate;NA;NA;NA;NA;NA,Bacillariophyta:2836
 Otu247,64,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;NA;NA;NA;NA;NA;NA,Arthropoda:6656
@@ -763,7 +763,7 @@ Otu1723,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Oc
 Otu1722,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Ciliophora;Oligohymenophorea;NA;NA;NA;NA;NA;NA,Oligohymenophorea:6020
 Otu1721,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Sagenista;Labyrinthulomycetes;Oblongichytrida;Oblongichytridiaceae;NA;NA;NA;NA,Oblongichytrida:2699530
 Otu1728,1,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Endomyxa;Vampyrellida;Penardia-lineage;NA;NA;NA;NA,Vampyrellida:1367446
-Otu96,11,2,0,0,9,8,0,0,24,0,0,1,0,3,1,0,371,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;CCW10-lineage;NA;NA;NA;NA,Ventricleftida:1938500_r1
+Otu96,11,2,0,0,9,8,0,0,24,0,0,1,0,3,1,0,371,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;CCW10-lineage;NA;NA;NA;NA,Ventricleftida:1938500
 Otu1268,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,Main genome;Eukaryota;Alveolata;Apicomplexa;Coccidiomorphea;Eimeriida;Sarcocystidae;NA;NA;NA;NA,Sarcocystidae:5809
 Otu1269,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,Main genome;Eukaryota;Opisthokonta;Fungi;NA;NA;NA;NA;NA;NA;NA,Fungi:4751
 Otu1262,0,0,0,0,0,0,0,0,0,0,0,0,3,0,1,0,0,Main genome;Eukaryota;Stramenopiles;Sagenista;Labyrinthulomycetes;Thraustochytrida;Thraustochytriaceae;NA;NA;NA;NA,Thraustochytriaceae:33674
@@ -774,7 +774,7 @@ Otu1266,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,Main genome;Eukaryota;Stramenopiles;Oc
 Otu1267,0,0,0,0,2,0,0,0,0,0,0,3,0,3,0,0,0,Main genome;Eukaryota;Apusozoa;Apusomonadidae;Group-1;Amastigomonas;NA;NA;NA;NA;NA,Amastigomonas:172821
 Otu1264,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,Main genome;Eukaryota;Archaeplastida;Chlorophyta;Mamiellophyceae;Dolichomastigales;Dolichomastigaceae;NA;NA;NA;NA,Dolichomastigaceae:1525217
 Otu1265,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,Main genome;Eukaryota;Stramenopiles;Ochrophyta;Bacillariophyta;NA;NA;NA;NA;NA;NA,Bacillariophyta:2836
-Otu1469,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Mataza-lineage;NA;NA;NA;NA;NA,Filosa-Thecofilosea:100_r14930
+Otu1469,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Mataza-lineage;NA;NA;NA;NA;NA,Filosa-Thecofilosea:1004930
 Otu1464,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Archaeplastida;Chlorophyta;Mamiellophyceae;Dolichomastigales;Dolichomastigaceae;NA;NA;NA;NA,Dolichomastigaceae:1525217
 Otu1465,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Sarcomonadea;Cercomonadida;Cercomonadidae;Cercomonas;NA;NA;NA,Cercomonas:45109
 Otu1466,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,2,Main genome;Eukaryota;Stramenopiles;Opalozoa;MAST-12;MAST-12A;NA;NA;NA;NA;NA,Opalozoa:2683629
@@ -868,10 +868,10 @@ Otu876,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Meta
 Otu871,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Imbricatea;Thaumatomonadida;NA;NA;NA;NA;NA,Thaumatomonadida:188944
 Otu870,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Archaeplastida;Rhodophyta;Rhodellophyceae;Glaucosphaera-Clade;NA;NA;NA;NA;NA,Rhodellophyceae:661027
 Otu873,0,0,0,0,2,0,0,5,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Nematoda;Chromadorea;NA;NA;NA;NA;NA,Chromadorea:119089
-Otu872,0,0,0,0,0,1,5,0,6,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:100_r14930
+Otu872,0,0,0,0,0,1,5,0,6,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:1004930
 Otu879,0,0,0,0,0,2,1,1,5,1,0,0,0,0,0,0,0,Main genome;Eukaryota;Archaeplastida;Chlorophyta;Ulvophyceae;Ulvales-relatives;Blidingia;NA;NA;NA;NA,Blidingia:63413
 Otu878,0,0,0,0,1,3,0,0,5,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Archaeplastida;Chlorophyta;Mamiellophyceae;Dolichomastigales;Dolichomastigaceae;Dolichomastigaceae-A;NA;NA;NA,Dolichomastigaceae:1525217
-Otu1608,0,0,0,0,0,1,0,0,1,2,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;NA;NA;NA;NA;NA,Ventricleftida:1938500_r1
+Otu1608,0,0,0,0,0,1,0,0,1,2,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;NA;NA;NA;NA;NA,Ventricleftida:1938500
 Otu1609,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Ciliophora;Spirotrichea;Hypotrichia;NA;NA;NA;NA;NA,Hypotrichia:5934
 Otu1601,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,1,0,Main genome;Eukaryota;Alveolata;Ciliophora;Oligohymenophorea;Peritrichia;Urceolariidae;NA;NA;NA;NA,Peritrichia:6021
 Otu1602,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Ciliophora;Phyllopharyngea;Suctoria;NA;NA;NA;NA;NA,Suctoria:39462
@@ -885,7 +885,7 @@ Otu1735,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozo
 Otu1736,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Endomyxa;Vampyrellida;NA;NA;NA;NA;NA,Vampyrellida:1367446
 Otu1737,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Ochrophyta;MOCH-5;NA;NA;NA;NA;NA;NA,Ochrophyta:2696291
 Otu1730,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;NA;NA;NA;NA;NA;NA;NA,Cercozoa:136419
-Otu1731,1,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;NA;NA;NA;NA;NA,Ventricleftida:1938500_r1
+Otu1731,1,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;NA;NA;NA;NA;NA,Ventricleftida:1938500
 Otu1732,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Fungi;Chytridiomycota;Chytridiomycotina;Chytridiomycetes;NA;NA;NA;NA,Chytridiomycetes:451435
 Otu1738,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Ciliophora;Spirotrichea;Hypotrichia;Oxytrichidae;Hemigastrostyla;enigmatica;NA;Hemigastrostyla_enigmatica,Hemigastrostyla_enigmatica:423615
 Otu1739,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,Main genome;Eukaryota;NA;NA;NA;NA;NA;NA;NA;NA;NA,Eukaryota:2759
@@ -931,7 +931,7 @@ Otu601,0,0,0,0,1,0,0,0,0,0,10,11,0,0,1,2,2,Main genome;Eukaryota;Opisthokonta;Me
 Otu606,0,0,0,0,0,0,0,0,0,0,0,1,0,11,0,0,10,Main genome;Eukaryota;Rhizaria;Cercozoa;Endomyxa-Phytomyxea;Phagomyxida;Phagomyxidae;NA;NA;NA;NA,Phagomyxida:2779610
 Otu607,0,0,0,0,0,0,0,0,0,0,0,2,0,11,0,0,0,Main genome;Eukaryota;Stramenopiles;Ochrophyta;Bacillariophyta;Polar-centric-Mediophyceae;Chaetoceros;NA;NA;NA;NA,Chaetoceros:49237
 Otu604,0,0,0,0,0,1,0,0,2,0,0,4,0,11,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Imbricatea;Novel-Clade-2;NA;NA;NA;NA;NA,Filosa-Imbricatea:1736114
-Otu605,0,0,0,0,0,0,3,0,1,0,0,0,0,11,0,1,9,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:100_r14930
+Otu605,0,0,0,0,0,0,3,0,1,0,0,0,0,11,0,1,9,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:1004930
 Otu268,0,0,0,51,7,0,0,1,0,0,0,4,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Ostracoda;NA;NA;NA;NA,Ostracoda:6670
 Otu264,0,0,0,0,0,0,0,0,0,0,0,0,0,13,1,0,55,Main genome;Eukaryota;Stramenopiles;Ochrophyta;Raphidophyceae;Heterosigma;akashiwo;NA;NA;NA;Heterosigma_akashiwo,Heterosigma_akashiwo:2829
 Otu265,0,0,0,0,6,11,0,2,54,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Apicomplexa;Gregarinomorphea;GRE3;NA;NA;NA;NA;NA,Apicomplexa:5794
@@ -988,7 +988,7 @@ Otu1705,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,Main genome;Eukaryota;Archaeplastida;C
 Otu1704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,Main genome;Eukaryota;Archaeplastida;Chlorophyta;Mamiellophyceae;Dolichomastigales;Dolichomastigaceae;Dolichomastigaceae-B;NA;NA;NA,Dolichomastigaceae:1525217
 Otu1707,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,Main genome;Eukaryota;Alveolata;Dinoflagellata;NA;NA;NA;NA;NA;NA;NA,Dinoflagellata:2864
 Otu1706,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,Main genome;Eukaryota;Rhizaria;Cercozoa;NA;NA;NA;NA;NA;NA;NA,Cercozoa:136419
-Otu1709,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:100_r14930
+Otu1709,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:1004930
 Otu1708,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,Main genome;Eukaryota;Alveolata;Dinoflagellata;NA;NA;NA;NA;NA;NA;NA,Dinoflagellata:2864
 Otu706,0,0,0,0,0,0,0,0,0,0,0,7,0,0,8,0,0,Main genome;Eukaryota;Alveolata;Dinoflagellata;Dinophyceae;Gymnodiniales;Gymnodiniaceae;Polykrikos;kofoidii;NA;Polykrikos_kofoidii,Polykrikos_kofoidii:271679
 Otu1446,0,0,0,0,0,2,1,0,2,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Hacrobia;Picozoa;NA;NA;NA;NA;NA;NA;NA,Picozoa:419944
@@ -1185,7 +1185,7 @@ Otu621,0,0,0,0,10,0,0,2,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Foramin
 Otu622,0,0,0,0,0,19,0,1,7,10,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Apicomplexa;Gregarinomorphea;Selenidium1;boccardiellae;NA;NA;NA;Selenidium1_boccardiellae,Apicomplexa:5794
 Otu623,0,0,0,0,0,10,0,0,8,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Apicomplexa;Gregarinomorphea;Eugregarinorida;Urosporidae;Difficilina;NA;NA;NA,Urosporidae:340202
 Otu628,0,0,0,0,0,0,0,0,0,0,0,13,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Mollusca;Gastropoda;Dendronotoidea-Arminoidea-Aeolidoidea;NA;NA;NA;NA,Gastropoda:6448
-Otu714,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;CCW10-lineage;NA;NA;NA;NA,Ventricleftida:1938500_r1
+Otu714,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;CCW10-lineage;NA;NA;NA;NA,Ventricleftida:1938500
 Otu828,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,6,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Imbricatea;Novel-Clade-2;NA;NA;NA;NA;NA,Filosa-Imbricatea:1736114
 Otu829,5,0,0,0,5,0,0,3,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Ochrophyta;Bacillariophyta;Araphid-pennate;NA;NA;NA;NA;NA,Bacillariophyta:2836
 Otu715,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Platyhelminthes;Turbellaria;Seriata;Archiloa;NA;NA;NA,Archiloa:44219
@@ -1299,11 +1299,11 @@ Otu907,0,0,0,0,0,0,0,0,0,0,0,2,1,0,5,0,0,Main genome;Eukaryota;Stramenopiles;Och
 Otu906,0,0,0,0,0,0,0,0,0,0,0,3,0,0,5,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Mollusca;Bivalvia;Heteroconchia;Ensis;NA;NA;NA,Ensis:6586
 Otu901,0,0,0,0,0,0,0,0,0,0,0,1,0,5,2,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Cryomonadida;Protaspa-lineage;NA;NA;NA;NA,Cryomonadida:589444
 Otu78,40,15,0,0,45,1152,814,4,403,181,0,81,16,1020,21,2,237,Main genome;Eukaryota;NA;NA;NA;NA;NA;NA;NA;NA;NA,Eukaryota:2759
-Otu902,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Mataza-lineage;NA;NA;NA;NA;NA,Filosa-Thecofilosea:100_r14930
+Otu902,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Mataza-lineage;NA;NA;NA;NA;NA,Filosa-Thecofilosea:1004930
 Otu79,1,0,0,0,22,319,140,31,536,83,0,1,0,34,0,0,81,Main genome;Eukaryota;Alveolata;Apicomplexa;Gregarinomorphea;Selenidium1;NA;NA;NA;NA;NA,Apicomplexa:5794
 Otu632,0,0,0,0,0,0,0,0,4,0,0,0,0,10,0,0,5,Main genome;Eukaryota;Alveolata;Apicomplexa;Coccidiomorphea;Eimeriida;Eimeriidae;Goussia7;NA;NA;NA,Eimeriidae:5799
 Otu631,0,0,0,0,0,1,0,0,2,0,0,0,0,10,0,0,3,Main genome;Eukaryota;Alveolata;NA;NA;NA;NA;NA;NA;NA;NA,Alveolata:33630
-Otu630,0,0,0,0,0,0,0,0,0,0,0,2,0,10,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Mataza-lineage;NA;NA;NA;NA;NA,Filosa-Thecofilosea:100_r14930
+Otu630,0,0,0,0,0,0,0,0,0,0,0,2,0,10,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Mataza-lineage;NA;NA;NA;NA;NA,Filosa-Thecofilosea:1004930
 Otu636,9,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Nematoda;Enoplea;Halalaimus;NA;NA;NA;NA,Halalaimus:560183
 Otu634,0,0,0,0,3,0,0,0,0,0,0,4,0,1,1,10,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Mollusca;Gastropoda;NA;NA;NA;NA;NA,Gastropoda:6448
 Otu639,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Maxillopoda;NA;NA;NA;NA,Crustacea:6657
@@ -1353,7 +1353,7 @@ Otu1564,0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozo
 Otu1566,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Pseudofungi;Oomycota;Haliphthorales;NA;NA;NA;NA;NA,Oomycota:4762
 Otu358,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Nematoda;Chromadorea;Ptycholaimellus;NA;NA;NA;NA,Ptycholaimellus:560188
 Otu359,22,42,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Ciliophora;Oligohymenophorea;Peritrichia;Sessilida;NA;NA;NA;NA,Sessilida:1974272
-Otu1100_r1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Opalozoa;Bicoecea;Bicoecales;Bicoecaceae;NA;NA;NA;NA,Bicoecaceae:238883
+Otu1100,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Opalozoa;Bicoecea;Bicoecales;Bicoecaceae;NA;NA;NA;NA,Bicoecaceae:238883
 Otu426,0,0,0,21,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Fungi;Basidiomycota;Ustilaginomycotina;Exobasidiomycetes;NA;NA;NA;NA,Exobasidiomycetes:452283
 Otu355,0,0,0,25,12,0,0,7,0,0,0,2,0,0,17,31,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Arthropoda;Crustacea;Maxillopoda;Amphiascoides;NA;NA;NA,Amphiascoides:324871
 Otu424,21,6,0,0,2,7,0,0,14,0,0,1,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Apicomplexa;Gregarinomorphea;Eugregarinorida;Lecudinidae;Lecudina;NA;NA;NA,Lecudina:198478
@@ -1418,18 +1418,18 @@ Otu808,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Meta
 Otu809,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Urochordata;Ascidiacea;Chelyosoma;NA;NA;NA;NA,Chelyosoma:71176
 Otu900,0,0,0,0,0,1,0,0,1,2,0,0,1,5,0,0,4,Main genome;Eukaryota;Opisthokonta;Choanoflagellida;Choanoflagellatea;Acanthoecida;Stephanoecidae;New;Choanos;NA;NA,Stephanoecidae:1158810
 Otu1018,0,0,0,0,0,0,2,0,6,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Apicomplexa;Gregarinomorphea;Neogregarinorida;Actinocephalidae;Monocystis;NA;NA;NA,Monocystis:110315
-Otu1747,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;CCW10-lineage;NA;NA;NA;NA,Ventricleftida:1938500_r1
+Otu1747,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;CCW10-lineage;NA;NA;NA;NA,Ventricleftida:1938500
 Otu1741,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Ciliophora;Spirotrichea;Euplotia;Aspidiscidae;NA;NA;NA;NA,Aspidiscidae:138847
 Otu1740,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Ciliophora;Litostomatea;Haptoria;Pleurostomatida;NA;NA;NA;NA,Pleurostomatida:197906
-Otu1742,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;NA;NA;NA;NA;NA,Ventricleftida:1938500_r1
+Otu1742,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;Ventricleftida;NA;NA;NA;NA;NA,Ventricleftida:1938500
 Otu1749,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Excavata;Discoba;Diplonemea;Diplonemida;Hemistasiidae;Hemistasia;NA;NA;NA,Hemistasia:1503926
 Otu1748,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Ciliophora;Spirotrichea;Hypotrichia;NA;NA;NA;NA;NA,Hypotrichia:5934
 Otu1384,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Endomyxa;Vampyrellida;Sey055-lineage;NA;NA;NA;NA,Vampyrellida:1367446
 Otu1116,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Opisthokonta;Metazoa;Cnidaria;Hydrozoa;NA;NA;NA;NA;NA,Hydrozoa:6074
-Otu1408,0,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:100_r14930
+Otu1408,0,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:1004930
 Otu1402,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Ciliophora;Phyllopharyngea;Suctoria;NA;NA;NA;NA;NA,Suctoria:39462
 Otu1403,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Foraminifera;Globothalamea;Rotaliida;Ammoniidae;Ammonia;NA;NA;NA,Ammonia:29189
-Otu1401,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:100_r14930
+Otu1401,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Rhizaria;Cercozoa;Filosa-Thecofilosea;NA;NA;NA;NA;NA;NA,Filosa-Thecofilosea:1004930
 Otu1407,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Stramenopiles;Ochrophyta;Bacillariophyta;Araphid-pennate;Opephora;NA;NA;NA;NA,Opephora:515465
 Otu1404,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Main genome;Eukaryota;Alveolata;Ciliophora;Phyllopharyngea;Suctoria;PHYLL;NA;NA;NA;NA,Suctoria:39462
 Otu1405,0,2,0,0,2,0,0,0,0,0,0,1,0,0,0,0,0,Main genome;Eukaryota;Apusozoa;Apusomonadidae;Group-1;Amastigomonas;NA;NA;NA;NA;NA,Amastigomonas:172821
