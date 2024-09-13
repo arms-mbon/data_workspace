@@ -17,6 +17,10 @@ Plymouth,United Kingdom,PLY4,ARMS unit,missing
 Plymouth,United Kingdom,PLY1,ARMS unit,missing
 Plymouth,United Kingdom,PLY2,ARMS unit,missing
 Plymouth,United Kingdom,PLY3,ARMS unit,missing
+Plymouth,United Kingdom,PLY7,ARMS unit,missing
+Plymouth,United Kingdom,PLY5,ARMS unit,missing
+Plymouth,United Kingdom,PLY6,ARMS unit,missing
+Plymouth,United Kingdom,PLY8,ARMS unit,missing
 TZS,Finland,NA,Station,passed
 TZS,Finland,NA,Station,passed
 TZS,Finland,NA,Station,passed
@@ -58,6 +62,8 @@ Eilat,Israel,NR2,ARMS unit,passed
 Eilat,Israel,NR1,ARMS unit,passed
 Eilat,Israel,Katza2,ARMS unit,passed
 Eilat,Israel,Katza1,ARMS unit,passed
+Eilat,Israel,Eilat_NR3,ARMS unit,missing
+Eilat,Israel,Eilat_Katza3,ARMS unit,missing
 GulfOfPiran,Slovenia,NA,Station,passed
 GulfOfPiran,Slovenia,NA,Station,passed
 GulfOfPiran,Slovenia,NA,Station,passed
@@ -128,3 +134,6 @@ Cadiz,Spain,GT2,ARMS unit,missing
 Cadiz,Spain,FP1,ARMS unit,missing
 Cadiz,Spain,FP3,ARMS unit,missing
 Cadiz,Spain,GT3,ARMS unit,missing
+Cadiz,Spain,ST1,ARMS unit,missing
+Cadiz,Spain,ST3,ARMS unit,missing
+Cadiz,Spain,ST2,ARMS unit,missing

@@ -20,13 +20,13 @@ parent_dit = os.path.dirname(os.path.abspath(__file__))
 output_dir = parent_dit
 
 # download the plutoF josn dump
-plutoF_url_dmp = "https://files.plutof.ut.ee/orig/3499F3A9B37BD8DA30F60A8CBE22580C403269818043A9324758C3F84434BAEB.json?h=hW-cqCf3zI5m7Yv6Vg1gJA&e=1709216887"
+# plutoF_url_dmp = "https://files.plutof.ut.ee/orig/3499F3A9B37BD8DA30F60A8CBE22580C403269818043A9324758C3F84434BAEB.json?h=hW-cqCf3zI5m7Yv6Vg1gJA&e=1709216887"
 plutoF_json_dmp = os.path.join(output_dir, "AllARMSPlutof.json")
 # download the plutoF josn dump
-file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
+# file_dump = requests.get(plutoF_url_dmp, allow_redirects=True)
 # pyt the file dump in the output dir
-with open(plutoF_json_dmp, "wb") as f:
-    f.write(file_dump.content)
+# with open(plutoF_json_dmp, "wb") as f:
+#    f.write(file_dump.content)
 
 # load json file
 json_data = open(os.path.join(parent_dit, "AllARMSPlutof.json"))
@@ -473,8 +473,9 @@ for sampling_area in json_data_loaded["sampling_areas"]:
 
             # associated_data table here
             for file in sampling_event["files"]:
-                file_name = file["identifier"]
-                platenumber, position = getPlateNumberAndPosition(file_name)
+                file_name = str(file["id"])
+                platenumber, position = "Not Provided", "Not Provided"
+                #platenumber, position = getPlateNumberAndPosition(file_name)
 
                 file_type = file["type"]
                 file_download_url = file["download_link"]

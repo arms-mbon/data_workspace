@@ -19,8 +19,11 @@ BelgiumCoast,CoastbustersA,"latitude, longitude, depth",pass,,
 BelgiumCoast,CoastbustersB,"latitude, longitude, depth",pass,,
 BelgiumCoast,CPowerA,"latitude, longitude, depth",pass,,
 BelgiumCoast,CPowerA,"latitude, longitude, depth",pass,,
+BelgiumCoast,CPowerA,"latitude, longitude, depth",pass,,
 BelgiumCoast,CPowerB,"latitude, longitude, depth",pass,,
 BelgiumCoast,CPowerB,"latitude, longitude, depth",pass,,
+BelgiumCoast,CPowerB,"latitude, longitude, depth",pass,,
+BelgiumCoast,CPowerC,"latitude, longitude, depth",pass,,
 BelgiumCoast,CPowerC,"latitude, longitude, depth",pass,,
 BelgiumCoast,CPowerC,"latitude, longitude, depth",pass,,
 Bodo,GStraM,"latitude, longitude, depth",pass,,
@@ -45,22 +48,26 @@ Crete,2UBPC,"latitude, longitude, depth",pass,,
 Crete,2UBPC,"latitude, longitude, depth",pass,,
 Crete,2UBPC,"latitude, longitude, depth",pass,,
 Crete,2UBPC,"latitude, longitude, depth",pass,,
-Daneborg,Daneborg2,arms_id,fail,Daneborg2,DiskoIsland3
-Daneborg,Daneborg3,arms_id,fail,Daneborg3,DiskoIsland3
-Daneborg,Daneborg1,arms_id,fail,Daneborg1,DiskoIsland3
+Daneborg,Daneborg2,arms_id,fail,Daneborg2,ST2
+Daneborg,Daneborg3,arms_id,fail,Daneborg3,ST2
+Daneborg,Daneborg1,arms_id,fail,Daneborg1,ST2
 Eilat,NR1,"latitude, longitude, depth",pass,,
 Eilat,NR1,"latitude, longitude, depth",pass,,
 Eilat,NR2,"latitude, longitude, depth",pass,,
 Eilat,NR2,"latitude, longitude, depth",pass,,
+Eilat,NR3,arms_id,fail,NR3,ST2
+Eilat,Katza1,"latitude, longitude, depth",pass,,
 Eilat,Katza1,"latitude, longitude, depth",pass,,
 Eilat,Katza2,"latitude, longitude, depth",pass,,
+Eilat,Katza2,"latitude, longitude, depth",pass,,
+Eilat,Katza3,arms_id,fail,Katza3,ST2
 Galway,Gurr3,"latitude, longitude, depth",pass,,
 Galway,Gurr3,"latitude, longitude, depth",pass,,
 Galway,Gurr2,"latitude, longitude, depth",pass,,
 Galway,Gurr2,"latitude, longitude, depth",pass,,
 Galway,Gurr1,"latitude, longitude, depth",pass,,
 Galway,Gurr1,"latitude, longitude, depth",pass,,
-Galway,Gurr4,arms_id,fail,Gurr4,DiskoIsland3
+Galway,Gurr4,arms_id,fail,Gurr4,ST2
 Gdynia,GDY1,"latitude, longitude, depth",pass,,
 Gdynia,GDY1,"latitude, longitude, depth",pass,,
 Gdynia,GDY1,"latitude, longitude, depth",pass,,
@@ -69,8 +76,10 @@ Getxo,G3,"latitude, longitude, depth",pass,,
 Getxo,G3,"latitude, longitude, depth",pass,,
 Getxo,G1,"latitude, longitude, depth",pass,,
 Getxo,G1,"latitude, longitude, depth",pass,,
+Getxo,G1,"latitude, longitude, depth",pass,,
 Getxo,G2,"latitude, longitude, depth",pass,,
 Getxo,G2,"latitude, longitude, depth",pass,,
+Getxo,G2,"latitude, longitude, depth",pass,,
 GulfOfPiran,Fornace,"latitude, longitude, depth",pass,,
 GulfOfPiran,Fornace,"latitude, longitude, depth",pass,,
 GulfOfPiran,Fornace,"latitude, longitude, depth",pass,,
@@ -79,6 +88,10 @@ GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
 GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
 GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
 GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
+GulfOfPiran,LukaKP,"latitude, longitude, depth",pass,,
+GulfOfPiran,LukaKP,"latitude, longitude, depth",pass,,
+GulfOfPiran,LukaKP,"latitude, longitude, depth",pass,,
+GulfOfPiran,LukaKP,"latitude, longitude, depth",pass,,
 GulfOfPiran,LukaKP,"latitude, longitude, depth",pass,,
 GulfOfPiran,LukaKP,"latitude, longitude, depth",pass,,
 GulfOfPiran,LukaKP,"latitude, longitude, depth",pass,,
@@ -101,17 +114,19 @@ Koster,VH2,"latitude, longitude, depth",pass,,
 Koster,VH2,"latitude, longitude, depth",pass,,
 Koster,VH2,"latitude, longitude, depth",pass,,
 Koster,VH2,"latitude, longitude, depth",pass,,
-KosterSeafarm,NSF1,arms_id,fail,NSF1,DiskoIsland3
-KosterSeafarm,NSF2,arms_id,fail,NSF2,DiskoIsland3
-KosterSeafarm,NSF3,arms_id,fail,NSF3,DiskoIsland3
-KosterSeafarm,NSF4,arms_id,fail,NSF4,DiskoIsland3
-KosterSeafarm,NSF5,arms_id,fail,NSF5,DiskoIsland3
-KosterSeafarm,NSF6,arms_id,fail,NSF6,DiskoIsland3
-KosterSeafarm,NSF7,arms_id,fail,NSF7,DiskoIsland3
-KosterSeafarm,NSF8,arms_id,fail,NSF8,DiskoIsland3
-KosterSeafarm,NSF9,arms_id,fail,NSF9,DiskoIsland3
+KosterSeafarm,NSF1,arms_id,fail,NSF1,ST2
+KosterSeafarm,NSF2,arms_id,fail,NSF2,ST2
+KosterSeafarm,NSF3,arms_id,fail,NSF3,ST2
+KosterSeafarm,NSF4,arms_id,fail,NSF4,ST2
+KosterSeafarm,NSF5,arms_id,fail,NSF5,ST2
+KosterSeafarm,NSF6,arms_id,fail,NSF6,ST2
+KosterSeafarm,NSF7,arms_id,fail,NSF7,ST2
+KosterSeafarm,NSF8,arms_id,fail,NSF8,ST2
+KosterSeafarm,NSF9,arms_id,fail,NSF9,ST2
 Laeso,Laeso1,"latitude, longitude, depth",pass,,
 Laeso,Laeso1,"latitude, longitude, depth",pass,,
+Laeso,Laeso1,"latitude, longitude, depth",pass,,
+Laeso,Laeso2,"latitude, longitude, depth",pass,,
 Laeso,Laeso2,"latitude, longitude, depth",pass,,
 Laeso,Laeso2,"latitude, longitude, depth",pass,,
 Laeso,Laeso3,"latitude, longitude, depth",pass,,
@@ -122,9 +137,9 @@ Limfjord,Red2,"latitude, longitude, depth",pass,,
 Limfjord,Green33,"latitude, longitude, depth",pass,,
 Limfjord,Green33,"latitude, longitude, depth",pass,,
 Limfjord,Green33,"latitude, longitude, depth",pass,,
-Nuuk,Kobbefjord2,arms_id,fail,Kobbefjord2,DiskoIsland3
-Nuuk,Kobbefjord1,arms_id,fail,Kobbefjord1,DiskoIsland3
-Nuuk,Kobberfjord3,arms_id,fail,Kobberfjord3,DiskoIsland3
+Nuuk,Kobbefjord2,arms_id,fail,Kobbefjord2,ST2
+Nuuk,Kobbefjord1,arms_id,fail,Kobbefjord1,ST2
+Nuuk,Kobberfjord3,arms_id,fail,Kobberfjord3,ST2
 Plymouth,MBA1B,"latitude, longitude, depth",pass,,
 Plymouth,MBA1B,"latitude, longitude, depth",pass,,
 Plymouth,MBA1A,"latitude, longitude, depth",pass,,
@@ -153,27 +168,33 @@ RavMarina,RavM1,"latitude, longitude, depth",pass,,
 Roscoff,MarBloR1,"latitude, longitude, depth",pass,,
 Roscoff,MarBloR1,"latitude, longitude, depth",pass,,
 Roscoff,MarBloR1,"latitude, longitude, depth",pass,,
+Roscoff,MarBloR1,"latitude, longitude, depth",pass,,
+Roscoff,MarBloR2,"latitude, longitude, depth",pass,,
 Roscoff,MarBloR2,"latitude, longitude, depth",pass,,
 Roscoff,MarBloR2,"latitude, longitude, depth",pass,,
 Roscoff,MarBloR3,"latitude, longitude, depth",pass,,
 Roscoff,MarBloR3,"latitude, longitude, depth",pass,,
+Roscoff,MarBloR3,"latitude, longitude, depth",pass,,
+Roscoff,BasBloS1,"latitude, longitude, depth",pass,,
 Roscoff,BasBloS1,"latitude, longitude, depth",pass,,
 Roscoff,BasBloS1,"latitude, longitude, depth",pass,,
 Roscoff,BasBloS1,"latitude, longitude, depth",pass,,
 Roscoff,BasBloS2,"latitude, longitude, depth",pass,,
 Roscoff,BasBloS2,"latitude, longitude, depth",pass,,
+Roscoff,BasBloS2,"latitude, longitude, depth",pass,,
+Roscoff,BasBloS3,"latitude, longitude, depth",pass,,
 Roscoff,BasBloS3,"latitude, longitude, depth",pass,,
 Roscoff,BasBloS3,"latitude, longitude, depth",pass,,
 Rothera,SouthCove1,longitude,value is different but not significantly,-68.1346667,-68.13466667
 Rothera,Cheshire1,latitude,value is different but not significantly,-67.5738333,-67.57383333
 Rothera,Cheshire1,longitude,value is different but not significantly,-68.1252333,-68.12523333
-Rothera,HangarCove1,arms_id,fail,HangarCove1,DiskoIsland3
-Rothera,HangarCove2,arms_id,fail,HangarCove2,DiskoIsland3
-Rothera,HangarCove3,arms_id,fail,HangarCove3,DiskoIsland3
-SchleswigHolstein,SHNP4,arms_id,fail,SHNP4,DiskoIsland3
-SchleswigHolstein,SHNP3,arms_id,fail,SHNP3,DiskoIsland3
-SchleswigHolstein,SHNP2,arms_id,fail,SHNP2,DiskoIsland3
-SchleswigHolstein,SHNP1,arms_id,fail,SHNP1,DiskoIsland3
+Rothera,HangarCove1,arms_id,fail,HangarCove1,ST2
+Rothera,HangarCove2,arms_id,fail,HangarCove2,ST2
+Rothera,HangarCove3,arms_id,fail,HangarCove3,ST2
+SchleswigHolstein,SHNP4,arms_id,fail,SHNP4,ST2
+SchleswigHolstein,SHNP3,arms_id,fail,SHNP3,ST2
+SchleswigHolstein,SHNP2,arms_id,fail,SHNP2,ST2
+SchleswigHolstein,SHNP1,arms_id,fail,SHNP1,ST2
 Svalbard,S2,"latitude, longitude, depth",pass,,
 Svalbard,S2,"latitude, longitude, depth",pass,,
 Svalbard,S1,"latitude, longitude, depth",pass,,
@@ -211,14 +232,20 @@ TZS,Angbat,"latitude, longitude, depth",pass,,
 TZS,Angbat,"latitude, longitude, depth",pass,,
 TZS,Angbat,"latitude, longitude, depth",pass,,
 TZS,Angbat,"latitude, longitude, depth",pass,,
+TZS,Angbat,"latitude, longitude, depth",pass,,
+TZS,Angbat,"latitude, longitude, depth",pass,,
+TZS,Angbat,"latitude, longitude, depth",pass,,
 TZS,Kummelkobben,"latitude, longitude, depth",pass,,
 TZS,Kummelkobben,"latitude, longitude, depth",pass,,
 TZS,Kummelkobben,"latitude, longitude, depth",pass,,
+Vigo,TorallaA,"latitude, longitude, depth",pass,,
 Vigo,TorallaA,"latitude, longitude, depth",pass,,
 Vigo,TorallaA,"latitude, longitude, depth",pass,,
 Vigo,TorallaA,"latitude, longitude, depth",pass,,
 Vigo,TorallaB,"latitude, longitude, depth",pass,,
 Vigo,TorallaB,"latitude, longitude, depth",pass,,
+Vigo,TorallaB,"latitude, longitude, depth",pass,,
 Vigo,TorallaC,"latitude, longitude, depth",pass,,
 Vigo,TorallaC,"latitude, longitude, depth",pass,,
-Vigo,TorallaD,arms_id,fail,TorallaD,DiskoIsland3
+Vigo,TorallaC,"latitude, longitude, depth",pass,,
+Vigo,TorallaD,arms_id,fail,TorallaD,ST2
