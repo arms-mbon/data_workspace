@@ -1,4 +1,4 @@
-Station,Station corrected,Country,Country corrected,ARMS unit,ARMS unit corrected
+Station in plutof,Station corrected,Country in plutof,Country corrected,ARMS unit in plutof,ARMS unit corrected
 Koster,,Sweden,,Koster_VH1,VH1
 Koster,,Sweden,,Koster_VH3,VH3
 Koster,,Sweden,,Koster_VH2,VH2
@@ -55,6 +55,8 @@ Eilat,,Israel,,Eilat_NR1,NR1
 Eilat,,Israel,,Eilat_Katza1,Katza1
 Eilat,,Israel,,Eilat_NR2,NR2
 Eilat,,Israel,,Eilat_Katza2,Katza2
+Eilat,,Israel,,Eilat_NR3,NR3
+Eilat,,Israel,,Eilat_Katza3,Katza3
 Gulf_of_Piran,GulfOfPiran,Slovenia,,Luka KP,LukaKP
 Gulf_of_Piran,GulfOfPiran,Slovenia,,Boja Vida,BojaVida
 Gulf_of_Piran,GulfOfPiran,Slovenia,,Fornace,
@@ -111,12 +113,12 @@ RavHarbour,,Italy,,RavH3,
 Adriatic East Coast,AdriaticEastCoast,Italy,,Ven3,
 Adriatic East Coast,AdriaticEastCoast,Italy,,Ven1,
 Adriatic East Coast,AdriaticEastCoast,Italy,,Ven2,
-KosterSeafarm,,Sweden,,KosterSeafarm_NSF1,KosterSeafarmNSF1
-KosterSeafarm,,Sweden,,KosterSeafarm_NSF2,KosterSeafarmNSF2
-KosterSeafarm,,Sweden,,KosterSeafarm_NSF3,KosterSeafarmNSF3
-KosterSeafarm,,Sweden,,KosterSeafarm_NSF4,KosterSeafarmNSF4
-KosterSeafarm,,Sweden,,KosterSeafarm_NSF5,KosterSeafarmNSF5
-KosterSeafarm,,Sweden,,KosterSeafarm_NSF6,KosterSeafarmNSF6
-KosterSeafarm,,Sweden,,KosterSeafarm_NSF7,KosterSeafarmNSF7
-KosterSeafarm,,Sweden,,KosterSeafarm_NSF8,KosterSeafarmNSF8
-KosterSeafarm,,Sweden,,KosterSeafarm_NSF9,KosterSeafarmNSF9
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF1,NSF1
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF2,NSF2
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF3,NSF3
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF4,NSF4
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF5,NSF5
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF6,NSF6
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF7,NSF7
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF8,NSF8
+KosterSeafarm,,Sweden,,KosterSeafarm_NSF9,NSF9
