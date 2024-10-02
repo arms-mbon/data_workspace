@@ -50,7 +50,9 @@ Crete,2UBPC,"latitude, longitude, depth",pass,,
 Crete,2UBPC,"latitude, longitude, depth",pass,,
 Daneborg,Daneborg2,arms_id,fail,Daneborg2,ST2
 Daneborg,Daneborg3,arms_id,fail,Daneborg3,ST2
-Daneborg,Daneborg1,arms_id,fail,Daneborg1,ST2
+Daneborg,Daneborg1,latitude,value is different but not significantly,74.3300,74.33040000
+Daneborg,Daneborg1,longitude,value is different but not significantly,-20.3400,-20.34040000
+Daneborg,Daneborg1,depth,fail,10,15
 Eilat,NR1,"latitude, longitude, depth",pass,,
 Eilat,NR1,"latitude, longitude, depth",pass,,
 Eilat,NR2,"latitude, longitude, depth",pass,,

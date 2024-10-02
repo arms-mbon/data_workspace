@@ -69,7 +69,6 @@ GulfOfPiran,Slovenia,NA,Station,passed
 GulfOfPiran,Slovenia,NA,Station,passed
 GulfOfPiran,Slovenia,LukaKP,ARMS unit,passed
 GulfOfPiran,Slovenia,BojaVida,ARMS unit,passed
-Daneborg,Greenland,Daneborg 1,ARMS unit,missing
 Getxo,Spain,G2,ARMS unit,passed
 Getxo,Spain,G1,ARMS unit,passed
 Getxo,Spain,G3,ARMS unit,passed
@@ -137,3 +136,6 @@ Cadiz,Spain,GT3,ARMS unit,missing
 Cadiz,Spain,ST1,ARMS unit,missing
 Cadiz,Spain,ST3,ARMS unit,missing
 Cadiz,Spain,ST2,ARMS unit,missing
+Cadiz,Spain,PT2,ARMS unit,missing
+Cadiz,Spain,PT3,ARMS unit,missing
+PT1,Spain,NA,Station,missing

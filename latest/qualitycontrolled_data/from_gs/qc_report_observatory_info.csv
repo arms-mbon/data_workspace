@@ -2,7 +2,6 @@ ARMS_unit,Station,QC_comment,QC_param,QC_value_plutoF,QC_value_gsheets
 CPowerMooring,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPowerMooring,
 CPowerTripod2,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPowerTripod2,
 CPowerTripod1,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPowerTripod1,
-Daneborg 1,Daneborg,ARMS ID not found in GS,ARMS_ID,Daneborg 1,
 DiskoIsland1,DiskoIsland,ARMS ID not found in GS,ARMS_ID,DiskoIsland1,
 DiskoIsland1,DiskoIsland,Observatory not found in GS,Observatory,DiskoIsland,
 DiskoIsland2,DiskoIsland,ARMS ID not found in GS,ARMS_ID,DiskoIsland2,
@@ -52,7 +51,7 @@ GStraB,NOR,OK,,,
 2UBPC,GRC,OK,,,
 Daneborg2,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Daneborg2
 Daneborg3,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Daneborg3
-Daneborg1,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Daneborg1
+Daneborg1,GRL,Observatory and ARMS ID found but lat and long are different,Lat_Long,74.33040000 -20.34040000,74.3300 -20.3400
 NR1,ISR,OK,,,
 NR2,ISR,OK,,,
 NR3,ISR,OK,,,
