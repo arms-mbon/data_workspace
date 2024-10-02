@@ -62,9 +62,9 @@ TZS,Angbat,"latitude, longitude, depth",pass,,
 TZS,Kummelkobben,"latitude, longitude, depth",pass,,
 TZS,Kummelkobben,"latitude, longitude, depth",pass,,
 TZS,Kummelkobben,"latitude, longitude, depth",pass,,
-TZS,Kolaviken,arms_unit,fail,Kolaviken,TorallaD
-TZS,Kolaviken,arms_unit,fail,Kolaviken,TorallaD
-TZS,Kolaviken,arms_unit,fail,Kolaviken,TorallaD
+TZS,Kolaviken,"latitude, longitude, depth",pass,,
+TZS,Kolaviken,"latitude, longitude, depth",pass,,
+TZS,Kolaviken,"latitude, longitude, depth",pass,,
 Svalbard,S2,"latitude, longitude, depth",pass,,
 Svalbard,S2,"latitude, longitude, depth",pass,,
 Svalbard,S1A,"latitude, longitude, depth",pass,,
@@ -117,8 +117,8 @@ Eilat,Katza2,"latitude, longitude, depth",pass,,
 Eilat,Katza2,"latitude, longitude, depth",pass,,
 Eilat,Katza1,"latitude, longitude, depth",pass,,
 Eilat,Katza1,"latitude, longitude, depth",pass,,
-Eilat,EilatNR3,arms_unit,fail,EilatNR3,TorallaD
-Eilat,EilatKatza3,arms_unit,fail,EilatKatza3,TorallaD
+Eilat,NR3,"latitude, longitude, depth",pass,,
+Eilat,Katza3,"latitude, longitude, depth",pass,,
 GulfOfPiran,Fornace,"latitude, longitude, depth",pass,,
 GulfOfPiran,Fornace,"latitude, longitude, depth",pass,,
 GulfOfPiran,Fornace,"latitude, longitude, depth",pass,,
@@ -139,7 +139,7 @@ GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
 GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
 GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
 GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
-Nuuk,Nuuk1,arms_unit,fail,Nuuk1,TorallaD
+Nuuk,Nuuk1,depth,fail,15,10
 Daneborg,Daneborg 1,arms_unit,fail,Daneborg 1,TorallaD
 Getxo,G2,"latitude, longitude, depth",pass,,
 Getxo,G2,"latitude, longitude, depth",pass,,
@@ -233,15 +233,15 @@ AdriaticEastCoast,Ven2,"latitude, longitude, depth",pass,,
 AdriaticEastCoast,Ven2,"latitude, longitude, depth",pass,,
 AdriaticEastCoast,Ven1,"latitude, longitude, depth",pass,,
 AdriaticEastCoast,Ven1,"latitude, longitude, depth",pass,,
-KosterSeafarm,KosterSeafarmNSF1,arms_unit,fail,KosterSeafarmNSF1,TorallaD
-KosterSeafarm,KosterSeafarmNSF2,arms_unit,fail,KosterSeafarmNSF2,TorallaD
-KosterSeafarm,KosterSeafarmNSF3,arms_unit,fail,KosterSeafarmNSF3,TorallaD
-KosterSeafarm,KosterSeafarmNSF4,arms_unit,fail,KosterSeafarmNSF4,TorallaD
-KosterSeafarm,KosterSeafarmNSF5,arms_unit,fail,KosterSeafarmNSF5,TorallaD
-KosterSeafarm,KosterSeafarmNSF6,arms_unit,fail,KosterSeafarmNSF6,TorallaD
-KosterSeafarm,KosterSeafarmNSF7,arms_unit,fail,KosterSeafarmNSF7,TorallaD
-KosterSeafarm,KosterSeafarmNSF8,arms_unit,fail,KosterSeafarmNSF8,TorallaD
-KosterSeafarm,KosterSeafarmNSF9,arms_unit,fail,KosterSeafarmNSF9,TorallaD
+KosterSeafarm,NSF1,"latitude, longitude, depth",pass,,
+KosterSeafarm,NSF2,"latitude, longitude, depth",pass,,
+KosterSeafarm,NSF3,"latitude, longitude, depth",pass,,
+KosterSeafarm,NSF4,"latitude, longitude, depth",pass,,
+KosterSeafarm,NSF5,"latitude, longitude, depth",pass,,
+KosterSeafarm,NSF6,"latitude, longitude, depth",pass,,
+KosterSeafarm,NSF7,"latitude, longitude, depth",pass,,
+KosterSeafarm,NSF8,"latitude, longitude, depth",pass,,
+KosterSeafarm,NSF9,"latitude, longitude, depth",pass,,
 DiskoIsland,DiskoIsland1,arms_unit,fail,DiskoIsland1,TorallaD
 DiskoIsland,DiskoIsland2,arms_unit,fail,DiskoIsland2,TorallaD
 DiskoIsland,DiskoIsland3,arms_unit,fail,DiskoIsland3,TorallaD

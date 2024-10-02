@@ -62,8 +62,8 @@ Eilat,Israel,NR2,ARMS unit,passed
 Eilat,Israel,NR1,ARMS unit,passed
 Eilat,Israel,Katza2,ARMS unit,passed
 Eilat,Israel,Katza1,ARMS unit,passed
-Eilat,Israel,Eilat_NR3,ARMS unit,missing
-Eilat,Israel,Eilat_Katza3,ARMS unit,missing
+Eilat,Israel,NR3,ARMS unit,passed
+Eilat,Israel,Katza3,ARMS unit,passed
 GulfOfPiran,Slovenia,NA,Station,passed
 GulfOfPiran,Slovenia,NA,Station,passed
 GulfOfPiran,Slovenia,NA,Station,passed
@@ -114,15 +114,15 @@ SWC,Sweden,Preemraff1,ARMS unit,passed
 AdriaticEastCoast,Italy,NA,Station,passed
 AdriaticEastCoast,Italy,NA,Station,passed
 AdriaticEastCoast,Italy,NA,Station,passed
-KosterSeafarm,Sweden,KosterSeafarmNSF1,ARMS unit,passed
-KosterSeafarm,Sweden,KosterSeafarmNSF2,ARMS unit,passed
-KosterSeafarm,Sweden,KosterSeafarmNSF3,ARMS unit,passed
-KosterSeafarm,Sweden,KosterSeafarmNSF4,ARMS unit,passed
-KosterSeafarm,Sweden,KosterSeafarmNSF5,ARMS unit,passed
-KosterSeafarm,Sweden,KosterSeafarmNSF6,ARMS unit,passed
-KosterSeafarm,Sweden,KosterSeafarmNSF7,ARMS unit,passed
-KosterSeafarm,Sweden,KosterSeafarmNSF8,ARMS unit,passed
-KosterSeafarm,Sweden,KosterSeafarmNSF9,ARMS unit,passed
+KosterSeafarm,Sweden,NSF1,ARMS unit,passed
+KosterSeafarm,Sweden,NSF2,ARMS unit,passed
+KosterSeafarm,Sweden,NSF3,ARMS unit,passed
+KosterSeafarm,Sweden,NSF4,ARMS unit,passed
+KosterSeafarm,Sweden,NSF5,ARMS unit,passed
+KosterSeafarm,Sweden,NSF6,ARMS unit,passed
+KosterSeafarm,Sweden,NSF7,ARMS unit,passed
+KosterSeafarm,Sweden,NSF8,ARMS unit,passed
+KosterSeafarm,Sweden,NSF9,ARMS unit,passed
 DiskoIsland,Greenland,NA,Station,missing
 DiskoIsland,Greenland,DiskoIsland1,ARMS unit,missing
 DiskoIsland,Greenland,DiskoIsland2,ARMS unit,missing
