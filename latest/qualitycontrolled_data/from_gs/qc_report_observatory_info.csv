@@ -1,23 +1,8 @@
 ARMS_unit,Station,QC_comment,QC_param,QC_value_plutoF,QC_value_gsheets
-Kolaviken,TZS,ARMS ID not found in GS,ARMS_ID,Kolaviken,
-Kolaviken,TZS,ARMS ID not found in GS,ARMS_ID,Kolaviken,
-Kolaviken,TZS,ARMS ID not found in GS,ARMS_ID,Kolaviken,
 CPowerMooring,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPowerMooring,
 CPowerTripod2,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPowerTripod2,
 CPowerTripod1,BelgiumCoast,ARMS ID not found in GS,ARMS_ID,CPowerTripod1,
-EilatNR3,Eilat,ARMS ID not found in GS,ARMS_ID,EilatNR3,
-EilatKatza3,Eilat,ARMS ID not found in GS,ARMS_ID,EilatKatza3,
-Nuuk1,Nuuk,ARMS ID not found in GS,ARMS_ID,Nuuk1,
 Daneborg 1,Daneborg,ARMS ID not found in GS,ARMS_ID,Daneborg 1,
-KosterSeafarmNSF1,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF1,
-KosterSeafarmNSF2,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF2,
-KosterSeafarmNSF3,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF3,
-KosterSeafarmNSF4,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF4,
-KosterSeafarmNSF5,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF5,
-KosterSeafarmNSF6,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF6,
-KosterSeafarmNSF7,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF7,
-KosterSeafarmNSF8,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF8,
-KosterSeafarmNSF9,KosterSeafarm,ARMS ID not found in GS,ARMS_ID,KosterSeafarmNSF9,
 DiskoIsland1,DiskoIsland,ARMS ID not found in GS,ARMS_ID,DiskoIsland1,
 DiskoIsland1,DiskoIsland,Observatory not found in GS,Observatory,DiskoIsland,
 DiskoIsland2,DiskoIsland,ARMS ID not found in GS,ARMS_ID,DiskoIsland2,
@@ -70,10 +55,10 @@ Daneborg3,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Daneborg3
 Daneborg1,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Daneborg1
 NR1,ISR,OK,,,
 NR2,ISR,OK,,,
-NR3,ISR,ARMS ID not found in PlutoF,ARMS_ID,,NR3
+NR3,ISR,OK,,,
 Katza1,ISR,OK,,,
 Katza2,ISR,OK,,,
-Katza3,ISR,ARMS ID not found in PlutoF,ARMS_ID,,Katza3
+Katza3,ISR,OK,,,
 Gurr3,IRL,OK,,,
 Gurr2,IRL,OK,,,
 Gurr1,IRL,OK,,,
@@ -88,24 +73,24 @@ LukaKP,SVN,OK,,,
 VH3,SWE,OK,,,
 VH1,SWE,OK,,,
 VH2,SWE,OK,,,
-NSF1,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF1
-NSF2,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF2
-NSF3,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF3
-NSF4,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF4
-NSF5,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF5
-NSF6,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF6
-NSF7,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF7
-NSF8,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF8
-NSF9,SWE,ARMS ID not found in PlutoF,ARMS_ID,,NSF9
+NSF1,SWE,OK,,,
+NSF2,SWE,OK,,,
+NSF3,SWE,OK,,,
+NSF4,SWE,OK,,,
+NSF5,SWE,OK,,,
+NSF6,SWE,OK,,,
+NSF7,SWE,OK,,,
+NSF8,SWE,OK,,,
+NSF9,SWE,OK,,,
 Laeso1,DNK,OK,,,
 Laeso2,DNK,OK,,,
 Laeso3,DNK,OK,,,
 Red2,DNK,OK,,,
 Yellow8,DNK,OK,,,
 Green33,DNK,OK,,,
-Kobbefjord2,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Kobbefjord2
-Kobbefjord1,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Kobbefjord1
-Kobberfjord3,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Kobberfjord3
+Nuuk2,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Nuuk2
+Nuuk1,GRL,OK,,,
+Nuuk3,GRL,ARMS ID not found in PlutoF,ARMS_ID,,Nuuk3
 MBA2,GBR,OK,,,
 MBA1B,GBR,OK,,,
 MBA1A,GBR,OK,,,
@@ -160,6 +145,7 @@ Preemraff2,SWE,OK,,,
 Spikarna,FIN,OK,,,
 Angbat,FIN,OK,,,
 Kummelkobben,FIN,OK,,,
+Kolaviken,FIN,OK,,,
 TorallaA,ESP,OK,,,
 TorallaB,ESP,OK,,,
 TorallaC,ESP,OK,,,

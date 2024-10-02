@@ -100,15 +100,22 @@ def getDepthMin(child_area):
         return "no measurements"
 
 
-# hepler functions that takes in input and also input column and return the value of the "input column corrected" from the qc-stations csv file if the value is not blank
+# helper functions that takes in input and also input column and return the value of the "input column corrected" from the qc-stations csv file if the value is not blank
 def correctedvalue(input_value, input_column, input_country=None, input_station=None):
     index_column = 0
+    print(f"input value: {input_value}")
+    print(f"input column: {input_column}")
+    print(f"input country: {input_country}")
+    print(f"input station: {input_station}")
     for field in qc_stations[0]:
-        if field == input_column:
+        print(f"field: {field}")
+        if field == input_column + " in plutof":
             tocheckcolumn = index_column
         if field == input_column + " corrected":
             correctedcolumn = index_column
         index_column += 1
+
+    print(f"tocheckcolumn: {tocheckcolumn}")
 
     toreturn = input_value
     found_station = False
@@ -475,7 +482,7 @@ for sampling_area in json_data_loaded["sampling_areas"]:
             for file in sampling_event["files"]:
                 file_name = str(file["id"])
                 platenumber, position = "Not Provided", "Not Provided"
-                #platenumber, position = getPlateNumberAndPosition(file_name)
+                # platenumber, position = getPlateNumberAndPosition(file_name)
 
                 file_type = file["type"]
                 file_download_url = file["download_link"]
@@ -1760,6 +1767,11 @@ for gsheets_data in json_arms_samples_gsheets:
                     ),
                     "Number of images": str(count),
                     "Sequences available": "; ".join(Sequences_available),
+                    "SampleRep": (
+                        gsheets_data["SampleRep"]
+                        if gsheets_data["SampleRep"] != ""
+                        else "Not provided"
+                    ),
                 }
             )
         else:
@@ -1809,6 +1821,11 @@ for gsheets_data in json_arms_samples_gsheets:
                     ),
                     "Number of images": str(count),
                     "Sequences available": "; ".join(Sequences_available),
+                    "SampleRep": (
+                        gsheets_data["SampleRep"]
+                        if gsheets_data["SampleRep"] != ""
+                        else "Not provided"
+                    ),
                 }
             )
 
@@ -1888,6 +1905,7 @@ for plutoF_data in material_samples_csv_data:
             "CrateCover": "Not provided",
             "Number of images": "0",
             "Sequences available": "",
+            "SampleRep": "Not provided",
         }
     )
 
@@ -1949,6 +1967,7 @@ for plutoF_data in material_samples_csv_data:
                 "CrateCover": "Not provided",
                 "Number of images": plutoF_data["Associated data"],
                 "Sequences available": "; ".join(Sequences_available),
+                "SampleRep": "Not provided",
             }
         )
         NonMatchingSamplingEventData.append({"EventID": plutoF_data["Parent_Event_ID"]})
@@ -1967,6 +1986,24 @@ for row in main_csv_data:
     if isfound == False:
         print("not found")
         NonMatchingSamplingEventData.append({"EventID": event_id_to_compare})
+
+# for sampling event in SamplingEventData:
+# check the value of the sequencing run repeat
+# if first sequencing run -> append _s1 to tge event id
+# if second sequencing run (repeat) -> append _s2 to the event id
+
+for sampling_event in SamplingEventData:
+    if sampling_event["SequencingRunRepeat"] == "first sequencing run":
+        sampling_event["EventID"] = sampling_event["EventID"] + "_r1"
+    if sampling_event["SequencingRunRepeat"] == "second sequencing run (repeat)":
+        sampling_event["EventID"] = sampling_event["EventID"] + "_r2"
+
+for sampling_event in SamplingEventData:
+    # if SampleRep is not empty , append the value to the EventID like _value
+    if sampling_event["SampleRep"] != "Not provided":
+        sampling_event["EventID"] = (
+            sampling_event["EventID"] + "_" + sampling_event["SampleRep"]
+        )
 
 ##OmicsData
 # EventID gsheets["Event-ID"]
@@ -2006,8 +2043,16 @@ for gsheets_data in json_arms_samples_gsheets:
                 "OriginalSampleID": gsheets_data["OriginalSample-ID"],
                 "SequencingRunRepeat": gsheets_data["SequencingRunRepeat"],
                 "SequencingRunComment": gsheets_data["SequencingRunComment"],
+                "SampleRep": gsheets_data["SampleRep"],
             }
         )
+
+for omics_data in OmicsData:
+    if omics_data["SequencingRunRepeat"] == "first sequencing run":
+        omics_data["EventID"] = omics_data["EventID"] + "_s1"
+    if omics_data["SequencingRunRepeat"] == "second sequencing run (repeat)":
+        omics_data["EventID"] = omics_data["EventID"] + "_s2"
+
 ##ImageData
 # ObservatoryID gsheets["Observatory-ID (corrected)"]
 # UnitID gsheets["ARMS-ID (corrected)"]
