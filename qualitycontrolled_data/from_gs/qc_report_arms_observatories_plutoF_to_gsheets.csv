@@ -140,7 +140,9 @@ GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
 GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
 GulfOfPiran,BojaVida,"latitude, longitude, depth",pass,,
 Nuuk,Nuuk1,depth,fail,15,10
-Daneborg,Daneborg 1,arms_unit,fail,Daneborg 1,TorallaD
+Daneborg,Daneborg1,latitude,value is different but not significantly,74.33040000,74.3300
+Daneborg,Daneborg1,longitude,value is different but not significantly,-20.34040000,-20.3400
+Daneborg,Daneborg1,depth,fail,15,10
 Getxo,G2,"latitude, longitude, depth",pass,,
 Getxo,G2,"latitude, longitude, depth",pass,,
 Getxo,G2,"latitude, longitude, depth",pass,,
