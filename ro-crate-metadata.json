@@ -142,6 +142,28 @@
             ]
         },
         {
+            "@id": "./qualitycontrolled_data/from_plutof/PT1/",
+            "@type": "Dataset",
+            "label": "./qualitycontrolled_data/from_plutof/PT1/",
+            "hasPart": [
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/PT1/sequences_PT1.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/PT1/associated_data_PT1.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/PT1/material_samples_PT1.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/PT1/observations_PT1.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/PT1/overview_data_PT1.csv"
+                }
+            ]
+        },
+        {
             "@id": "./qualitycontrolled_data/from_plutof/Nuuk/",
             "@type": "Dataset",
             "label": "./qualitycontrolled_data/from_plutof/Nuuk/",
@@ -698,6 +720,9 @@
             "hasPart": [
                 {
                     "@id": "./qualitycontrolled_data/from_plutof/Koster/"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/PT1/"
                 },
                 {
                     "@id": "./qualitycontrolled_data/from_plutof/Nuuk/"
@@ -1522,6 +1547,31 @@
             "@id": "./qualitycontrolled_data/from_plutof/Koster/material_samples_Koster.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/from_plutof/Koster/material_samples_Koster.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/PT1/sequences_PT1.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/PT1/sequences_PT1.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/PT1/associated_data_PT1.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/PT1/associated_data_PT1.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/PT1/material_samples_PT1.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/PT1/material_samples_PT1.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/PT1/observations_PT1.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/PT1/observations_PT1.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/PT1/overview_data_PT1.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/PT1/overview_data_PT1.csv"
         },
         {
             "@id": "./qualitycontrolled_data/from_plutof/Nuuk/material_samples_Nuuk.csv",
