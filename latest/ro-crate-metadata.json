@@ -142,6 +142,28 @@
             ]
         },
         {
+            "@id": "./qualitycontrolled_data/from_plutof/PT1/",
+            "@type": "Dataset",
+            "label": "./qualitycontrolled_data/from_plutof/PT1/",
+            "hasPart": [
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/PT1/sequences_PT1.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/PT1/associated_data_PT1.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/PT1/material_samples_PT1.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/PT1/observations_PT1.csv"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/PT1/overview_data_PT1.csv"
+                }
+            ]
+        },
+        {
             "@id": "./qualitycontrolled_data/from_plutof/Nuuk/",
             "@type": "Dataset",
             "label": "./qualitycontrolled_data/from_plutof/Nuuk/",
@@ -698,6 +720,9 @@
             "hasPart": [
                 {
                     "@id": "./qualitycontrolled_data/from_plutof/Koster/"
+                },
+                {
+                    "@id": "./qualitycontrolled_data/from_plutof/PT1/"
                 },
                 {
                     "@id": "./qualitycontrolled_data/from_plutof/Nuuk/"
@@ -1524,6 +1549,31 @@
             "label": "./qualitycontrolled_data/from_plutof/Koster/material_samples_Koster.csv"
         },
         {
+            "@id": "./qualitycontrolled_data/from_plutof/PT1/sequences_PT1.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/PT1/sequences_PT1.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/PT1/associated_data_PT1.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/PT1/associated_data_PT1.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/PT1/material_samples_PT1.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/PT1/material_samples_PT1.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/PT1/observations_PT1.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/PT1/observations_PT1.csv"
+        },
+        {
+            "@id": "./qualitycontrolled_data/from_plutof/PT1/overview_data_PT1.csv",
+            "@type": "File",
+            "label": "./qualitycontrolled_data/from_plutof/PT1/overview_data_PT1.csv"
+        },
+        {
             "@id": "./qualitycontrolled_data/from_plutof/Nuuk/material_samples_Nuuk.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/from_plutof/Nuuk/material_samples_Nuuk.csv"
@@ -2227,7 +2277,7 @@
             "@id": "./qualitycontrolled_data/Mapping_PlutoF_GS.csv",
             "@type": "File",
             "label": "./qualitycontrolled_data/Mapping_PlutoF_GS.csv",
-            "fileFormat": "text/csv",
+            "encodingFormat": "text/csv",
             "description": "The mapping of PlutoF metadata to the Google Sheet metadtata: used for our internal data-combining processes",
             "startDate": "2018-01-01",
             "endDate": "2023-10-10",
@@ -2667,7 +2717,7 @@
             "@id": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1.xlsx",
             "@type": "File",
             "label": "./analysis_data/from_pema/processing_batch1/pema_overview_batch1.xlsx",
-            "fileFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
             "description": "The PEMA overview file arising from PEMA processing of ARMS-MBON data (batch 1)",
             "startDate": "2018-01-01",
             "endDate": "2023-10-10",
@@ -2697,7 +2747,7 @@
             "@id": "./Mapping_PlutoF_GS.csv",
             "@type": "File",
             "label": "./Mapping_PlutoF_GS.csv",
-            "fileFormat": "text/csv",
+            "encodingFormat": "text/csv",
             "description": "The mapping of PlutoF metadata to the Google Sheet metadtata: used for our internal data-combining processes",
             "startDate": "2018-01-01",
             "endDate": "2023-10-10",

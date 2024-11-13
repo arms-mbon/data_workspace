@@ -85,7 +85,7 @@
         "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./reformatted_data/"
     },
     "./Mapping_PlutoF_GS.csv":{
-        "fileFormat": "text/csv",
+        "encodingFormat": "text/csv",
         "description": "The mapping of PlutoF metadata to the Google Sheet metadtata: used for our internal data-combining processes",
         "startDate": "2018-01-01",
         "endDate": "2023-10-10",
@@ -117,7 +117,7 @@
         "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./analysis_data/from_pema/processing_batch1/taxonomic_assignments"
     },
     "./analysis_data/from_pema/processing_batch1/pema_overview_batch1.xlsx":{
-        "fileFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         "description": "The PEMA overview file arising from PEMA processing of ARMS-MBON data (batch 1)",
         "startDate": "2018-01-01",
         "endDate": "2023-10-10",
@@ -148,7 +148,7 @@
         "downloadURL": "https://arms-mbon.github.io/data_workspace/latest/#./qualitycontrolled_data/from_plutof/"
     },
     "./qualitycontrolled_data/Mapping_PlutoF_GS.csv":{
-        "fileFormat": "text/csv",
+        "encodingFormat": "text/csv",
         "description": "The mapping of PlutoF metadata to the Google Sheet metadtata: used for our internal data-combining processes",
         "startDate": "2018-01-01",
         "endDate": "2023-10-10",
