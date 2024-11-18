@@ -1,2 +1,2 @@
-In here are the raw output files from the first processing batch of PEMA runs on the ARMS-MBON sequences. These files represent ASV/OTU raw read count tables (i.e., prior to blank-correction) INCLUDING the data of PCR blank samples.
+In here are the raw output files from the first processing batch of PEMA runs on the ARMS-MBON sequences. These files represent ASV/OTU raw read count tables (i.e., prior to blank-correction) INCLUDING the data of PCR blank samples and samples which were eventually omitted because they did not produce any ASVs/OTUs.
 There are one to two blank samples in each of the tables. They are marked in various ways, but all of them contain the character string _blank_ in one way or the other (i.e., _blank_, _Blank_, _BLANK_).
