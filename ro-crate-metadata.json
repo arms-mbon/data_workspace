@@ -949,6 +949,9 @@
             "hasPart": [
                 {
                     "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments_with_blanks/abc.txt"
+                },
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments_with_blanks/README.md"
                 }
             ]
         },
@@ -2335,6 +2338,11 @@
             "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments_with_blanks/abc.txt",
             "@type": "File",
             "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments_with_blanks/abc.txt"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments_with_blanks/README.md",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments_with_blanks/README.md"
         },
         {
             "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_May2021_COI_noBlank.xlsx",
