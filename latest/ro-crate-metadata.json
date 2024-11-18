@@ -943,6 +943,16 @@
             "downloadURL": "https://data.arms-mbon.org/data_workspace/latest/#./reformatted_data/"
         },
         {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments_with_blanks/",
+            "@type": "Dataset",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments_with_blanks/",
+            "hasPart": [
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments_with_blanks/abc.txt"
+                }
+            ]
+        },
+        {
             "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/",
             "@type": "Dataset",
             "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/",
@@ -1212,6 +1222,9 @@
             "@type": "Dataset",
             "label": "./analysis_data/from_pema/processing_batch1/",
             "hasPart": [
+                {
+                    "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments_with_blanks/"
+                },
                 {
                     "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/"
                 },
@@ -2317,6 +2330,11 @@
             "@id": "./reformatted_data/README.md",
             "@type": "File",
             "label": "./reformatted_data/README.md"
+        },
+        {
+            "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments_with_blanks/abc.txt",
+            "@type": "File",
+            "label": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments_with_blanks/abc.txt"
         },
         {
             "@id": "./analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_May2021_COI_noBlank.xlsx",
