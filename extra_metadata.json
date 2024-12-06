@@ -1,4 +1,4 @@
-{
+[{
     "./":{
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "title": "data_workspace",
@@ -21,17 +21,23 @@
         ],
         "description":"The data workspace: ARMS-MBON data are harvested, quality controlled, and combined",
         "keywords":[
-            "https://dwc.tdwg.org/terms/#materialsample",
-            "https://schema.org/Dataset",
-            "ARMS",
-            "MBON",
-            "https://vocabularyserver.com/asfa/index.php?tema=2185&/Biodiversity",
-            "https://vocabularyserver.com/asfa/index.php?tema=2091&/benthic-communities",
-            "https://vocabularyserver.com/asfa/index.php?tema=3505&/Long-term-changes",
-            "https://vocabularyserver.com/asfa/index.php?tema=2146&/biology",
-            "https://vocabularyserver.com/asfa/index.php?tema=1150&/marine-environment",
-            "https://vocabularyserver.com/asfa/index.php?tema=2365&/genetics"
-        ]
+                "sample",
+                "measurement",
+                "biodiversity",
+                "long-term-changes",
+                "marine-environment",
+                "genetics",
+                "benthic-communities"
+            ],
+            "dcat:theme":[
+                {"@id":"http://semanticscience.org/resource/SIO_001050"},
+                {"@id":"http://purl.obolibrary.org/obo/ExO_0000067"},
+                {"@id":"https://vocabularyserver.com/asfa/?tema=2185"},
+                {"@id":"https://vocabularyserver.com/asfa/?tema=3505"},
+                {"@id":"https://vocabularyserver.com/asfa/?tema=1150"},
+                {"@id":"https://vocabularyserver.com/asfa/?tema=2365"},
+                {"@id":"https://vocabularyserver.com/asfa/?tema=2091"}
+            ]
     },
     "_:MatthiasObst":{
         "@type":"Person",
@@ -174,4 +180,40 @@
         ],
         "downloadURL": "https://arms-mbon.github.io/data_workspace/latest/#./reformatted_data/lifewatch"
     }
-}
+},
+{
+        "@id":"http://semanticscience.org/resource/SIO_001050",
+        "@type": "skos:Concept",
+        "skos:prefLabel": "sample"
+    },
+    {
+        "@id":"http://purl.obolibrary.org/obo/ExO_0000067",
+        "@type": "skos:Concept",
+        "skos:prefLabel": "measurement"
+    },
+    {
+        "@id":"https://vocabularyserver.com/asfa/?tema=2185",
+        "@type": "skos:Concept",
+        "skos:prefLabel": "Biodiversity"
+    },
+    {
+        "@id":"https://vocabularyserver.com/asfa/?tema=3505",
+        "@type": "skos:Concept",
+        "skos:prefLabel": "Long-term changes"
+    },
+    {
+        "@id":"https://vocabularyserver.com/asfa/?tema=1150",
+        "@type": "skos:Concept",
+        "skos:prefLabel": "Marine environment"
+    },
+    {
+        "@id":"https://vocabularyserver.com/asfa/?tema=2365",
+        "@type": "skos:Concept",
+        "skos:prefLabel": "Genetics"
+    },
+    {
+        "@id":"https://vocabularyserver.com/asfa/?tema=2091",
+        "@type": "skos:Concept",
+        "skos:prefLabel": "Benthic communities"
+    }
+]
