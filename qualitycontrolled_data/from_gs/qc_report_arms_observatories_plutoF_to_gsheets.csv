@@ -13,6 +13,9 @@ Koster,VH2,"latitude, longitude, depth",pass,,
 Koster,VH2,"latitude, longitude, depth",pass,,
 Koster,VH2,"latitude, longitude, depth",pass,,
 Koster,VH2,"latitude, longitude, depth",pass,,
+Koster,KosterVH1A,arms_unit,fail,KosterVH1A,TorallaD
+Koster,KosterVH2A,arms_unit,fail,KosterVH2A,TorallaD
+Koster,KosterVH3A,arms_unit,fail,KosterVH3A,TorallaD
 Roscoff,BasBloS1,"latitude, longitude, depth",pass,,
 Roscoff,BasBloS1,"latitude, longitude, depth",pass,,
 Roscoff,BasBloS1,"latitude, longitude, depth",pass,,
@@ -59,6 +62,9 @@ TZS,Angbat,"latitude, longitude, depth",pass,,
 TZS,Angbat,"latitude, longitude, depth",pass,,
 TZS,Angbat,"latitude, longitude, depth",pass,,
 TZS,Angbat,"latitude, longitude, depth",pass,,
+TZS,Angbat,"latitude, longitude, depth",pass,,
+TZS,Angbat,"latitude, longitude, depth",pass,,
+TZS,Angbat,"latitude, longitude, depth",pass,,
 TZS,Kummelkobben,"latitude, longitude, depth",pass,,
 TZS,Kummelkobben,"latitude, longitude, depth",pass,,
 TZS,Kummelkobben,"latitude, longitude, depth",pass,,
@@ -72,6 +78,9 @@ Svalbard,S1B,"latitude, longitude, depth",pass,,
 Svalbard,S1C,"latitude, longitude, depth",pass,,
 Svalbard,S1,"latitude, longitude, depth",pass,,
 Svalbard,S1,"latitude, longitude, depth",pass,,
+Svalbard,Svalbard S1A,arms_unit,fail,Svalbard S1A,TorallaD
+Svalbard,Svalbard S1B,arms_unit,fail,Svalbard S1B,TorallaD
+Svalbard,Svalbard S1C,arms_unit,fail,Svalbard S1C,TorallaD
 Rothera,SouthCove1,longitude,value is different but not significantly,-68.13466667,-68.1346667
 Rothera,Cheshire1,latitude,value is different but not significantly,-67.57383333,-67.5738333
 Rothera,Cheshire1,longitude,value is different but not significantly,-68.12523333,-68.1252333
@@ -214,25 +223,34 @@ SWC,Preemraff1,"latitude, longitude, depth",pass,,
 RavMarina,RavM2,"latitude, longitude, depth",pass,,
 RavMarina,RavM2,"latitude, longitude, depth",pass,,
 RavMarina,RavM2,"latitude, longitude, depth",pass,,
+RavMarina,RavM2,"latitude, longitude, depth",pass,,
+RavMarina,RavM1,"latitude, longitude, depth",pass,,
 RavMarina,RavM1,"latitude, longitude, depth",pass,,
 RavMarina,RavM1,"latitude, longitude, depth",pass,,
 RavMarina,RavM1,"latitude, longitude, depth",pass,,
 RavMarina,RavM3,"latitude, longitude, depth",pass,,
 RavMarina,RavM3,"latitude, longitude, depth",pass,,
 RavMarina,RavM3,"latitude, longitude, depth",pass,,
+RavMarina,RavM3,"latitude, longitude, depth",pass,,
+RavHarbour,RavH1,"latitude, longitude, depth",pass,,
 RavHarbour,RavH1,"latitude, longitude, depth",pass,,
 RavHarbour,RavH1,"latitude, longitude, depth",pass,,
 RavHarbour,RavH1,"latitude, longitude, depth",pass,,
 RavHarbour,RavH2,"latitude, longitude, depth",pass,,
 RavHarbour,RavH2,"latitude, longitude, depth",pass,,
 RavHarbour,RavH2,"latitude, longitude, depth",pass,,
+RavHarbour,RavH2,"latitude, longitude, depth",pass,,
+RavHarbour,RavH3,"latitude, longitude, depth",pass,,
 RavHarbour,RavH3,"latitude, longitude, depth",pass,,
 RavHarbour,RavH3,"latitude, longitude, depth",pass,,
 RavHarbour,RavH3,"latitude, longitude, depth",pass,,
 AdriaticEastCoast,Ven3,"latitude, longitude, depth",pass,,
 AdriaticEastCoast,Ven3,"latitude, longitude, depth",pass,,
+AdriaticEastCoast,Ven3,"latitude, longitude, depth",pass,,
 AdriaticEastCoast,Ven2,"latitude, longitude, depth",pass,,
 AdriaticEastCoast,Ven2,"latitude, longitude, depth",pass,,
+AdriaticEastCoast,Ven2,"latitude, longitude, depth",pass,,
+AdriaticEastCoast,Ven1,"latitude, longitude, depth",pass,,
 AdriaticEastCoast,Ven1,"latitude, longitude, depth",pass,,
 AdriaticEastCoast,Ven1,"latitude, longitude, depth",pass,,
 KosterSeafarm,NSF1,"latitude, longitude, depth",pass,,
@@ -256,3 +274,6 @@ Cadiz,GT3,arms_unit,fail,GT3,TorallaD
 Cadiz,ST1,arms_unit,fail,ST1,TorallaD
 Cadiz,ST3,arms_unit,fail,ST3,TorallaD
 Cadiz,ST2,arms_unit,fail,ST2,TorallaD
+Cadiz,PT2,arms_unit,fail,PT2,TorallaD
+Cadiz,PT1,arms_unit,fail,PT1,TorallaD
+Cadiz,PT3,arms_unit,fail,PT3,TorallaD

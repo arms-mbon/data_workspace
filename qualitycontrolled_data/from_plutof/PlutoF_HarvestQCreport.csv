@@ -2,6 +2,9 @@ station,country,unit,qc_param,qc_flag
 Koster,Sweden,VH1,ARMS unit,passed
 Koster,Sweden,VH3,ARMS unit,passed
 Koster,Sweden,VH2,ARMS unit,passed
+Koster,Sweden,Koster_VH1A,ARMS unit,missing
+Koster,Sweden,Koster_VH2A,ARMS unit,missing
+Koster,Sweden,Koster_VH3A,ARMS unit,missing
 Roscoff,France,BasBloS1,ARMS unit,passed
 Roscoff,France,MarBloR1,ARMS unit,passed
 Roscoff,France,MarBloR3,ARMS unit,passed
@@ -30,6 +33,9 @@ Svalbard,Norway,S1A,ARMS unit,passed
 Svalbard,Norway,S1B,ARMS unit,passed
 Svalbard,Norway,S1C,ARMS unit,passed
 Svalbard,Norway,S1,ARMS unit,passed
+Svalbard,Norway,Svalbard S1A,ARMS unit,missing
+Svalbard,Norway,Svalbard S1B,ARMS unit,missing
+Svalbard,Norway,Svalbard S1C,ARMS unit,missing
 Rothera,Antarctica,SouthCove1,ARMS unit,passed
 Rothera,Antarctica,Cheshire1,ARMS unit,passed
 BelgiumCoast,Belgium,NA,Station,passed
@@ -137,5 +143,5 @@ Cadiz,Spain,ST1,ARMS unit,missing
 Cadiz,Spain,ST3,ARMS unit,missing
 Cadiz,Spain,ST2,ARMS unit,missing
 Cadiz,Spain,PT2,ARMS unit,missing
+Cadiz,Spain,PT1,ARMS unit,missing
 Cadiz,Spain,PT3,ARMS unit,missing
-PT1,Spain,NA,Station,missing
