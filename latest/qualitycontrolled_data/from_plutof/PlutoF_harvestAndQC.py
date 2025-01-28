@@ -1994,15 +1994,15 @@ for row in main_csv_data:
 
 for sampling_event in SamplingEventData:
     if sampling_event["SequencingRunRepeat"] == "first sequencing run":
-        sampling_event["EventID"] = sampling_event["EventID"] + "_r1"
+        sampling_event["MaterialSampleID"] = sampling_event["MaterialSampleID"] + "_r1"
     if sampling_event["SequencingRunRepeat"] == "second sequencing run (repeat)":
-        sampling_event["EventID"] = sampling_event["EventID"] + "_r2"
+        sampling_event["MaterialSampleID"] = sampling_event["MaterialSampleID"] + "_r2"
 
 for sampling_event in SamplingEventData:
     # if SampleRep is not empty , append the value to the EventID like _value
     if sampling_event["SampleRep"] != "Not provided":
-        sampling_event["EventID"] = (
-            sampling_event["EventID"] + "_" + sampling_event["SampleRep"]
+        sampling_event["MaterialSampleID"] = (
+            sampling_event["MaterialSampleID"] + "_" + sampling_event["SampleRep"]
         )
 
 ##OmicsData
@@ -2018,9 +2018,9 @@ for sampling_event in SamplingEventData:
 for gsheets_data in json_arms_samples_gsheets:
     # if (Gene_COI == undefined or  Gene_COI = "") and (GeneITS = "" or GeneITS == undefined ) and (Gene18S = "" or Gene18S == undefined):
     if (
-        (gsheets_data["gene_COI"] == "" or gsheets_data["gene_COI"] == "undefined")
-        and (gsheets_data["gene_ITS"] == "" or gsheets_data["gene_ITS"] == "undefined")
-        and (gsheets_data["gene_18S"] == "" or gsheets_data["gene_18S"] == "undefined")
+        (gsheets_data["gene_COI"] == "" or gsheets_data["gene_COI"] == "undefined" or gsheets_data["gene_COI"] == "none")
+        and (gsheets_data["gene_ITS"] == "" or gsheets_data["gene_ITS"] == "undefined" or gsheets_data["gene_ITS"] == "none")
+        and (gsheets_data["gene_18S"] == "" or gsheets_data["gene_18S"] == "undefined" or gsheets_data["gene_18S"] == "none")
     ):
         continue
     else:
@@ -2049,9 +2049,9 @@ for gsheets_data in json_arms_samples_gsheets:
 
 for omics_data in OmicsData:
     if omics_data["SequencingRunRepeat"] == "first sequencing run":
-        omics_data["EventID"] = omics_data["EventID"] + "_s1"
+        omics_data["MaterialSampleID"] = omics_data["MaterialSampleID"] + "_s1"
     if omics_data["SequencingRunRepeat"] == "second sequencing run (repeat)":
-        omics_data["EventID"] = omics_data["EventID"] + "_s2"
+        omics_data["MaterialSampleID"] = omics_data["MaterialSampleID"] + "_s2"
 
 ##ImageData
 # ObservatoryID gsheets["Observatory-ID (corrected)"]
