@@ -9,6 +9,8 @@ Here you will find the combination of the quality-controlled (meta)data taken [f
 *  [combined_OtherDataFiles.csv](https://github.com/arms-mbon/data_workspace/tree/main/qualitycontrolled_data/combined/combined_OtherDataFiles.csv): containing the IDs, filenames and download URLs for other files that the observatories uploaded for their sampling events, e.g. spreadsheets containing information about the images or visual observations.
 *  For each data file there is a metadata file that explains what the columns are and what type of values are contained therein.
 
+These files are each accompanied by a ...Metadata.csv that explains what each column contains. 
+
 Three additional files which are not the combination of previous data 
 *  [demultiplexing_details_OmicsData.csv](https://github.com/arms-mbon/data_workspace/blob/main/qualitycontrolled_data/combined/demultiplexing_details_OmicsData.csv), which is explained below.
 *  [ena_accession_numbers.xlsx](https://github.com/arms-mbon/data_workspace/blob/main/qualitycontrolled_data/combined/ena_accession_numbers.xlsx) which is a list of all the sample (SAMEA) and run (ERR) accession numbers for the ARMS-MBON data in ENA, for each project (PRJEB), of which there is a separate project for each country. All projects are linked under the ARMS-MBON project [PRJEB72316](https://www.ebi.ac.uk/ena/browser/view/prjeb72316). The sample ID (as added to ENA, which is often somewhat different from the material sample IDs as otherwise recorded here) are also provided, along with the sequencing run (run 1 or run 2) number (see the next bullet point to understand this).
