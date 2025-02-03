@@ -11,7 +11,7 @@ MaterialSampleID,Material sample identifier,xsd:string,schema:identifier,http://
 Number of images,Number of images associated with this event,xsd:integer,schema:description,none,none,none
 ObservatoryID,Observatory identifier,xsd:string,schema:identifier,none,none,none
 Preservative,"The preservative used: ETOH or DMSO (see the ARMS Handbook for details; note that the preservative could be DMSO or DMSO-EDTA-NaCl, i.e. DESS, this distinction was not tracked for these sampling events). For events in 2018 and 2019 both where used, thereafter only DMSO",xsd:string,schema:description,none,none,none
-ReplicateMaterialSampleID,"Material sample ID with _r1/2 (sequencing, i.e., technical replicate 1/2) and _s1/2 (biological, i.e. sample replicated 1/2) appended",xsd:string,schema:identifier,none,none,none
+ReplicateMaterialSampleID,"Material sample ID with _r1/2 (sequencing, i.e., technical replicate 1/2) and _s1/2 (biological, i.e. sample replicate 1/2) appended",xsd:string,schema:identifier,none,none,none
 Sequences available,The gene types for which sequences are available in ENA,"xsd:string,schema:description,none,none,none,",schema:description,none,none,none
 SequencingRunComment,Information about why sequencing was repeated (where relevant),xsd:string,schema:description,none,none,none
 SequencingRunRepeat,"As sequencing runs were sometimes repeated and the previous runs retained, this contains the repeat value (first, second, etc) of the run given as r1 or r2",xsd:string,schema:description,none,none,none
