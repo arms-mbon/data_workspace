@@ -2018,9 +2018,21 @@ for sampling_event in SamplingEventData:
 for gsheets_data in json_arms_samples_gsheets:
     # if (Gene_COI == undefined or  Gene_COI = "") and (GeneITS = "" or GeneITS == undefined ) and (Gene18S = "" or Gene18S == undefined):
     if (
-        (gsheets_data["gene_COI"] == "" or gsheets_data["gene_COI"] == "undefined" or gsheets_data["gene_COI"] == "none")
-        and (gsheets_data["gene_ITS"] == "" or gsheets_data["gene_ITS"] == "undefined" or gsheets_data["gene_ITS"] == "none")
-        and (gsheets_data["gene_18S"] == "" or gsheets_data["gene_18S"] == "undefined" or gsheets_data["gene_18S"] == "none")
+        (
+            gsheets_data["gene_COI"] == ""
+            or gsheets_data["gene_COI"] == "undefined"
+            or gsheets_data["gene_COI"] == "none"
+        )
+        and (
+            gsheets_data["gene_ITS"] == ""
+            or gsheets_data["gene_ITS"] == "undefined"
+            or gsheets_data["gene_ITS"] == "none"
+        )
+        and (
+            gsheets_data["gene_18S"] == ""
+            or gsheets_data["gene_18S"] == "undefined"
+            or gsheets_data["gene_18S"] == "none"
+        )
     ):
         continue
     else:
@@ -2049,9 +2061,17 @@ for gsheets_data in json_arms_samples_gsheets:
 
 for omics_data in OmicsData:
     if omics_data["SequencingRunRepeat"] == "first sequencing run":
-        omics_data["MaterialSampleID"] = omics_data["MaterialSampleID"] + "_s1"
+        omics_data["MaterialSampleID"] = omics_data["MaterialSampleID"] + "_r1"
     if omics_data["SequencingRunRepeat"] == "second sequencing run (repeat)":
-        omics_data["MaterialSampleID"] = omics_data["MaterialSampleID"] + "_s2"
+        omics_data["MaterialSampleID"] = omics_data["MaterialSampleID"] + "_r2"
+
+for omics_data in OmicsData:
+    # if SampleRep is not empty , append the value to the EventID like _value
+    if omics_data["SampleRep"] != "Not provided":
+        omics_data["MaterialSampleID"] = (
+            omics_data["MaterialSampleID"] + "_" + omics_data["SampleRep"]
+        )
+
 
 ##ImageData
 # ObservatoryID gsheets["Observatory-ID (corrected)"]
