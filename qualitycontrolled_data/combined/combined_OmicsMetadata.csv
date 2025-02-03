@@ -1,6 +1,7 @@
 Column title,Definition,Data type,Property,ObservablePropertyUrl,Unit,UnitURL
 EventID,Sampling event identifier,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/eventID,none,none
 MaterialSampleID,Material sample identifier,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/materialSampleID,none,none
+ReplicateMaterialSampleID,"Material sample ID with _r1/2 (sequencing, i.e., technical replicate 1/2) and _s1/2 (biological, i.e. sample replicate 1/2) appended",xsd:string,schema:identifier,none,none,none
 Gene_18S,ENA run accession number for the 18S sequence,xsd:string,schema:identifier,http://edamontology.org/data_1093,none,none
 Gene_18S_comment,comments regarding the sequencing success,xsd:string,schema:description,none,none,none
 Gene_18S_demultiplexed,ENA run accession number for the  negative control18S sequence,xsd:string,schema:identifier,http://edamontology.org/data_1093,none,none
@@ -13,7 +14,6 @@ Gene_ITS,ENA run accession number for the ITS sequence,xsd:string,schema:identif
 Gene_ITS_comment,comments regarding the sequencing success,xsd:string,schema:description,none,none,none
 Gene_ITS_demultiplexed,ENA run accession number for the  negative control ITS sequence,xsd:string,schema:identifier,http://edamontology.org/data_1093,none,none
 Gene_ITS_negative_control,Demultiplexing method used,xsd:string,schema:description,none,none,none
-ReplicateMaterialSampleID,"Material sample ID with _r1/2 (sequencing, i.e., technical replicate 1/2) and _s1/2 (biological, i.e. sample replicate 1/2) appended",xsd:string,schema:identifier,none,none,none
 OriginalSampleID,Material Sample ID as written on the shipped samples,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/materialSampleID,none,none
 SequencingRunComment,Information about why sequencing was repeated (where relevant),xsd:string,schema:description,none,none,none
 SequencingRunRepeat,"As sequencing runs were sometimes repeated, but previous runs retained, this contains the repeat value (first, second, etc) of the run",xsd:string,schema:description,none,none,none
