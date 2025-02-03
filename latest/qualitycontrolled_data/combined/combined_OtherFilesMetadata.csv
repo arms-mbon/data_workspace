@@ -1,5 +1,4 @@
 Column title,Definition,Data type,Property,ObservablePropertyUrl,Unit,UnitURL
-, , ,,,,
 Download URL,URL to download the image,xsd:anyURI,schema:url,none,none,none
 EventID,Sampling event identifier,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/eventID,none,none
 Filename,File name,xsd:string,schema:name ,none,none,none
