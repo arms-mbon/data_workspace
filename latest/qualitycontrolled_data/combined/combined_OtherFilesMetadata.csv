@@ -4,6 +4,6 @@ EventID,Sampling event identifier,xsd:string,schema:identifier,http://rs.tdwg.or
 Filename,File name,xsd:string,schema:name ,none,none,none
 Filetype,File type,xsd:string,schema:fileFormat,none,none,none
 ObservatoryID,Observatory identifier,xsd:string,schema:identifier,none,none,none
-PlateNumber,IGNORE,xsd:string,none,none,none,none
-Position,IGNORE,xsd:string,none,none,none,none
+PlateNumber,IGNORE (a residue from the images spreadsheet),xsd:string,none,none,none,none
+Position,IGNORE (a residue from the images spreadsheet),xsd:string,none,none,none,none
 UnitID,ARMS unit identifier,xsd:string,schema:identifier,none,none,none
