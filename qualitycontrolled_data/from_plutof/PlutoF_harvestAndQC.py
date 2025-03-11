@@ -2010,8 +2010,10 @@ for sampling_event in SamplingEventData:
 for sampling_event in SamplingEventData:
     # if SampleRep is not empty , append the value to the EventID like _value
     if sampling_event["SampleRep"] != "Not provided":
-        sampling_event["MaterialSampleID"] = (
-            sampling_event["MaterialSampleID"] + "_" + sampling_event["SampleRep"]
+        sampling_event["ReplicateMaterialSampleID"] = (
+            sampling_event["ReplicateMaterialSampleID"]
+            + "_"
+            + sampling_event["SampleRep"]
         )
 
 ##OmicsData
