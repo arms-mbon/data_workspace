@@ -1772,6 +1772,7 @@ for gsheets_data in json_arms_samples_gsheets:
                         if gsheets_data["SampleRep"] != ""
                         else "Not provided"
                     ),
+                    "ReplicateMaterialSampleID": gsheets_data["MaterialSample-ID"],
                 }
             )
         else:
@@ -1826,8 +1827,10 @@ for gsheets_data in json_arms_samples_gsheets:
                         if gsheets_data["SampleRep"] != ""
                         else "Not provided"
                     ),
+                    "ReplicateMaterialSampleID": gsheets_data["MaterialSample-ID"],
                 }
             )
+
 
 for plutoF_data in material_samples_csv_data:
 
@@ -1906,6 +1909,7 @@ for plutoF_data in material_samples_csv_data:
             "Number of images": "0",
             "Sequences available": "",
             "SampleRep": "Not provided",
+            "ReplicateMaterialSampleID": plutoF_data["Material_Sample_ID"],
         }
     )
 
@@ -1968,6 +1972,7 @@ for plutoF_data in material_samples_csv_data:
                 "Number of images": plutoF_data["Associated data"],
                 "Sequences available": "; ".join(Sequences_available),
                 "SampleRep": "Not provided",
+                "ReplicateMaterialSampleID": plutoF_data["Material_Sample_ID"],
             }
         )
         NonMatchingSamplingEventData.append({"EventID": plutoF_data["Parent_Event_ID"]})
@@ -1994,9 +1999,13 @@ for row in main_csv_data:
 
 for sampling_event in SamplingEventData:
     if sampling_event["SequencingRunRepeat"] == "first sequencing run":
-        sampling_event["MaterialSampleID"] = sampling_event["MaterialSampleID"] + "_r1"
+        sampling_event["ReplicateMaterialSampleID"] = (
+            sampling_event["ReplicateMaterialSampleID"] + "_r1"
+        )
     if sampling_event["SequencingRunRepeat"] == "second sequencing run (repeat)":
-        sampling_event["MaterialSampleID"] = sampling_event["MaterialSampleID"] + "_r2"
+        sampling_event["ReplicateMaterialSampleID"] = (
+            sampling_event["ReplicateMaterialSampleID"] + "_r2"
+        )
 
 for sampling_event in SamplingEventData:
     # if SampleRep is not empty , append the value to the EventID like _value
@@ -2056,20 +2065,25 @@ for gsheets_data in json_arms_samples_gsheets:
                 "SequencingRunRepeat": gsheets_data["SequencingRunRepeat"],
                 "SequencingRunComment": gsheets_data["SequencingRunComment"],
                 "SampleRep": gsheets_data["SampleRep"],
+                "ReplicateMaterialSampleID": gsheets_data["MaterialSample-ID"],
             }
         )
 
 for omics_data in OmicsData:
-    if omics_data["SequencingRunRepeat"] == "first sequencing run":
-        omics_data["MaterialSampleID"] = omics_data["MaterialSampleID"] + "_r1"
-    if omics_data["SequencingRunRepeat"] == "second sequencing run (repeat)":
-        omics_data["MaterialSampleID"] = omics_data["MaterialSampleID"] + "_r2"
-
-for omics_data in OmicsData:
     # if SampleRep is not empty , append the value to the EventID like _value
     if omics_data["SampleRep"] != "Not provided":
-        omics_data["MaterialSampleID"] = (
-            omics_data["MaterialSampleID"] + "_" + omics_data["SampleRep"]
+        omics_data["ReplicateMaterialSampleID"] = (
+            omics_data["ReplicateMaterialSampleID"] + "_" + omics_data["SampleRep"]
+        )
+
+for omics_data in OmicsData:
+    if omics_data["SequencingRunRepeat"] == "first sequencing run":
+        omics_data["ReplicateMaterialSampleID"] = (
+            omics_data["ReplicateMaterialSampleID"] + "_r1"
+        )
+    if omics_data["SequencingRunRepeat"] == "second sequencing run (repeat)":
+        omics_data["ReplicateMaterialSampleID"] = (
+            omics_data["ReplicateMaterialSampleID"] + "_r2"
         )
 
 
