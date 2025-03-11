@@ -1,4 +1,0 @@
-Station,Country,ARMS_unit,Latitude,Longitude,Depth_min,Depth_max,Date_start,Date_end,Event_ID,Event_Description,IUCN_Habitat_type,Material Samples,Observations,Sequences,Associated Data,Created,Updated
-DiskoIsland,Greenland,DiskoIsland1,69.25708300,-53.56625000,10,10,2023-08-26,None,ARMS_DiskoIsland_DiskoIsland1_20230826_00000000,,None,0,0,0,0,2024-02-23,2024-02-23
-DiskoIsland,Greenland,DiskoIsland2,69.25783300,-53.56588300,10,10,2023-08-26,None,ARMS_DiskoIsland_DiskoIsland2_20230826_00000000,,None,0,0,0,0,2024-02-23,2024-02-23
-DiskoIsland,Greenland,DiskoIsland3,69.25886700,-53.57630000,10,10,2023-08-26,None,ARMS_DiskoIsland_DiskoIsland3_20230826_00000000,,None,0,0,0,0,2024-02-23,2024-02-23

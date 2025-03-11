@@ -1,9 +1,0 @@
-Column title,Definition,Data type,Property,ObservablePropertyUrl,Unit,UnitURL
-Download URL,URL to download the image,xsd:anyURI,schema:url,none,none,none
-EventID,Sampling event identifier,xsd:string,schema:identifier,http://rs.tdwg.org/dwc/terms/eventID,none,none
-Filename,File name,xsd:string,schema:name ,none,none,none
-Filetype,File type,xsd:string,schema:fileFormat,none,none,none
-ObservatoryID,Observatory identifier,xsd:string,schema:identifier,none,none,none
-PlateNumber,IGNORE (a residue from the images spreadsheet),xsd:string,none,none,none,none
-Position,IGNORE (a residue from the images spreadsheet),xsd:string,none,none,none,none
-UnitID,ARMS unit identifier,xsd:string,schema:identifier,none,none,none
