@@ -1998,6 +1998,15 @@ for row in main_csv_data:
 # if second sequencing run (repeat) -> append _s2 to the event id
 
 for sampling_event in SamplingEventData:
+    # if SampleRep is not empty , append the value to the EventID like _value
+    if sampling_event["SampleRep"] != "Not provided":
+        sampling_event["ReplicateMaterialSampleID"] = (
+            sampling_event["ReplicateMaterialSampleID"]
+            + "_"
+            + sampling_event["SampleRep"]
+        )
+
+for sampling_event in SamplingEventData:
     if sampling_event["SequencingRunRepeat"] == "first sequencing run":
         sampling_event["ReplicateMaterialSampleID"] = (
             sampling_event["ReplicateMaterialSampleID"] + "_r1"
@@ -2007,14 +2016,6 @@ for sampling_event in SamplingEventData:
             sampling_event["ReplicateMaterialSampleID"] + "_r2"
         )
 
-for sampling_event in SamplingEventData:
-    # if SampleRep is not empty , append the value to the EventID like _value
-    if sampling_event["SampleRep"] != "Not provided":
-        sampling_event["ReplicateMaterialSampleID"] = (
-            sampling_event["ReplicateMaterialSampleID"]
-            + "_"
-            + sampling_event["SampleRep"]
-        )
 
 ##OmicsData
 # EventID gsheets["Event-ID"]
