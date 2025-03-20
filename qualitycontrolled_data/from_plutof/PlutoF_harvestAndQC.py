@@ -51,8 +51,30 @@ def converteddate(date):
 
 
 def getPlateNumberAndPosition(file_name):
-    # do a regular expression to get the plate position and plate number the expression should search for "_1-9(B or T)" eg _1T_ or _2B_ or _3B_
-    # the regex should find patterns like: _1T_ or _2B_ or _3B_
+
+    # to get to the plate number and position we need to first get hte content-disposition header from the file name which is a uri
+    # the file name should be in the format of "content-disposition: attachment; filename*=utf-8''40827526_ARMS_KOSTER_VH1_190527-200716_MF2000_IMG_3505.JPG"
+    # extract the file name from the content-disposition header and then do a regular expression to get the plate position and plate number
+    time.sleep(0.3)
+    print(f"file_name: {file_name}")
+    try:
+        response = requests.get(file_name, stream=True)
+        response.raise_for_status()
+        try:
+            content_disposition = response.headers["content-disposition"]
+            if content_disposition:
+                file_name = content_disposition.split("filename*=utf-8''")[1]
+                file_name = file_name.replace("'", "")
+            else:
+                file_name = "Not Provided"
+        except Exception as e:
+            print(f"Error getting content-disposition header: {e}")
+            file_name = "Not Provided"
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error during request: {e}")
+        file_name = "Not Provided"
+
     regex = re.compile(r"_(\d)([BT])")
     found = regex.search(file_name)
     # check if the regex found a match and if so return the match
@@ -482,7 +504,7 @@ for sampling_area in json_data_loaded["sampling_areas"]:
             for file in sampling_event["files"]:
                 file_name = str(file["id"])
                 platenumber, position = "Not Provided", "Not Provided"
-                # platenumber, position = getPlateNumberAndPosition(file_name)
+                platenumber, position = getPlateNumberAndPosition(file["download_link"])
 
                 file_type = file["type"]
                 file_download_url = file["download_link"]
