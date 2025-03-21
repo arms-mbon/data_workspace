@@ -82,11 +82,11 @@ def getPlateNumberAndPosition(file_name):
         # print(found.group(1))
         # print(found.group(2))
         if found.group(2) == "T":
-            return found.group(1), "Top"
+            return found.group(1), "Top", file_name
         elif found.group(2) == "B":
-            return found.group(1), "Bottom"
+            return found.group(1), "Bottom", file_name
     else:
-        return "Not Provided", "Not Provided"
+        return "Not Provided", "Not Provided", file_name
 
 
 def getDepthMax(child_area):
@@ -502,9 +502,14 @@ for sampling_area in json_data_loaded["sampling_areas"]:
 
             # associated_data table here
             for file in sampling_event["files"]:
-                file_name = str(file["id"])
-                platenumber, position = "Not Provided", "Not Provided"
-                platenumber, position = getPlateNumberAndPosition(file["download_link"])
+                platenumber, position, file_name = (
+                    "Not Provided",
+                    "Not Provided",
+                    "Not Provided",
+                )
+                platenumber, position, file_name = getPlateNumberAndPosition(
+                    file["download_link"]
+                )
 
                 file_type = file["type"]
                 file_download_url = file["download_link"]
