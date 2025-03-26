@@ -50,14 +50,26 @@ def converteddate(date):
         return date
 
 
-def getPlateNumberAndPosition(file_name):
+def getPlateNumberAndPosition(file_name, og_file_name):
 
     # to get to the plate number and position we need to first get hte content-disposition header from the file name which is a uri
     # the file name should be in the format of "content-disposition: attachment; filename*=utf-8''40827526_ARMS_KOSTER_VH1_190527-200716_MF2000_IMG_3505.JPG"
     # extract the file name from the content-disposition header and then do a regular expression to get the plate position and plate number
-    time.sleep(0.3)
+
     print(f"file_name: {file_name}")
+    print(f"og_file_name: {og_file_name}")
+
+    # first do a regex on the og_file_name
+    regex = re.compile(r"_(\d)([BT])")
+    found = regex.search(og_file_name)
+    if found:
+        if found.group(2) == "T":
+            return found.group(1), "Top", og_file_name
+        elif found.group(2) == "B":
+            return found.group(1), "Bottom", og_file_name
+
     try:
+        time.sleep(0.3)
         response = requests.get(file_name, stream=True)
         response.raise_for_status()
         try:
@@ -507,8 +519,11 @@ for sampling_area in json_data_loaded["sampling_areas"]:
                     "Not Provided",
                     "Not Provided",
                 )
+
+                og_file_name = file["file_name"]
+
                 platenumber, position, file_name = getPlateNumberAndPosition(
-                    file["download_link"]
+                    file["download_link"], og_file_name
                 )
 
                 file_type = file["type"]
