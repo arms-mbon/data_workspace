@@ -1,0 +1,20 @@
+ColumnTitle,Description,Datatype,Property,ObservablePropertyUrl,Unit,UnitUrl,Cell2URL
+Sample Region (country),Sampling region name,xsd:string,schema:description,none,none,none,none
+Country ISO3letter code,Country,xsd:string,schema:country,none,none,none,http://publications.europa.eu/resource/authority/country/{}
+Observatory-ID (corrected),Observatory ID,xsd:string,schema:identifier,none,none,none,none
+ARMS-ID (corrected),ARMS unit ID,xsd:string,schema:identifier,none,none,none,none
+Latitude,Latitude of the ARMS unit,xsd:double,schema:latitude,none,decimal degree,http://vocab.nerc.ac.uk/collection/P06/current/UAAA/,none
+Longitude,Longitude of the ARMS unit,xsd:double,schema:longitude,none,decimal degree,http://vocab.nerc.ac.uk/collection/P06/current/UAAA/,none
+Depth_min (m),Min depth of the ARMS unit,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/AHGT/,metre,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,none
+Depth_max (m),Mas depth of the ARMS unit,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/AHGT/,metre,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,none
+Monitoring area,Type of monitoring area,xsd:string,schema:description,none,none,none,none
+Anthropogenic influence,"Habitat keywords, semi-colon separated",xsd:string,schema:description,none,none,none,http://purl.obolibrary.org/obo/{}
+IUCN habitat type,IUCN habitat keyword,xsd:string,schema:description,none,none,none,none
+Description,Description,xsd:string,schema:description,none,none,none,none
+Notes,Notes ,xsd:string,schema:comment,none,none,none,none
+env_broad_scale,ENVO terms broad sea,xsd:string,schema:description,none,none,none,none
+env_local_scale,ENVO terms local habitat ,xsd:string,schema:description,none,none,none,none
+env_medium_scale,ENVO terms medium sea,xsd:string,schema:description,none,none,none,none
+add. info,additional habitat information,xsd:string,schema:description,none,none,none,none
+MarineRegion_smaller,"The marine regions that encompasses the site, as specific as possible without being too small",xsd:string,schema:description,none,none,none,none
+MarineRegion_larger,"The marine regions that encompasses the site, being larger that the _smaller ones",xsd:string,schema:description,none,none,none,none

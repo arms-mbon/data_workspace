@@ -1,0 +1,62 @@
+Station,Country,ARMS_unit,Latitude,Longitude,Depth_min,Depth_max,Date_start,Date_end,Event_ID,Event_Description,IUCN_Habitat_type,Material Samples,Observations,Sequences,Associated Data,Created,Updated
+BelgiumCoast,Belgium,AZFPout,51.68821000,2.84921000,38,38,2018-07-12,2018-08-18,ARMS_BelgiumCoast_AZFPout_20180712_20180818,"Just outside a windmill park. ARMS was deployed on a Acoustic Zooplankton Fish Profiler (AZFP's). As we were unable to dive, we undoubtedly lost most of the motile fraction. Still, many motile specimens were recorded (albeit in a rather low species diversity at first sight). The AZFP frame itself was also heavily occupied with motile and sessile organisms.",9.5 - Subtidal Sandy-Mud,0,0,0,125,2019-11-11,2022-10-18
+BelgiumCoast,Belgium,AZBW1,51.36290600,3.18363400,12,12,2019-09-24,2020-03-03,ARMS_BelgiumCoast_AZBW1_20190924_20200303,ARSM was deployed near marina of Zeebrugge in fine sand-silt (soft sediment). ARMS attached to tripod. The ARMS on zbw1 completely submerged ca 50 cm beneath sand in a fully anoxic zone. Not a single living specimens.,"12.2 - Sandy Shoreline and/or Beaches, Sand Bars, Spits, etc.",0,0,0,1,2020-05-12,2022-03-25
+BelgiumCoast,Belgium,AJJC86,51.65264000,2.79369998,37,37,2020-05-06,2020-10-12,ARMS_BelgiumCoast_AJJC86_20200506_20201012,Inside a windmill park. Attached to tripod. Retrieved with acoustic release (no cover crate).,9.6 - Subtidal Muddy,3,0,0,35,2020-09-25,2023-11-20
+BelgiumCoast,Belgium,AZBE1,51.36429800,3.20701000,7,7,2019-09-24,2020-03-03,ARMS_BelgiumCoast_AZBE1_20190924_20200303,"ARMS was deployed near marina of Zeebrugge, ARMS attached to tripod, retrieved with acoustic release (no cover crate). Substrate was fine sand-silt (soft-bottom). Very fine silt made filtrations heavy.",9.5 - Subtidal Sandy-Mud,3,0,0,39,2020-05-12,2023-11-07
+BelgiumCoast,Belgium,AJJCD89,51.64505000,2.79307400,18.64,18.64,2021-02-25,2021-08-19,ARMS_BelgiumCoast_AJJCD89_20210225_20210819,"ARMS was deployed at Belwind, ARMS attached to tripod CD89. Retrieved with acoustic release (no cover crate).",None,3,0,0,19,2021-09-01,2022-09-28
+BelgiumCoast,Belgium,AJJBC89,51.64971000,2.78937400,20.815624,20.815624,2021-02-25,2021-08-19,ARMS_BelgiumCoast_AJJBC89_20210225_20210819,"ARMS was deployed at windmill park Belwind, ARMS attached to tripod BC89. Retrieved with acoustic release (no cover crate).",None,3,0,0,19,2021-09-01,2023-11-20
+BelgiumCoast,Belgium,AZFPin,51.66522000,2.82558000,37.5,37.5,2018-07-12,2018-08-18,ARMS_BelgiumCoast_AZFPin_20180712_20180818,"Inside a windmill park. ARMS was deployed on a Acoustic Zooplankton Fish Profiler (AZFP's). As we were unable to dive, we undoubtedly lost most of the motile fraction. Still, many motile specimens were recorded (albeit in a rather low species diversity at first sight). The AZFP frame itself was also heavily occupied with motile and sessile organisms.
+
+
+
+
+Plate labelling
+The pictures of the plates were taken according to https://www.oceanarms.org/protocols/processing/plate-photos
+However, we skipped step 5 as it was possible to assess general diversity from one picture.
+Site 1 is AZFP IN 
+Site 2 is AZFP OUT.
+ 
+For example the label below come from site AZFP IN (Site 1 ARMS), it is the second plate in the sequence (Plate 2), and it is the bottom side (B)
+
+Voucher Specimens (see attached xls file fro labelling information)
+Images and xls sheet from Voucher specimens are under AZFP_Out_2018.
+In the excel sheet you can find the Station name in column ?P?.
+In time, we sent over five PCR-8-strips (one specimen in each well). This is an PCR-8-strips (because everybody gives it another name):
+ 
+The five strips were labelled ?1?, ?2?, ?3?, ?4?, ?5?.
+Within each strip there is an ?A? end and a ?H? end.
+The first specimen in the first strip on the A-side is labelled: 1.1
+The second specimen in the first strip on the A-side is labelled: 1.2
+The first specimen in the second strip on the A-side is labelled: 2.1",9.5 - Subtidal Sandy-Mud,2,0,0,294,2019-11-11,2022-10-18
+BelgiumCoast,Belgium,BirkenfelsB,51.64816667,2.53583333,38.81,38.81,2020-06-17,2021-03-09,ARMS_BelgiumCoast_BirkenfelsB_20200617_20210309,"ARMS was deployed near to Birkenfels shipwreck, ARMS attached to tripod, retrieved by acoustic release (no cover crate). Substrate was fine sand-silt (soft-bottom). Very fine silt made filtrations heavy.","12.2 - Sandy Shoreline and/or Beaches, Sand Bars, Spits, etc.",3,0,0,37,2021-04-07,2022-10-21
+BelgiumCoast,Belgium,CPowerB,51.57983300,2.99550000,26,26,2023-10-23,2024-07-18,ARMS_BelgiumCoast_CPowerB_20231023_20240718,"C-Power windfarm, mounted on tripod
+cover crate added by divers. tripod retrieved by winching",None,9,0,0,18,2024-07-22,2024-08-22
+BelgiumCoast,Belgium,CPowerB,51.57983300,2.99550000,26,26,2022-06-22,2023-09-05,ARMS_BelgiumCoast_CPowerB_20220622_20230905,"C-Power windfarm, mounted on tripod
+retrieved by winching, no cover crates used",None,6,0,0,18,2023-09-07,2024-07-31
+BelgiumCoast,Belgium,CPowerB,51.57983300,2.99550000,26,26,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerB_20210623_20220622,"C-Power windfarm, mounted on tripod
+retrieved with divers and cover crate",None,7,0,0,19,2022-06-28,2024-10-03
+BelgiumCoast,Belgium,CPowerA,51.57983300,2.99550000,26,26,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerA_20210623_20220622,"C-Power windfarm, mounted on tripod
+retrieved with divers and cover crate",11.1.1 - Hard Substrate,7,0,0,19,2022-06-28,2024-07-31
+BelgiumCoast,Belgium,CPowerA,51.57983300,2.99550000,26,26,2023-10-23,2024-07-18,ARMS_BelgiumCoast_CPowerA_20231023_20240718,"C-Power windfarm, mounted on tripod
+cover crate added by divers. tripod retrieved by winching",None,9,0,0,18,2024-07-22,2024-08-22
+BelgiumCoast,Belgium,CPowerA,51.57983300,2.99550000,26,26,2022-06-22,2023-09-05,ARMS_BelgiumCoast_CPowerA_20220622_20230905,"C-Power windfarm, mounted on tripod
+retrieved by winching, no cover crates used",None,5,0,0,18,2023-09-07,2023-11-20
+BelgiumCoast,Belgium,CPowerC,51.57983300,2.99550000,26,26,2023-10-23,2024-07-18,ARMS_BelgiumCoast_CPowerC_20231023_20240718,"C-Power windfarm, mounted on tripod
+cover crate added by divers. tripod retrieved by winching",None,10,0,0,18,2024-07-22,2024-08-22
+BelgiumCoast,Belgium,CPowerC,51.57983300,2.99550000,26,26,2022-05-22,2023-09-05,ARMS_BelgiumCoast_CPowerC_20220522_20230905,"C-Power windfarm, mounted on tripod
+retrieved by winching, no cover crates used",None,5,0,0,18,2023-09-07,2024-07-31
+BelgiumCoast,Belgium,CPowerC,51.57983300,2.99550000,26,26,2021-06-23,2022-06-22,ARMS_BelgiumCoast_CPowerC_20210623_20220622,"C-Power windfarm, mounted on tripod
+retrieved with divers and cover crate.",None,7,0,0,19,2022-06-28,2024-10-03
+BelgiumCoast,Belgium,CoastbustersA,51.11486388,2.57857672,9,9,2021-04-22,2021-10-08,ARMS_BelgiumCoast_CoastbustersA_20210422_20211008,"ARMS were deployed near the shore on biofacilitating anchors in the framework of the Coastbusters project. 
+Retrieved with divers and cover crate.",None,3,0,0,19,2021-10-12,2022-10-21
+BelgiumCoast,Belgium,AJJC81,51.65335670,2.79178508,38,38,2020-05-06,2020-10-12,ARMS_BelgiumCoast_AJJC81_20200506_20201012,"Inside a windmill park. Attached to a tripod, retrieved with acoustic release (no cover crate).",None,3,0,0,37,2020-09-25,2023-11-20
+BelgiumCoast,Belgium,BirkenfelsA,51.64816667,2.53583333,38.81,38.81,2020-06-17,2021-03-09,ARMS_BelgiumCoast_BirkenfelsA_20200617_20210309,"ARMS was deployed near to Birkenfels shipwreck, ARMS attached to tripod, retrieved by acoustic release (no cover crate). Substrate was fine sand-silt (soft-bottom). Very fine silt made filtrations heavy.","12.2 - Sandy Shoreline and/or Beaches, Sand Bars, Spits, etc.",3,0,0,19,2022-10-06,2022-10-18
+BelgiumCoast,Belgium,AJJCD78,51.65374944,2.79602577,38,38,2020-05-06,2020-10-12,ARMS_BelgiumCoast_AJJCD78_20200506_20201012,"ARMS was deployed at Belwind windmill park, ARMS attached to tripod CD78. Retrieved with acoustic release (no cover crate).",9.6 - Subtidal Muddy,2,0,0,37,2020-09-25,2022-11-04
+BelgiumCoast,Belgium,AJJCD78,51.65374944,2.79602577,38,38,2021-02-25,2021-08-19,ARMS_BelgiumCoast_AJJCD78_20210225_20210819,"ARMS was deployed at Belwind windmill park, ARMS attached to tripod CD78. Retrieved with acoustic release (no cover crate).",None,3,0,0,19,2021-09-01,2022-09-29
+BelgiumCoast,Belgium,CPowerMooring,51.57953300,2.99608300,None,26,2023-03-26,2023-10-23,ARMS_BelgiumCoast_CPowerMooring_20230326_20231023,offshore windmill farm,None,0,0,0,54,2023-11-13,2023-11-20
+BelgiumCoast,Belgium,CPowerTripod2,51.57943300,2.99605000,None,26,2023-03-26,2023-10-23,ARMS_BelgiumCoast_CPowerTripod2_20230326_20231023,offshore windmill farm,None,0,0,0,53,2023-11-13,2023-11-20
+BelgiumCoast,Belgium,CoastbustersB,51.11529044,2.57995513,9,9,2021-04-22,2023-02-15,ARMS_BelgiumCoast_CoastbustersB_20210422_20230215,"ARMS were deployed near the shore on biofacilitating anchors in the framework of the Coastbusters project.
+Retrieved with divers and cover crate. Part of unit was sedimented, tried to shake the sand out ot but some shells came loose, had to take one plate out of the water for picture because sand made picture too murky. 
+Part of the unit was silted, but plates were fulling covered despite silt!
+SF and MF in - 85°C (no DMSO), biobanking in -20 for better long term preservation, part of ARMS unit was silted however plates were fully covered in fauna",None,5,0,0,18,2023-02-15,2024-02-20
+BelgiumCoast,Belgium,CPowerTripod1,51.58000000,2.99610000,None,26,2023-03-26,2023-10-23,ARMS_BelgiumCoast_CPowerTripod1_20230326_20231023,offshore windmill farm,None,0,0,0,53,2023-11-13,2023-11-20
